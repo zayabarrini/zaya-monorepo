@@ -1,0 +1,198 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+
+  let isVisible = false;
+  // let showShareModal = false;
+
+  // Initialize Google Translate
+  onMount(() => {
+    const script = document.createElement("script");
+    script.src =
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    document.head.appendChild(script);
+
+    window.googleTranslateElementInit = () => {
+      new google.translate.TranslateElement(
+        { pageLanguage: "auto" },
+        "google_translate_element"
+      );
+
+      // Start observing the widget's container
+      const translateElement = document.getElementById(
+        "google_translate_element"
+      );
+      if (translateElement) {
+        // Set up MutationObserver
+        const observer = new MutationObserver(
+          (mutations) => {
+            mutations.forEach((mutation) => {
+              // Check if the widget's iframe is added or modified
+              if (
+                mutation.type === "childList" &&
+                mutation.addedNodes.length > 0
+              ) {
+                const skiptranslateDivs =
+                  document.querySelectorAll(
+                    ".skiptranslate"
+                  );
+                skiptranslateDivs.forEach(
+                  (skiptranslateDiv) => {
+                    const iframe =
+                      skiptranslateDiv.querySelector(
+                        "iframe"
+                      );
+                    if (iframe) {
+                      iframe.style.display = "none";
+                      isVisible = false;
+                    }
+                  }
+                );
+
+                const tooltips =
+                  document.querySelectorAll("#goog-gt-tt");
+                tooltips.forEach((tooltip) => {
+                  tooltip.style.display = "none";
+                });
+              }
+            });
+          }
+        );
+
+        // Start observing
+        observer.observe(translateElement, {
+          childList: true,
+          subtree: true
+        });
+
+        // Cleanup observer on component destruction
+        return () => {
+          observer.disconnect();
+        };
+      } else {
+        console.error(
+          "Google Translate element not found."
+        );
+      }
+    };
+  });
+
+  // Toggle visibility of the Google Translate widget
+  function toggleTranslate() {
+    isVisible = !isVisible;
+    // showShareModal = true;
+  }
+
+  // Handle clicks outside the modal content
+  function handleBackdropClick(event: MouseEvent) {
+    if (event.target === event.currentTarget) {
+      console.log("Backdrop clicked");
+      isVisible = false;
+      // showShareModal = false;
+    }
+  }
+
+  // Handle keyboard events (Escape to close modal)
+  function handleKeydown(event: KeyboardEvent) {
+    if (event.key === "Escape") {
+      isVisible = false; // Close share modal
+      // showShareModal = false;
+    }
+  }
+</script>
+
+<!-- Translate button -->
+<div
+  id="translate-icon"
+  on:click={toggleTranslate}
+  on:keypress={toggleTranslate}
+  aria-label="Translate"
+  role="button"
+  tabindex="0"
+>
+  <img src="/icons/translate.svg" alt="Translate" />
+</div>
+
+<div
+  id="google_translate_element"
+  class:visible={isVisible}
+/>
+
+<!-- Google Translate widget -->
+<!-- {#if showShareModal}
+  <div
+    class="share-modal-backdrop"
+    on:click={handleBackdropClick}
+    on:keydown={handleKeydown}
+    tabindex="0"
+    role="button"
+  >
+    <div
+      id="google_translate_element"
+      class:visible={isVisible}
+    />
+  </div>
+{/if} -->
+
+<style>
+  .share-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: text; */
+    z-index: 0;
+  }
+  /* Floating button style */
+  #translate-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    background: var(--background-color, #000);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  #translate-icon img {
+    width: 24px;
+    height: 24px;
+    filter: var(--icon-filter, none);
+    /* background: var(--background-color, #000); */
+  }
+
+  /* Google Translate widget style */
+  #google_translate_element {
+    position: fixed;
+    bottom: 80px; /* Adjusted to avoid overlap with the button */
+    right: 80px;
+    color: var(--text-color, #fff);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background: white;
+    z-index: 1000;
+    display: none; /* Default to hidden */
+  }
+
+  #goog-gt-tt {
+    max-width: 90vh;
+    padding: 2em;
+    display: none;
+  }
+  /* Class to show the widget */
+  #google_translate_element.visible {
+    display: block;
+  }
+
+  /* Hide the iframe generated by Google Translate */
+  .skiptranslate iframe {
+    display: none !important;
+  }
+</style>

@@ -1,0 +1,1374 @@
+/* body {
+  font-family: 'Zilla Slab Highlight', cursive;
+} */
+
+/* html {
+  margin: 0;
+  padding: 0;
+} */
+
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lora', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'Zilla Slab Highlight', cursive; */
+
+.mainpage article p {
+  font-family: "Lora", serif;
+}
+
+.prose {
+  font-family: "Lora", serif;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  font-family: "Open Sans", serif;
+}
+
+#goog-gt-tt {
+  display: none !important;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #e5e7eb;
+  --icon-filter: none;
+  --modal-background: white;
+
+  --blob-1: 145 71 108;
+  --blob-2: 62 151 92;
+  --blob-3: 164 20 180;
+
+  /* Alpha levels */
+  --blob-strong: 0.35;
+  --blob-medium: 0.3;
+  --blob-soft: 0.22;
+
+  --gradient-primary: radial-gradient(
+    120% 120% at 20% 20%,
+    rgba(var(--blob-1), var(--blob-strong)),
+    transparent 60%
+  );
+
+  --gradient-secondary: radial-gradient(
+    120% 120% at 80% 80%,
+    rgba(var(--blob-2), var(--blob-medium)),
+    transparent 65%
+  );
+
+  --gradient-tertiary: radial-gradient(
+    120% 120% at 50% 20%,
+    rgba(var(--blob-3), var(--blob-soft)),
+    transparent 70%
+  );
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 8px black;
+}
+
+.dark {
+  --background-color: rgb(34 21 35);
+  --text-color: #ffffff;
+  --border-color: #374151;
+  --icon-filter: invert(1);
+  --modal-background: #333333;
+
+  --blob-strong: 0.38;
+  --blob-medium: 0.32;
+  --blob-soft: 0.26;
+
+  /* Derived color palette based on background-color */
+  --accent-primary: color-mix(
+    in srgb,
+    var(--background-color) 70%,
+    #91476c 30%
+  );
+  --accent-secondary: color-mix(
+    in srgb,
+    var(--background-color) 70%,
+    #3e975c 30%
+  );
+  --accent-tertiary: color-mix(
+    in srgb,
+    var(--background-color) 70%,
+    #a414b4 30%
+  );
+  --shadow-intensity: 0.4;
+  --shadow-color: color-mix(
+    in srgb,
+    var(--background-color) 20%,
+    currentColor 80%
+  );
+}
+
+/* Fallback for browsers that don't support color-mix */
+@supports not (color-mix(in srgb, black, white)) {
+  .dark {
+    --accent-primary: #7a3a5c;
+    --accent-secondary: #2d7045;
+    --accent-tertiary: #3d6480;
+  }
+}
+
+/* Apply variables consistently */
+.bg-white {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+@keyframes forceReflow {
+  0% {
+    opacity: 0.999;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.zaya,
+.bg-white,
+.dark\\:text-white {
+  animation: forceReflow 0.001s;
+}
+
+/* Ensure text colors use variables */
+body {
+  background:
+    radial-gradient(
+      700px at 20% 30%,
+      color-mix(in srgb, #91476c 30%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      600px at 80% 70%,
+      color-mix(in srgb, #3e975c 30%, transparent),
+      transparent 65%
+    ),
+    radial-gradient(
+      500px at 60% 20%,
+      color-mix(in srgb, #a414b4 30%, transparent),
+      transparent 70%
+    ),
+    var(--background-color);
+}
+
+.background-blobs {
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      700px at 20% 30%,
+      rgba(145, 71, 108, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      600px at 80% 70%,
+      rgba(62, 151, 92, 0.3),
+      transparent 65%
+    ),
+    radial-gradient(
+      500px at 60% 20%,
+      rgba(164, 20, 180, 0.28),
+      transparent 70%
+    ),
+    var(--background-color);
+
+  filter: blur(120px);
+  animation: float 30s ease-in-out infinite;
+}
+
+.background-blobs {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.dark .keyword-tag {
+  color: #f5f5f5;
+
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--blob-1), 0.25),
+    rgba(var(--blob-3), 0.2)
+  );
+
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.keyword-tag {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  cursor: help;
+
+  color: var(--text-color);
+  background: linear-gradient(
+    120deg,
+    rgba(var(--blob-1), 0.4),
+    rgba(var(--blob-3), 0.35)
+  );
+
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.keyword-tag::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom right,
+    rgba(var(--blob-1), 0.18),
+    rgba(var(--blob-3), 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.keyword-tag:hover::before {
+  opacity: 1;
+}
+
+/* .bg-input {
+  background: radial-gradient(
+    500px at 60% 20%,
+    rgba(164, 20, 180, 0.28),
+    transparent 70%
+  );
+} */
+
+/* Fix dark mode text */
+.dark .dark\:text-white {
+  color: var(--text-color) !important;
+}
+
+.zaya {
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+}
+
+.zaya-img {
+  width: 2vh;
+  height: 2vh;
+  background-image: url("/css/img/logos/zaya.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-flex {
+  background-color: white;
+  opacity: 1;
+}
+
+.markdown-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+  }
+
+  h1 {
+    text-align: left;
+    font-family: "Open Sans", serif;
+    text-shadow: 0 4px 8px var(--accent-secondary);
+    border-radius: 8px;
+    font-size: 1.6em;
+  }
+}
+
+.dark .post-listing {
+  box-shadow: 0 4px 8px black;
+}
+
+.post-listing {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px var(--text-color);
+  margin: 2em 1em;
+  padding: 6em;
+
+  .rounded-lg {
+    border-radius: 1.5rem;
+    /* box-shadow: 0 4px 8px var(--text-color); */
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 4em 2em;
+
+    a {
+      display: block;
+    }
+  }
+
+  a {
+    display: grid;
+  }
+}
+
+.post-listing-content {
+  h3 {
+    font-family: "Playball", cursive;
+    font-size: 2em;
+    padding-bottom: 0.1em;
+  }
+
+  p {
+    margin-bottom: 0.1em;
+  }
+
+  .date {
+    border-radius: 8px;
+    text-shadow: 0 4px 8px var(--accent-tertiary);
+  }
+
+  .readmore {
+    font-family: "Playball", cursive;
+    border-radius: 8px;
+    text-shadow: 0 4px 8px var(--accent-tertiary);
+    text-decoration: none;
+  }
+}
+.carousel-caption {
+  font-size: larger;
+  text-align: center;
+  background-color: #282e34;
+  opacity: 0.8;
+}
+
+.carousel-item img {
+  height: 95vh;
+  object-fit: cover; /* Ensures the image covers the entire space */
+}
+
+.post-header {
+  text-align: left;
+}
+
+body {
+  /* margin-top: 56px; */
+  background-color: rgb(33 29 39);
+  /* display: contents; */
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+#mainpage {
+  /* background-color: #000; */
+}
+
+#page3,
+#page5,
+#page7,
+#page9,
+#page11,
+#page12,
+#page13,
+#page14,
+#page16,
+#page3-about,
+#page9-about {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#page2 {
+  background-size: cover;
+  color: black;
+  width: 100%;
+  /* height: 100vh; */
+
+  a {
+    display: contents;
+  }
+}
+
+#page2 .analystSpeech {
+  background-image: url("/css/img/Psychoanalysis/Topology10.png");
+  background-size: cover;
+  width: 100%;
+  /* height: 100vh; */
+  opacity: 0.9;
+}
+
+#page3 {
+  background-image: url("/css/img/Psychoanalysis/Topology10.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+/* #page3-about {
+  background-image: url("/css/img/Psychoanalysis/Topology10.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+} */
+
+#page4 {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  color: black;
+}
+
+#page4 .container i {
+  visibility: hidden;
+}
+
+#page4 img {
+  padding: 3em;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+/* #page4 p {
+  font-size: 5em;
+} */
+
+#page4 h1 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#page5 {
+  background-image: url("/css/img/Psychoanalysis/Topology13.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#page6 {
+  background-image: url("/css/img/Psychoanalysis/Topology14.png");
+  background-size: auto 100vh;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (min-width: 520px) and (max-width: 720px) {
+  .parallax {
+    span {
+      display: flex !important;
+    }
+  }
+}
+
+.parallax {
+  /* object-fit: cover; */
+
+  span {
+    display: block;
+    margin: -2em 2em;
+  }
+}
+
+#page6 .logo {
+  background-image: url("/css/img/Psychoanalysis/Topology15.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50vh;
+  margin-top: -3em;
+  width: 100%;
+  height: 20vh;
+}
+
+#page6 .fore-bird {
+  background-image: url("/css/img/Psychoanalysis/Topology16.png");
+  background-position: right bottom;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 70vh;
+  margin-left: -10em;
+  width: 100%;
+  height: 100vh;
+}
+
+#page6 .back-bird {
+  background-image: url("/css/img/Psychoanalysis/Topology17.png");
+  background-position: top left;
+  background-size: auto 50vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10vh;
+  margin-left: 0em;
+  width: 50%;
+  height: 100vh;
+}
+
+#page7 {
+  background-color: #d2d2d2;
+  background-size: cover;
+  opacity: 0.9;
+  color: black;
+}
+
+#page7 .content {
+  text-align: center;
+  font-family: "Playball", cursive;
+  margin-top: 3em;
+  font-size: 1.2em;
+  padding: 2em 2em;
+}
+
+@media screen and (min-width: 600px) {
+  #page7 .content {
+    padding: 2em 18em;
+  }
+}
+
+#page7 .content h1 {
+  margin-top: 1em;
+  font-size: 4em;
+}
+
+#page7-about {
+  background-color: #d2d2d2;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+#page7-about .content {
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 1.2em;
+  padding: 2em 2em;
+}
+
+#page7-about .content h1 {
+  margin-top: 1em;
+  font-size: 4em;
+}
+
+#clothes-section {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  color: black;
+}
+
+#clothes-section .content {
+  text-align: center;
+  font-family: "Playball", cursive;
+  margin-top: 3em;
+  font-size: 1.2em;
+  padding: 2em 20em;
+}
+
+#clothes-section .content h1 {
+  margin-top: 1em;
+  font-size: 4em;
+}
+
+#clothes-section .clothes-pic figure {
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6 ease-in-out;
+  cursor: pointer;
+  /* opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.5s ease-in-out; */
+}
+
+#clothes-section .clothes-pic img {
+  height: 30vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+} */
+
+#clothes-section .caption {
+  position: absolute;
+  top: 35vh;
+  background: black;
+  color: white;
+  overflow: hidden;
+  padding: 0.2em 0.5em;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#clothes-section figure:hover .caption {
+  left: 0%;
+}
+
+#clothes-section img:hover,
+figure:hover {
+  transform: scale(1.2);
+}
+
+#page8-section {
+  background-color: white;
+  background-size: cover;
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  #page8-section p {
+    padding: 0em 18em;
+  }
+}
+
+#page8-section .content {
+  text-align: center;
+  font-family: "Playball", cursive;
+  /* margin-top: 3em; */
+  font-size: 1.2em;
+  padding: 2em 2em;
+}
+
+#page8-section .content h1 {
+  margin-top: 1em;
+  font-size: 4em;
+}
+
+#page8 {
+  background-image: url("/css/img/Psychoanalysis/Topology18.png");
+  background-position: center 0em;
+  background-attachment: fixed;
+  opacity: 0.9;
+  position: relative;
+  height: 600px;
+  border-radius: 60%;
+  margin-top: 5em;
+}
+
+#page8 .window-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page8 .promo-text {
+  color: white;
+  font-weight: 100;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+#page8 .window-tint strong {
+  display: block;
+  font-size: 0.5em;
+}
+
+#page8 .window-tint span {
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#page8 .window-tint .window-cta {
+  font-size: 0.5em;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#page8 .window-tint .window-cta:hover {
+  background: white;
+  color: black;
+}
+
+#page9-about {
+  background-image: url("/css/img/Psychoanalysis/Topology19.png");
+  width: 100%;
+  height: 100vh;
+}
+
+#page9 {
+  background-image: url("/css/img/Psychoanalysis/Topology20.png");
+  width: 100%;
+  height: 100vh;
+}
+
+#page10 {
+  background-color: #9eacaf;
+  background-size: cover;
+  opacity: 0.7;
+  color: black;
+  width: 100%;
+}
+
+#page10 .blog-posts {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  height: 100%;
+}
+
+#page10 .blog-posts .post {
+  border: 0.1em solid #e1e1e1;
+  padding: 0.2em 0.1em;
+  height: 100%;
+  /* position: relative; */
+}
+
+#page10 .blog-posts .post-1 {
+  transform: translate(100px, 1em);
+}
+
+#page10 .blog-posts .post-2 {
+  z-index: 2;
+}
+
+#page10 .blog-posts .post-3 {
+  transform: translate(-100px, 20px);
+}
+
+#page10 .blog-posts .post img {
+  height: 100%;
+  /* width: 10vw; */
+  transition: all 0.3s ease-in-out;
+}
+
+#page10 .blog-posts .post img:hover {
+  transform: scale(1.2);
+}
+
+#page11 {
+  background-image: url("/css/img/Psychoanalysis/Topology21.png");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+#page12 {
+  /* background-image: url("img/red/css/img/Psychoanalysis/Topology10.png") */
+  background-color: #b91212;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#page13 {
+  background-image: url("/css/img/Psychoanalysis/Topology22.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#page14 {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#page15 {
+  background-color: black;
+  padding: 2em 0;
+  width: 100%;
+  color: #f8ffea;
+}
+
+#page15 ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+#page15 footer {
+  background-color: black;
+  text-align: left;
+}
+
+#page15 footer .submit-button {
+  padding-left: 3em;
+}
+
+#page15 .footer-stuff {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#page15 .footer-stuff a {
+  color: rgb(91, 192, 222);
+}
+
+#page15 .footer-stuff a:focus,
+a:hover {
+  color: rgb(91, 192, 222);
+}
+
+#page16 {
+  background-image: url("/css/img/Psychoanalysis/Topology23.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 2em;
+  color: white;
+  /* border-top: #333 0.7em solid;
+  border-bottom: #333 0.7em solid; */
+}
+
+#page2 h1 {
+  font-family: "Playball", cursive;
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+#page2 h2 {
+  font-family: "Playball", cursive;
+}
+
+#page2 img {
+  width: 90%;
+  margin-left: 2em;
+  margin-top: 4em;
+}
+
+#page2 .showcase-left i {
+  /* margin-top: 4em; */
+  font-size: 22em;
+}
+
+#page2 .showcase-right i {
+  /* margin-top: 4em; */
+  font-size: 5em;
+  opacity: 0.7;
+}
+
+#page2 .showcase-right {
+  margin-top: 3em;
+}
+
+#page2 .showcase-left {
+  margin-top: 3em;
+}
+
+#page2 .showcase-left-me {
+  margin-top: 1em;
+}
+
+#page2 .showcase-left-me img {
+  margin-top: 1em;
+  border: 0.23m solid black;
+  border-radius: 5%;
+}
+
+#testimonial {
+  background: #727070;
+  padding: 3em 0 2em 0;
+  text-align: center;
+}
+
+#testimonial p {
+  font-size: 2em;
+  font-family: "Indie Flower", cursive;
+  color: indianred;
+}
+
+#testimonial p.customer {
+  font-size: 1em;
+  /* color: #dab9b9; */
+}
+
+#page4 .info-right {
+  margin-top: 8em;
+}
+
+#page4 .info-right h2,
+p,
+q {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+#page4 .info-right h2 {
+  font-size: 3em;
+}
+
+#page4 .info-down h2,
+p,
+q {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+#page4 .info-down h2 {
+  font-size: 3em;
+}
+
+#contact {
+  margin-top: 1em;
+}
+
+footer {
+  /* padding: 0.8em; */
+  color: white;
+  background: black;
+  p {
+    text-align: center;
+  }
+
+  .py-4 {
+    padding: 0.5em;
+  }
+}
+
+.section {
+  padding: 1.2em 3em;
+}
+
+.section h2,
+p {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* nav {
+    display: contents !important;
+    position: fixed;
+    opacity: 1;
+    z-index: 10;
+  } */
+
+  body {
+    display: flex;
+  }
+
+  .mainpage {
+    /* padding: auto 2em; */
+    display: flex;
+    margin-top: 4rem;
+    overflow-x: hidden !important;
+  }
+
+  .post-listing-content {
+    h3 {
+      margin-top: 0.2em;
+    }
+  }
+
+  .carousel {
+    margin-top: 4em;
+  }
+
+  .carousel-inner img {
+    height: 44vh;
+    object-fit: cover; /* Ensures the image covers the entire space */
+  }
+
+  #clothes-section .clothes-pic img {
+    height: auto;
+  }
+
+  #clothes-section .content {
+    padding: 2em 2em;
+  }
+
+  /* nav {
+   
+    display: flex;
+  } */
+}
+
+.social-media {
+  padding: 1em 0em;
+  /* background-color: #f1aaaa; */
+  /* opacity: 0.7; */
+}
+
+.post-header .section h2,
+p {
+  text-align: left;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+  height: 40vh;
+}
+
+.section-dark .content-section {
+  margin-top: 2em;
+}
+
+.section-dark .content-section h2 {
+  font-size: 3em;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 2em;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+}
+
+.ptext-light {
+  color: #ffffff;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 1em;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.btn-outline-success {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-success:hover {
+  background: #e2a6a6;
+}
+
+@media (max-width: 568px) {
+  .ptext {
+    font-size: 1em;
+  }
+
+  #page2 .showcase-right {
+    display: none;
+  }
+
+  #page2 .showcase-left {
+    display: none;
+  }
+
+  #testimonial p {
+    font-size: 1em;
+  }
+
+  #testimonial p.customer {
+    font-size: 1em;
+    color: #666;
+  }
+
+  #page4 img {
+    width: 90%;
+  }
+
+  #page5,
+  #page7,
+  #page9,
+  #page11 {
+    /* background-attachment: scroll; */
+  }
+}
+
+/* Fonts */
+
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lora', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'Zilla Slab Highlight', cursive; */
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block; /* Change from flex to block */
+  }
+
+  .mainpage {
+    /* padding: 0 1rem; */
+    display: block; /* Change from flex to block */
+    width: 100%;
+    overflow-x: hidden !important; /* Prevent horizontal scroll */
+  }
+
+  /* Ensure prose content fits on mobile */
+  .prose {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .prose img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix other mobile issues */
+  .carousel {
+    margin-top: 1.55em;
+  }
+
+  .carousel-inner img {
+    height: 44vh;
+    object-fit: cover;
+  }
+
+  .post-listing-content h3 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+
+  #clothes-section .clothes-pic img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  #clothes-section .content {
+    padding: 1em;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 480px) {
+  .mainpage {
+    padding: 0 0.5rem;
+  }
+
+  .prose {
+    font-size: 0.875rem; /* sm text size */
+    line-height: 1.5;
+  }
+
+  .prose h1 {
+    font-size: 1.5em !important;
+  }
+
+  .prose h2 {
+    font-size: 1.3em !important;
+  }
+
+  .prose h3 {
+    font-size: 1.1em !important;
+  }
+}
+
+/* Improved scrollable tables */
+.prose {
+  overflow-x: visible; /* Remove this from prose, apply only to tables */
+}
+
+.prose table {
+  width: 100%;
+  min-width: auto; /* Change from 100% to auto */
+  display: table; /* Change from block to table */
+  overflow-x: auto;
+  white-space: normal; /* Allow wrapping */
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  /* Better scrolling UX */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* Container for scrollable tables */
+.prose > table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Visual scroll indicators */
+.prose > table {
+  background:
+    linear-gradient(
+      90deg,
+      var(--background-color) 30%,
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0),
+        var(--background-color) 70%
+      )
+      100% 0;
+  background-repeat: no-repeat;
+  background-size:
+    20px 100%,
+    20px 100%;
+  background-attachment: local, local;
+}
+
+.prose table th,
+.prose table td {
+  padding: 0.75rem 1rem; /* Slightly larger padding */
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  position: sticky;
+  left: 0; /* Keep header visible when scrolling */
+  z-index: 10;
+}
+
+/* Custom scrollbar for better UX */
+.prose > table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.prose > table::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.prose > table::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode support */
+.dark .prose table th,
+.dark .prose table td {
+  border-color: #374151;
+}
+
+.dark .prose table th {
+  background-color: #1f2937;
+}
+
+.dark .prose > table::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark .prose > table::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.more-like-this {
+  padding-bottom: 2em;
+}
+
+/* Fix strong tag color in table headers for dark mode */
+.dark .prose table th,
+.dark .prose table th strong {
+  color: #f9fafb !important; /* Light color for dark background */
+}
+
+/* Also fix regular text color in table headers for dark mode */
+.dark .prose table th {
+  color: #f9fafb !important;
+}
+
+/* Ensure strong tags in table cells are also visible in dark mode */
+.dark .prose table td strong {
+  color: #f9fafb;
+}
+
+/* Fix the general prose strong tag color for dark mode */
+.dark
+  .prose
+  table
+  :where(strong):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  ) {
+  color: #1f2937 !important; /* Light gray for better readability */
+}
+
+/* @media screen and (max-width: 768px) {
+  .prose table.mobile-stack {
+    display: block;
+  }
+
+  .prose table.mobile-stack thead {
+    display: none;
+  }
+
+  .prose table.mobile-stack tbody,
+  .prose table.mobile-stack tr,
+  .prose table.mobile-stack td {
+    display: block;
+  }
+
+  .prose table.mobile-stack td {
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .prose table.mobile-stack td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: 45%;
+    font-weight: 600;
+  }
+} */
+
+/* Fix horizontal overflow */
+.homepage {
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure all direct children don't exceed viewport */
+.homepage > * {
+  max-width: 100%;
+  box-sizing: border-box;
+}

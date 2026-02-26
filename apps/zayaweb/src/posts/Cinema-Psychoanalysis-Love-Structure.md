@@ -1,0 +1,130 @@
+---
+title: "Love Sctructure"
+imgUrl: "/css/img/Bing/bing33.png"
+youtubeId: "6de5c4e2-ba20-412b-bf89-0fffe1bad4bf"
+publishedAt: "2025-02-22"
+summary: "Love structure framework"
+---
+
+- Estrutura do Amor
+  - Mãe e seu amor
+    - Filho Prostituto
+    - Filho terrível
+      - Sádica
+        - Mata
+        - com raiva
+        - Deixa passar fome
+        - Come mais que o filho
+        - Violência
+      - Psicótica
+      - Melancólica
+      - Depressiva
+      - Suicida
+      - Toxicômona
+      - Abadona
+    - As virtudes da mãe
+      - Carinhosa
+      - Tranquila
+      - Bom alimento
+      - Sono tranquilo
+      - Bela, Divertida, Sorridente
+      - Casa limpa, bela, aconchegante
+      - Meu porto seguro
+      - Ama vários filhos
+      - Tempo para olhar pro filho
+  - Pai e seu amor
+    - Filho Fraco
+      - Burocrático
+      - Fálido
+      - Expulso
+      - Exposto
+      - Pênis que não funciona
+    - Filho Terrível
+    - Filho Transexual
+      - Gozo Outro
+    - Filho Amaldiçoado
+      - Deus/Destino
+    - Filho Criminoso
+      - Assassinato
+      - Corrupto
+      - Violento
+      - Estupro
+    - As virtudes do Pai
+      - Trabalhador
+      - Honesto
+      - Tranquilo
+      - Carinhoso
+      - Com visão de futuro
+      - Sábio
+      - Bonito, divertido, sorridente
+      - Processos, Produtos, Finanças, Estratégias, Sabedoria
+      - Tempo para brincar com o filho
+  - Eu
+    - Largado por seu criador
+      - Protegido e amado por seu criador
+    - Futuro enquanto imagem
+      - Estável e amado
+    - Futuro enquanto símbolo
+      - Estável e amado
+    - Invadido por gozo
+      - Delimitador por fronteiras
+    - Temendo pela minha virilidade, por meu conhecimento e por minha vida
+      - Caminhando tranquilo a céu aberto
+  - Repetição
+- Frustração, Privação, Castração
+  - Formas de negação
+    - Olhar
+    - Fala
+      - Razão
+    - Grito
+    - Violência
+      - Corpo
+        - Despedaçado
+        - Estupro
+    - Tempo
+    - Espaço
+    - Prisão
+    - Privação
+      - Bens
+      - Imoveis
+      - Nacionalidade
+      - Família
+      - Privacidade
+      - Timetable
+  - o bom uso da frustração
+- Incesto
+  - Encontro sexual
+    - Gozo
+  - Sonhos
+    - Polução
+    - Pênis ereto
+    - Gemidos
+  - fantasias
+  - Pensamentos intrusivos
+  - Carinho
+  - Higiene, Toque
+  - Abraço, Beijo, Banho
+  - Pornografia infantil
+- Pedofilia
+- Julgamento
+  - Provas
+  - Cálculos
+  - Leis
+  - Juízes
+  - Restituição
+  - Renúncia
+  - Útil, Justiça, Exemplos
+- Dúvida
+  - Familiar
+    - Estrangeiro
+  - Perto
+    - Longe
+  - Real
+    - Dólar
+  - Marido
+    - Rico
+    - Pobre
+    - Brasileiro
+    - Estrangeiro
+      - Americano
+      - Imigrante

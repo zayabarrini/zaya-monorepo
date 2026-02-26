@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-flex {
+  background-color: white;
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* margin: 0;
+  padding: 0; */
+  width: 100%;
+  /* display: flex; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: revert; /* or use specific values */
+}
+
+mjx-container[jax="SVG"] {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+mjx-container[jax="SVG"] svg {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Fix MathJax inline display */
+mjx-container[jax="SVG"][display="false"] {
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure inline math stays inline in lists and paragraphs */
+p mjx-container {
+  display: inline-flex !important;
+}
+
+/* Optional: Adjust vertical alignment for better appearance */
+mjx-container {
+  vertical-align: middle !important;
+}
+
+/* GENERAL RULE: Display math should be inline by default */
+mjx-container[jax="SVG"][display="true"] {
+  display: block !important;
+}
+
+svg {
+  display: inline !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 mjx-container[jax="SVG"][display="true"] {
+  display: inline !important;
+}
+
+/* SPECIFIC RULE: Override for display math inside paragraphs ONLY */
+p mjx-container[jax="SVG"][display="true"] {
+  display: block !important;
+  text-align: center;
+  margin: 1em 0;
+  padding-inline-start: 1.625em;
+  overflow-x: auto;
+}
+
+mjx-container[jax="SVG"][display="true"] svg {
+  max-width: 100%;
+  height: auto !important;
+}
