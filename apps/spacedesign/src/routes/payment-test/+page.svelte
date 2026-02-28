@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import PaymentForm from "$lib/components/payment/PaymentForm.svelte";
+  // import PaymentForm from "$lib/components/payment/PaymentForm.svelte";
   import { LocationService } from "$lib/services/location";
 
   let amount = 99.99;
@@ -188,11 +188,11 @@
       <div
         class="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
       >
-        <PaymentForm
+        <!-- <PaymentForm
           {amount}
           onSuccess={handleSuccess}
           onError={handleError}
-        />
+        /> -->
       </div>
     {/if}
 

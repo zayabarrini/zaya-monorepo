@@ -2,26 +2,20 @@
   "name": "zaya-monorepo",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "type": "module",
   "scripts": {
-    "dev:spacedesign": "npm run dev --workspace=apps/spacedesign",
-    "dev:signflow": "npm run dev --workspace=apps/signflow",
-    "dev:transliteration": "cd apps/transliteration && python api/index.py",
-    "build:spacedesign": "npm run build --workspace=apps/spacedesign",
-    "build:signflow": "npm run build --workspace=apps/signflow",
-    "build:all": "npm run build --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present",
-    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/*/dist packages/*/dist apps/*/.vercel"
+    "dev": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web",
+    "preview": "npm run preview --workspace=web",
+    "check": "npm run check --workspace=web"
   },
+  "workspaces": ["apps/*", "packages/*"],
   "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-svelte": "^3.0.0",
     "typescript": "^5.0.0"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "node": "18.x"
   }
 }

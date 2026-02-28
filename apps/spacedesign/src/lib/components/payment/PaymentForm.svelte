@@ -1,8 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { loadStripe } from "@stripe/stripe-js";
-  import { PaymentProviderFactory } from "@zaya/country-adapters";
+  // import { PaymentProviderFactory } from "@zaya/country-adapters";
+  // import { PaymentProviderFactory } from "../../../../../../packages/country-adapters/src";
+
   import { LocationService } from "$lib/services/location";
+
   import type { PaymentMethod, Order } from "@zaya/core";
 
   export let amount: number;
@@ -19,7 +22,7 @@
   let showAllMethods = false;
 
   const locationService = LocationService.getInstance();
-  const factory = PaymentProviderFactory.getInstance();
+  // const factory = PaymentProviderFactory.getInstance();
 
   onMount(async () => {
     await loadPaymentOptions();

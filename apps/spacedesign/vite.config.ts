@@ -2,22 +2,77 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig, type PluginOption } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { visualizer } from "rollup-plugin-visualizer";
-import path from 'path';
+import path from "path";
+import fs from "fs";
+
+// Add debug logging
+console.log("🔍 Resolving paths:");
+console.log(
+  "  country-adapters:",
+  path.resolve(
+    __dirname,
+    "../../packages/country-adapters/src"
+  )
+);
+console.log(
+  "  core:",
+  path.resolve(__dirname, "../../packages/core/src")
+);
+console.log(
+  "  stripe:",
+  path.resolve(__dirname, "../../packages/stripe/src")
+);
+
+// Check if directories exist
+const checkDir = (p: string) => {
+  const exists = fs.existsSync(p);
+  console.log(`  ${p}: ${exists ? "✅" : "❌"}`);
+  return exists;
+};
+
+checkDir(
+  path.resolve(
+    __dirname,
+    "../../packages/country-adapters/src"
+  )
+);
+checkDir(
+  path.resolve(__dirname, "../../packages/core/src")
+);
+checkDir(
+  path.resolve(__dirname, "../../packages/stripe/src")
+);
 
 export default defineConfig({
   resolve: {
     alias: {
-      '@zaya/country-adapters': path.resolve(__dirname, '../../packages/country-adapters/src'),
-      '@zaya/core': path.resolve(__dirname, '../../packages/core/src'),
-      '@zaya/stripe': path.resolve(__dirname, '../../packages/stripe/src'),
-    },
+      "@zaya/country-adapters": path.resolve(
+        __dirname,
+        "../../packages/country-adapters/src"
+      ),
+      "@zaya/core": path.resolve(
+        __dirname,
+        "../../packages/core/src"
+      ),
+      "@zaya/stripe": path.resolve(
+        __dirname,
+        "../../packages/stripe/src"
+      )
+    }
   },
   server: {
     fs: {
-      allow: ['..']
+      allow: ["..", "../../packages"]
     }
   },
-
+  optimizeDeps: {
+    include: [
+      "@zaya/country-adapters",
+      "@zaya/core",
+      "@zaya/stripe"
+    ],
+    exclude: []
+  },
   plugins: [
     sveltekit(),
     visualizer({
