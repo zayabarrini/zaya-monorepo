@@ -1,0 +1,13 @@
+{
+  "name": "zaya-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:spacedesign": "npm run dev --workspace=apps/spacedesign",
+    "dev:signflow": "npm run dev --workspace=apps/signflow",
+    "build:all": "npm run build --workspaces --if-present"
+  }
+}
