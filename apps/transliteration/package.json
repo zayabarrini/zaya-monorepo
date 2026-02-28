@@ -1,0 +1,10 @@
+{
+  "name": "transliteration",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python api/index.py",
+    "build": "echo 'Python build complete'",
+    "vercel-build": "pip install -r requirements.txt"
+  }
+}

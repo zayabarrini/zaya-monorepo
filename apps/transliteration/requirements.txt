@@ -1,0 +1,35 @@
+# Core API
+flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Chinese
+jieba==0.42.1
+pypinyin==0.50.0
+
+# Japanese
+pykakasi==2.2.1
+fugashi>=1.3.1
+unidic==1.1.0
+
+# Korean
+hangul-romanize==0.1.0
+
+# Arabic
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+pyarabic==0.6.15
+
+# Hindi/Indic
+indic-transliteration==1.8.0
+
+# Russian
+transliterate==1.10.2
+
+# Utilities
+beautifulsoup4==4.12.2
+requests==2.31.0
+PyYAML==6.0.1
+
+# Remove these if not strictly needed for API:
+# spacy, opencv, konlpy, mecab-python3, etc.

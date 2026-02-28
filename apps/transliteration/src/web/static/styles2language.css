@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.translator-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.header {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.translator-form {
+  padding: 40px 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.translate-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.translate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+}
+
+.translate-btn:active {
+  transform: translateY(0);
+}
+
+.result-section {
+  padding: 30px;
+  border-top: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.result-header h2 {
+  color: #374151;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-badge {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.rtl-language {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.cjk-language {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* Floating Invert Button */
+.floating-invert-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+  z-index: 1000;
+  border: 2px solid white;
+}
+
+.floating-invert-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(245, 158, 11, 0.5);
+}
+
+.floating-invert-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Ruby annotation styling - FIXED inversion */
+.word-ruby {
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+/* Normal mode: Big original word, small translation */
+.ruby-normal .word-ruby ruby {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.ruby-normal .word-ruby rt {
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Inverted mode: Big translation, small original word */
+.ruby-inverted .word-ruby ruby {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #059669;
+}
+
+.ruby-inverted .word-ruby rt {
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Proper spacing and alignment */
+.sentence-words {
+  word-spacing: 2px;
+  letter-spacing: 0.2px;
+  line-height: 2;
+  text-align: left;
+}
+
+/* RTL language support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .sentence-words {
+  text-align: right;
+}
+
+/* CJK language support */
+.cjk-language {
+  font-family: 'Inter', 'Noto Sans CJK', sans-serif;
+}
+
+/* Combined translation breakdown */
+.translation-breakdown {
+  margin-bottom: 0;
+}
+
+.translation-breakdown h3 {
+  color: #374151;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.breakdown-content {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.sentence-group {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sentence-group:last-child {
+  border-bottom: none;
+}
+
+.sentence-breakdown {
+  padding: 20px 20px 10px 20px;
+  background: #fafafa;
+}
+
+.sentence-translation {
+  padding: 10px 20px 20px 20px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px; */
+}
+
+.original-sentence {
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #4f46e5;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.translated-sentence {
+  padding: 15px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Sentence numbering */
+.sentence-group::before {
+  content: 'Sentence ' counter(sentence);
+  counter-increment: sentence;
+  display: block;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 15px 20px 0 20px;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.breakdown-content {
+  counter-reset: sentence;
+}
+
+.error {
+  color: #dc2626;
+  background: #fef2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #fecaca;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 30px 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .translator-form {
+    padding: 30px 20px;
+  }
+
+  .result-section {
+    padding: 20px;
+  }
+
+  .result-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .header-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sentence-breakdown {
+    padding: 15px 15px 8px 15px;
+  }
+
+  .sentence-translation {
+    padding: 8px 15px 15px 15px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .ruby-normal .word-ruby ruby {
+    font-size: 1.1rem;
+  }
+
+  .ruby-normal .word-ruby rt {
+    font-size: 0.7rem;
+  }
+
+  .ruby-inverted .word-ruby ruby {
+    font-size: 0.7rem;
+  }
+
+  .ruby-inverted .word-ruby rt {
+    font-size: 1.1rem;
+  }
+
+  /* Adjust floating button for mobile */
+  .floating-invert-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+  }
+
+  .floating-invert-btn .btn-text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-invert-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 14px;
+  }
+}
+
+/* Loading animation */
+.loading::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide floating button when printing */
+@media print {
+  .floating-invert-btn {
+    display: none !important;
+  }
+}
