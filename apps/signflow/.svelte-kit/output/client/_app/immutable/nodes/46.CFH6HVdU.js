@@ -1,0 +1,1 @@
+import{a as t,f as r}from"../chunks/-0HexQLS.js";/* empty css                */var i=r('<div class="pt-24 max-w-5xl mx-auto mainpage"><h1>Transliteration</h1></div>');function n(a){var o=i();t(a,o)}export{n as component};

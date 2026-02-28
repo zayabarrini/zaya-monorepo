@@ -1,0 +1,1906 @@
+{
+  "../../node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
+    "file": "_app/immutable/entry/start.zT2sQUIe.js",
+    "name": "entry/start",
+    "src": "../../node_modules/@sveltejs/kit/src/runtime/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/app.js": {
+    "file": "_app/immutable/entry/app.50XNgmhX.js",
+    "name": "entry/app",
+    "src": ".svelte-kit/generated/client-optimized/app.js",
+    "isEntry": true,
+    "imports": [
+      "_Ct5FWWRu.js",
+      "_-0HexQLS.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/client-optimized/nodes/0.js",
+      ".svelte-kit/generated/client-optimized/nodes/1.js",
+      ".svelte-kit/generated/client-optimized/nodes/2.js",
+      ".svelte-kit/generated/client-optimized/nodes/3.js",
+      ".svelte-kit/generated/client-optimized/nodes/4.js",
+      ".svelte-kit/generated/client-optimized/nodes/5.js",
+      ".svelte-kit/generated/client-optimized/nodes/6.js",
+      ".svelte-kit/generated/client-optimized/nodes/7.js",
+      ".svelte-kit/generated/client-optimized/nodes/8.js",
+      ".svelte-kit/generated/client-optimized/nodes/9.js",
+      ".svelte-kit/generated/client-optimized/nodes/10.js",
+      ".svelte-kit/generated/client-optimized/nodes/11.js",
+      ".svelte-kit/generated/client-optimized/nodes/12.js",
+      ".svelte-kit/generated/client-optimized/nodes/13.js",
+      ".svelte-kit/generated/client-optimized/nodes/14.js",
+      ".svelte-kit/generated/client-optimized/nodes/15.js",
+      ".svelte-kit/generated/client-optimized/nodes/16.js",
+      ".svelte-kit/generated/client-optimized/nodes/17.js",
+      ".svelte-kit/generated/client-optimized/nodes/18.js",
+      ".svelte-kit/generated/client-optimized/nodes/19.js",
+      ".svelte-kit/generated/client-optimized/nodes/20.js",
+      ".svelte-kit/generated/client-optimized/nodes/21.js",
+      ".svelte-kit/generated/client-optimized/nodes/22.js",
+      ".svelte-kit/generated/client-optimized/nodes/23.js",
+      ".svelte-kit/generated/client-optimized/nodes/24.js",
+      ".svelte-kit/generated/client-optimized/nodes/25.js",
+      ".svelte-kit/generated/client-optimized/nodes/26.js",
+      ".svelte-kit/generated/client-optimized/nodes/27.js",
+      ".svelte-kit/generated/client-optimized/nodes/28.js",
+      ".svelte-kit/generated/client-optimized/nodes/29.js",
+      ".svelte-kit/generated/client-optimized/nodes/30.js",
+      ".svelte-kit/generated/client-optimized/nodes/31.js",
+      ".svelte-kit/generated/client-optimized/nodes/32.js",
+      ".svelte-kit/generated/client-optimized/nodes/33.js",
+      ".svelte-kit/generated/client-optimized/nodes/34.js",
+      ".svelte-kit/generated/client-optimized/nodes/35.js",
+      ".svelte-kit/generated/client-optimized/nodes/36.js",
+      ".svelte-kit/generated/client-optimized/nodes/37.js",
+      ".svelte-kit/generated/client-optimized/nodes/38.js",
+      ".svelte-kit/generated/client-optimized/nodes/39.js",
+      ".svelte-kit/generated/client-optimized/nodes/40.js",
+      ".svelte-kit/generated/client-optimized/nodes/41.js",
+      ".svelte-kit/generated/client-optimized/nodes/42.js",
+      ".svelte-kit/generated/client-optimized/nodes/43.js",
+      ".svelte-kit/generated/client-optimized/nodes/44.js",
+      ".svelte-kit/generated/client-optimized/nodes/45.js",
+      ".svelte-kit/generated/client-optimized/nodes/46.js",
+      ".svelte-kit/generated/client-optimized/nodes/47.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/0.js": {
+    "file": "_app/immutable/nodes/0.EgXnl0y6.js",
+    "name": "nodes/0",
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_DOiDhcps.js",
+      "_ChVxeZXD.js"
+    ],
+    "css": [
+      "_app/immutable/assets/0.DH8-s0cv.css",
+      "_app/immutable/assets/app.CToo3IAm.css",
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/1.js": {
+    "file": "_app/immutable/nodes/1.DSXFFMnv.js",
+    "name": "nodes/1",
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/10.js": {
+    "file": "_app/immutable/nodes/10.CuWSsBao.js",
+    "name": "nodes/10",
+    "src": ".svelte-kit/generated/client-optimized/nodes/10.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_DOiDhcps.js"
+    ],
+    "css": [
+      "_app/immutable/assets/10.CtyYqGt8.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/11.js": {
+    "file": "_app/immutable/nodes/11.BQqsE0m5.js",
+    "name": "nodes/11",
+    "src": ".svelte-kit/generated/client-optimized/nodes/11.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/12.js": {
+    "file": "_app/immutable/nodes/12.CxTrLneP.js",
+    "name": "nodes/12",
+    "src": ".svelte-kit/generated/client-optimized/nodes/12.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/12.WzukF1F4.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/13.js": {
+    "file": "_app/immutable/nodes/13.Zoo6U9QT.js",
+    "name": "nodes/13",
+    "src": ".svelte-kit/generated/client-optimized/nodes/13.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/13.Cnbn_WgP.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/14.js": {
+    "file": "_app/immutable/nodes/14.DptkTmil.js",
+    "name": "nodes/14",
+    "src": ".svelte-kit/generated/client-optimized/nodes/14.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/14.qRsXhR_1.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/15.js": {
+    "file": "_app/immutable/nodes/15.DHoxHvxM.js",
+    "name": "nodes/15",
+    "src": ".svelte-kit/generated/client-optimized/nodes/15.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/15.C6LK2bXN.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/16.js": {
+    "file": "_app/immutable/nodes/16.BsN2DB2V.js",
+    "name": "nodes/16",
+    "src": ".svelte-kit/generated/client-optimized/nodes/16.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/16.Bxa5E10-.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/17.js": {
+    "file": "_app/immutable/nodes/17.jPBPF3Lx.js",
+    "name": "nodes/17",
+    "src": ".svelte-kit/generated/client-optimized/nodes/17.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/17.CUPCo6_H.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/18.js": {
+    "file": "_app/immutable/nodes/18.CovWLHab.js",
+    "name": "nodes/18",
+    "src": ".svelte-kit/generated/client-optimized/nodes/18.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/19.js": {
+    "file": "_app/immutable/nodes/19.BptWLDHB.js",
+    "name": "nodes/19",
+    "src": ".svelte-kit/generated/client-optimized/nodes/19.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/19.Cv4UpfA2.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/2.js": {
+    "file": "_app/immutable/nodes/2.BVb_XcmR.js",
+    "name": "nodes/2",
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_Bhym2ohr.js",
+      "_DdUw2Phi.js",
+      "_CsSW8tJi.js"
+    ],
+    "css": [
+      "_app/immutable/assets/app.CToo3IAm.css",
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/20.js": {
+    "file": "_app/immutable/nodes/20.o72y-jkz.js",
+    "name": "nodes/20",
+    "src": ".svelte-kit/generated/client-optimized/nodes/20.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/20.BMC7EbiB.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/21.js": {
+    "file": "_app/immutable/nodes/21.DgN5hP5N.js",
+    "name": "nodes/21",
+    "src": ".svelte-kit/generated/client-optimized/nodes/21.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/21.C75u3jtj.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/22.js": {
+    "file": "_app/immutable/nodes/22.dutsIgId.js",
+    "name": "nodes/22",
+    "src": ".svelte-kit/generated/client-optimized/nodes/22.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/22.EbU_kqlN.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/23.js": {
+    "file": "_app/immutable/nodes/23.ChRZrZEF.js",
+    "name": "nodes/23",
+    "src": ".svelte-kit/generated/client-optimized/nodes/23.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/23.2wXFKfme.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/24.js": {
+    "file": "_app/immutable/nodes/24.BL8mR1vZ.js",
+    "name": "nodes/24",
+    "src": ".svelte-kit/generated/client-optimized/nodes/24.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_ChVxeZXD.js"
+    ],
+    "css": [
+      "_app/immutable/assets/24.DJ8TIyLP.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/25.js": {
+    "file": "_app/immutable/nodes/25.sWEHa-K9.js",
+    "name": "nodes/25",
+    "src": ".svelte-kit/generated/client-optimized/nodes/25.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_ChVxeZXD.js"
+    ],
+    "css": [
+      "_app/immutable/assets/25.DwdKQDJH.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/26.js": {
+    "file": "_app/immutable/nodes/26.CA8V3cW4.js",
+    "name": "nodes/26",
+    "src": ".svelte-kit/generated/client-optimized/nodes/26.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/26.C3Q74v_u.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/27.js": {
+    "file": "_app/immutable/nodes/27.jqOLxetd.js",
+    "name": "nodes/27",
+    "src": ".svelte-kit/generated/client-optimized/nodes/27.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/27.CdmDG2eY.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/28.js": {
+    "file": "_app/immutable/nodes/28.BV99mJbD.js",
+    "name": "nodes/28",
+    "src": ".svelte-kit/generated/client-optimized/nodes/28.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/28.Bn7caSt9.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/29.js": {
+    "file": "_app/immutable/nodes/29.Miw41VVv.js",
+    "name": "nodes/29",
+    "src": ".svelte-kit/generated/client-optimized/nodes/29.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/29.BMXTv61v.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/3.js": {
+    "file": "_app/immutable/nodes/3.BzqOMjUk.js",
+    "name": "nodes/3",
+    "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_Ct5FWWRu.js",
+      "_-0HexQLS.js",
+      "_B_XlkYFP.js"
+    ],
+    "dynamicImports": [
+      "src/posts/Arabic.md",
+      "src/posts/CVs-CV-AudioVisual.md",
+      "src/posts/CVs-CV-IAs.md",
+      "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+      "src/posts/CVs-Cv-strategies.md",
+      "src/posts/CVs-Dev-CV.md",
+      "src/posts/CVs-Path-to-Psychoanalysis.md",
+      "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-Startup-Checklist.md",
+      "src/posts/Cinema-Quotes-Theather-Performance.md",
+      "src/posts/Cinema-Quotes.md",
+      "src/posts/Cinema-QuotesFavoriteMovies.md",
+      "src/posts/Cinema-Structure-of-tragedy.md",
+      "src/posts/Cvs-Data.md",
+      "src/posts/Dictionary-100DifficultSentences.md",
+      "src/posts/Dictionary-100Sentences.md",
+      "src/posts/Dictionary-Actress-Actor-Director.md",
+      "src/posts/Dictionary-AdvancedConjunctions.md",
+      "src/posts/Dictionary-Business.md",
+      "src/posts/Dictionary-ChildPsychoanalysis.md",
+      "src/posts/Dictionary-GrammaticalWords.md",
+      "src/posts/Dictionary-HSK.md",
+      "src/posts/Dictionary-LGBTWorld.md",
+      "src/posts/Dictionary-Lacan.md",
+      "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+      "src/posts/Dictionary-Mobius-Klein.md",
+      "src/posts/Dictionary-ModernPsychoanalysis.md",
+      "src/posts/Dictionary-Movies.md",
+      "src/posts/Dictionary-Music.md",
+      "src/posts/Dictionary-Numbers.md",
+      "src/posts/Dictionary-Philosophy.md",
+      "src/posts/Dictionary-Psychoanalysis.md",
+      "src/posts/Dictionary-Sade.md",
+      "src/posts/Dictionary-Theology.md",
+      "src/posts/Dictionary-Volleyball.md",
+      "src/posts/Dictionary-WordList.md",
+      "src/posts/Hindi.md",
+      "src/posts/Languages-Alphabets.md",
+      "src/posts/Languages-Frequency-Arabic.md",
+      "src/posts/Languages-Frequency-French.md",
+      "src/posts/Languages-Frequency-German.md",
+      "src/posts/Languages-Frequency-Hindi.md",
+      "src/posts/Languages-Frequency-Italian.md",
+      "src/posts/Languages-Frequency-Russian.md",
+      "src/posts/Languages-Phonetics-ar.md",
+      "src/posts/Languages-Phonetics-ch.md",
+      "src/posts/Languages-Phonetics-de.md",
+      "src/posts/Languages-Phonetics-hi.md",
+      "src/posts/Languages-Phonetics-ja.md",
+      "src/posts/Languages-Phonetics-ru.md",
+      "src/posts/Music-2025-1D-BS-db-ar.md",
+      "src/posts/Music-2025.md",
+      "src/posts/Music-BTS-Ja.md",
+      "src/posts/Music-Britney.md",
+      "src/posts/Music-Get-Together.md",
+      "src/posts/Music-Languages.md",
+      "src/posts/Music-Mulheres-Apaixonadas.md",
+      "src/posts/Music-NB-Mansionair-DR.md",
+      "src/posts/Music-OneDirection.md",
+      "src/posts/Music-Practice-Arabic-Songs.md",
+      "src/posts/Music-Practice-Chinese-Songs.md",
+      "src/posts/Music-Practice-French-Songs.md",
+      "src/posts/Music-Practice-Hindi-Songs.md",
+      "src/posts/Music-Practice-Italian-Songs.md",
+      "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+      "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+      "src/posts/Music-Practice-Japanese-Songs.md",
+      "src/posts/Music-Practice-Korean-Songs.md",
+      "src/posts/Music-Practice-Languages-Music.md",
+      "src/posts/Music-Practice-Russian-Songs.md",
+      "src/posts/Music-Practive-German-Songs.md",
+      "src/posts/Music-SingAlong.md",
+      "src/posts/Music-Songs.md",
+      "src/posts/Music-Songs_Lyrics-db-ar.md",
+      "src/posts/Music-Woman.md",
+      "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+      "src/posts/Practice-Conversing.md",
+      "src/posts/Practice-KoreanMusic.md",
+      "src/posts/Practice-Signs.md",
+      "src/posts/Practice-Songs.md",
+      "src/posts/Practice-Structure.md",
+      "src/posts/Psychoanalysis-Language-Arabic.md",
+      "src/posts/Psychoanalysis-Language-Chinese.md",
+      "src/posts/Psychoanalysis-Language-German.md",
+      "src/posts/Psychoanalysis-Language-Hindi.md",
+      "src/posts/Psychoanalysis-Language-Japanese.md",
+      "src/posts/Psychoanalysis-Language-Korean.md",
+      "src/posts/Psychoanalysis-Language-Russian.md",
+      "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+      "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+      "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+      "src/posts/Psychoanalysis-Semiotics-Topology.md",
+      "src/posts/Psychoanalysis-Semiotics.md",
+      "src/posts/Theater-DragRaceS05E01.md",
+      "src/posts/Theater-Quotes.md",
+      "src/posts/Theater-SurvivorAuS08E07.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+      "src/posts/music-languages-ml-practice.md"
+    ],
+    "css": [
+      "_app/immutable/assets/3.BQT52N5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/30.js": {
+    "file": "_app/immutable/nodes/30.CksbaZvP.js",
+    "name": "nodes/30",
+    "src": ".svelte-kit/generated/client-optimized/nodes/30.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/30.B0xvDmgN.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/31.js": {
+    "file": "_app/immutable/nodes/31.BxDOs5zS.js",
+    "name": "nodes/31",
+    "src": ".svelte-kit/generated/client-optimized/nodes/31.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/31.CpYon7KV.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/32.js": {
+    "file": "_app/immutable/nodes/32.CWRJU_bv.js",
+    "name": "nodes/32",
+    "src": ".svelte-kit/generated/client-optimized/nodes/32.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/32.DKwO_Yyg.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/33.js": {
+    "file": "_app/immutable/nodes/33.Jxe87bcT.js",
+    "name": "nodes/33",
+    "src": ".svelte-kit/generated/client-optimized/nodes/33.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/33.CzjcJMq8.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/34.js": {
+    "file": "_app/immutable/nodes/34.DvvPm26M.js",
+    "name": "nodes/34",
+    "src": ".svelte-kit/generated/client-optimized/nodes/34.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/34.DKTcYlGK.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/35.js": {
+    "file": "_app/immutable/nodes/35.CkptNijz.js",
+    "name": "nodes/35",
+    "src": ".svelte-kit/generated/client-optimized/nodes/35.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/35.CpJ7vTgO.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/36.js": {
+    "file": "_app/immutable/nodes/36.BkiHaNwL.js",
+    "name": "nodes/36",
+    "src": ".svelte-kit/generated/client-optimized/nodes/36.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/36.CNL47D4s.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/37.js": {
+    "file": "_app/immutable/nodes/37.Cb5FIGyt.js",
+    "name": "nodes/37",
+    "src": ".svelte-kit/generated/client-optimized/nodes/37.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/37.NH_xnlHv.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/38.js": {
+    "file": "_app/immutable/nodes/38.Cz_p4-yj.js",
+    "name": "nodes/38",
+    "src": ".svelte-kit/generated/client-optimized/nodes/38.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/38.MWKK1Jwm.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/39.js": {
+    "file": "_app/immutable/nodes/39.DbQKaxQJ.js",
+    "name": "nodes/39",
+    "src": ".svelte-kit/generated/client-optimized/nodes/39.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/39.DB3XL1x-.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/4.js": {
+    "file": "_app/immutable/nodes/4.DRH3iXND.js",
+    "name": "nodes/4",
+    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_DdUw2Phi.js",
+      "_CsSW8tJi.js",
+      "_DAvaKDgI.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/40.js": {
+    "file": "_app/immutable/nodes/40.DpORBkDW.js",
+    "name": "nodes/40",
+    "src": ".svelte-kit/generated/client-optimized/nodes/40.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/40.DyMUuvSk.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/41.js": {
+    "file": "_app/immutable/nodes/41.CnTk9k47.js",
+    "name": "nodes/41",
+    "src": ".svelte-kit/generated/client-optimized/nodes/41.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/41.CpDTx-iM.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/42.js": {
+    "file": "_app/immutable/nodes/42.BaBXh63_.js",
+    "name": "nodes/42",
+    "src": ".svelte-kit/generated/client-optimized/nodes/42.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_Bhym2ohr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/43.js": {
+    "file": "_app/immutable/nodes/43.Dxg7rjiv.js",
+    "name": "nodes/43",
+    "src": ".svelte-kit/generated/client-optimized/nodes/43.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_CsSW8tJi.js",
+      "_DAvaKDgI.js",
+      "_D6zAZRpj.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/44.js": {
+    "file": "_app/immutable/nodes/44.BVTziocj.js",
+    "name": "nodes/44",
+    "src": ".svelte-kit/generated/client-optimized/nodes/44.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_Bhym2ohr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/45.js": {
+    "file": "_app/immutable/nodes/45.BiZSo5uD.js",
+    "name": "nodes/45",
+    "src": ".svelte-kit/generated/client-optimized/nodes/45.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_4bEhiaHO.js",
+      "_CkQr5FF5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/45.DPIBD0pf.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/46.js": {
+    "file": "_app/immutable/nodes/46.CFH6HVdU.js",
+    "name": "nodes/46",
+    "src": ".svelte-kit/generated/client-optimized/nodes/46.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/47.js": {
+    "file": "_app/immutable/nodes/47.DvdbdHE6.js",
+    "name": "nodes/47",
+    "src": ".svelte-kit/generated/client-optimized/nodes/47.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_4bEhiaHO.js",
+      "_CkQr5FF5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/47.C6j4Kfaq.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/5.js": {
+    "file": "_app/immutable/nodes/5.CN-b_3Nb.js",
+    "name": "nodes/5",
+    "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_CsSW8tJi.js",
+      "_DAvaKDgI.js",
+      "_D6zAZRpj.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/6.js": {
+    "file": "_app/immutable/nodes/6.3eXU1dfQ.js",
+    "name": "nodes/6",
+    "src": ".svelte-kit/generated/client-optimized/nodes/6.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/7.js": {
+    "file": "_app/immutable/nodes/7.DvdruEfn.js",
+    "name": "nodes/7",
+    "src": ".svelte-kit/generated/client-optimized/nodes/7.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_CsSW8tJi.js",
+      "_DAvaKDgI.js",
+      "_D6zAZRpj.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.CGw2Wy5F.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/8.js": {
+    "file": "_app/immutable/nodes/8.CPiNrXa6.js",
+    "name": "nodes/8",
+    "src": ".svelte-kit/generated/client-optimized/nodes/8.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_CkQr5FF5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/8.B_HAT-_s.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/9.js": {
+    "file": "_app/immutable/nodes/9.D0t5tg8M.js",
+    "name": "nodes/9",
+    "src": ".svelte-kit/generated/client-optimized/nodes/9.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js",
+      "_CkQr5FF5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/9.y8rOdDMN.css"
+    ]
+  },
+  "_-0HexQLS.js": {
+    "file": "_app/immutable/chunks/-0HexQLS.js",
+    "name": "vendor-svelte",
+    "imports": [
+      "_ChVxeZXD.js"
+    ]
+  },
+  "_4bEhiaHO.js": {
+    "file": "_app/immutable/chunks/4bEhiaHO.js",
+    "name": "TranslationConfig",
+    "imports": [
+      "_-0HexQLS.js",
+      "_CkQr5FF5.js"
+    ],
+    "css": [
+      "_app/immutable/assets/TranslationConfig.zBsiVAwJ.css"
+    ]
+  },
+  "_B_XlkYFP.js": {
+    "file": "_app/immutable/chunks/B_XlkYFP.js",
+    "name": "SocialMedia",
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/SocialMedia.Bb8TiI_P.css"
+    ]
+  },
+  "_Bhym2ohr.js": {
+    "file": "_app/immutable/chunks/Bhym2ohr.js",
+    "name": "PostListing",
+    "imports": [
+      "_-0HexQLS.js",
+      "_B_XlkYFP.js"
+    ]
+  },
+  "_ChVxeZXD.js": {
+    "file": "_app/immutable/chunks/ChVxeZXD.js",
+    "name": "vendor",
+    "css": [
+      "_app/immutable/assets/vendor.DY7Szrf1.css"
+    ]
+  },
+  "_CkQr5FF5.js": {
+    "file": "_app/immutable/chunks/CkQr5FF5.js",
+    "name": "languages"
+  },
+  "_CsSW8tJi.js": {
+    "file": "_app/immutable/chunks/CsSW8tJi.js",
+    "name": "parallaxData",
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "_Ct5FWWRu.js": {
+    "file": "_app/immutable/chunks/Ct5FWWRu.js",
+    "name": "preload-helper"
+  },
+  "_D6zAZRpj.js": {
+    "file": "_app/immutable/chunks/D6zAZRpj.js",
+    "name": "TOC",
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "_DAvaKDgI.js": {
+    "file": "_app/immutable/chunks/DAvaKDgI.js",
+    "name": "CircularParallax",
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "_DOiDhcps.js": {
+    "file": "_app/immutable/chunks/DOiDhcps.js",
+    "name": "IconLink",
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "_DdUw2Phi.js": {
+    "file": "_app/immutable/chunks/DdUw2Phi.js",
+    "name": "postsData",
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/postsData.DCF-KTye.css"
+    ]
+  },
+  "_SocialMedia.Bb8TiI_P.css": {
+    "file": "_app/immutable/assets/SocialMedia.Bb8TiI_P.css",
+    "src": "_SocialMedia.Bb8TiI_P.css"
+  },
+  "_TranslationConfig.zBsiVAwJ.css": {
+    "file": "_app/immutable/assets/TranslationConfig.zBsiVAwJ.css",
+    "src": "_TranslationConfig.zBsiVAwJ.css"
+  },
+  "_app.CToo3IAm.css": {
+    "file": "_app/immutable/assets/app.CToo3IAm.css",
+    "src": "_app.CToo3IAm.css"
+  },
+  "_postsData.DCF-KTye.css": {
+    "file": "_app/immutable/assets/postsData.DCF-KTye.css",
+    "src": "_postsData.DCF-KTye.css"
+  },
+  "_style.CGw2Wy5F.css": {
+    "file": "_app/immutable/assets/style.CGw2Wy5F.css",
+    "src": "_style.CGw2Wy5F.css"
+  },
+  "_vendor.DY7Szrf1.css": {
+    "file": "_app/immutable/assets/vendor.DY7Szrf1.css",
+    "src": "_vendor.DY7Szrf1.css"
+  },
+  "src/posts/Arabic.md": {
+    "file": "_app/immutable/chunks/De3FT0Xa.js",
+    "name": "Arabic",
+    "src": "src/posts/Arabic.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-CV-AudioVisual.md": {
+    "file": "_app/immutable/chunks/CDJDv8JJ.js",
+    "name": "CVs-CV-AudioVisual",
+    "src": "src/posts/CVs-CV-AudioVisual.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-CV-IAs.md": {
+    "file": "_app/immutable/chunks/1oUsuo31.js",
+    "name": "CVs-CV-IAs",
+    "src": "src/posts/CVs-CV-IAs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md": {
+    "file": "_app/immutable/chunks/DtP_CNa2.js",
+    "name": "CVs-CV-Talles-Barrini-Writing-Performance",
+    "src": "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-Cv-strategies.md": {
+    "file": "_app/immutable/chunks/Ck5HkfN4.js",
+    "name": "CVs-Cv-strategies",
+    "src": "src/posts/CVs-Cv-strategies.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-Dev-CV.md": {
+    "file": "_app/immutable/chunks/CKdghMXV.js",
+    "name": "CVs-Dev-CV",
+    "src": "src/posts/CVs-Dev-CV.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-Path-to-Psychoanalysis.md": {
+    "file": "_app/immutable/chunks/B0KxtR3e.js",
+    "name": "CVs-Path-to-Psychoanalysis",
+    "src": "src/posts/CVs-Path-to-Psychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md": {
+    "file": "_app/immutable/chunks/Dj_aw7yd.js",
+    "name": "CVs-Presentation-school-of-cinema-art-psychoanalysis",
+    "src": "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-School-cinema-art-psychoanalysis.md": {
+    "file": "_app/immutable/chunks/DMFAgS_n.js",
+    "name": "CVs-School-cinema-art-psychoanalysis",
+    "src": "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/CVs-Startup-Checklist.md": {
+    "file": "_app/immutable/chunks/CIfOKolJ.js",
+    "name": "CVs-Startup-Checklist",
+    "src": "src/posts/CVs-Startup-Checklist.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Cinema-Quotes-Theather-Performance.md": {
+    "file": "_app/immutable/chunks/DzlV3Tvp.js",
+    "name": "Cinema-Quotes-Theather-Performance",
+    "src": "src/posts/Cinema-Quotes-Theather-Performance.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Cinema-Quotes.md": {
+    "file": "_app/immutable/chunks/Ddp_iKaA.js",
+    "name": "Cinema-Quotes",
+    "src": "src/posts/Cinema-Quotes.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Cinema-QuotesFavoriteMovies.md": {
+    "file": "_app/immutable/chunks/BFFEmjO_.js",
+    "name": "Cinema-QuotesFavoriteMovies",
+    "src": "src/posts/Cinema-QuotesFavoriteMovies.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Cinema-Structure-of-tragedy.md": {
+    "file": "_app/immutable/chunks/BLv_anbo.js",
+    "name": "Cinema-Structure-of-tragedy",
+    "src": "src/posts/Cinema-Structure-of-tragedy.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Cvs-Data.md": {
+    "file": "_app/immutable/chunks/0DIlowo3.js",
+    "name": "Cvs-Data",
+    "src": "src/posts/Cvs-Data.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-100DifficultSentences.md": {
+    "file": "_app/immutable/chunks/w4vP1gu4.js",
+    "name": "Dictionary-100DifficultSentences",
+    "src": "src/posts/Dictionary-100DifficultSentences.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-100Sentences.md": {
+    "file": "_app/immutable/chunks/DCIbpw1R.js",
+    "name": "Dictionary-100Sentences",
+    "src": "src/posts/Dictionary-100Sentences.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Actress-Actor-Director.md": {
+    "file": "_app/immutable/chunks/D9FrFhzc.js",
+    "name": "Dictionary-Actress-Actor-Director",
+    "src": "src/posts/Dictionary-Actress-Actor-Director.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-AdvancedConjunctions.md": {
+    "file": "_app/immutable/chunks/C407KYdt.js",
+    "name": "Dictionary-AdvancedConjunctions",
+    "src": "src/posts/Dictionary-AdvancedConjunctions.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Business.md": {
+    "file": "_app/immutable/chunks/CODBqz-j.js",
+    "name": "Dictionary-Business",
+    "src": "src/posts/Dictionary-Business.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-ChildPsychoanalysis.md": {
+    "file": "_app/immutable/chunks/OGtL_0KC.js",
+    "name": "Dictionary-ChildPsychoanalysis",
+    "src": "src/posts/Dictionary-ChildPsychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-GrammaticalWords.md": {
+    "file": "_app/immutable/chunks/CP62lPyU.js",
+    "name": "Dictionary-GrammaticalWords",
+    "src": "src/posts/Dictionary-GrammaticalWords.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-HSK.md": {
+    "file": "_app/immutable/chunks/DXgLY9DF.js",
+    "name": "Dictionary-HSK",
+    "src": "src/posts/Dictionary-HSK.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-LGBTWorld.md": {
+    "file": "_app/immutable/chunks/DK3PuNSg.js",
+    "name": "Dictionary-LGBTWorld",
+    "src": "src/posts/Dictionary-LGBTWorld.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Lacan.md": {
+    "file": "_app/immutable/chunks/D31R-aSg.js",
+    "name": "Dictionary-Lacan",
+    "src": "src/posts/Dictionary-Lacan.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md": {
+    "file": "_app/immutable/chunks/DwmU3adZ.js",
+    "name": "Dictionary-ML-Psychoanalysis-Semioptics",
+    "src": "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Dictionary-ML-Psychoanalysis-Semioptics.2u4zpRKu.css"
+    ]
+  },
+  "src/posts/Dictionary-Mobius-Klein.md": {
+    "file": "_app/immutable/chunks/ByBcqiRX.js",
+    "name": "Dictionary-Mobius-Klein",
+    "src": "src/posts/Dictionary-Mobius-Klein.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-ModernPsychoanalysis.md": {
+    "file": "_app/immutable/chunks/1ioGf2n9.js",
+    "name": "Dictionary-ModernPsychoanalysis",
+    "src": "src/posts/Dictionary-ModernPsychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Dictionary-ModernPsychoanalysis.BSGZXTJj.css"
+    ]
+  },
+  "src/posts/Dictionary-Movies.md": {
+    "file": "_app/immutable/chunks/BVR48xqY.js",
+    "name": "Dictionary-Movies",
+    "src": "src/posts/Dictionary-Movies.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Music.md": {
+    "file": "_app/immutable/chunks/BKoolpEA.js",
+    "name": "Dictionary-Music",
+    "src": "src/posts/Dictionary-Music.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Numbers.md": {
+    "file": "_app/immutable/chunks/B1zYz4di.js",
+    "name": "Dictionary-Numbers",
+    "src": "src/posts/Dictionary-Numbers.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Philosophy.md": {
+    "file": "_app/immutable/chunks/Ca_U8wAH.js",
+    "name": "Dictionary-Philosophy",
+    "src": "src/posts/Dictionary-Philosophy.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Psychoanalysis.md": {
+    "file": "_app/immutable/chunks/Dj4I8Ryf.js",
+    "name": "Dictionary-Psychoanalysis",
+    "src": "src/posts/Dictionary-Psychoanalysis.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Sade.md": {
+    "file": "_app/immutable/chunks/DE2c3iBy.js",
+    "name": "Dictionary-Sade",
+    "src": "src/posts/Dictionary-Sade.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Theology.md": {
+    "file": "_app/immutable/chunks/BoZGFV6X.js",
+    "name": "Dictionary-Theology",
+    "src": "src/posts/Dictionary-Theology.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-Volleyball.md": {
+    "file": "_app/immutable/chunks/CReS6hNQ.js",
+    "name": "Dictionary-Volleyball",
+    "src": "src/posts/Dictionary-Volleyball.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Dictionary-WordList.md": {
+    "file": "_app/immutable/chunks/DKvoalh2.js",
+    "name": "Dictionary-WordList",
+    "src": "src/posts/Dictionary-WordList.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Hindi.md": {
+    "file": "_app/immutable/chunks/eazF5bNb.js",
+    "name": "Hindi",
+    "src": "src/posts/Hindi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Alphabets.md": {
+    "file": "_app/immutable/chunks/I12Veync.js",
+    "name": "Languages-Alphabets",
+    "src": "src/posts/Languages-Alphabets.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-Arabic.md": {
+    "file": "_app/immutable/chunks/D9tV67hf.js",
+    "name": "Languages-Frequency-Arabic",
+    "src": "src/posts/Languages-Frequency-Arabic.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-French.md": {
+    "file": "_app/immutable/chunks/BwLzNYcA.js",
+    "name": "Languages-Frequency-French",
+    "src": "src/posts/Languages-Frequency-French.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-German.md": {
+    "file": "_app/immutable/chunks/CyaaMM9Y.js",
+    "name": "Languages-Frequency-German",
+    "src": "src/posts/Languages-Frequency-German.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-Hindi.md": {
+    "file": "_app/immutable/chunks/DxpQv0ya.js",
+    "name": "Languages-Frequency-Hindi",
+    "src": "src/posts/Languages-Frequency-Hindi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-Italian.md": {
+    "file": "_app/immutable/chunks/DEOKWzvw.js",
+    "name": "Languages-Frequency-Italian",
+    "src": "src/posts/Languages-Frequency-Italian.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Frequency-Russian.md": {
+    "file": "_app/immutable/chunks/DRz7MDR9.js",
+    "name": "Languages-Frequency-Russian",
+    "src": "src/posts/Languages-Frequency-Russian.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-ar.md": {
+    "file": "_app/immutable/chunks/yXzVgDfo.js",
+    "name": "Languages-Phonetics-ar",
+    "src": "src/posts/Languages-Phonetics-ar.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-ch.md": {
+    "file": "_app/immutable/chunks/CwGp03pn.js",
+    "name": "Languages-Phonetics-ch",
+    "src": "src/posts/Languages-Phonetics-ch.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-de.md": {
+    "file": "_app/immutable/chunks/DNYuqGRb.js",
+    "name": "Languages-Phonetics-de",
+    "src": "src/posts/Languages-Phonetics-de.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-hi.md": {
+    "file": "_app/immutable/chunks/DGwKI9zP.js",
+    "name": "Languages-Phonetics-hi",
+    "src": "src/posts/Languages-Phonetics-hi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-ja.md": {
+    "file": "_app/immutable/chunks/BioEDKop.js",
+    "name": "Languages-Phonetics-ja",
+    "src": "src/posts/Languages-Phonetics-ja.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Languages-Phonetics-ru.md": {
+    "file": "_app/immutable/chunks/yR6H3GeA.js",
+    "name": "Languages-Phonetics-ru",
+    "src": "src/posts/Languages-Phonetics-ru.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-2025-1D-BS-db-ar.md": {
+    "file": "_app/immutable/chunks/B-puwo2Y.js",
+    "name": "Music-2025-1D-BS-db-ar",
+    "src": "src/posts/Music-2025-1D-BS-db-ar.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-2025.md": {
+    "file": "_app/immutable/chunks/DczGY447.js",
+    "name": "Music-2025",
+    "src": "src/posts/Music-2025.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-BTS-Ja.md": {
+    "file": "_app/immutable/chunks/CQCiRBT4.js",
+    "name": "Music-BTS-Ja",
+    "src": "src/posts/Music-BTS-Ja.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Britney.md": {
+    "file": "_app/immutable/chunks/CWP3ZqPo.js",
+    "name": "Music-Britney",
+    "src": "src/posts/Music-Britney.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Get-Together.md": {
+    "file": "_app/immutable/chunks/WZ35XNf1.js",
+    "name": "Music-Get-Together",
+    "src": "src/posts/Music-Get-Together.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Languages.md": {
+    "file": "_app/immutable/chunks/BohY3htb.js",
+    "name": "Music-Languages",
+    "src": "src/posts/Music-Languages.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Mulheres-Apaixonadas.md": {
+    "file": "_app/immutable/chunks/BN51TRLH.js",
+    "name": "Music-Mulheres-Apaixonadas",
+    "src": "src/posts/Music-Mulheres-Apaixonadas.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-NB-Mansionair-DR.md": {
+    "file": "_app/immutable/chunks/hTzFrmVH.js",
+    "name": "Music-NB-Mansionair-DR",
+    "src": "src/posts/Music-NB-Mansionair-DR.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-OneDirection.md": {
+    "file": "_app/immutable/chunks/CUT4S59p.js",
+    "name": "Music-OneDirection",
+    "src": "src/posts/Music-OneDirection.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Arabic-Songs.md": {
+    "file": "_app/immutable/chunks/Cp3jm_ev.js",
+    "name": "Music-Practice-Arabic-Songs",
+    "src": "src/posts/Music-Practice-Arabic-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Chinese-Songs.md": {
+    "file": "_app/immutable/chunks/4DvRQfeN.js",
+    "name": "Music-Practice-Chinese-Songs",
+    "src": "src/posts/Music-Practice-Chinese-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-French-Songs.md": {
+    "file": "_app/immutable/chunks/LEjihX0I.js",
+    "name": "Music-Practice-French-Songs",
+    "src": "src/posts/Music-Practice-French-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Hindi-Songs.md": {
+    "file": "_app/immutable/chunks/DvLXsI2j.js",
+    "name": "Music-Practice-Hindi-Songs",
+    "src": "src/posts/Music-Practice-Hindi-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Italian-Songs.md": {
+    "file": "_app/immutable/chunks/DHHslSm-.js",
+    "name": "Music-Practice-Italian-Songs",
+    "src": "src/posts/Music-Practice-Italian-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md": {
+    "file": "_app/immutable/chunks/CNpfbaue.js",
+    "name": "Music-Practice-Japanese-Songs-Spotify-Lyrics",
+    "src": "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Japanese-Songs-mixed.md": {
+    "file": "_app/immutable/chunks/2l_TBhhA.js",
+    "name": "Music-Practice-Japanese-Songs-mixed",
+    "src": "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Japanese-Songs.md": {
+    "file": "_app/immutable/chunks/BG_6zxYN.js",
+    "name": "Music-Practice-Japanese-Songs",
+    "src": "src/posts/Music-Practice-Japanese-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Korean-Songs.md": {
+    "file": "_app/immutable/chunks/ByBJF0tt.js",
+    "name": "Music-Practice-Korean-Songs",
+    "src": "src/posts/Music-Practice-Korean-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Music-Practice-Korean-Songs.oIMIVmi7.css"
+    ]
+  },
+  "src/posts/Music-Practice-Languages-Music.md": {
+    "file": "_app/immutable/chunks/BdTRuUHT.js",
+    "name": "Music-Practice-Languages-Music",
+    "src": "src/posts/Music-Practice-Languages-Music.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Practice-Russian-Songs.md": {
+    "file": "_app/immutable/chunks/CNZ34hkL.js",
+    "name": "Music-Practice-Russian-Songs",
+    "src": "src/posts/Music-Practice-Russian-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Music-Practice-Russian-Songs.iryx2JdF.css"
+    ]
+  },
+  "src/posts/Music-Practive-German-Songs.md": {
+    "file": "_app/immutable/chunks/BD_VL0Yh.js",
+    "name": "Music-Practive-German-Songs",
+    "src": "src/posts/Music-Practive-German-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-SingAlong.md": {
+    "file": "_app/immutable/chunks/DqDw0BRK.js",
+    "name": "Music-SingAlong",
+    "src": "src/posts/Music-SingAlong.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Songs.md": {
+    "file": "_app/immutable/chunks/Bqbw9JPo.js",
+    "name": "Music-Songs",
+    "src": "src/posts/Music-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Songs_Lyrics-db-ar.md": {
+    "file": "_app/immutable/chunks/BWpGi7pC.js",
+    "name": "Music-Songs_Lyrics-db-ar",
+    "src": "src/posts/Music-Songs_Lyrics-db-ar.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Woman.md": {
+    "file": "_app/immutable/chunks/DgELj42R.js",
+    "name": "Music-Woman",
+    "src": "src/posts/Music-Woman.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Music-Zayn-Room-Under-the-stairs.md": {
+    "file": "_app/immutable/chunks/BAKfsXak.js",
+    "name": "Music-Zayn-Room-Under-the-stairs",
+    "src": "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Practice-Conversing.md": {
+    "file": "_app/immutable/chunks/DWkLzXgO.js",
+    "name": "Practice-Conversing",
+    "src": "src/posts/Practice-Conversing.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Practice-KoreanMusic.md": {
+    "file": "_app/immutable/chunks/C-ay5gij.js",
+    "name": "Practice-KoreanMusic",
+    "src": "src/posts/Practice-KoreanMusic.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Practice-KoreanMusic.W3XsgU2r.css"
+    ]
+  },
+  "src/posts/Practice-Signs.md": {
+    "file": "_app/immutable/chunks/BcES0OLb.js",
+    "name": "Practice-Signs",
+    "src": "src/posts/Practice-Signs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Practice-Songs.md": {
+    "file": "_app/immutable/chunks/C3tiSREM.js",
+    "name": "Practice-Songs",
+    "src": "src/posts/Practice-Songs.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Practice-Structure.md": {
+    "file": "_app/immutable/chunks/dQPhTnim.js",
+    "name": "Practice-Structure",
+    "src": "src/posts/Practice-Structure.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Arabic.md": {
+    "file": "_app/immutable/chunks/CiVtIIzP.js",
+    "name": "Psychoanalysis-Language-Arabic",
+    "src": "src/posts/Psychoanalysis-Language-Arabic.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Chinese.md": {
+    "file": "_app/immutable/chunks/DyUS9ahp.js",
+    "name": "Psychoanalysis-Language-Chinese",
+    "src": "src/posts/Psychoanalysis-Language-Chinese.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-German.md": {
+    "file": "_app/immutable/chunks/_geLOzPx.js",
+    "name": "Psychoanalysis-Language-German",
+    "src": "src/posts/Psychoanalysis-Language-German.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Hindi.md": {
+    "file": "_app/immutable/chunks/YvE9Hyj_.js",
+    "name": "Psychoanalysis-Language-Hindi",
+    "src": "src/posts/Psychoanalysis-Language-Hindi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Japanese.md": {
+    "file": "_app/immutable/chunks/DRsA1wdd.js",
+    "name": "Psychoanalysis-Language-Japanese",
+    "src": "src/posts/Psychoanalysis-Language-Japanese.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Korean.md": {
+    "file": "_app/immutable/chunks/CzBe_qba.js",
+    "name": "Psychoanalysis-Language-Korean",
+    "src": "src/posts/Psychoanalysis-Language-Korean.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Language-Russian.md": {
+    "file": "_app/immutable/chunks/tU0452bs.js",
+    "name": "Psychoanalysis-Language-Russian",
+    "src": "src/posts/Psychoanalysis-Language-Russian.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md": {
+    "file": "_app/immutable/chunks/Bdc6OV5x.js",
+    "name": "Psychoanalysis-Parenting-LGBTQAPI_",
+    "src": "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md": {
+    "file": "_app/immutable/chunks/D5afOYsn.js",
+    "name": "Psychoanalysis-Semiotics-LGBTQAPI_Women",
+    "src": "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Semiotics-Linguistics.md": {
+    "file": "_app/immutable/chunks/efNY2laY.js",
+    "name": "Psychoanalysis-Semiotics-Linguistics",
+    "src": "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Semiotics-Topology.md": {
+    "file": "_app/immutable/chunks/D4ThOj4H.js",
+    "name": "Psychoanalysis-Semiotics-Topology",
+    "src": "src/posts/Psychoanalysis-Semiotics-Topology.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Psychoanalysis-Semiotics.md": {
+    "file": "_app/immutable/chunks/BgkFLW9Y.js",
+    "name": "Psychoanalysis-Semiotics",
+    "src": "src/posts/Psychoanalysis-Semiotics.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Theater-DragRaceS05E01.md": {
+    "file": "_app/immutable/chunks/CZDq4Me6.js",
+    "name": "Theater-DragRaceS05E01",
+    "src": "src/posts/Theater-DragRaceS05E01.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Theater-Quotes.md": {
+    "file": "_app/immutable/chunks/Dv-1dk3K.js",
+    "name": "Theater-Quotes",
+    "src": "src/posts/Theater-Quotes.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/Theater-SurvivorAuS08E07.md": {
+    "file": "_app/immutable/chunks/BlTbwHbi.js",
+    "name": "Theater-SurvivorAuS08E07",
+    "src": "src/posts/Theater-SurvivorAuS08E07.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md": {
+    "file": "_app/immutable/chunks/CcPZwN-9.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md": {
+    "file": "_app/immutable/chunks/CtsDJIn1.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md": {
+    "file": "_app/immutable/chunks/BsByKmM9.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md": {
+    "file": "_app/immutable/chunks/BpKCbEQz.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md": {
+    "file": "_app/immutable/chunks/znrTg97Y.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md": {
+    "file": "_app/immutable/chunks/CqvUXeNS.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md": {
+    "file": "_app/immutable/chunks/CULfnUuC.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md": {
+    "file": "_app/immutable/chunks/B5tvGRO_.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  },
+  "src/posts/music-languages-ml-practice.md": {
+    "file": "_app/immutable/chunks/BpI3OJ7I.js",
+    "name": "music-languages-ml-practice",
+    "src": "src/posts/music-languages-ml-practice.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_-0HexQLS.js"
+    ]
+  }
+}

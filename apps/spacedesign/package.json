@@ -17,9 +17,9 @@
 	},
 	"dependencies": {
 		"@stripe/stripe-js": "^4.0.0",
-		"@zaya/core": "0.0.1",
-		"@zaya/stripe": "0.0.1",
-		"@zaya/country-adapters": "0.0.1",
+		"@zaya/core": "file:../../packages/core",
+		"@zaya/stripe": "file:../../packages/stripe",
+		"@zaya/country-adapters": "file:../../packages/country-adapters",
 		"stripe": "^14.0.0",
 		"swiper": "^11.2.2"
 	},

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/35.CkptNijz.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><title>
+    Zaya Barrini Psychoanalysis, Creation and Cinema Studio
+  </title>
+		<link href="../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/35.CpJ7vTgO.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><main class="container svelte-11x9dyh"><div class="header svelte-11x9dyh"><h1 class="svelte-11x9dyh">🌐 Language Detection Test Phrases</h1> <p class="subtitle svelte-11x9dyh">Displaying 19 languages from the test
+      suite</p></div> <div class="controls svelte-11x9dyh"><div class="search-box svelte-11x9dyh"><input type="text" placeholder="Search phrases, languages, or codes..." value="" class="svelte-11x9dyh"/></div> <div class="filter-box svelte-11x9dyh"><select class="svelte-11x9dyh"><!--[--><option value="all" selected="">All Languages</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option><option value="pt">PT</option><option value="nl">NL</option><option value="sv">SV</option><option value="da">DA</option><option value="no">NO</option><option value="fi">FI</option><option value="pl">PL</option><option value="cs">CS</option><option value="hu">HU</option><option value="ro">RO</option><option value="tr">TR</option><option value="ru">RU</option><option value="ja">JA</option><option value="zh">ZH</option><option value="ko">KO</option><!--]--></select></div></div> <div class="stats svelte-11x9dyh">Showing 19 of 19 languages</div> <div class="card-grid svelte-11x9dyh"><!--[--><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Spanish</span> <span class="language-code svelte-11x9dyh">es</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">El rápido zorro marrón salta sobre el perro perezoso. Esta es una frase simple en español para pruebas.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">French</span> <span class="language-code svelte-11x9dyh">fr</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Le renard brun rapide saute par-dessus le chien paresseux. Ceci est une phrase simple en français pour les tests.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">German</span> <span class="language-code svelte-11x9dyh">de</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Der schnelle braune Fuchs springt über den faulen Hund. Dies ist ein einfacher deutscher Satz zum Testen.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Italian</span> <span class="language-code svelte-11x9dyh">it</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">La veloce volpe marrone salta sopra il cane pigro. Questa è una semplice frase italiana per test.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Portuguese</span> <span class="language-code svelte-11x9dyh">pt</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">A rápida raposa marrom salta sobre o cão preguiçoso. Esta é uma frase simples em português para teste.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Dutch</span> <span class="language-code svelte-11x9dyh">nl</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">De snelle bruine vos springt over de luie hond. Dit is een eenvoudige Nederlandse zin om te testen.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Swedish</span> <span class="language-code svelte-11x9dyh">sv</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Den snabba bruna räven hoppar över den lata hunden. Detta är en enkel svensk mening för testning.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Danish</span> <span class="language-code svelte-11x9dyh">da</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Den hurtige brune ræv hopper over den dovne hund. Dette er en simpel dansk sætning til test.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Norwegian</span> <span class="language-code svelte-11x9dyh">no</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Den raske brune reven hopper over den late hunden. Dette er en enkel norsk setning for testing.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Finnish</span> <span class="language-code svelte-11x9dyh">fi</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Nopea ruskea kettu hyppää laiska koiran yli. Tämä on yksinkertainen suomalainen testilause.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Polish</span> <span class="language-code svelte-11x9dyh">pl</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Szybki brązowy lis przeskakuje nad leniwym psem. To jest proste polskie zdanie do testowania.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Czech</span> <span class="language-code svelte-11x9dyh">cs</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Rychlá hnědá liška skáče přes líného psa. Toto je jednoduchá česká věta pro testování.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Hungarian</span> <span class="language-code svelte-11x9dyh">hu</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">A gyors barna róka átugrik a lusta kutya fölött. Ez egy egyszerű magyar mondat a teszteléshez.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Romanian</span> <span class="language-code svelte-11x9dyh">ro</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Vulpea maro rapidă sare peste câinele leneș. Aceasta este o propoziție simplă în limba română pentru testare.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Turkish</span> <span class="language-code svelte-11x9dyh">tr</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Hızlı kahverengi tilki tembel köpeğin üzerinden atlar. Bu test için basit bir Türkçe cümledir.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Russian</span> <span class="language-code svelte-11x9dyh">ru</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">Быстрая коричневая лиса прыгает через ленивую собаку. Это простое русское предложение для тестирования.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Japanese</span> <span class="language-code svelte-11x9dyh">ja</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">素早い茶色のキツネが怠け者の犬を飛び越えます。これはテスト用の簡単な日本語の文です。</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Chinese</span> <span class="language-code svelte-11x9dyh">zh</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">敏捷的棕色狐狸跳过懒狗。这是一个用于测试的简单中文句子。</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><div class="card svelte-11x9dyh"><div class="card-header svelte-11x9dyh"><span class="language-name svelte-11x9dyh">Korean</span> <span class="language-code svelte-11x9dyh">ko</span></div> <div class="card-body svelte-11x9dyh"><p class="phrase svelte-11x9dyh">재빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 이것은 테스트를 위한 간단한 한국어 문장입니다.</p></div> <div class="card-footer svelte-11x9dyh"><button class="copy-btn svelte-11x9dyh">📋 Copy Phrase</button></div></div><!--]--></div> <!--[!--><!--]--></main><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 35],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

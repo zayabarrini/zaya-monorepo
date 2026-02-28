@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/41.CnTk9k47.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><!--7mjbx3--><meta charset="UTF-8" class="svelte-7mjbx3"/> <meta name="viewport" content="width=device-width, initial-scale=1.0" class="svelte-7mjbx3"/><!----><title>Comprehensive Guide: Logic, Math, Physics &amp; Chemistry
+    Operators</title>
+		<link href="../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/41.CpDTx-iM.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><div class="container mainpage svelte-7mjbx3"><title class="svelte-7mjbx3"></title> <div class="container svelte-7mjbx3"><h1 class="svelte-7mjbx3">Logic, Math, Physics &amp; Chemistry Operators</h1> <p class="subtitle svelte-7mjbx3">A comprehensive guide to operators across disciplines
+      - from basic logic connectors to advanced scientific
+      notation</p> <div class="legend-container svelte-7mjbx3"><div class="legend-box logic-box svelte-7mjbx3"><div class="legend-title svelte-7mjbx3"><span style="color: var(--logic)" class="svelte-7mjbx3">🔣</span> Logic Operators</div> <div class="legend-grid svelte-7mjbx3"><div class="legend-item logic-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Propositional Logic:</strong> AND, OR, NOT,
+            IMPLIES</div> <div class="legend-item logic-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Quantifiers:</strong> ∀ (for all), ∃ (exists)</div> <div class="legend-item logic-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Set Theory:</strong> ∈ (belongs to), ∪ (union),
+            ∩ (intersection)</div></div></div> <div class="legend-box math-box svelte-7mjbx3"><div class="legend-title svelte-7mjbx3"><span style="color: var(--math)" class="svelte-7mjbx3">∫</span> Math Operators</div> <div class="legend-grid svelte-7mjbx3"><div class="legend-item math-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Arithmetic:</strong> +, −, ×, ÷, √</div> <div class="legend-item math-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Calculus:</strong> ∂ (partial), ∫ (integral),
+            ∇ (nabla)</div> <div class="legend-item math-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Linear Algebra:</strong> · (dot), × (cross),
+            † (adjoint)</div></div></div> <div class="legend-box physics-box svelte-7mjbx3"><div class="legend-title svelte-7mjbx3"><span style="color: var(--physics)" class="svelte-7mjbx3">⚛</span> Physics
+          Operators</div> <div class="legend-grid svelte-7mjbx3"><div class="legend-item physics-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Mechanics:</strong> F (force), v (velocity),
+            a (acceleration)</div> <div class="legend-item physics-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Quantum:</strong> Ĥ (Hamiltonian), Ψ (wave
+            function)</div> <div class="legend-item physics-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Relativity:</strong> η (metric tensor), Γ
+            (Christoffel)</div></div></div> <div class="legend-box chemistry-box svelte-7mjbx3"><div class="legend-title svelte-7mjbx3"><span style="color: var(--chemistry)" class="svelte-7mjbx3">⚗</span> Chemistry
+          Operators</div> <div class="legend-grid svelte-7mjbx3"><div class="legend-item chemistry-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Reactions:</strong> → (yields), ⇌ (equilibrium)</div> <div class="legend-item chemistry-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Notation:</strong> ∆ (change), ⦵ (standard
+            state)</div> <div class="legend-item chemistry-item svelte-7mjbx3"><strong class="svelte-7mjbx3">Quantum Chemistry:</strong> Ê (energy operator)</div></div></div></div> <div class="nav-tabs svelte-7mjbx3"><button class="tab-btn logic-btn active svelte-7mjbx3" data-tab="logic">Logic Operators</button> <button class="tab-btn math-btn svelte-7mjbx3" data-tab="math">Math Operators</button> <button class="tab-btn physics-btn svelte-7mjbx3" data-tab="physics">Physics Operators</button> <button class="tab-btn chemistry-btn svelte-7mjbx3" data-tab="chemistry">Chemistry Operators</button></div> <div id="logic" class="tab-content active svelte-7mjbx3"><h2 class="section-title logic-title svelte-7mjbx3">Basic Logic Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">∧</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Logical AND (Conjunction)</div> <div class="operator-description svelte-7mjbx3">Returns true if both operands are true.
+            Represents "and" in logical statements.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">P ∧ Q</div> <div class="example-explanation svelte-7mjbx3">"P and Q are both true"</div></div></div> <div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">∨</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Logical OR (Disjunction)</div> <div class="operator-description svelte-7mjbx3">Returns true if at least one operand is true.
+            Represents inclusive "or".</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">P ∨ Q</div> <div class="example-explanation svelte-7mjbx3">"Either P or Q is true (or both)"</div></div></div> <div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">¬</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Logical NOT (Negation)</div> <div class="operator-description svelte-7mjbx3">Returns the opposite truth value. Inverts true
+            to false and false to true.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">¬P</div> <div class="example-explanation svelte-7mjbx3">"P is not true" or "It is not the case that P"</div></div></div></div> <h2 class="section-title logic-title advanced svelte-7mjbx3">Advanced Logic Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">⇒</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Implication (If...Then)</div> <div class="operator-description svelte-7mjbx3">"If P then Q". False only when P is true and Q
+            is false.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">P ⇒ Q</div> <div class="example-explanation svelte-7mjbx3">"If it rains (P), then the ground is wet (Q)"</div></div></div> <div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">⇔</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Biconditional (If and Only If)</div> <div class="operator-description svelte-7mjbx3">"P if and only if Q". True when P and Q have the
+            same truth value.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">P ⇔ Q</div> <div class="example-explanation svelte-7mjbx3">"A triangle is equilateral if and only if all
+              angles are 60°"</div></div></div> <div class="operator-card logic-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol logic-symbol svelte-7mjbx3">∀</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Universal Quantifier</div> <div class="operator-description svelte-7mjbx3">"For all" or "For every". Indicates that a
+            property holds for all members of a domain.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content logic-example svelte-7mjbx3">∀x ∈ ℝ, x² ≥ 0</div> <div class="example-explanation svelte-7mjbx3">"For all real numbers x, x squared is
+              non-negative"</div></div></div></div> <table class="comparison-table svelte-7mjbx3"><thead class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><th colspan="4" class="svelte-7mjbx3">Logical Connectors Summary</th></tr><tr class="svelte-7mjbx3"><th class="svelte-7mjbx3">Connector</th><th class="svelte-7mjbx3">Symbol</th><th class="svelte-7mjbx3">Meaning</th><th class="svelte-7mjbx3">Example</th></tr></thead><tbody class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Because/Since</td><td class="table-symbol logic-symbol-cell svelte-7mjbx3">∵</td><td class="svelte-7mjbx3">Reason or cause</td><td class="svelte-7mjbx3">A ∵ B (A because B)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Therefore</td><td class="table-symbol logic-symbol-cell svelte-7mjbx3">∴</td><td class="svelte-7mjbx3">Conclusion or result</td><td class="svelte-7mjbx3">A ∴ B (A therefore B)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">First/Firstly</td><td class="svelte-7mjbx3">① or (1)</td><td class="svelte-7mjbx3">Initial point in sequence</td><td class="svelte-7mjbx3">① P, ② Q, ③ R</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Last/Finally</td><td class="svelte-7mjbx3">Ⓝ or (n)</td><td class="svelte-7mjbx3">Final point in sequence</td><td class="svelte-7mjbx3">Finally, we conclude...</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">In relation to</td><td class="svelte-7mjbx3">∝</td><td class="svelte-7mjbx3">Proportional relationship</td><td class="svelte-7mjbx3">A ∝ B (A is proportional to B)</td></tr></tbody></table></div> <div id="math" class="tab-content svelte-7mjbx3"><h2 class="section-title math-title svelte-7mjbx3">Basic Math Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">±</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Plus-Minus</div> <div class="operator-description svelte-7mjbx3">Indicates two possible values, one positive and
+            one negative.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">x = 3 ± 1</div> <div class="example-explanation svelte-7mjbx3">"x equals 3 plus or minus 1" (x = 2 or x = 4)</div></div></div> <div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">×</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Multiplication</div> <div class="operator-description svelte-7mjbx3">Alternative symbol for multiplication, often
+            used in vector products.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">3 × 4 = 12</div> <div class="example-explanation svelte-7mjbx3">Cross product: a × b</div></div></div> <div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">÷</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Division</div> <div class="operator-description svelte-7mjbx3">Classic division symbol, less common in advanced
+            mathematics.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">12 ÷ 4 = 3</div> <div class="example-explanation svelte-7mjbx3">"Twelve divided by four equals three"</div></div></div></div> <h2 class="section-title math-title advanced svelte-7mjbx3">Advanced Math Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">∫</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Integral</div> <div class="operator-description svelte-7mjbx3">Represents integration, the inverse operation of
+            differentiation.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">∫f(x)dx</div> <div class="example-explanation svelte-7mjbx3">"The integral of f(x) with respect to x"</div></div></div> <div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">∂</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Partial Derivative</div> <div class="operator-description svelte-7mjbx3">Derivative with respect to one variable while
+            holding others constant.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">∂f/∂x</div> <div class="example-explanation svelte-7mjbx3">"Partial derivative of f with respect to x"</div></div></div> <div class="operator-card math-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol math-symbol svelte-7mjbx3">∇</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Nabla/Del Operator</div> <div class="operator-description svelte-7mjbx3">Vector differential operator used in gradient,
+            divergence, and curl.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content math-example svelte-7mjbx3">∇f</div> <div class="example-explanation svelte-7mjbx3">"Gradient of f" (vector of partial
+              derivatives)</div></div></div></div> <table class="comparison-table math-table svelte-7mjbx3"><thead class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><th colspan="4" class="svelte-7mjbx3">Mathematical Operators Summary</th></tr><tr class="svelte-7mjbx3"><th class="svelte-7mjbx3">Operator</th><th class="svelte-7mjbx3">Symbol</th><th class="svelte-7mjbx3">Meaning</th><th class="svelte-7mjbx3">Example</th></tr></thead><tbody class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Square Root</td><td class="table-symbol math-symbol-cell svelte-7mjbx3">√</td><td class="svelte-7mjbx3">Principal square root</td><td class="svelte-7mjbx3">√9 = 3</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">n-th Root</td><td class="table-symbol math-symbol-cell svelte-7mjbx3">ⁿ√</td><td class="svelte-7mjbx3">n-th root of a number</td><td class="svelte-7mjbx3">³√8 = 2</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Summation</td><td class="table-symbol math-symbol-cell svelte-7mjbx3">∑</td><td class="svelte-7mjbx3">Sum of a sequence</td><td class="svelte-7mjbx3">∑(i=1 to n) i</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Product</td><td class="table-symbol math-symbol-cell svelte-7mjbx3">∏</td><td class="svelte-7mjbx3">Product of a sequence</td><td class="svelte-7mjbx3">∏(i=1 to n) i = n!</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Limit</td><td class="table-symbol math-symbol-cell svelte-7mjbx3">lim</td><td class="svelte-7mjbx3">Limit of a function</td><td class="svelte-7mjbx3">lim(x→0) sin(x)/x = 1</td></tr></tbody></table></div> <div id="physics" class="tab-content svelte-7mjbx3"><h2 class="section-title physics-title svelte-7mjbx3">Basic Physics Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">→</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Vector</div> <div class="operator-description svelte-7mjbx3">Indicates a vector quantity with both magnitude
+            and direction.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">v⃗ = 5 m/s east</div> <div class="example-explanation svelte-7mjbx3">"Velocity vector of 5 meters per second
+              eastward"</div></div></div> <div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">Δ</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Delta (Change)</div> <div class="operator-description svelte-7mjbx3">Represents change in a quantity or difference
+            between values.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">Δx = x₂ - x₁</div> <div class="example-explanation svelte-7mjbx3">"Change in position equals final minus initial
+              position"</div></div></div> <div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">·</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Dot Product</div> <div class="operator-description svelte-7mjbx3">Scalar product of two vectors, producing a
+            scalar quantity.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">A·B = |A||B|cosθ</div> <div class="example-explanation svelte-7mjbx3">"Dot product gives projection of one vector
+              onto another"</div></div></div></div> <h2 class="section-title physics-title advanced svelte-7mjbx3">Advanced Physics Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">∇</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Del Operator</div> <div class="operator-description svelte-7mjbx3">Vector differential operator crucial in
+            electromagnetism and fluid dynamics.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">∇·E = ρ/ε₀</div> <div class="example-explanation svelte-7mjbx3">"Gauss's law for electricity (divergence of E
+              field)"</div></div></div> <div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">Ĥ</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Hamiltonian Operator</div> <div class="operator-description svelte-7mjbx3">Quantum mechanical operator representing total
+            energy of a system.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">ĤΨ = EΨ</div> <div class="example-explanation svelte-7mjbx3">"Time-independent Schrödinger equation"</div></div></div> <div class="operator-card physics-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol physics-symbol svelte-7mjbx3">Γ</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Christoffel Symbol</div> <div class="operator-description svelte-7mjbx3">Describes the Levi-Civita connection in general
+            relativity.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content physics-example svelte-7mjbx3">Γⁱⱼₖ</div> <div class="example-explanation svelte-7mjbx3">"Connection coefficients in curved spacetime"</div></div></div></div> <div class="quick-reference svelte-7mjbx3"><div class="reference-card physics-reference svelte-7mjbx3"><div class="reference-title svelte-7mjbx3">Classical Mechanics</div> <ul class="reference-list physics-list svelte-7mjbx3"><li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">F</strong> = ma (Newton's Second Law)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">p</strong> = mv (Momentum)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">τ</strong> = r × F (Torque)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">L</strong> = r × p (Angular Momentum)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">W</strong> = F·d (Work)</li></ul></div> <div class="reference-card physics-reference svelte-7mjbx3"><div class="reference-title svelte-7mjbx3">Electromagnetism</div> <ul class="reference-list physics-list svelte-7mjbx3"><li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">E</strong> = Electric Field</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">B</strong> = Magnetic Field</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">∇×E</strong> = -∂B/∂t (Faraday's Law)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">∇·B</strong> = 0 (Gauss's Law for Magnetism)</li> <li class="svelte-7mjbx3"><strong class="svelte-7mjbx3">J</strong> = Current Density</li></ul></div></div></div> <div id="chemistry" class="tab-content svelte-7mjbx3"><h2 class="section-title chemistry-title svelte-7mjbx3">Basic Chemistry Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">→</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Reaction Arrow</div> <div class="operator-description svelte-7mjbx3">Indicates direction of a chemical reaction from
+            reactants to products.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">2H₂ + O₂ → 2H₂O</div> <div class="example-explanation svelte-7mjbx3">"Hydrogen and oxygen react to form water"</div></div></div> <div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">⇌</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Equilibrium Arrow</div> <div class="operator-description svelte-7mjbx3">Indicates a reversible reaction at equilibrium.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">N₂ + 3H₂ ⇌ 2NH₃</div> <div class="example-explanation svelte-7mjbx3">"Haber process: nitrogen and hydrogen in
+              equilibrium with ammonia"</div></div></div> <div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">Δ</div> <div class="operator-level basic-level svelte-7mjbx3">Basic</div></div> <div class="operator-name svelte-7mjbx3">Heat/Change</div> <div class="operator-description svelte-7mjbx3">Indicates heat applied or change in a
+            thermodynamic quantity.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">CaCO₃ → CaO + CO₂ (Δ)</div> <div class="example-explanation svelte-7mjbx3">"Calcium carbonate decomposes with heat to
+              calcium oxide and carbon dioxide"</div></div></div></div> <h2 class="section-title chemistry-title advanced svelte-7mjbx3">Advanced Chemistry Operators</h2> <div class="operator-grid svelte-7mjbx3"><div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">⦵</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Standard State</div> <div class="operator-description svelte-7mjbx3">Indicates a thermodynamic quantity at standard
+            conditions (1 bar, specified temperature).</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">ΔG⦵</div> <div class="example-explanation svelte-7mjbx3">"Standard Gibbs free energy change"</div></div></div> <div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">Ê</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Energy Operator</div> <div class="operator-description svelte-7mjbx3">Quantum chemical operator representing energy in
+            molecular systems.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">Ĥ = Ê + V̂</div> <div class="example-explanation svelte-7mjbx3">"Hamiltonian as sum of kinetic and potential
+              energy operators"</div></div></div> <div class="operator-card chemistry-card svelte-7mjbx3"><div class="operator-header svelte-7mjbx3"><div class="operator-symbol chemistry-symbol svelte-7mjbx3">∇²</div> <div class="operator-level advanced-level svelte-7mjbx3">Advanced</div></div> <div class="operator-name svelte-7mjbx3">Laplacian</div> <div class="operator-description svelte-7mjbx3">Divergence of gradient, appears in diffusion and
+            Schrödinger equations.</div> <div class="example-box svelte-7mjbx3"><div class="example-title svelte-7mjbx3">Example:</div> <div class="example-content chemistry-example svelte-7mjbx3">-ħ²/2m ∇²Ψ + VΨ = EΨ</div> <div class="example-explanation svelte-7mjbx3">"Time-independent Schrödinger equation for
+              molecular systems"</div></div></div></div> <table class="comparison-table chemistry-table svelte-7mjbx3"><thead class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><th colspan="4" class="svelte-7mjbx3">Chemical Notation Summary</th></tr><tr class="svelte-7mjbx3"><th class="svelte-7mjbx3">Notation</th><th class="svelte-7mjbx3">Symbol</th><th class="svelte-7mjbx3">Meaning</th><th class="svelte-7mjbx3">Example</th></tr></thead><tbody class="svelte-7mjbx3"><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Gas</td><td class="table-symbol chemistry-symbol-cell svelte-7mjbx3">(g)</td><td class="svelte-7mjbx3">Gaseous state</td><td class="svelte-7mjbx3">H₂O(g)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Liquid</td><td class="table-symbol chemistry-symbol-cell svelte-7mjbx3">(l)</td><td class="svelte-7mjbx3">Liquid state</td><td class="svelte-7mjbx3">H₂O(l)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Solid</td><td class="table-symbol chemistry-symbol-cell svelte-7mjbx3">(s)</td><td class="svelte-7mjbx3">Solid state</td><td class="svelte-7mjbx3">NaCl(s)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Aqueous</td><td class="table-symbol chemistry-symbol-cell svelte-7mjbx3">(aq)</td><td class="svelte-7mjbx3">Dissolved in water</td><td class="svelte-7mjbx3">NaCl(aq)</td></tr><tr class="svelte-7mjbx3"><td class="svelte-7mjbx3">Catalyst</td><td class="table-symbol chemistry-symbol-cell svelte-7mjbx3">→[cat]</td><td class="svelte-7mjbx3">Reaction with catalyst</td><td class="svelte-7mjbx3">2H₂O₂ →[MnO₂] 2H₂O + O₂</td></tr></tbody></table></div> <div class="practice-section svelte-7mjbx3"><h2 class="practice-title svelte-7mjbx3">Practice Exercises</h2> <div class="practice-question svelte-7mjbx3"><div class="question-text svelte-7mjbx3">1. Complete the logical statement: "If it is
+          raining (P) AND the temperature is below freezing
+          (Q), THEN there will be snow (R)."</div> <input type="text" class="answer-input svelte-7mjbx3" id="q1" placeholder="Write the logical expression..."/> <button class="check-button svelte-7mjbx3">Check Answer</button> <div id="result1" class="result svelte-7mjbx3"></div></div> <div class="practice-question svelte-7mjbx3"><div class="question-text svelte-7mjbx3">2. What does this mathematical expression
+          represent? ∑(i=1 to 5) i²</div> <input type="text" class="answer-input svelte-7mjbx3" id="q2" placeholder="Describe the operation..."/> <button class="check-button svelte-7mjbx3">Check Answer</button> <div id="result2" class="result svelte-7mjbx3"></div></div> <div class="practice-question svelte-7mjbx3"><div class="question-text svelte-7mjbx3">3. In chemistry, what does the symbol ⇌ indicate?</div> <input type="text" class="answer-input svelte-7mjbx3" id="q3" placeholder="Describe the chemical notation..."/> <button class="check-button svelte-7mjbx3">Check Answer</button> <div id="result3" class="result svelte-7mjbx3"></div></div></div> <footer class="svelte-7mjbx3"><p class="svelte-7mjbx3">Comprehensive Guide to Logic, Math, Physics &amp;
+        Chemistry Operators</p> <p class="svelte-7mjbx3">Remember: Operators are the building blocks of
+        scientific communication across disciplines!</p></footer></div></div><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 41],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

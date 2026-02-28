@@ -1,0 +1,3842 @@
+[
+  {
+    "en":"Cute",
+    "ru":"милый",
+    "ar":"لطيف",
+    "de":"Niedlich"
+  },
+  {
+    "en":"sweet",
+    "ru":"сладкую",
+    "ar":"حلو",
+    "de":"süß"
+  },
+  {
+    "en":"we're getting ready",
+    "ru":"собираемся",
+    "ar":"نحن نستعد",
+    "de":"Wir bereiten uns vor"
+  },
+  {
+    "en":"happy",
+    "ru":"счастливым",
+    "ar":"سعيد",
+    "de":"Glücklich"
+  },
+  {
+    "en":"Really?",
+    "ru":"Разве",
+    "ar":"حقًا؟",
+    "de":"Wirklich?"
+  },
+  {
+    "en":"snow",
+    "ru":"снег",
+    "ar":"ثلج",
+    "de":"Schnee"
+  },
+  {
+    "en":"Following",
+    "ru":"Следующее",
+    "ar":"التالي",
+    "de":"Im Folgenden"
+  },
+  {
+    "en":"we measure",
+    "ru":"измеряем",
+    "ar":"نقيس",
+    "de":"wir messen"
+  },
+  {
+    "en":"cups",
+    "ru":"чашки",
+    "ar":"أكواب",
+    "de":"Tassen"
+  },
+  {
+    "en":"difficult",
+    "ru":"сложно",
+    "ar":"صعب",
+    "de":"schwierig"
+  },
+  {
+    "en":"birthday",
+    "ru":"день рождения",
+    "ar":"عيد ميلاد",
+    "de":"Geburtstag"
+  },
+  {
+    "en":"Otherwise",
+    "ru":"В противном случае",
+    "ar":"خلاف ذلك",
+    "de":"Ansonsten"
+  },
+  {
+    "en":"interrupting",
+    "ru":"прерываю",
+    "ar":"مقاطعة",
+    "de":"unterbrechen"
+  },
+  {
+    "en":"Any",
+    "ru":"Любой",
+    "ar":"أي",
+    "de":"Beliebig"
+  },
+  {
+    "en":"ridiculously easy",
+    "ru":"смехотворно легко",
+    "ar":"سهل للغاية",
+    "de":"lächerlich einfach"
+  },
+  {
+    "en":"I bet",
+    "ru":"держу пари",
+    "ar":"أراهن",
+    "de":"Ich wette"
+  },
+  {
+    "en":"Plenty",
+    "ru":"Мол",
+    "ar":"كثير",
+    "de":"Eine Menge"
+  },
+  {
+    "en":"squeezed the pan",
+    "ru":"сжимали кастрюлю",
+    "ar":"ضغط على المقلاة",
+    "de":"drückte die Pfanne zusammen"
+  },
+  {
+    "en":"I wet the frying pan.",
+    "ru":"Я смачивал сковороду.",
+    "ar":"بللت المقلاة.",
+    "de":"Ich habe die Bratpfanne angefeuchtet."
+  },
+  {
+    "en":"advantages",
+    "ru":"достоинства",
+    "ar":"المزايا",
+    "de":"Vorteile"
+  },
+  {
+    "en":"strongly",
+    "ru":"сильно",
+    "ar":"بقوة",
+    "de":"stark"
+  },
+  {
+    "en":"will notice",
+    "ru":"заметит",
+    "ar":"سيلاحظون",
+    "de":"wird bemerken"
+  },
+  {
+    "en":"Whatever you do",
+    "ru":"Что бы вы ни делали",
+    "ar":"مهما فعلت",
+    "de":"Was auch immer du tust"
+  },
+  {
+    "en":"Amazing",
+    "ru":"замечательно",
+    "ar":"مدهش",
+    "de":"Toll"
+  },
+  {
+    "en":"country",
+    "ru":"загородный",
+    "ar":"دولة",
+    "de":"Land"
+  },
+  {
+    "en":"we are conducting",
+    "ru":"проводим",
+    "ar":"نحن نجري",
+    "de":"Wir führen durch"
+  },
+  {
+    "en":"both",
+    "ru":"обоих",
+    "ar":"كلاهما",
+    "de":"beide"
+  },
+  {
+    "en":"you're coping",
+    "ru":"справляешься",
+    "ar":"أنت تتأقلم",
+    "de":"Du kommst damit zurecht."
+  },
+  {
+    "en":"wars",
+    "ru":"войны",
+    "ar":"حروب",
+    "de":"Kriege"
+  },
+  {
+    "en":"deserved",
+    "ru":"заслужили",
+    "ar":"مستحق",
+    "de":"verdient"
+  },
+  {
+    "en":"passed",
+    "ru":"прошли",
+    "ar":"اجتاز",
+    "de":"bestanden"
+  },
+  {
+    "en":"incredible",
+    "ru":"невероятно",
+    "ar":"رائع",
+    "de":"unglaublich"
+  },
+  {
+    "en":"hostess",
+    "ru":"хозяйка",
+    "ar":"مضيفة",
+    "de":"Hostess"
+  },
+  {
+    "en":"sure",
+    "ru":"уверена",
+    "ar":"بالتأكيد",
+    "de":"Sicher"
+  },
+  {
+    "en":"arrange",
+    "ru":"устроить",
+    "ar":"يرتب",
+    "de":"arrangieren"
+  },
+  {
+    "en":"party",
+    "ru":"вечеринку",
+    "ar":"حزب",
+    "de":"Party"
+  },
+  {
+    "en":"hospital",
+    "ru":"больницу",
+    "ar":"مستشفى",
+    "de":"Krankenhaus"
+  },
+  {
+    "en":"height",
+    "ru":"рост",
+    "ar":"ارتفاع",
+    "de":"Höhe"
+  },
+  {
+    "en":"uterus",
+    "ru":"матке",
+    "ar":"رَحِم",
+    "de":"Uterus"
+  },
+  {
+    "en":"take a look",
+    "ru":"взглянуть",
+    "ar":"ألق نظرة",
+    "de":"Schau mal rein"
+  },
+  {
+    "en":"fed",
+    "ru":"кормил",
+    "ar":"تم إطعام",
+    "de":"gefüttert"
+  },
+  {
+    "en":"get pregnant",
+    "ru":"забеременеть",
+    "ar":"الحمل",
+    "de":"schwanger werden"
+  },
+  {
+    "en":"satisfied",
+    "ru":"доволен",
+    "ar":"راضي",
+    "de":"befriedigt"
+  },
+  {
+    "en":"turns out",
+    "ru":"оказывается",
+    "ar":"إقبال جماهيري",
+    "de":"wie sich herausstellt"
+  },
+  {
+    "en":"cause",
+    "ru":"причина",
+    "ar":"سبب",
+    "de":"Ursache"
+  },
+  {
+    "en":"conceive",
+    "ru":"зачать",
+    "ar":"تصور",
+    "de":"empfangen"
+  },
+  {
+    "en":"by which",
+    "ru":"по которой",
+    "ar":"والتي من خلالها",
+    "de":"wodurch"
+  },
+  {
+    "en":"lucky",
+    "ru":"повезло",
+    "ar":"محظوظ",
+    "de":"glücklich"
+  },
+  {
+    "en":"name",
+    "ru":"назвать",
+    "ar":"اسم",
+    "de":"Name"
+  },
+  {
+    "en":"Except",
+    "ru":"За исключением",
+    "ar":"يستثني",
+    "de":"Außer"
+  },
+  {
+    "en":"at least",
+    "ru":"по крайней мере",
+    "ar":"على الأقل",
+    "de":"mindestens"
+  },
+  {
+    "en":"will be able to",
+    "ru":"смогут",
+    "ar":"سيكون قادراً على",
+    "de":"wird in der Lage sein"
+  },
+  {
+    "en":"cope with",
+    "ru":"справиться",
+    "ar":"التعامل مع",
+    "de":"bewältigen"
+  },
+  {
+    "en":"I'm worried",
+    "ru":"волнуюсь",
+    "ar":"أنا قلق",
+    "de":"Ich bin besorgt"
+  },
+  {
+    "en":"meaning",
+    "ru":"смысл",
+    "ar":"معنى",
+    "de":"Bedeutung"
+  },
+  {
+    "en":"worry",
+    "ru":"беспокоиться",
+    "ar":"يقلق",
+    "de":"Sorge"
+  },
+  {
+    "en":"whom",
+    "ru":"которого",
+    "ar":"مَن",
+    "de":"dem"
+  },
+  {
+    "en":"In any case",
+    "ru":"Во всяком случае",
+    "ar":"على أي حال",
+    "de":"In jedem Fall"
+  },
+  {
+    "en":"Forget",
+    "ru":"Забудь",
+    "ar":"ينسى",
+    "de":"Vergessen"
+  },
+  {
+    "en":"check",
+    "ru":"проверьте",
+    "ar":"يفحص",
+    "de":"überprüfen"
+  },
+  {
+    "en":"objected",
+    "ru":"возражал",
+    "ar":"اعترض",
+    "de":"Einspruch erhoben"
+  },
+  {
+    "en":"led",
+    "ru":"водил",
+    "ar":"قاد",
+    "de":"geführt"
+  },
+  {
+    "en":"will become",
+    "ru":"станет",
+    "ar":"سيصبح",
+    "de":"wird werden"
+  },
+  {
+    "en":"cookies",
+    "ru":"печенье",
+    "ar":"ملفات تعريف الارتباط",
+    "de":"Cookies"
+  },
+  {
+    "en":"brave",
+    "ru":"смелым",
+    "ar":"شجاع",
+    "de":"mutig"
+  },
+  {
+    "en":"don't worry",
+    "ru":"волнуйтесь",
+    "ar":"لا تقلق",
+    "de":"Mach dir keine Sorgen"
+  },
+  {
+    "en":"Have a drink",
+    "ru":"Попейте",
+    "ar":"تناول مشروب",
+    "de":"Trink etwas"
+  },
+  {
+    "en":"worry",
+    "ru":"беспокоиться",
+    "ar":"يقلق",
+    "de":"Sorge"
+  },
+  {
+    "en":"had",
+    "ru":"имело",
+    "ar":"ملك",
+    "de":"hatte"
+  },
+  {
+    "en":"will inevitably cease completely",
+    "ru":"неизбежно полностью прекратится",
+    "ar":"سيتوقف الأمر حتماً تماماً",
+    "de":"wird unweigerlich vollständig aufhören"
+  },
+  {
+    "en":"continue",
+    "ru":"продолжаться",
+    "ar":"يكمل",
+    "de":"weitermachen"
+  },
+  {
+    "en":"was offended",
+    "ru":"обижалась",
+    "ar":"شعر بالإهانة",
+    "de":"war beleidigt"
+  },
+  {
+    "en":"became",
+    "ru":"стало",
+    "ar":"أصبح",
+    "de":"wurde"
+  },
+  {
+    "en":"consolation",
+    "ru":"утешением",
+    "ar":"عزاء",
+    "de":"Trost"
+  },
+  {
+    "en":"ended",
+    "ru":"закончилась",
+    "ar":"نهاية",
+    "de":"Ende"
+  },
+  {
+    "en":"happened",
+    "ru":"случилось",
+    "ar":"حدث",
+    "de":"passiert"
+  },
+  {
+    "en":"discovered",
+    "ru":"обнаружил",
+    "ar":"تم اكتشافه",
+    "de":"entdeckt"
+  },
+  {
+    "en":"met",
+    "ru":"встречал",
+    "ar":"قابلت",
+    "de":"traf"
+  },
+  {
+    "en":"fragile",
+    "ru":"хрупкой",
+    "ar":"قابل للكسر",
+    "de":"zerbrechlich"
+  },
+  {
+    "en":"shy",
+    "ru":"застенчива",
+    "ar":"خجول",
+    "de":"schüchtern"
+  },
+  {
+    "en":"basically",
+    "ru":"основном",
+    "ar":"أساسًا",
+    "de":"grundsätzlich"
+  },
+  {
+    "en":"southern",
+    "ru":"южной",
+    "ar":"جنوبي",
+    "de":"Süd-"
+  },
+  {
+    "en":"parts",
+    "ru":"части",
+    "ar":"أجزاء",
+    "de":"Teile"
+  },
+  {
+    "en":"bring",
+    "ru":"привести",
+    "ar":"يحضر",
+    "de":"bringen"
+  },
+  {
+    "en":"degrees",
+    "ru":"степени",
+    "ar":"الدرجات العلمية",
+    "de":"Abschlüsse"
+  },
+  {
+    "en":"the thought of happiness",
+    "ru":"мысль о счастье",
+    "ar":"فكرة السعادة",
+    "de":"der Gedanke an Glück"
+  },
+  {
+    "en":"forced",
+    "ru":"заставило",
+    "ar":"قسرياً",
+    "de":"gezwungen"
+  },
+  {
+    "en":"performance",
+    "ru":"представление",
+    "ar":"أداء",
+    "de":"Leistung"
+  },
+  {
+    "en":"disappear",
+    "ru":"исчезнуть",
+    "ar":"يختفي",
+    "de":"verschwinden"
+  },
+  {
+    "en":"clean",
+    "ru":"чистите",
+    "ar":"ينظف",
+    "de":"sauber"
+  },
+  {
+    "en":"teeth",
+    "ru":"зубы",
+    "ar":"أسنان",
+    "de":"Zähne"
+  },
+  {
+    "en":"you lie down",
+    "ru":"ложишься",
+    "ar":"تستلقي",
+    "de":"du legst dich hin"
+  },
+  {
+    "en":"through",
+    "ru":"через",
+    "ar":"خلال",
+    "de":"durch"
+  },
+  {
+    "en":"collided",
+    "ru":"столкнулся",
+    "ar":"اصطدم",
+    "de":"kollidierten"
+  },
+  {
+    "en":"hospital",
+    "ru":"больницу",
+    "ar":"مستشفى",
+    "de":"Krankenhaus"
+  },
+  {
+    "en":"inspection",
+    "ru":"осмотр",
+    "ar":"تقتيش",
+    "de":"Inspektion"
+  },
+  {
+    "en":"horror",
+    "ru":"ужасе",
+    "ar":"رعب",
+    "de":"Horror"
+  },
+  {
+    "en":"Maybe you could",
+    "ru":"Maybe you could",
+    "ar":"ربما أنت",
+    "de":"Vielleicht könntest du"
+  },
+  {
+    "en":"was going to",
+    "ru":"собирался",
+    "ar":"كنت سأفعل",
+    "de":"wollte"
+  },
+  {
+    "en":"come in",
+    "ru":"зайти",
+    "ar":"ادخل",
+    "de":"Komm herein"
+  },
+  {
+    "en":"thank",
+    "ru":"поблагодарить",
+    "ar":"شكر",
+    "de":"Dank"
+  },
+  {
+    "en":"hoped",
+    "ru":"надеялся",
+    "ar":"نأمل",
+    "de":"hoffte"
+  },
+  {
+    "en":"chose",
+    "ru":"выбрал",
+    "ar":"تم الاختيار",
+    "de":"wählte"
+  },
+  {
+    "en":"resolved",
+    "ru":"решена",
+    "ar":"تم حلها",
+    "de":"gelöst"
+  },
+  {
+    "en":"Fate",
+    "ru":"Судьба",
+    "ar":"قدر",
+    "de":"Schicksal"
+  },
+  {
+    "en":"kitchen",
+    "ru":"кухне",
+    "ar":"مطبخ",
+    "de":"Küche"
+  },
+  {
+    "en":"I'll take it",
+    "ru":"возьму",
+    "ar":"أنا أعتبر",
+    "de":"Ich nehme es"
+  },
+  {
+    "en":"found",
+    "ru":"нашел",
+    "ar":"وجد",
+    "de":"gefunden"
+  },
+  {
+    "en":"enough",
+    "ru":"довольно",
+    "ar":"كافٍ",
+    "de":"genug"
+  },
+  {
+    "en":"Obviously",
+    "ru":"Очевидно",
+    "ar":"بوضوح",
+    "de":"Offensichtlich"
+  },
+  {
+    "en":"unworthy",
+    "ru":"недостойным",
+    "ar":"غير جدير",
+    "de":"unwürdig"
+  },
+  {
+    "en":"poetry",
+    "ru":"стихи",
+    "ar":"شِعر",
+    "de":"Poesie"
+  },
+  {
+    "en":"forced",
+    "ru":"заставил",
+    "ar":"قسرياً",
+    "de":"gezwungen"
+  },
+  {
+    "en":"hurt",
+    "ru":"больно",
+    "ar":"يؤذي",
+    "de":"verletzt"
+  },
+  {
+    "en":"pretend",
+    "ru":"притворяться",
+    "ar":"يدّعي",
+    "de":"vorgeben"
+  },
+  {
+    "en":"left",
+    "ru":"покинули",
+    "ar":"غادر",
+    "de":"links"
+  },
+  {
+    "en":"left",
+    "ru":"оставил",
+    "ar":"غادر",
+    "de":"links"
+  },
+  {
+    "en":"refused",
+    "ru":"отказался",
+    "ar":"رفض",
+    "de":"abgelehnt"
+  },
+  {
+    "en":"met",
+    "ru":"встречал",
+    "ar":"قابلت",
+    "de":"traf"
+  },
+  {
+    "en":"you belong",
+    "ru":"принадлежите",
+    "ar":"أنت تنتمي",
+    "de":"Du gehörst"
+  },
+  {
+    "en":"was born",
+    "ru":"родился",
+    "ar":"ولد",
+    "de":"wurde geboren"
+  },
+  {
+    "en":"sat down",
+    "ru":"сел",
+    "ar":"جلس",
+    "de":"setzte sich"
+  },
+  {
+    "en":"note",
+    "ru":"записку",
+    "ar":"ملحوظة",
+    "de":"Notiz"
+  },
+  {
+    "en":"felt sorry for",
+    "ru":"пожалели",
+    "ar":"شعرت بالأسف تجاه",
+    "de":"Ich hatte Mitleid mit"
+  },
+  {
+    "en":"take out",
+    "ru":"вынести",
+    "ar":"أخرج",
+    "de":"Mitnahme"
+  },
+  {
+    "en":"take off",
+    "ru":"снять",
+    "ar":"اخلع",
+    "de":"abheben"
+  },
+  {
+    "en":"theft",
+    "ru":"кражу",
+    "ar":"سرقة",
+    "de":"Diebstahl"
+  },
+  {
+    "en":"we put it off",
+    "ru":"откладываем",
+    "ar":"أجلنا الأمر",
+    "de":"Wir haben es aufgeschoben"
+  },
+  {
+    "en":"at all",
+    "ru":"вообще",
+    "ar":"على الإطلاق",
+    "de":"überhaupt"
+  },
+  {
+    "en":"hungry",
+    "ru":"голодны",
+    "ar":"جائع",
+    "de":"hungrig"
+  },
+  {
+    "en":"Take it",
+    "ru":"Возьми",
+    "ar":"خذها",
+    "de":"Nimm es"
+  },
+  {
+    "en":"Necessary",
+    "ru":"Необходимо",
+    "ar":"ضروري",
+    "de":"Notwendig"
+  },
+  {
+    "en":"be proud",
+    "ru":"гордиться",
+    "ar":"كن فخوراً",
+    "de":"Sei stolz"
+  },
+  {
+    "en":"brave",
+    "ru":"смелым",
+    "ar":"شجاع",
+    "de":"mutig"
+  },
+  {
+    "en":"nonsense",
+    "ru":"чепуха",
+    "ar":"هراء",
+    "de":"Unsinn"
+  },
+  {
+    "en":"healthy",
+    "ru":"здоровым",
+    "ar":"صحيح",
+    "de":"gesund"
+  },
+  {
+    "en":"suits me",
+    "ru":"устраивает",
+    "ar":"يناسبني",
+    "de":"passt mir"
+  },
+  {
+    "en":"just",
+    "ru":"всего лишь",
+    "ar":"فقط",
+    "de":"Nur"
+  },
+  {
+    "en":"To be filled in",
+    "ru":"Заполняется",
+    "ar":"يرجى ملء البيانات",
+    "de":"Auszufüllen"
+  },
+  {
+    "en":"fully",
+    "ru":"полностью",
+    "ar":"كلب",
+    "de":"voll"
+  },
+  {
+    "en":"respect",
+    "ru":"уважают",
+    "ar":"احترام",
+    "de":"respektieren"
+  },
+  {
+    "en":"admire",
+    "ru":"восхищаются",
+    "ar":"يُعجَب ب",
+    "de":"bewundern"
+  },
+  {
+    "en":"lost",
+    "ru":"потерял",
+    "ar":"ضائع",
+    "de":"verloren"
+  },
+  {
+    "en":"silence",
+    "ru":"тишину",
+    "ar":"الصمت",
+    "de":"Schweigen"
+  },
+  {
+    "en":"Because",
+    "ru":"Поскольку",
+    "ar":"لأن",
+    "de":"Weil"
+  },
+  {
+    "en":"instant",
+    "ru":"мгновение",
+    "ar":"فوري",
+    "de":"sofort"
+  },
+  {
+    "en":"look",
+    "ru":"выглядят",
+    "ar":"ينظر",
+    "de":"sehen"
+  },
+  {
+    "en":"you are carrying",
+    "ru":"несете",
+    "ar":"أنت تحمل",
+    "de":"Du trägst"
+  },
+  {
+    "en":"smells",
+    "ru":"пахнет",
+    "ar":"روائح",
+    "de":"Gerüche"
+  },
+  {
+    "en":"Seems",
+    "ru":"кажется",
+    "ar":"يبدو",
+    "de":"Scheint"
+  },
+  {
+    "en":"thread",
+    "ru":"нитью",
+    "ar":"خيط",
+    "de":"Faden"
+  },
+  {
+    "en":"failure",
+    "ru":"неудачу",
+    "ar":"فشل",
+    "de":"Versagen"
+  },
+  {
+    "en":"No matter",
+    "ru":"Независимо от того",
+    "ar":"لا يهم",
+    "de":"Egal"
+  },
+  {
+    "en":"closer",
+    "ru":"ближе",
+    "ar":"أقرب",
+    "de":"näher"
+  },
+  {
+    "en":"merged",
+    "ru":"злились",
+    "ar":"تم الدمج",
+    "de":"zusammengeführt"
+  },
+  {
+    "en":"angry",
+    "ru":"зол",
+    "ar":"غاضب",
+    "de":"wütend"
+  },
+  {
+    "en":"I'm staying",
+    "ru":"остаюсь",
+    "ar":"سأبقى",
+    "de":"Ich bleibe"
+  },
+  {
+    "en":"satisfy",
+    "ru":"удовлетворить",
+    "ar":"مُرضٍ",
+    "de":"erfüllen"
+  },
+  {
+    "en":"own",
+    "ru":"собственной",
+    "ar":"ملك",
+    "de":"eigen"
+  },
+  {
+    "en":"(Not that I imagine it makes any difference to you.)",
+    "ru":"(Не то чтобы я представлял, что это имеет какое -либо значение для вас.)",
+    "ar":"(مع أنني لا أعتقد أن ذلك سيغير شيئاً بالنسبة لك.)",
+    "de":"(Nicht, dass es für Sie irgendeinen Unterschied machen würde.)"
+  },
+  {
+    "en":"concept",
+    "ru":"понятие",
+    "ar":"مفهوم",
+    "de":"Konzept"
+  },
+  {
+    "en":"-Don't come near me!",
+    "ru":"-Не не подошли ко мне!",
+    "ar":"لا تقترب مني!",
+    "de":"-Komm mir nicht zu nahe!"
+  },
+  {
+    "en":"it seemed",
+    "ru":"казалось",
+    "ar":"بدا",
+    "de":"Es schien"
+  },
+  {
+    "en":"favor",
+    "ru":"одолжение",
+    "ar":"معروف",
+    "de":"favorisieren"
+  },
+  {
+    "en":"collide",
+    "ru":"сталкиваться",
+    "ar":"تصادم",
+    "de":"kollidieren"
+  },
+  {
+    "en":"at all",
+    "ru":"совсем",
+    "ar":"على الإطلاق",
+    "de":"überhaupt"
+  },
+  {
+    "en":"vote",
+    "ru":"голоса",
+    "ar":"تصويت",
+    "de":"Abstimmung"
+  },
+  {
+    "en":"do you hear?",
+    "ru":"слышите",
+    "ar":"هل تسمع؟",
+    "de":"Hörst du?"
+  },
+  {
+    "en":"stood up",
+    "ru":"встал",
+    "ar":"وقف",
+    "de":"stand auf"
+  },
+  {
+    "en":"fresh",
+    "ru":"свежо",
+    "ar":"طازج",
+    "de":"frisch"
+  },
+  {
+    "en":"ordinary",
+    "ru":"обычное",
+    "ar":"عادي",
+    "de":"normal"
+  },
+  {
+    "en":"someone's",
+    "ru":"чьей -либо",
+    "ar":"شخص ما",
+    "de":"jemandes"
+  },
+  {
+    "en":"Afraid",
+    "ru":"Боюсь",
+    "ar":"خائف",
+    "de":"Besorgt"
+  },
+  {
+    "en":"amazing",
+    "ru":"потрясающе",
+    "ar":"مدهش",
+    "de":"toll"
+  },
+  {
+    "en":"painful",
+    "ru":"болезненный",
+    "ar":"مؤلم",
+    "de":"schmerzhaft"
+  },
+  {
+    "en":"Too much",
+    "ru":"Слишком",
+    "ar":"أكثر مما ينبغي",
+    "de":"Zu viel"
+  },
+  {
+    "en":"buckets",
+    "ru":"ведра",
+    "ar":"دلاء",
+    "de":"Eimer"
+  },
+  {
+    "en":"it was required",
+    "ru":"потребовалось",
+    "ar":"كان ذلك مطلوبا",
+    "de":"Es war erforderlich"
+  },
+  {
+    "en":"Like",
+    "ru":"Вроде",
+    "ar":"يحب",
+    "de":"Wie"
+  },
+  {
+    "en":"some",
+    "ru":"некотором",
+    "ar":"بعض",
+    "de":"manche"
+  },
+  {
+    "en":"itself",
+    "ru":"самом",
+    "ar":"نفسها",
+    "de":"selbst"
+  },
+  {
+    "en":"case",
+    "ru":"деле",
+    "ar":"قضية",
+    "de":"Fall"
+  },
+  {
+    "en":"changes",
+    "ru":"меняет",
+    "ar":"التغييرات",
+    "de":"Änderungen"
+  },
+  {
+    "en":"way",
+    "ru":"образом",
+    "ar":"طريق",
+    "de":"Weg"
+  },
+  {
+    "en":"clear",
+    "ru":"ясной",
+    "ar":"واضح",
+    "de":"klar"
+  },
+  {
+    "en":"Dare to visit",
+    "ru":"Осмелиться посетить",
+    "ar":"تجرأ على الزيارة",
+    "de":"Trau dich zu besuchen"
+  },
+  {
+    "en":"those",
+    "ru":"тех",
+    "ar":"أولئك",
+    "de":"diese"
+  },
+  {
+    "en":"disease",
+    "ru":"болезнь",
+    "ar":"مرض",
+    "de":"Krankheit"
+  },
+  {
+    "en":"prepare",
+    "ru":"подготовиться",
+    "ar":"يحضر",
+    "de":"vorbereiten"
+  },
+  {
+    "en":"changed",
+    "ru":"изменился",
+    "ar":"تم التغيير",
+    "de":"geändert"
+  },
+  {
+    "en":"intended",
+    "ru":"предназначено",
+    "ar":"منوي",
+    "de":"beabsichtigt"
+  },
+  {
+    "en":"fictions",
+    "ru":"выдумки",
+    "ar":"قصص خيالية",
+    "de":"Fiktionen"
+  },
+  {
+    "en":"forced",
+    "ru":"заставил",
+    "ar":"قسرياً",
+    "de":"gezwungen"
+  },
+  {
+    "en":"Whole",
+    "ru":"Целая",
+    "ar":"جميع",
+    "de":"Ganz"
+  },
+  {
+    "en":"nail polish",
+    "ru":"лак для ногтей",
+    "ar":"طلاء أظافر",
+    "de":"Nagellack"
+  },
+  {
+    "en":"guess",
+    "ru":"угадайте",
+    "ar":"يخمن",
+    "de":"erraten"
+  },
+  {
+    "en":"continues",
+    "ru":"продолжается",
+    "ar":"يستمر",
+    "de":"Fortsetzung"
+  },
+  {
+    "en":"reasons",
+    "ru":"причины",
+    "ar":"أسباب",
+    "de":"Gründe"
+  },
+  {
+    "en":"Liu",
+    "ru":"Лю",
+    "ar":"ليو",
+    "de":"Liu"
+  },
+  {
+    "en":"tough",
+    "ru":"жесткая",
+    "ar":"قاسٍ",
+    "de":"hart"
+  },
+  {
+    "en":"I liked it",
+    "ru":"понравилась",
+    "ar":"أعجبني",
+    "de":"Mir hat es gefallen."
+  },
+  {
+    "en":"upset",
+    "ru":"расстроила",
+    "ar":"منزعج",
+    "de":"verärgern"
+  },
+  {
+    "en":"good",
+    "ru":"добро",
+    "ar":"جيد",
+    "de":"Gut"
+  },
+  {
+    "en":"brave",
+    "ru":"смелый",
+    "ar":"شجاع",
+    "de":"mutig"
+  },
+  {
+    "en":"collide",
+    "ru":"столкнуться",
+    "ar":"تصادم",
+    "de":"kollidieren"
+  },
+  {
+    "en":"those",
+    "ru":"тем",
+    "ar":"أولئك",
+    "de":"diese"
+  },
+  {
+    "en":"I am here",
+    "ru":"нахожусь",
+    "ar":"أنا هنا",
+    "de":"Ich bin hier"
+  },
+  {
+    "en":"mood",
+    "ru":"настроении",
+    "ar":"مزاج",
+    "de":"Stimmung"
+  },
+  {
+    "en":"rough",
+    "ru":"грубо",
+    "ar":"خشن",
+    "de":"rauh"
+  },
+  {
+    "en":"I'm untangling",
+    "ru":"распутываю",
+    "ar":"أنا أفك التشابك",
+    "de":"Ich entwirre"
+  },
+  {
+    "en":"performance",
+    "ru":"представление",
+    "ar":"أداء",
+    "de":"Leistung"
+  },
+  {
+    "en":"relation",
+    "ru":"отношении",
+    "ar":"علاقة",
+    "de":"Beziehung"
+  },
+  {
+    "en":"hostess",
+    "ru":"хозяйка",
+    "ar":"مضيفة",
+    "de":"Hostess"
+  },
+  {
+    "en":"touch",
+    "ru":"трогай",
+    "ar":"يلمس",
+    "de":"berühren"
+  },
+  {
+    "en":"courted",
+    "ru":"ухаживал",
+    "ar":"مغازلة",
+    "de":"umworben"
+  },
+  {
+    "en":"held",
+    "ru":"держал",
+    "ar":"محتجز",
+    "de":"abgehalten"
+  },
+  {
+    "en":"back",
+    "ru":"заднем",
+    "ar":"خلف",
+    "de":"zurück"
+  },
+  {
+    "en":"porch",
+    "ru":"крыльце",
+    "ar":"الشرفة",
+    "de":"Veranda"
+  },
+  {
+    "en":"shoulder",
+    "ru":"плечо",
+    "ar":"كتف",
+    "de":"Schulter"
+  },
+  {
+    "en":"Since then I",
+    "ru":"С тех пор я",
+    "ar":"منذ ذلك الحين أنا",
+    "de":"Seitdem ich"
+  },
+  {
+    "en":"stuck",
+    "ru":"застрял",
+    "ar":"عالق",
+    "de":"gesteckt"
+  },
+  {
+    "en":"made my way through",
+    "ru":"пробился",
+    "ar":"شققت طريقي عبر",
+    "de":"Ich habe mich durchgekämpft"
+  },
+  {
+    "en":"free",
+    "ru":"свободным",
+    "ar":"حر",
+    "de":"frei"
+  },
+  {
+    "en":"ghosts",
+    "ru":"призраки",
+    "ar":"أشباح",
+    "de":"Geister"
+  },
+  {
+    "en":"are gathering",
+    "ru":"собираются",
+    "ar":"يتجمعون",
+    "de":"versammeln sich"
+  },
+  {
+    "en":"cried",
+    "ru":"плакали",
+    "ar":"بكى",
+    "de":"weinte"
+  },
+  {
+    "en":"looked back",
+    "ru":"оглянулся",
+    "ar":"نظر إلى الوراء",
+    "de":"zurückblickte"
+  },
+  {
+    "en":"intentionally",
+    "ru":"намеренно",
+    "ar":"عمدا",
+    "de":"absichtlich"
+  },
+  {
+    "en":"sight",
+    "ru":"взгляд",
+    "ar":"رؤية",
+    "de":"Sicht"
+  },
+  {
+    "en":"daily",
+    "ru":"ежедневные",
+    "ar":"يوميًا",
+    "de":"täglich"
+  },
+  {
+    "en":"details",
+    "ru":"подробности",
+    "ar":"تفاصيل",
+    "de":"Details"
+  },
+  {
+    "en":"silly",
+    "ru":"глупый",
+    "ar":"سخيف",
+    "de":"dumm"
+  },
+  {
+    "en":"rest",
+    "ru":"остальное",
+    "ar":"استراحة",
+    "de":"ausruhen"
+  },
+  {
+    "en":"dawn",
+    "ru":"рассвет",
+    "ar":"فَجر",
+    "de":"Dämmerung"
+  },
+  {
+    "en":"came",
+    "ru":"приходило",
+    "ar":"أتى",
+    "de":"kam"
+  },
+  {
+    "en":"I will recover",
+    "ru":"выздоровею",
+    "ar":"سأتعافى",
+    "de":"Ich werde mich erholen."
+  },
+  {
+    "en":"concentrate",
+    "ru":"сосредоточиться",
+    "ar":"يركز",
+    "de":"konzentrieren"
+  },
+  {
+    "en":"the greatest",
+    "ru":"величайшее",
+    "ar":"الأعظم",
+    "de":"der Größte"
+  },
+  {
+    "en":"relationships",
+    "ru":"отношениях",
+    "ar":"العلاقات",
+    "de":"Beziehungen"
+  },
+  {
+    "en":"damage",
+    "ru":"порчу",
+    "ar":"ضرر",
+    "de":"Schaden"
+  },
+  {
+    "en":"obliged",
+    "ru":"обязана",
+    "ar":"مُلزم",
+    "de":"verpflichtet"
+  },
+  {
+    "en":"incredible",
+    "ru":"невероятно",
+    "ar":"رائع",
+    "de":"unglaublich"
+  },
+  {
+    "en":"patient",
+    "ru":"терпелива",
+    "ar":"مريض",
+    "de":"geduldig"
+  },
+  {
+    "en":"lost",
+    "ru":"потеряно",
+    "ar":"ضائع",
+    "de":"verloren"
+  },
+  {
+    "en":"incidents",
+    "ru":"происшествий",
+    "ar":"الحوادث",
+    "de":"Vorfälle"
+  },
+  {
+    "en":"Headaches?",
+    "ru":"Головные боли?",
+    "ar":"هل تعاني من الصداع؟",
+    "de":"Kopfschmerzen?"
+  },
+  {
+    "en":"satisfied",
+    "ru":"довольным",
+    "ar":"راضي",
+    "de":"befriedigt"
+  },
+  {
+    "en":"manuscript",
+    "ru":"рукопись",
+    "ar":"مخطوطة",
+    "de":"Manuskript"
+  },
+  {
+    "en":"mistakes",
+    "ru":"ошибки",
+    "ar":"أخطاء",
+    "de":"Fehler"
+  },
+  {
+    "en":"persistence",
+    "ru":"настойчивость",
+    "ar":"المثابرة",
+    "de":"Persistenz"
+  },
+  {
+    "en":"send",
+    "ru":"отправить",
+    "ar":"يرسل",
+    "de":"schicken"
+  },
+  {
+    "en":"By force",
+    "ru":"Силой",
+    "ar":"بالقوة",
+    "de":"Gewaltsam"
+  },
+  {
+    "en":"proposal",
+    "ru":"предложение",
+    "ar":"عرض",
+    "de":"Vorschlag"
+  },
+  {
+    "en":"attracts",
+    "ru":"привлекает",
+    "ar":"يجذب",
+    "de":"zieht an"
+  },
+  {
+    "en":"high",
+    "ru":"высокую",
+    "ar":"عالي",
+    "de":"hoch"
+  },
+  {
+    "en":"frequency",
+    "ru":"частоту",
+    "ar":"تكرار",
+    "de":"Frequenz"
+  },
+  {
+    "en":"air",
+    "ru":"воздуха",
+    "ar":"هواء",
+    "de":"Luft"
+  },
+  {
+    "en":"in the middle",
+    "ru":"середине",
+    "ar":"في المنتصف",
+    "de":"mitten drin"
+  },
+  {
+    "en":"will happen",
+    "ru":"произойдет",
+    "ar":"سيحدث",
+    "de":"wird geschehen"
+  },
+  {
+    "en":"you pay attention",
+    "ru":"обращаете",
+    "ar":"انتبه",
+    "de":"du achtest"
+  },
+  {
+    "en":"attention",
+    "ru":"внимания",
+    "ar":"انتباه",
+    "de":"Aufmerksamkeit"
+  },
+  {
+    "en":"found out",
+    "ru":"узнали",
+    "ar":"تم اكتشاف ذلك",
+    "de":"herausgefunden"
+  },
+  {
+    "en":"you ask",
+    "ru":"спрашиваете",
+    "ar":"أنت تسأل",
+    "de":"Sie fragen"
+  },
+  {
+    "en":"forbidden",
+    "ru":"запрещено",
+    "ar":"مُحرَّم",
+    "de":"verboten"
+  },
+  {
+    "en":"despicable",
+    "ru":"презренных",
+    "ar":"حقير",
+    "de":"verabscheuungswürdig"
+  },
+  {
+    "en":"vastness",
+    "ru":"обширность",
+    "ar":"اتساع",
+    "de":"Unermesslichkeit"
+  },
+  {
+    "en":"stronger",
+    "ru":"сильнее",
+    "ar":"أقوى",
+    "de":"stärker"
+  },
+  {
+    "en":"careful",
+    "ru":"осторожны",
+    "ar":"حذر",
+    "de":"vorsichtig"
+  },
+  {
+    "en":"grass",
+    "ru":"траву",
+    "ar":"عشب",
+    "de":"Gras"
+  },
+  {
+    "en":"grave",
+    "ru":"могилу",
+    "ar":"خطير",
+    "de":"Grab"
+  },
+  {
+    "en":"at least",
+    "ru":"по крайней мере",
+    "ar":"على الأقل",
+    "de":"mindestens"
+  },
+  {
+    "en":"bed",
+    "ru":"кровать",
+    "ar":"سرير",
+    "de":"Bett"
+  },
+  {
+    "en":"we're coming back",
+    "ru":"возвращаемся",
+    "ar":"سنعود",
+    "de":"Wir kommen zurück"
+  },
+  {
+    "en":"calmly",
+    "ru":"мирно",
+    "ar":"بهدوء",
+    "de":"ruhig"
+  },
+  {
+    "en":"finished",
+    "ru":"закончили",
+    "ar":"انتهى",
+    "de":"fertig"
+  },
+  {
+    "en":"Funeral",
+    "ru":"Похороны",
+    "ar":"جنازة",
+    "de":"Beerdigung"
+  },
+  {
+    "en":"completed",
+    "ru":"завершены",
+    "ar":"مكتمل",
+    "de":"vollendet"
+  },
+  {
+    "en":"leads",
+    "ru":"ведет",
+    "ar":"الرصاص",
+    "de":"führt"
+  },
+  {
+    "en":"lucky",
+    "ru":"повезло",
+    "ar":"محظوظ",
+    "de":"glücklich"
+  },
+  {
+    "en":"will have to",
+    "ru":"придется",
+    "ar":"سيتعين عليه",
+    "de":"wird müssen"
+  },
+  {
+    "en":"run away",
+    "ru":"сбежать",
+    "ar":"اهرب",
+    "de":"weglaufen"
+  },
+  {
+    "en":"unbearable",
+    "ru":"невыносимый",
+    "ar":"لا يطاق",
+    "de":"unerträglich"
+  },
+  {
+    "en":"envy",
+    "ru":"завидовать",
+    "ar":"حسد",
+    "de":"Neid"
+  },
+  {
+    "en":"it seemed",
+    "ru":"казалось",
+    "ar":"بدا",
+    "de":"Es schien"
+  },
+  {
+    "en":"obligations",
+    "ru":"обязательства",
+    "ar":"الالتزامات",
+    "de":"Verpflichtungen"
+  },
+  {
+    "en":"pleasure",
+    "ru":"удовольствие",
+    "ar":"سرور",
+    "de":"Vergnügen"
+  },
+  {
+    "en":"garden",
+    "ru":"саду",
+    "ar":"حديقة",
+    "de":"Garten"
+  },
+  {
+    "en":"bother",
+    "ru":"беспокоить",
+    "ar":"يزعج",
+    "de":"sich kümmern"
+  },
+  {
+    "en":"you disappear",
+    "ru":"исчезаешь",
+    "ar":"تختفي",
+    "de":"Du verschwindest"
+  },
+  {
+    "en":"common sense",
+    "ru":"здравомыслием",
+    "ar":"الحس السليم",
+    "de":"gesunder Menschenverstand"
+  },
+  {
+    "en":"guardianship",
+    "ru":"опеку",
+    "ar":"الوصاية",
+    "de":"Vormundschaft"
+  },
+  {
+    "en":"imprisonment.",
+    "ru":"тюремное заключение.",
+    "ar":"السجن.",
+    "de":"Haft."
+  },
+  {
+    "en":"visit",
+    "ru":"посещают",
+    "ar":"يزور",
+    "de":"besuchen"
+  },
+  {
+    "en":"everywhere",
+    "ru":"везде",
+    "ar":"في كل مكان",
+    "de":"überall"
+  },
+  {
+    "en":"condition",
+    "ru":"состоянии",
+    "ar":"حالة",
+    "de":"Zustand"
+  },
+  {
+    "en":"seizures",
+    "ru":"припадков",
+    "ar":"نوبات",
+    "de":"Anfälle"
+  },
+  {
+    "en":"moods",
+    "ru":"настроений",
+    "ar":"المزاج",
+    "de":"Stimmungen"
+  },
+  {
+    "en":"shutdowns",
+    "ru":"отключений",
+    "ar":"عمليات الإغلاق",
+    "de":"Abschaltungen"
+  },
+  {
+    "en":"irrevocable",
+    "ru":"безотзывного",
+    "ar":"لا رجعة فيه",
+    "de":"unwiderruflich"
+  },
+  {
+    "en":"damage",
+    "ru":"ущерба",
+    "ar":"ضرر",
+    "de":"Schaden"
+  },
+  {
+    "en":"intended",
+    "ru":"намеревали",
+    "ar":"منوي",
+    "de":"beabsichtigt"
+  },
+  {
+    "en":"threat",
+    "ru":"угрозой",
+    "ar":"تهديد",
+    "de":"Gefahr"
+  },
+  {
+    "en":"configured",
+    "ru":"настроили",
+    "ar":"تم التكوين",
+    "de":"konfiguriert"
+  },
+  {
+    "en":"printed",
+    "ru":"печатный",
+    "ar":"مطبوع",
+    "de":"gedruckt"
+  },
+  {
+    "en":"source",
+    "ru":"источник",
+    "ar":"مصدر",
+    "de":"Quelle"
+  },
+  {
+    "en":"absorption",
+    "ru":"поглощения",
+    "ar":"امتصاص",
+    "de":"Absorption"
+  },
+  {
+    "en":"medicines",
+    "ru":"лекарства",
+    "ar":"الأدوية",
+    "de":"Medikamente"
+  },
+  {
+    "en":"needlework",
+    "ru":"рукодее",
+    "ar":"تطريز",
+    "de":"Handarbeit"
+  },
+  {
+    "en":"ingratitude",
+    "ru":"неблагодарность",
+    "ar":"عقوق",
+    "de":"Undankbarkeit"
+  },
+  {
+    "en":"stolen",
+    "ru":"украдена",
+    "ar":"مسروق",
+    "de":"gestohlen"
+  },
+  {
+    "en":"I miss",
+    "ru":"скучаю",
+    "ar":"أفتقد",
+    "de":"Ich vermisse"
+  },
+  {
+    "en":"low",
+    "ru":"низкому",
+    "ar":"قليل",
+    "de":"niedrig"
+  },
+  {
+    "en":"fought",
+    "ru":"боролся",
+    "ar":"قاتل",
+    "de":"gekämpft"
+  },
+  {
+    "en":"in the darkness",
+    "ru":"темноте",
+    "ar":"في الظلام",
+    "de":"in der Dunkelheit"
+  },
+  {
+    "en":"deep",
+    "ru":"глубокой",
+    "ar":"عميق",
+    "de":"tief"
+  },
+  {
+    "en":"suffocating",
+    "ru":"удушающий",
+    "ar":"خانق",
+    "de":"erstickend"
+  },
+  {
+    "en":"suburbs",
+    "ru":"пригородов",
+    "ar":"الضواحي",
+    "de":"Vororte"
+  },
+  {
+    "en":"violent",
+    "ru":"насильственный",
+    "ar":"عنيف",
+    "de":"gewalttätig"
+  },
+  {
+    "en":"push",
+    "ru":"толчок",
+    "ar":"يدفع",
+    "de":"drücken"
+  },
+  {
+    "en":"capitals",
+    "ru":"столицы",
+    "ar":"العواصم",
+    "de":"Hauptstädte"
+  },
+  {
+    "en":"vile",
+    "ru":"подлый",
+    "ar":"حقير",
+    "de":"abscheulich"
+  },
+  {
+    "en":"recipes",
+    "ru":"рецепте",
+    "ar":"وصفات الطعام",
+    "de":"Rezepte"
+  },
+  {
+    "en":"defines",
+    "ru":"определяет",
+    "ar":"يُعرّف",
+    "de":"definiert"
+  },
+  {
+    "en":"for",
+    "ru":"ради",
+    "ar":"ل",
+    "de":"für"
+  },
+  {
+    "en":"to the tooth",
+    "ru":"тишине",
+    "ar":"للسن",
+    "de":"bis zum Zahn"
+  },
+  {
+    "en":"let's return",
+    "ru":"вернемся",
+    "ar":"لنعد",
+    "de":"Lasst uns zurückkehren"
+  },
+  {
+    "en":"finishing",
+    "ru":"заканчивающий",
+    "ar":"إنهاء",
+    "de":"Abschluss"
+  },
+  {
+    "en":"avoiding",
+    "ru":"избегая",
+    "ar":"تجنب",
+    "de":"Vermeidung"
+  },
+  {
+    "en":"error",
+    "ru":"ошибка",
+    "ar":"خطأ",
+    "de":"Fehler"
+  },
+  {
+    "en":"happened",
+    "ru":"случилось",
+    "ar":"حدث",
+    "de":"passiert"
+  },
+  {
+    "en":"cut out",
+    "ru":"вырезали",
+    "ar":"قطع",
+    "de":"ausgeschnitten"
+  },
+  {
+    "en":"fabulous",
+    "ru":"великолепно",
+    "ar":"خلاب",
+    "de":"fabelhaft"
+  },
+  {
+    "en":"don't worry",
+    "ru":"волнуйся",
+    "ar":"لا تقلق",
+    "de":"Mach dir keine Sorgen"
+  },
+  {
+    "en":"I represent",
+    "ru":"представляю",
+    "ar":"أنا أمثل",
+    "de":"Ich vertrete"
+  },
+  {
+    "en":"rest",
+    "ru":"остальные",
+    "ar":"استراحة",
+    "de":"ausruhen"
+  },
+  {
+    "en":"appreciated",
+    "ru":"ценили",
+    "ar":"مُقدَّر",
+    "de":"geschätzt"
+  },
+  {
+    "en":"Seer",
+    "ru":"Провидца",
+    "ar":"الرائي",
+    "de":"Seher"
+  },
+  {
+    "en":"put away",
+    "ru":"убрать",
+    "ar":"يُحفظ جانبا",
+    "de":"weggeräumt"
+  },
+  {
+    "en":"\"Darling, I'm sure I'm going crazy again.",
+    "ru":"«Дорогая, я уверена, что снова схожу с ума.",
+    "ar":"\"عزيزي، أنا متأكد من أنني سأصاب بالجنون مرة أخرى.\"",
+    "de":"\"Liebling, ich glaube, ich werde wieder verrückt.\""
+  },
+  {
+    "en":"I don't think we can go through another terrible time like this, and I won't recover this time.",
+    "ru":"Думаю, мы не можем пережить еще одно такое ужасное время, и на этот раз я не выздоровею.",
+    "ar":"لا أعتقد أننا نستطيع أن نمر بوقت عصيب آخر كهذا، ولن أتعافى هذه المرة.",
+    "de":"Ich glaube nicht, dass wir noch einmal so eine schreckliche Zeit durchstehen können, und ich werde mich diesmal nicht erholen."
+  },
+  {
+    "en":"I start hearing voices and can't concentrate.",
+    "ru":"Я начинаю слышать голоса и не могу сосредоточиться.",
+    "ar":"بدأت أسمع أصواتاً ولم أعد أستطيع التركيز.",
+    "de":"Ich höre Stimmen und kann mich nicht mehr konzentrieren."
+  },
+  {
+    "en":"So I do what seems best.",
+    "ru":"Поэтому я делаю то, что кажется лучшим.",
+    "ar":"لذلك أفعل ما يبدو لي الأفضل.",
+    "de":"Also tue ich, was mir am besten erscheint."
+  },
+  {
+    "en":"You gave me the greatest happiness.",
+    "ru":"Ты подарила мне величайшее счастье.",
+    "ar":"لقد منحتني أعظم سعادة.",
+    "de":"Du hast mir das größte Glück geschenkt."
+  },
+  {
+    "en":"You were, in every way, everything that there is to be.",
+    "ru":"Ты во всех отношениях была всем, чем только можно быть.",
+    "ar":"كنتَ، بكل معنى الكلمة، كل ما يمكن أن يكون عليه المرء.",
+    "de":"Du warst in jeder Hinsicht alles, was es zu sein gibt."
+  },
+  {
+    "en":"I know that I am ruining your life, and without me you could work, and you will work.",
+    "ru":"Я знаю, что порчу тебе жизнь, и без меня ты могла бы работать, и ты будешь работать.",
+    "ar":"أعلم أنني أدمر حياتك، وبدوني يمكنك العمل، وستعمل.",
+    "de":"Ich weiß, dass ich dein Leben ruiniere, und ohne mich könntest du arbeiten, und du wirst arbeiten."
+  },
+  {
+    "en":"I know.",
+    "ru":"Я знаю.",
+    "ar":"أنا أعرف.",
+    "de":"Ich weiß."
+  },
+  {
+    "en":"You see, I can't even write this properly.",
+    "ru":"Видишь, я даже не могу нормально это написать.",
+    "ar":"كما ترى، لا أستطيع حتى كتابة هذا بشكل صحيح.",
+    "de":"Sehen Sie, ich kann das hier nicht einmal richtig schreiben."
+  },
+  {
+    "en":"I want to say that I owe all the happiness in my life to you.",
+    "ru":"Я хочу сказать, что всем счастьем своей жизни я обязана тебе.",
+    "ar":"أود أن أقول إنني مدين لك بكل السعادة في حياتي.",
+    "de":"Ich möchte sagen, dass ich Ihnen alles Glück in meinem Leben verdanke."
+  },
+  {
+    "en":"You were incredibly patient with me and incredibly kind.",
+    "ru":"Ты была невероятно терпелива со мной и невероятно добра.",
+    "ar":"لقد كنت صبوراً جداً معي ولطيفاً جداً.",
+    "de":"Du warst unglaublich geduldig mit mir und unglaublich freundlich."
+  },
+  {
+    "en":"I have lost everything except the confidence in your kindness.",
+    "ru":"У меня все потеряно, кроме уверенности в твоей доброте.",
+    "ar":"لقد فقدت كل شيء إلا الثقة في لطفك.",
+    "de":"Ich habe alles verloren, außer dem Vertrauen in Ihre Güte."
+  },
+  {
+    "en":"I can't ruin your life anymore.",
+    "ru":"Я больше не могу портить тебе жизнь.",
+    "ar":"لا أستطيع أن أدمر حياتك بعد الآن.",
+    "de":"Ich kann dein Leben nicht noch weiter ruinieren."
+  },
+  {
+    "en":"I don't think two people could be happier than we are.\"",
+    "ru":"Думаю, два человека не могли бы быть счастливее, чем мы».",
+    "ar":"لا أعتقد أن هناك شخصين يمكن أن يكونا أسعد مما نحن عليه الآن.",
+    "de":"Ich glaube nicht, dass zwei Menschen glücklicher sein könnten als wir.“"
+  },
+  {
+    "en":"perjured himself",
+    "ru":"лжесвидетельствовал",
+    "ar":"لقد حنث باليمين",
+    "de":"hat Meineid geleistet"
+  },
+  {
+    "en":"prudently",
+    "ru":"предусмотрительно",
+    "ar":"بحكمة",
+    "de":"umsichtig"
+  },
+  {
+    "en":"Last Kiss",
+    "ru":"Последний поцелуй (Last Kiss)",
+    "ar":"القبلة الأخيرة",
+    "de":"Letzter Kuss"
+  },
+  {
+    "en":"Shaking",
+    "ru":"Сотрясая",
+    "ar":"يهتز",
+    "de":"Schütteln"
+  },
+  {
+    "en":"emptiness",
+    "ru":"пустоту",
+    "ar":"الفراغ",
+    "de":"Leere"
+  },
+  {
+    "en":"collect",
+    "ru":"собрать",
+    "ar":"يجمع",
+    "de":"sammeln"
+  },
+  {
+    "en":"frankly",
+    "ru":"начистоту",
+    "ar":"بصراحة",
+    "de":"ehrlich gesagt"
+  },
+  {
+    "en":"Will take away",
+    "ru":"Заберёт",
+    "ar":"سوف يأخذ",
+    "de":"Wird weggenommen"
+  },
+  {
+    "en":"will leave",
+    "ru":"оставит",
+    "ar":"سيغادر",
+    "de":"wird gehen"
+  },
+  {
+    "en":"scary",
+    "ru":"страшно",
+    "ar":"مخيف",
+    "de":"beängstigend"
+  },
+  {
+    "en":"down",
+    "ru":"вниз",
+    "ar":"تحت",
+    "de":"runter"
+  },
+  {
+    "en":"sadly",
+    "ru":"печально",
+    "ar":"للأسف",
+    "de":"leider"
+  },
+  {
+    "en":"were trembling",
+    "ru":"дрожали",
+    "ar":"كانوا يرتجفون",
+    "de":"zitterten"
+  },
+  {
+    "en":"lanterns",
+    "ru":"фонари",
+    "ar":"الفوانيس",
+    "de":"Laternen"
+  },
+  {
+    "en":"half a pack",
+    "ru":"полпачки",
+    "ar":"نصف عبوة",
+    "de":"eine halbe Packung"
+  },
+  {
+    "en":"lost",
+    "ru":"терял",
+    "ar":"ضائع",
+    "de":"verloren"
+  },
+  {
+    "en":"meet",
+    "ru":"встречать",
+    "ar":"يقابل",
+    "de":"treffen"
+  },
+  {
+    "en":"sunrises",
+    "ru":"рассветы",
+    "ar":"شروق الشمس",
+    "de":"Sonnenaufgänge"
+  },
+  {
+    "en":"features",
+    "ru":"черты",
+    "ar":"سمات",
+    "de":"Merkmale"
+  },
+  {
+    "en":"tears",
+    "ru":"слёзы",
+    "ar":"دموع",
+    "de":"Tränen"
+  },
+  {
+    "en":"save",
+    "ru":"спасать",
+    "ar":"يحفظ",
+    "de":"speichern"
+  },
+  {
+    "en":"After all",
+    "ru":"Ведь",
+    "ar":"في النهاية",
+    "de":"Schließlich"
+  },
+  {
+    "en":"edge",
+    "ru":"краю",
+    "ar":"حافة",
+    "de":"Rand"
+  },
+  {
+    "en":"to fail",
+    "ru":"пропасти",
+    "ar":"الفشل",
+    "de":"scheitern"
+  },
+  {
+    "en":"you will lower",
+    "ru":"опустишь",
+    "ar":"سوف تنخفض",
+    "de":"Sie werden senken"
+  },
+  {
+    "en":"sharp",
+    "ru":"резко",
+    "ar":"حاد",
+    "de":"scharf"
+  },
+  {
+    "en":"brakes",
+    "ru":"тормоза",
+    "ar":"الفرامل",
+    "de":"Bremsen"
+  },
+  {
+    "en":"loyalty",
+    "ru":"верность",
+    "ar":"وفاء",
+    "de":"Loyalität"
+  },
+  {
+    "en":"Hit",
+    "ru":"Удар",
+    "ar":"يضرب",
+    "de":"Schlag"
+  },
+  {
+    "en":"inevitability",
+    "ru":"неизбежность",
+    "ar":"حتمية",
+    "de":"Unvermeidlichkeit"
+  },
+  {
+    "en":"Girl Dance",
+    "ru":"Девочка, танцуй (Girl Dance)",
+    "ar":"رقصة الفتيات",
+    "de":"Mädchentanz"
+  },
+  {
+    "en":"you put it on",
+    "ru":"надеваешь",
+    "ar":"تضعه",
+    "de":"Du ziehst es an"
+  },
+  {
+    "en":"heels",
+    "ru":"каблуки",
+    "ar":"الكعب العالي",
+    "de":"Absätze"
+  },
+  {
+    "en":"you answer",
+    "ru":"отвечаешь",
+    "ar":"أنت تجيب",
+    "de":"Sie antworten"
+  },
+  {
+    "en":"calls",
+    "ru":"звонки",
+    "ar":"المكالمات",
+    "de":"Anrufe"
+  },
+  {
+    "en":"will take",
+    "ru":"возьмёт",
+    "ar":"سوف يأخذ",
+    "de":"wird nehmen"
+  },
+  {
+    "en":"the phone",
+    "ru":"трубку",
+    "ar":"الهاتف",
+    "de":"das Telefon"
+  },
+  {
+    "en":"shakes",
+    "ru":"трясёт",
+    "ar":"مشروبات غازية",
+    "de":"Schütteln"
+  },
+  {
+    "en":"Memories",
+    "ru":"Воспоминания",
+    "ar":"ذكريات",
+    "de":"Erinnerungen"
+  },
+  {
+    "en":"to hell with it all",
+    "ru":"да пошло оно к чёрту всё",
+    "ar":"تباً لكل هذا",
+    "de":"Zum Teufel damit!"
+  },
+  {
+    "en":"obviously",
+    "ru":"явно",
+    "ar":"بوضوح",
+    "de":"offensichtlich"
+  },
+  {
+    "en":"snow",
+    "ru":"снегом",
+    "ar":"ثلج",
+    "de":"Schnee"
+  },
+  {
+    "en":"mist",
+    "ru":"замело",
+    "ar":"شَبُّورَة",
+    "de":"Nebel"
+  },
+  {
+    "en":"sleep",
+    "ru":"сна",
+    "ar":"ينام",
+    "de":"schlafen"
+  },
+  {
+    "en":"out of spite",
+    "ru":"назло",
+    "ar":"بدافع الحقد",
+    "de":"aus Trotz"
+  },
+  {
+    "en":"will pass",
+    "ru":"пройдёт",
+    "ar":"سوف يمر",
+    "de":"wird vergehen"
+  },
+  {
+    "en":"Accelerate",
+    "ru":"Разгоняй",
+    "ar":"تسريع",
+    "de":"Beschleunigen"
+  },
+  {
+    "en":"melancholy",
+    "ru":"тоску",
+    "ar":"حزن",
+    "de":"Melancholie"
+  },
+  {
+    "en":"circle",
+    "ru":"кружи",
+    "ar":"دائرة",
+    "de":"Kreis"
+  },
+  {
+    "en":"Burning out",
+    "ru":"Выжигая",
+    "ar":"الاحتراق",
+    "de":"Ausbrennen"
+  },
+  {
+    "en":"strong",
+    "ru":"крепким",
+    "ar":"قوي",
+    "de":"stark"
+  },
+  {
+    "en":"face",
+    "ru":"лицу",
+    "ar":"وجه",
+    "de":"Gesicht"
+  },
+  {
+    "en":"will return",
+    "ru":"вернётся",
+    "ar":"سأعود",
+    "de":"wird zurückkehren"
+  },
+  {
+    "en":"leaving",
+    "ru":"оставив",
+    "ar":"مغادرة",
+    "de":"Verlassen"
+  },
+  {
+    "en":"fragments",
+    "ru":"осколки",
+    "ar":"شظايا",
+    "de":"Fragmente"
+  },
+  {
+    "en":"therefore",
+    "ru":"зато",
+    "ar":"لذلك",
+    "de":"daher"
+  },
+  {
+    "en":"decided",
+    "ru":"решено",
+    "ar":"مقرر",
+    "de":"entschieden"
+  },
+  {
+    "en":"sky",
+    "ru":"небом",
+    "ar":"سماء",
+    "de":"Himmel"
+  },
+  {
+    "en":"broken",
+    "ru":"битое",
+    "ar":"مكسور",
+    "de":"gebrochen"
+  },
+  {
+    "en":"glass",
+    "ru":"стекло",
+    "ar":"زجاج",
+    "de":"Glas"
+  },
+  {
+    "en":"medicine",
+    "ru":"лекарство",
+    "ar":"الدواء",
+    "de":"Medizin"
+  },
+  {
+    "en":"gently",
+    "ru":"нежно",
+    "ar":"بلطف",
+    "de":"sanft"
+  },
+  {
+    "en":"around",
+    "ru":"вокруг",
+    "ar":"حول",
+    "de":"um"
+  },
+  {
+    "en":"the most",
+    "ru":"самая",
+    "ar":"الأكثر",
+    "de":"die meisten"
+  },
+  {
+    "en":"bright",
+    "ru":"яркая",
+    "ar":"ساطع",
+    "de":"hell"
+  },
+  {
+    "en":"universe",
+    "ru":"вселенной",
+    "ar":"الكون",
+    "de":"Universum"
+  },
+  {
+    "en":"star",
+    "ru":"звезда",
+    "ar":"نجم",
+    "de":"Stern"
+  },
+  {
+    "en":"And, no matter what, you have always been and will be the first for him.",
+    "ru":"И, не смотря ни на что, ты всегда была и будешь для него первой",
+    "ar":"ومهما حدث، فقد كنت وستظلين دائماً الأولى بالنسبة له.",
+    "de":"Und egal was passiert, du warst und wirst immer die Erste für ihn sein."
+  },
+  {
+    "en":"It's burning.",
+    "ru":"Гори",
+    "ar":"إنها تحترق.",
+    "de":"Es brennt."
+  },
+  {
+    "en":"fire",
+    "ru":"огнём",
+    "ar":"نار",
+    "de":"Feuer"
+  },
+  {
+    "en":"glass",
+    "ru":"бокал",
+    "ar":"زجاج",
+    "de":"Glas"
+  },
+  {
+    "en":"turbidity",
+    "ru":"муть",
+    "ar":"العكارة",
+    "de":"Trübung"
+  },
+  {
+    "en":"will leak",
+    "ru":"утечёт",
+    "ar":"سوف يتم تسريبها",
+    "de":"wird undicht"
+  },
+  {
+    "en":"He'll get over it.",
+    "ru":"Переболит",
+    "ar":"سيتجاوز الأمر.",
+    "de":"Er wird es verkraften."
+  },
+  {
+    "en":"will heal",
+    "ru":"заживёт",
+    "ar":"سوف يشفى",
+    "de":"wird heilen"
+  },
+  {
+    "en":"Feelings",
+    "ru":"Чувства (Feelings)",
+    "ar":"المشاعر",
+    "de":"Gefühle"
+  },
+  {
+    "en":"treated",
+    "ru":"лечили",
+    "ar":"تم علاجه",
+    "de":"behandelt"
+  },
+  {
+    "en":"reason",
+    "ru":"причиной",
+    "ar":"سبب",
+    "de":"Grund"
+  },
+  {
+    "en":"jumped off",
+    "ru":"соскочила",
+    "ar":"قفز",
+    "de":"sprang ab"
+  },
+  {
+    "en":"Broke down",
+    "ru":"Сорвалась",
+    "ar":"تعطلت السيارة",
+    "de":"Panne"
+  },
+  {
+    "en":"get in touch",
+    "ru":"выйди на связь",
+    "ar":"تواصل معنا",
+    "de":"Nehmen Sie Kontakt auf"
+  },
+  {
+    "en":"friendship",
+    "ru":"дружба",
+    "ar":"صداقة",
+    "de":"Freundschaft"
+  },
+  {
+    "en":"codependent",
+    "ru":"созависима",
+    "ar":"الاعتماد المتبادل",
+    "de":"Koabhängigkeit"
+  },
+  {
+    "en":"bitch",
+    "ru":"стерва",
+    "ar":"عاهرة",
+    "de":"Hündin"
+  },
+  {
+    "en":"will win",
+    "ru":"победит",
+    "ar":"سيفوز",
+    "de":"wird gewinnen"
+  },
+  {
+    "en":"you will put",
+    "ru":"поставишь",
+    "ar":"ستضع",
+    "de":"Du wirst setzen"
+  },
+  {
+    "en":"tenderness",
+    "ru":"нежность",
+    "ar":"رقة",
+    "de":"Zärtlichkeit"
+  },
+  {
+    "en":"depth",
+    "ru":"глубина",
+    "ar":"عمق",
+    "de":"Tiefe"
+  },
+  {
+    "en":"loyalty",
+    "ru":"верность",
+    "ar":"وفاء",
+    "de":"Loyalität"
+  },
+  {
+    "en":"her",
+    "ru":"ней",
+    "ar":"ها",
+    "de":"ihr"
+  },
+  {
+    "en":"promised",
+    "ru":"обещали",
+    "ar":"وع��",
+    "de":"versprochen"
+  },
+  {
+    "en":"they will fix it",
+    "ru":"починят",
+    "ar":"سيصلحونها",
+    "de":"Sie werden es reparieren."
+  },
+  {
+    "en":"incoming",
+    "ru":"входящий",
+    "ar":"وارد",
+    "de":"eingehende"
+  },
+  {
+    "en":"accepted",
+    "ru":"принят",
+    "ar":"مقبول",
+    "de":"akzeptiert"
+  },
+  {
+    "en":"get",
+    "ru":"добивай",
+    "ar":"يحصل",
+    "de":"erhalten"
+  },
+  {
+    "en":"Trust",
+    "ru":"Доверять",
+    "ar":"يثق",
+    "de":"Vertrauen"
+  },
+  {
+    "en":"reasons",
+    "ru":"причины",
+    "ar":"أسباب",
+    "de":"Gründe"
+  },
+  {
+    "en":"bliss",
+    "ru":"кайф",
+    "ar":"النعيم",
+    "de":"Wonne"
+  },
+  {
+    "en":"I",
+    "ru":"яд",
+    "ar":"أنا",
+    "de":"ICH"
+  },
+  {
+    "en":"weak",
+    "ru":"слабое",
+    "ar":"ضعيف",
+    "de":"schwach"
+  },
+  {
+    "en":"view",
+    "ru":"вид",
+    "ar":"منظر",
+    "de":"Sicht"
+  },
+  {
+    "en":"It goes out",
+    "ru":"Гаснет",
+    "ar":"يخرج",
+    "de":"Es geht aus"
+  },
+  {
+    "en":"world",
+    "ru":"свет",
+    "ar":"عالم",
+    "de":"Welt"
+  },
+  {
+    "en":"came in",
+    "ru":"зашел",
+    "ar":"دخل",
+    "de":"kam herein"
+  },
+  {
+    "en":"wears",
+    "ru":"носит",
+    "ar":"يرتدي",
+    "de":"trägt"
+  },
+  {
+    "en":"Out of the zone again, wherever you are?",
+    "ru":"Снова вне зоны, где тебя носит?",
+    "ar":"هل خرجت عن نطاق التركيز مجدداً، أينما كنت؟",
+    "de":"Schon wieder aus der Bahn geraten, wo auch immer du bist?"
+  },
+  {
+    "en":"fall",
+    "ru":"тусе",
+    "ar":"يسقط",
+    "de":"fallen"
+  },
+  {
+    "en":"let",
+    "ru":"пусть",
+    "ar":"يترك",
+    "de":"lassen"
+  },
+  {
+    "en":"course",
+    "ru":"курсе",
+    "ar":"دورة",
+    "de":"Kurs"
+  },
+  {
+    "en":"suddenly",
+    "ru":"вдруг",
+    "ar":"فجأة",
+    "de":"plötzlich"
+  },
+  {
+    "en":"became",
+    "ru":"стало",
+    "ar":"أصبح",
+    "de":"wurde"
+  },
+  {
+    "en":"Taste",
+    "ru":"Вкус",
+    "ar":"ذوق",
+    "de":"Schmecken"
+  },
+  {
+    "en":"these",
+    "ru":"сих",
+    "ar":"هؤلاء",
+    "de":"diese"
+  },
+  {
+    "en":"pores",
+    "ru":"пор",
+    "ar":"المسام",
+    "de":"Poren"
+  },
+  {
+    "en":"enemy",
+    "ru":"враг",
+    "ar":"العدو",
+    "de":"Feind"
+  },
+  {
+    "en":"Love After You",
+    "ru":"Любовь после тебя (Love After You)",
+    "ar":"الحب بعدك",
+    "de":"Liebe Grüße nach dir"
+  },
+  {
+    "en":"for a long time",
+    "ru":"давно",
+    "ar":"لفترة طويلة",
+    "de":"für eine lange Zeit"
+  },
+  {
+    "en":"hide and seek",
+    "ru":"прятки",
+    "ar":"الغميضة",
+    "de":"verstecken und suchen"
+  },
+  {
+    "en":"charging",
+    "ru":"зарядке",
+    "ar":"الشحن",
+    "de":"Laden"
+  },
+  {
+    "en":"I'm moving forward",
+    "ru":"выдвигаюсь",
+    "ar":"أنا أمضي قدماً",
+    "de":"Ich gehe voran"
+  },
+  {
+    "en":"I am erasing.",
+    "ru":"Стирая",
+    "ar":"أنا أمحو.",
+    "de":"Ich lösche."
+  },
+  {
+    "en":"glances back",
+    "ru":"оглядки",
+    "ar":"نظرات إلى الوراء",
+    "de":"blickt zurück"
+  },
+  {
+    "en":"It happens",
+    "ru":"бывает",
+    "ar":"يحدث ذلك",
+    "de":"Es passiert"
+  },
+  {
+    "en":"covers",
+    "ru":"накрывает",
+    "ar":"أغطية",
+    "de":"Cover"
+  },
+  {
+    "en":"strongly",
+    "ru":"сильно",
+    "ar":"بقوة",
+    "de":"stark"
+  },
+  {
+    "en":"break",
+    "ru":"разбивают",
+    "ar":"استراحة",
+    "de":"brechen"
+  },
+  {
+    "en":"only",
+    "ru":"лишь",
+    "ar":"فقط",
+    "de":"nur"
+  },
+  {
+    "en":"sip",
+    "ru":"глоток",
+    "ar":"رشفة",
+    "de":"Schluck"
+  },
+  {
+    "en":"introduce",
+    "ru":"представить",
+    "ar":"يقدم",
+    "de":"einführen"
+  },
+  {
+    "en":"will burn out",
+    "ru":"перегорит",
+    "ar":"سيحترق",
+    "de":"wird ausbrennen"
+  },
+  {
+    "en":"cooled down",
+    "ru":"остыла",
+    "ar":"تم تبريده",
+    "de":"abgekühlt"
+  },
+  {
+    "en":"ex-half",
+    "ru":"бывшая половина",
+    "ar":"النصف السابق",
+    "de":"Ex-Halb"
+  },
+  {
+    "en":"get angry",
+    "ru":"злись",
+    "ar":"يغضب",
+    "de":"wütend werden"
+  },
+  {
+    "en":"hits",
+    "ru":"попадает",
+    "ar":"الأغاني الناجحة",
+    "de":"Treffer"
+  },
+  {
+    "en":"edge",
+    "ru":"краю",
+    "ar":"حافة",
+    "de":"Rand"
+  },
+  {
+    "en":"irreplaceable",
+    "ru":"незаменимых",
+    "ar":"لا يُعوَّض",
+    "de":"unersetzlich"
+  },
+  {
+    "en":"besides",
+    "ru":"помимо",
+    "ar":"بجانب",
+    "de":"außerdem"
+  },
+  {
+    "en":"Cute",
+    "ru":"Милый",
+    "ar":"لطيف",
+    "de":"Niedlich"
+  },
+  {
+    "en":"stripes",
+    "ru":"полосы",
+    "ar":"داء الكلب",
+    "de":"Streifen"
+  },
+  {
+    "en":"wounds",
+    "ru":"ран",
+    "ar":"جروح",
+    "de":"Wunden"
+  },
+  {
+    "en":"treats",
+    "ru":"лечит",
+    "ar":"يعالج",
+    "de":"Leckereien"
+  },
+  {
+    "en":"shouted",
+    "ru":"кричал",
+    "ar":"صرخ",
+    "de":"rief"
+  },
+  {
+    "en":null,
+    "ru":null,
+    "ar":null,
+    "de":null
+  },
+  {
+    "en":"Queen",
+    "ru":"Царица (Queen)",
+    "ar":"ملكة",
+    "de":"Königin"
+  },
+  {
+    "en":"brought out",
+    "ru":"выводил",
+    "ar":"تم إخراجه",
+    "de":"herausgebracht"
+  },
+  {
+    "en":"personal",
+    "ru":"личностного",
+    "ar":"شخصي",
+    "de":"persönlich"
+  },
+  {
+    "en":"growth",
+    "ru":"роста",
+    "ar":"نمو",
+    "de":"Wachstum"
+  },
+  {
+    "en":"more cunning",
+    "ru":"хитрее",
+    "ar":"أكثر دهاءً",
+    "de":"mehr List"
+  },
+  {
+    "en":"adult",
+    "ru":"взрослой",
+    "ar":"بالغ",
+    "de":"Erwachsene"
+  },
+  {
+    "en":"mascara",
+    "ru":"тушь",
+    "ar":"الماسكارا",
+    "de":"Wimperntusche"
+  },
+  {
+    "en":"powder",
+    "ru":"пудрой",
+    "ar":"مسحوق",
+    "de":"Pulver"
+  },
+  {
+    "en":"powder",
+    "ru":"пудрой",
+    "ar":"مسحوق",
+    "de":"Pulver"
+  },
+  {
+    "en":"sharp",
+    "ru":"острые",
+    "ar":"حاد",
+    "de":"scharf"
+  },
+  {
+    "en":"turned into",
+    "ru":"превратилось",
+    "ar":"تحول إلى",
+    "de":"wurde zu"
+  },
+  {
+    "en":"precious",
+    "ru":"драгоценный",
+    "ar":"ثمين",
+    "de":"wertvoll"
+  },
+  {
+    "en":"wine",
+    "ru":"вине",
+    "ar":"خمر",
+    "de":"Wein"
+  },
+  {
+    "en":"fierce",
+    "ru":"лютый",
+    "ar":"شرس",
+    "de":"erbittert"
+  },
+  {
+    "en":"dissolve",
+    "ru":"раствориться",
+    "ar":"حل",
+    "de":"lösen"
+  },
+  {
+    "en":"swam",
+    "ru":"поплыл",
+    "ar":"سبح",
+    "de":"schwamm"
+  },
+  {
+    "en":"got there",
+    "ru":"попал",
+    "ar":"وصلت إلى هناك",
+    "de":"dort angekommen"
+  },
+  {
+    "en":"is shy",
+    "ru":"стесняется",
+    "ar":"خجول",
+    "de":"ist schüchtern"
+  },
+  {
+    "en":"breathe",
+    "ru":"дыши",
+    "ar":"يتنفس",
+    "de":"atmen"
+  },
+  {
+    "en":"order",
+    "ru":"низам",
+    "ar":"طلب",
+    "de":"Befehl"
+  },
+  {
+    "en":"get out",
+    "ru":"вылези",
+    "ar":"اخرج",
+    "de":"aussteigen"
+  },
+  {
+    "en":"skin",
+    "ru":"кожи",
+    "ar":"جلد",
+    "de":"Haut"
+  },
+  {
+    "en":"teeth",
+    "ru":"зубам",
+    "ar":"أسنان",
+    "de":"Zähne"
+  },
+  {
+    "en":"skewed",
+    "ru":"перекосило",
+    "ar":"منحرف",
+    "de":"verzerrt"
+  },
+  {
+    "en":"envy",
+    "ru":"зависти",
+    "ar":"حسد",
+    "de":"Neid"
+  },
+  {
+    "en":"hall",
+    "ru":"зале",
+    "ar":"قاعة",
+    "de":"Saal"
+  },
+  {
+    "en":"consequences",
+    "ru":"последствий",
+    "ar":"عواقب",
+    "de":"Konsequenzen"
+  },
+  {
+    "en":"calculated",
+    "ru":"просчитывал",
+    "ar":"محسوب",
+    "de":"berechnet"
+  },
+  {
+    "en":null,
+    "ru":null,
+    "ar":null,
+    "de":null
+  },
+  {
+    "en":"Led",
+    "ru":"Повело (Led)",
+    "ar":"قاد",
+    "de":"Geführt"
+  },
+  {
+    "en":"end",
+    "ru":"край",
+    "ar":"نهاية",
+    "de":"Ende"
+  },
+  {
+    "en":"got it",
+    "ru":"достала",
+    "ar":"فهمتها",
+    "de":"habe es"
+  },
+  {
+    "en":"day",
+    "ru":"сутки",
+    "ar":"يوم",
+    "de":"Tag"
+  },
+  {
+    "en":"the phone",
+    "ru":"трубку",
+    "ar":"الهاتف",
+    "de":"das Telefon"
+  },
+  {
+    "en":"merit",
+    "ru":"заслуга",
+    "ar":"استحقاق",
+    "de":"Verdienst"
+  },
+  {
+    "en":"I'm falling asleep",
+    "ru":"засыпаю",
+    "ar":"أشعر بالنعاس",
+    "de":"Ich schlafe ein"
+  },
+  {
+    "en":"I'll pour it",
+    "ru":"залью",
+    "ar":"سأسكبه",
+    "de":"Ich gieße es ein."
+  },
+  {
+    "en":"cup",
+    "ru":"чашкой",
+    "ar":"كوب",
+    "de":"Tasse"
+  },
+  {
+    "en":"dance",
+    "ru":"плясать",
+    "ar":"الرقص",
+    "de":"tanzen"
+  },
+  {
+    "en":"succeeded",
+    "ru":"успела",
+    "ar":"نجح",
+    "de":"erfolgreich"
+  },
+  {
+    "en":"tipsy",
+    "ru":"подшофе",
+    "ar":"سكران",
+    "de":"beschwipst"
+  },
+  {
+    "en":"appeared",
+    "ru":"появился",
+    "ar":"ظهر",
+    "de":"erschien"
+  },
+  {
+    "en":"floated away",
+    "ru":"поплыло",
+    "ar":"انجرف بعيدًا",
+    "de":"schwebte davon"
+  },
+  {
+    "en":"I'm smiling",
+    "ru":"улыбаюсь",
+    "ar":"أنا أبتسم",
+    "de":"Ich lächle."
+  },
+  {
+    "en":"scored",
+    "ru":"забила",
+    "ar":"النتيجة",
+    "de":"erzielte"
+  },
+  {
+    "en":"timid",
+    "ru":"робких",
+    "ar":"خجول",
+    "de":"schüchtern"
+  },
+  {
+    "en":"I'm embarrassed",
+    "ru":"смущаюсь",
+    "ar":"أشعر بالحرج",
+    "de":"Mir ist das peinlich."
+  },
+  {
+    "en":"Mood",
+    "ru":"Настроение",
+    "ar":"مزاج",
+    "de":"Stimmung"
+  },
+  {
+    "en":"madly",
+    "ru":"бешено",
+    "ar":"بجنون",
+    "de":"wahnsinnig"
+  },
+  {
+    "en":"jumps",
+    "ru":"скачет",
+    "ar":"القفزات",
+    "de":"Sprünge"
+  },
+  {
+    "en":null,
+    "ru":null,
+    "ar":null,
+    "de":null
+  },
+  {
+    "en":"To bars",
+    "ru":"По барам (To bars)",
+    "ar":"إلى الحانات",
+    "de":"Zu Bars"
+  },
+  {
+    "en":"nightmare",
+    "ru":"кошмар",
+    "ar":"كابوس",
+    "de":"Alptraum"
+  },
+  {
+    "en":"melted",
+    "ru":"растаял",
+    "ar":"ذائب",
+    "de":"geschmolzen"
+  },
+  {
+    "en":"as before",
+    "ru":"прежнему",
+    "ar":"كما كان من قبل",
+    "de":"wie zuvor"
+  },
+  {
+    "en":"at least",
+    "ru":"хоть",
+    "ar":"على الأقل",
+    "de":"mindestens"
+  },
+  {
+    "en":"it seemed",
+    "ru":"казалось",
+    "ar":"بدا",
+    "de":"Es schien"
+  },
+  {
+    "en":"burning",
+    "ru":"горящий",
+    "ar":"يحترق",
+    "de":"Verbrennung"
+  },
+  {
+    "en":"not easy",
+    "ru":"непрост",
+    "ar":"ليس بالأمر السهل",
+    "de":"nicht einfach"
+  },
+  {
+    "en":"It may have been so difficult with me, but you, boy, are not easy either.",
+    "ru":"Пусть со мной так сложно было, но и ты, пацан, непрост",
+    "ar":"ربما كان الأمر صعباً للغاية معي، لكنك يا فتى، لست سهلاً أيضاً.",
+    "de":"Es mag mit mir so schwierig gewesen sein, aber du, Junge, bist auch nicht einfach."
+  },
+  {
+    "en":"I'm jealous",
+    "ru":"ревную",
+    "ar":"أشعر بالغيرة",
+    "de":"Ich bin neidisch."
+  },
+  {
+    "en":"little by little",
+    "ru":"потихоньку",
+    "ar":"شيئًا فشيئًا",
+    "de":"nach und nach"
+  },
+  {
+    "en":"it started spinning",
+    "ru":"закрутилось",
+    "ar":"بدأ يدور",
+    "de":"Es begann sich zu drehen"
+  },
+  {
+    "en":"it's off to the races",
+    "ru":"понеслась",
+    "ar":"انطلق السباق",
+    "de":"Das Rennen beginnt!"
+  },
+  {
+    "en":"cooled down",
+    "ru":"остыла",
+    "ar":"تم تبريده",
+    "de":"abgekühlt"
+  },
+  {
+    "en":"wiser",
+    "ru":"поумнела",
+    "ar":"أكثر حكمة",
+    "de":"weiser"
+  },
+  {
+    "en":"fallow",
+    "ru":"угаре",
+    "ar":"فالو",
+    "de":"Brache"
+  },
+  {
+    "en":"walked",
+    "ru":"гуляли",
+    "ar":"مشى",
+    "de":"ging"
+  },
+  {
+    "en":"sidewalks",
+    "ru":"тротуарам",
+    "ar":"الأرصفة",
+    "de":"Gehwege"
+  },
+  {
+    "en":"Wet",
+    "ru":"Мокрым",
+    "ar":"مبتل",
+    "de":"Nass"
+  },
+  {
+    "en":"barefoot",
+    "ru":"босиком",
+    "ar":"حافي القدمين",
+    "de":"barfuß"
+  },
+  {
+    "en":"rain",
+    "ru":"дождём",
+    "ar":"مطر",
+    "de":"Regen"
+  },
+  {
+    "en":"black",
+    "ru":"кара",
+    "ar":"أسود",
+    "de":"Schwarz"
+  },
+  {
+    "en":"crowd",
+    "ru":"толпе",
+    "ar":"حشد",
+    "de":"Menge"
+  },
+  {
+    "en":"rolled",
+    "ru":"подкатил",
+    "ar":"ملفوف",
+    "de":"gerollt"
+  },
+  {
+    "en":"pulls",
+    "ru":"тянет",
+    "ar":"يسحب",
+    "de":"zieht"
+  },
+  {
+    "en":"Stop it",
+    "ru":"Перестань",
+    "ar":"توقف عن ذلك",
+    "de":"Hör auf damit!"
+  },
+  {
+    "en":"candle",
+    "ru":"свечу",
+    "ar":"شمعة",
+    "de":"Kerze"
+  },
+  {
+    "en":"So that",
+    "ru":"Чтоб",
+    "ar":"لهذا السبب",
+    "de":"So dass"
+  },
+  {
+    "en":"get there",
+    "ru":"добраться",
+    "ar":"الوصول إلى هناك",
+    "de":"Dorthin gelangen"
+  },
+  {
+    "en":"basket",
+    "ru":"корзине",
+    "ar":"سلة",
+    "de":"Korb"
+  },
+  {
+    "en":"Sad Dance",
+    "ru":"Грустный дэнс (Sad Dance)",
+    "ar":"رقصة حزينة",
+    "de":"Trauriger Tanz"
+  },
+  {
+    "en":"half",
+    "ru":"пола",
+    "ar":"نصف",
+    "de":"Hälfte"
+  },
+  {
+    "en":"the floor is not reduced",
+    "ru":"пола не сводят",
+    "ar":"لم يتم تخفيض الحد الأدنى",
+    "de":"Der Boden wird nicht reduziert"
+  },
+  {
+    "en":"proudly",
+    "ru":"гордо",
+    "ar":"بفخر",
+    "de":"stolz"
+  },
+  {
+    "en":"edges",
+    "ru":"грани",
+    "ar":"الحواف",
+    "de":"Kanten"
+  },
+  {
+    "en":"fola",
+    "ru":"фола",
+    "ar":"فولا",
+    "de":"Fol"
+  },
+  {
+    "en":"guilty",
+    "ru":"виновата",
+    "ar":"مذنب",
+    "de":"schuldig"
+  },
+  {
+    "en":"herself",
+    "ru":"сама",
+    "ar":"نفسها",
+    "de":"sich"
+  },
+  {
+    "en":"drives",
+    "ru":"сводит",
+    "ar":"محركات الأقراص",
+    "de":"Laufwerke"
+  },
+  {
+    "en":"got sick",
+    "ru":"заболела",
+    "ar":"مرضت",
+    "de":"wurde krank"
+  },
+  {
+    "en":"strongly",
+    "ru":"сильно",
+    "ar":"بقوة",
+    "de":"stark"
+  },
+  {
+    "en":"They sound",
+    "ru":"Звучат",
+    "ar":"يبدو صوتهم",
+    "de":"Sie klingen"
+  },
+  {
+    "en":"I'm letting go",
+    "ru":"отпускаю",
+    "ar":"أنا أتخلى عن الأمر",
+    "de":"Ich lasse los"
+  },
+  {
+    "en":"web",
+    "ru":"паутине",
+    "ar":"الويب",
+    "de":"Web"
+  },
+  {
+    "en":"networks",
+    "ru":"сети",
+    "ar":"شبكة",
+    "de":"Netzwerke"
+  },
+  {
+    "en":"you're falling apart",
+    "ru":"рассыпаешься",
+    "ar":"أنت تنهار",
+    "de":"Du zerfällst."
+  },
+  {
+    "en":"As if",
+    "ru":"Словно",
+    "ar":"كما لو",
+    "de":"Als ob"
+  },
+  {
+    "en":"stranger",
+    "ru":"чужой",
+    "ar":"غريب",
+    "de":"Fremder"
+  },
+  {
+    "en":"native",
+    "ru":"родным",
+    "ar":"محلي",
+    "de":"einheimisch"
+  },
+  {
+    "en":"It's on fire",
+    "ru":"Горит",
+    "ar":"إنها تحترق",
+    "de":"Es brennt"
+  },
+  {
+    "en":"style",
+    "ru":"фасону",
+    "ar":"أسلوب",
+    "de":"Stil"
+  },
+  {
+    "en":"do you miss me?",
+    "ru":"скучаешь",
+    "ar":"هل تفتقدنى؟",
+    "de":"vermisst du mich?"
+  },
+  {
+    "en":"will smear",
+    "ru":"размажет",
+    "ar":"سوف يلطخ",
+    "de":"wird verschmieren"
+  },
+  {
+    "en":"wait",
+    "ru":"жди",
+    "ar":"انتظر",
+    "de":"Warten"
+  },
+  {
+    "en":"even",
+    "ru":"даже",
+    "ar":"حتى",
+    "de":"sogar"
+  },
+  {
+    "en":"high",
+    "ru":"высоко",
+    "ar":"عالي",
+    "de":"hoch"
+  },
+  {
+    "en":"straighten up",
+    "ru":"расправь",
+    "ar":"انتصب",
+    "de":"aufrichten"
+  },
+  {
+    "en":"wide",
+    "ru":"широко",
+    "ar":"واسع",
+    "de":"breit"
+  },
+  {
+    "en":"wings",
+    "ru":"крылья",
+    "ar":"أجنحة",
+    "de":"Flügel"
+  },
+  {
+    "en":"personal",
+    "ru":"личном",
+    "ar":"شخصي",
+    "de":"persönlich"
+  },
+  {
+    "en":"searches",
+    "ru":"поисках",
+    "ar":"عمليات البحث",
+    "de":"Suchanfragen"
+  },
+  {
+    "en":"dolls",
+    "ru":"куклы",
+    "ar":"الدمى",
+    "de":"Puppen"
+  },
+  {
+    "en":"I'll find it",
+    "ru":"найду",
+    "ar":"سأجده",
+    "de":"Ich werde es finden."
+  },
+  {
+    "en":"relatives",
+    "ru":"родными",
+    "ar":"الأقارب",
+    "de":"Verwandte"
+  },
+  {
+    "en":"Let's spin around",
+    "ru":"Закружимся",
+    "ar":"لندور حول أنفسنا",
+    "de":"Lass uns im Kreis drehen"
+  },
+  {
+    "en":"tightly",
+    "ru":"крепко",
+    "ar":"بإحكام",
+    "de":"dicht"
+  },
+  {
+    "en":"forces",
+    "ru":"силах",
+    "ar":"القوات",
+    "de":"Streitkräfte"
+  },
+  {
+    "en":"wake up",
+    "ru":"просыпаться",
+    "ar":"استيقظ",
+    "de":"aufwachen"
+  },
+  {
+    "en":"unbearable",
+    "ru":"невыносимо",
+    "ar":"لا يطاق",
+    "de":"unerträglich"
+  },
+  {
+    "en":"Under Hypnosis",
+    "ru":"Под гипнозом (Under Hypnosis)",
+    "ar":"تحت التنويم المغناطيسي",
+    "de":"Unter Hypnose"
+  },
+  {
+    "en":"let it be",
+    "ru":"пускай",
+    "ar":"فليكن",
+    "de":"lass es sein"
+  },
+  {
+    "en":"main",
+    "ru":"главный",
+    "ar":"رئيسي",
+    "de":"hauptsächlich"
+  },
+  {
+    "en":"bliss",
+    "ru":"кайф",
+    "ar":"النعيم",
+    "de":"Wonne"
+  },
+  {
+    "en":"I'll let you in",
+    "ru":"пущу",
+    "ar":"سأسمح لك بالدخول",
+    "de":"Ich lasse dich rein"
+  },
+  {
+    "en":"line",
+    "ru":"черту",
+    "ar":"خط",
+    "de":"Linie"
+  },
+  {
+    "en":"allowed",
+    "ru":"позволила",
+    "ar":"مسموح",
+    "de":"erlaubt"
+  },
+  {
+    "en":"in love",
+    "ru":"влюблёнными",
+    "ar":"يعشق",
+    "de":"verliebt"
+  },
+  {
+    "en":"I'm getting confused",
+    "ru":"сбиваюсь",
+    "ar":"أشعر بالارتباك",
+    "de":"Ich bin verwirrt"
+  },
+  {
+    "en":"covered",
+    "ru":"накрыло",
+    "ar":"مغطى",
+    "de":"bedeckt"
+  },
+  {
+    "en":"close",
+    "ru":"близко",
+    "ar":"يغلق",
+    "de":"schließen"
+  },
+  {
+    "en":"pulls",
+    "ru":"тянет",
+    "ar":"يسحب",
+    "de":"zieht"
+  },
+  {
+    "en":"by force",
+    "ru":"силой",
+    "ar":"بالقوة",
+    "de":"gewaltsam"
+  },
+  {
+    "en":"stand up",
+    "ru":"встать",
+    "ar":"الوقوف",
+    "de":"aufstehen"
+  },
+  {
+    "en":"knees",
+    "ru":"колен",
+    "ar":"الركبتين",
+    "de":"Knie"
+  },
+  {
+    "en":"I'm tearing apart",
+    "ru":"разрываю",
+    "ar":"أنا أتمزق",
+    "de":"Ich zerreiße alles."
+  },
+  {
+    "en":"connection",
+    "ru":"связь",
+    "ar":"اتصال",
+    "de":"Verbindung"
+  },
+  {
+    "en":"outside",
+    "ru":"вне",
+    "ar":"الخارج",
+    "de":"draußen"
+  },
+  {
+    "en":"subscriber",
+    "ru":"абонент",
+    "ar":"مشترك",
+    "de":"Teilnehmer"
+  },
+  {
+    "en":"usually",
+    "ru":"обычно",
+    "ar":"عادة",
+    "de":"normalerweise"
+  },
+  {
+    "en":"view",
+    "ru":"вид",
+    "ar":"منظر",
+    "de":"Sicht"
+  },
+  {
+    "en":"indifferent",
+    "ru":"безразлично",
+    "ar":"غير مبال",
+    "de":"gleichgültig"
+  },
+  {
+    "en":"closed",
+    "ru":"замкнутый",
+    "ar":"مغلق",
+    "de":"geschlossen"
+  },
+  {
+    "en":"sincerely",
+    "ru":"искренне",
+    "ar":"بإخلاص",
+    "de":"aufrichtig"
+  },
+  {
+    "en":"conduct",
+    "ru":"провести",
+    "ar":"سلوك",
+    "de":"Benehmen"
+  }
+]

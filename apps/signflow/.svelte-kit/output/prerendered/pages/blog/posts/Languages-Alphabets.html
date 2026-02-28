@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/3.BzqOMjUk.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/B_XlkYFP.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><title>
+    Zaya Barrini Psychoanalysis, Creation and Cinema Studio
+  </title>
+		<link href="../../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/SocialMedia.Bb8TiI_P.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/3.BQT52N5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ML-Psychoanalysis-Semioptics.2u4zpRKu.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ModernPsychoanalysis.BSGZXTJj.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Korean-Songs.oIMIVmi7.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Russian-Songs.iryx2JdF.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Practice-KoreanMusic.W3XsgU2r.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><div class="pt-24 max-w-5xl mx-auto mainpage"><article><header class="p-4"><div class="w-full sm:w-3/5 mb-6"><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"><img src="/css/img/Bing/bing185.png" alt="Topology Decay" class="object-cover"/></div></div> <div><h1 class="text-4xl font-bold mb-4">Topology Decay</h1> <div class="py-2 border-t dark:border-gray-700 inline-block"><span>Published:</span> <time class="font-light" datetime="2025-11-04">November 4, 2025</time></div></div></header><!----> <div class="py-4 px-4 max-w-none"><!--[--><button class="floating-share svelte-d5sus5" aria-label="Share"><img src="/icons/share.svg" alt="Share" width="24" class="svelte-d5sus5"/></button><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!----> <hr/> <div class="markdown-content"><!--[--><p>A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+Ä, Ö, Ü, ẞ
+alpha, bravo, charlie, delta, echo, foxtrot, golf, hotel, india, juliett, kilo, lima, mike, november, oscar, papa, quebec, romeo, sierra, tango, uniform, victor, whiskey, x-ray, yankee, zulu
+А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+α, β, γ, δ, ε, ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ, τ, υ, φ, χ, ψ, ω
+à, á, â, ã, ä, å, æ, ç, è, é, ê, ë, ì, í, î, ï, ñ, ò, ó, ô, õ, ö, ø, ù, ú, û, ü, ý, ÿ
+ā, ē, ī, ō, ū, ǖ, ǘ, ǚ, ǜ
+ā, ē, ī, ō, ū</p> <p>Arabic alphabet:
+أ, ب, ت, ث, ج,<br/> ح, خ, د, ذ, ر, ز, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ك, ل, م, ن, ه, ي
+ا, ب, پ, ت, ث, ج, چ, ح, خ, د, ذ, ر, ز, ژ, س, ش, ص, ض, ط, ظ, ع, غ, ف, ق, ک, گ, ل, م, ن, و, ه, ی</p> <p>Hebrew alphabet:
+א, ב, ג, ד, ה, ו, ז, ח, ט, י, כ, ל, מ, נ, ס, ע, פ, צ, ק, ר, ש, ת
+ך, ם, ן, ף, ץ</p> <p>Korean alphabet:
+ㄱ, ㄲ, ㄴ, ㄷ, ㄸ, ㄹ, ㅁ, ㅂ, ㅃ, ㅅ, ㅆ, ㅇ, ㅈ, ㅉ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ
+ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ</p> <p>Armenian alphabet:<br/> Ա, Բ, Գ, Դ, Ե, Զ, Է, Ը, Թ, Ժ, Ի, Լ, Խ, Ծ, Կ, Հ, Ձ, Ղ, Ճ, Մ, Յ, Ն, Շ, Ո, Չ, Պ, Ջ, Ռ, Ս, Վ, Տ, Ր, Ց, Ւ, Փ, Ք</p> <p>Georgian alphabet:
+ა, ბ, გ, დ, ე, ვ, ზ, თ, ი, კ, ლ, მ, ნ, ო, პ, ჟ, რ, ს, ტ, უ, ფ, ქ, ღ, ყ, შ, ჩ, ც, ძ, წ, ჭ, ხ, ჯ, ჰ</p> <p>Thai alphabet:
+ก, ข, ฃ, ค, ฅ, ฆ, ง, จ, ฉ, ช, ซ, ฌ, ญ, ฎ, ฏ, ฐ, ฑ, ฒ, ณ, ด, ต, ถ, ท, ธ, น, บ, ป, ผ, ฝ, พ, ฟ, ภ, ม, ย, ร, ล, ว, ศ, ษ, ส, ห, ฬ, อ, ฮ
+ฯ, ๆ</p> <p>Vietnamese alphabet:
+A, Ă, Â, B, C, D, Đ, E, Ê, G, H, I, K, L, M, N, O, Ô, Ơ, P, Q, R, S, T, U, Ư, V, X, Y
+a, ă, â, b, c, d, đ, e, ê, g, h, i, k, l, m, n, o, ô, ơ, p, q, r, s, t, u, ư, v, x, y</p> <p>Cyrillic alphabet:
+А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я
+а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я</p> <p>Greek alphabet:
+Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω
+α, β, γ, δ, ε , ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ, τ, υ, φ, χ, ψ, ω</p> <p>Devanagari alphabet:
+अ, आ, इ, ई, उ, ऊ, ऋ, ॠ, ऌ, ॡ, ए, ऐ, ओ, औ, क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह
+क्ष, त्र, ज्ञ, श्र</p> <p>Bengali alphabet:
+অ, আ, ই, ঈ, উ, ঊ, ঋ, এ, ঐ, ও, ঔ, ক, খ, গ, ঘ, ঙ, চ, ছ, জ, ঝ, ঞ, ট, ঠ, ড, ঢ, ণ, ত, থ, দ, ধ, ন, প, ফ, ব, ভ, ম, য, র, ল, শ, ষ, স, হ
+ক্ষ, য়, ড়, ঢ়, ং, ঃ, ঁ</p> <p>Gurmukhi alphabet:
+ਅ, ਆ, ਇ, ਈ, ਉ, ਊ, ਏ, ਐ, ਓ, ਔ, ਕ, ਖ, ਗ, ਘ, ਙ, ਚ, ਛ, ਜ, ਝ, ਞ, ਟ, ਠ, ਡ, ਢ, ਣ, ਤ, ਥ, ਦ, ਧ, ਨ, ਪ, ਫ, ਬ, ਭ, ਮ, ਯ, ਰ, ਲ, ਵ, ਸ਼, ਸ, ਹ
+ੜ, ੜ, ਫ਼, ੰ, ਂ, ਃ, ਁ</p> <p>Gujarati alphabet:
+અ, આ, ઇ, ઈ, ઉ, ઊ, ઋ, એ, ઐ, ઓ, ઔ, ક, ખ, ગ, ઘ, ઙ, ચ, છ, જ, ઝ, ઞ, ટ, ઠ, ડ, ઢ, ણ, ત, થ, દ, ધ, ન, પ, ફ, બ, ભ, મ, ય, ર, લ, વ, શ, ષ, સ, હ
+ક્ષ, જ્ઞ, ં, ઃ, ઁ</p> <p>Oriya alphabet:
+ଅ, ଆ, ଇ, ଈ, ଉ, ଊ, ଋ, ଏ, ଐ, ଓ, ଔ, କ, ଖ, ଗ, ଘ, ଙ, ଚ, ଛ, ଜ, ଝ, ଞ, ଟ, ଠ, ଡ, ଢ, ଣ, ତ, ଥ, ଦ, ଧ, ନ, ପ, ଫ, ବ, ଭ, ମ, ଯ, ର, ଲ, ଵ, ଶ, ଷ, ସ, ହ
+କ୍ଷ, ଜ୍ଞ, ଂ, ଃ, ଁ</p> <p>Tamil alphabet:
+அ, ஆ, இ, ஈ, உ, ஊ, எ, ஏ, ஐ, ஒ, ஓ, ஔ, க, ங, ச, ஞ, ட, ண, த, ந, ப, ம, ய, ர, ல, வ, ழ, ள, ற, ன, ஶ, ஷ, ஸ, ஹ
+க்ஷ, ஜ, ஃ</p> <p>Telugu alphabet:
+అ, ఆ, ఇ, ఈ, ఉ, ఊ, ఋ, ఎ, ఏ, ఐ, ఒ, ఓ, ఔ, క, ఖ, గ, ఘ, ఙ, చ, ఛ, జ, ఝ, ఞ, ట, ఠ, డ, ఢ, ణ, త, థ, ద, ధ, న, ప, ఫ, బ, భ, మ, య, ర, ల, వ, శ, ష, స, హ
+క్ష, ఱ, ం, ః, ఁ</p> <p>Kannada alphabet:
+ಅ, ಆ, ಇ, ಈ, ಉ, ಊ, ಋ, ಎ, ಏ, ಐ, ಒ, ಓ, ಔ, ಕ, ಖ, ಗ, ಘ, ಙ, ಚ, ಛ, ಜ, ಝ, ಞ, ಟ, ಠ, ಡ, ಢ, ಣ, ತ, ಥ, ದ, ಧ, ನ, ಪ, ಫ, ಬ, ಭ, ಮ, ಯ, ರ, ಲ, ವ, ಶ, ಷ, ಸ, ಹ
+ಕ್ಷ, ಜ್ಞ, ಂ, ಃ, ಁ</p> <p>Malayalam alphabet:
+അ, ആ, ഇ, ഈ, ഉ, ഊ, ഋ, എ, ഏ, ഐ, ഒ, ഓ, ഔ, ക, ഖ, ഗ, ഘ, ങ, ച, ഛ, ജ, ഝ, ഞ, ട, ഠ, ഡ, ഢ, ണ, ത, ഥ, ദ, ധ, ന, പ, ഫ, ബ, ഭ, മ, യ, ര, ല, വ, ശ, ഷ, സ, ഹ
+ക്ഷ, ജ്ഞ, ം, ഃ, ഁ</p> <p>Sinhala alphabet:
+අ, ආ, ඉ, ඊ, උ, ඌ, ඍ, ඎ, එ, ඒ, ඓ, ඔ, ඕ, ඖ, ක, ඛ, ග, ඝ, ඞ, ච, ඡ, ජ, ඣ, ඤ, ට, ඨ, ඩ, ඪ, ණ, ත, ථ, ද, ධ, න, ප, ඵ, බ, භ, ම, ය, ර, ල, ව, ශ, ෂ, ස, හ
+ක්‍ෂ, ඥ, ඤ්, ඬ, ඳ, ඹ, ය්, ඹ්, ඼්, ඾්, ඿්, ං, ඃ, ඁ</p> <p>Khmer alphabet:
+ក, ខ, គ, ឃ, ង, ច, ឆ, ជ, ឈ, ញ, ដ, ឋ, ឌ, ឍ, ណ, ត, ថ, ទ, ធ, ន, ប, ផ, ព, ភ, ម, យ, រ, ល, វ, ស, ហ, ឡ, អ
+្្, ើ, ឿ, ៀ, េ, ែ, ៃ, ោ, ៅ, ុ, ូ, ួ, ើ, ឿ</p> <p>Lao alphabet:
+ກ, ຂ, ຄ, ງ, ຈ, ສ, ຊ, ຍ, ດ, ຕ, ຖ, ທ, ນ, ບ, ປ, ຜ, ຝ, ພ, ຟ, ມ, ຢ, ຣ, ລ, ວ, ສ, ຫ, ອ, ຮ
+ະ, ັ, າ, ຳ, ິ, ີ, ຶ, ື, ຸ, ູ, ົ, ຼ, ຽ, ຾, ຿</p> <p>Tibetan alphabet:
+ཀ, ཁ, ག, གྷ, ང, ཅ, ཆ, ཇ, ཉ, ཊ, ཋ, ཌ, ཌྷ, ཎ, ཏ, ཐ, ད, དྷ, ན, པ, ཕ, བ, བྷ, མ, ཙ, ཚ, ཛ, ཝ, ཞ, ཟ, འ, ཡ, ར, ལ, ཤ, ཥ, ས, ཧ, ཨ
+ྐ, ྑ, ྒ, ྒྷ, ྔ, ྕ, ྖ, ྗ, ྘, ྙ, ྚ, ྛ, ྜ, ྜྷ, ྞ, ྟ, ྠ, ྡ, ྡྷ, ྣ, ྤ, ྥ, ྦ, ྦྷ, ྨ, ྩ, ྪ, ྫ, ྫྷ, ྭ, ྮ, ྯ, ྰ, ྱ, ྲ, ླ, ྴ, ྵ, ྶ, ྷ, ྸ, ྐྵ, ྺ, ྻ, ྼ, ྽, ྾, ྿</p> <p>Ethiopic alphabet:
+ሀ, ለ, ሐ, መ, ሠ, ረ, ሰ, ሸ, ቀ, ቈ, ቐ, ቘ, በ, ቨ, ተ, ቸ, ኀ, ኈ, ነ, ኘ, አ, ከ, ኸ, ወ, ዐ, ዘ, ዠ, የ, ደ, ጀ, ገ, ጐ, ጠ, ጨ, ጰ, ጸ, ፀ, ፈ, ፐ
+ፊ, ፋ, ፌ, ፍ, ፎ</p> <p>Cherokee alphabet:
+Ꭰ, Ꭱ, Ꭲ, Ꭳ, Ꭴ, Ꭵ, Ꭶ, Ꭷ, Ꭸ, Ꭹ, Ꭺ, Ꭻ, Ꭼ, Ꭽ, Ꭾ, Ꭿ, Ꮀ, Ꮁ, Ꮂ, Ꮃ, Ꮄ, Ꮅ, Ꮆ, Ꮇ, Ꮈ, Ꮉ, Ꮊ, Ꮋ, Ꮌ, Ꮍ, Ꮎ, Ꮏ, Ꮐ, Ꮑ, Ꮒ, Ꮓ, Ꮔ, Ꮕ, Ꮖ, Ꮗ, Ꮘ, Ꮙ, Ꮚ, Ꮛ, Ꮜ, Ꮝ, Ꮞ, Ꮟ
+Ꮠ, Ꮡ, Ꮢ, Ꮣ, Ꮤ, Ꮥ, Ꮦ, Ꮧ, Ꮨ, Ꮩ, Ꮪ, Ꮫ, Ꮬ, Ꮭ, Ꮮ, Ꮯ, Ꮰ, Ꮱ, Ꮲ, Ꮳ, Ꮴ, Ꮵ, Ꮶ, Ꮷ, Ꮸ, Ꮹ, Ꮺ, Ꮻ, Ꮼ, Ꮽ, Ꮾ, Ꮿ, Ᏸ, Ᏹ, Ᏺ, Ᏻ,
+Ᏼ, Ᏽ</p> <p>Inuktitut alphabet:
+ᐃ, ᐁ, ᐅ, ᐊ, ᐋ, ᐄ, ᐆ, ᐈ, ᐱ, ᐯ, ᐳ, ᐸ, ᐹ, ᐲ, ᐴ, ᐼ, ᑎ, ᑌ, ᑕ, ᑖ, ᑭ, ᑮ, ᑯ, ᑰ, ᑲ, ᑳ, ᑴ, ᑵ, ᒋ, ᒍ, ᒐ, ᒑ, ᒌ, ᒍ, ᒎ, ᒏ, ᒐ, ᒑ, ᒒ, ᒓ, ᒔ, ᒕ, ᒖ, ᒗ,
+ᒪ, ᒫ, ᒬ, ᒭ, ᒮ, ᒯ, ᒰ, ᒱ, ᒲ, ᒳ, ᒴ, ᒵ, ᒶ, ᒷ, ᒸ, ᒹ, ᒺ, ᒻ, ᒼ, ᒽ, ᒾ, ᒿ, ᓀ, ᓁ, ᓂ, ᓃ, ᓄ, ᓅ, ᓆ, ᓇ, ᓈ, ᓉ, ᓊ, ᓋ, ᓌ, ᓍ, ᓎ, ᓏ
+ᓐ, ᓑ, ᓒ, ᓓ, ᓔ, ᓕ, ᓖ, ᓗ, ᓘ, ᓙ, ᓚ, ᓛ, ᓜ, ᓝ, ᓞ, ᓟ, ᓠ, ᓡ, ᓢ, ᓣ, ᓤ, ᓥ, ᓦ, ᓧ, ᓨ, ᓩ, ᓪ, ᓫ, ᓬ, ᓭ, ᓮ, ᓯ, ᓰ, ᓱ, ᓲ, ᓳ,
+ᓴ, ᓵ, ᓶ, ᓷ, ᓸ, ᓹ, ᓺ, ᓻ, ᓼ, ᓽ, ᓾ, ᓿ, ᔀ, ᔁ, ᔂ, ᔃ, ᔄ, ᔅ, ᔆ, ᔇ, ᔈ, ᔉ, ᔊ, ᔋ, ᔌ, ᔍ, ᔎ, ᔏ</p> <p>Myanmar alphabet:
+က, ခ, ဂ, ဃ, င, စ, ဆ, ဇ, ဈ, ဉ, ည, ဋ, ဌ, ဍ, ဎ, ဏ, တ, ထ, ဒ, ဓ, န, ပ, ဖ, ဗ, ဘ, မ, ယ, ရ, လ, ဝ, သ, ဟ, ဠ, အ
+္, ်, ျ, ြ, ွ, ှ, ဿ, ိ, ီ, ု, ူ, ေ, ဲ, ဳ, ဴ, ဵ</p> <p>Ogham alphabet:
+ᚁ, ᚂ, ᚃ, ᚄ, ᚅ, ᚆ, ᚇ, ᚈ, ᚉ, ᚊ, ᚋ, ᚌ, ᚍ, ᚎ, ᚏ, ᚐ, ᚑ, ᚒ, ᚓ, ᚔ, ᚕ, ᚖ, ᚗ, ᚘ, ᚙ, ᚚ, ᚛, ᚜</p> <p>Runic alphabet:
+ᚠ, ᚡ, ᚢ, ᚣ, ᚤ, ᚥ, ᚦ, ᚨ, ᚩ, ᚪ, ᚫ, ᚬ, ᚭ, ᚮ, ᚯ, ᚰ, ᚱ, ᚲ, ᚳ, ᚴ, ᚵ, ᚶ, ᚷ, ᚸ, ᚹ, ᚺ, ᚻ, ᚼ, ᚽ, ᚾ, ᚿ, ᛀ, ᛁ, ᛂ, ᛃ, ᛄ, ᛄ, ᛅ, ᛆ, ᛇ, ᛈ, ᛉ, ᛊ, ᛋ,</p> <p>ᛌ, ᛍ, ᛎ, ᛏ, ᛐ, ᛑ, ᛒ, ᛓ, ᛔ, ᛕ, ᛖ, ᛗ, ᛘ, ᛙ, ᛚ, ᛛ, ᛜ, ᛝ, ᛞ, ᛟ, ᛠ, ᛡ, ᛢ, ᛣ, ᛤ, ᛥ, ᛦ, ᛧ, ᛈ, ᛩ, ᛪ, ᛫, ᛬, ᛭, ᛮ, ᛯ, ᛰ, ᛱ, ᛲ, ᛳ, ᛴ, ᛵ, ᛶ, ᛷ, ᛸ, ᛹, ᛺, ᛻, ᛼, ᛽, ᛾, ᛿</p> <p>Braille alphabet:
+⠁, ⠃, ⠉, ⠙, ⠑, ⠋, ⠛, ⠓, ⠊, ⠚, ⠅, ⠇, ⠍, ⠝, ⠕, ⠏, ⠟, ⠗, ⠎, ⠞, ⠥, ⠧, ⠺, ⠭, ⠽, ⠵
+⠡, ⠣, ⠩, ⠹, ⠱, ⠳, ⠫, ⠻, ⠳, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿</p> <p>Morse code:
+.-, -…, -.-., -.., ., ..-., —., …, .., .---, -.-, .-.., —, -., ---, .—., —.-, .-., …, -, ..-, …-, .—, -..-, -.—, -.—, —..—
+.—.-., .-..-., ..—.., -..-., -…-, .----., ---…, -.-.-., -…-, .-.-., ..—.-, .-…, .—.-, …-..-, .-.-.-, —..—, ..—.., -..-., -…-, .----., ---…, -.-.-., -…-, .-.-., ..—.-, .-…, .—.-, …-..-, .-.-.-, —..—, ..—.., -..-., -
+…-, .----, ..---, …—, …-, … , -…, —…, ---.., ----., -----</p> <p>Braille patterns:
+⠈, ⠐, ⠠, ⢀, ⠁, ⠃, ⠉, ⠙, ⠑, ⠋, ⠛, ⠓, ⠊, ⠚, ⠅, ⠇, ⠍, ⠝, ⠕, ⠏, ⠟, ⠗, ⠎, ⠞, ⠥, ⠧, ⠺, ⠭, ⠽, ⠵
+⠡, ⠣, ⠩, ⠹, ⠱, ⠳, ⠫, ⠻, ⠳, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿, ⠿
+⠿, ⠿, ⠿, ⠿, ⠿
+⠿, ⠿, ⠿, ⠿, ⠿</p> <p>Black Letter or Fraktur typeface:
+A ℌ, B 𝔅, C ℭ, D 𝔇, E 𝔈, F 𝔉, G 𝔊, H ℌ, I ℑ, J 𝔍, K 𝔎, L 𝔏, M 𝔐, N 𝔑, O 𝔒, P 𝔓, Q 𝔔, R ℜ, S 𝔖, T 𝔗, U 𝔘, V 𝔙, W 𝔚, X 𝔛, Y 𝔜, Z ℨ</p> <p>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह
+अ, आ, इ, ई, उ, ऊ, ऋ, ए, ऐ, ओ, औ
+ā, ī, ū, ṛ, ḷ
+あ, い, う, え, お
+か, き, く, け, こ
+さ, し, す, せ, そ
+た, ち, つ, て, と
+な, に, ぬ, ね, の
+は, ひ, ふ, へ, ほ
+ま, み, む, め, も
+や, ゆ, よ
+ら, り, る, れ, ろ
+わ, を, ん
+が, ぎ, ぐ, げ, ご
+ざ, じ, ず, ぜ, ぞ
+だ, ぢ, づ, で, ど
+ば, び, ぶ, べ, ぼ
+ア, イ, ウ, エ, オ
+カ, キ, ク, ケ, コ
+サ, シ, ス, セ, ソ
+タ, チ, ツ, テ, ト
+ナ, ニ, ヌ, ネ, ノ
+ハ, ヒ, フ, ヘ, ホ
+マ, ミ, ム, メ, モ
+ヤ, ユ, ヨ
+ラ, リ, ル, レ, ロ
+ワ, ヲ, ン
+ガ, ギ, グ, ゲ, ゴ
+ザ, ジ, ズ, ゼ, ゾ
+ダ, ヂ, ヅ, デ, ド
+バ, ビ, ブ, ベ, ボ</p> <h3><strong>1. Basic Latin Alphabet</strong></h3> <ul><li><strong>Uppercase:</strong> A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z</li> <li><strong>Lowercase:</strong> a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z</li> <li><strong>NATO Phonetic Alphabet:</strong> Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu</li></ul> <hr/> <h3><strong>2. German (Latin-based with Extensions)</strong></h3> <ul><li><strong>Umlauts &amp; Eszett:</strong> Ä, Ö, Ü, ẞ (ß)</li></ul> <hr/> <h3><strong>3. Russian (Cyrillic Alphabet)</strong></h3> <ul><li><strong>Uppercase:</strong> А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я</li> <li><strong>Lowercase:</strong> а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я</li></ul> <hr/> <h3><strong>4. Greek (Greek Alphabet)</strong></h3> <ul><li><strong>Uppercase:</strong> Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω</li> <li><strong>Lowercase:</strong> α, β, γ, δ, ε, ζ, η, θ, ι, κ, λ, μ, ν, ξ, ο, π, ρ, σ/ς, τ, υ, φ, χ, ψ, ω</li></ul> <hr/> <h3><strong>5. Common Latin Diacritics &amp; Special Characters</strong></h3> <ul><li><strong>Vowels with Accents:</strong> à, á, â, ã, ä, å, è, é, ê, ë, ì, í, î, ï, ò, ó, ô, õ, ö, ø, ù, ú, û, ü, ý, ÿ</li> <li><strong>Consonants &amp; Ligatures:</strong> æ, ç, ñ</li> <li><strong>Macrons (for Vowel Length):</strong> ā, ē, ī, ō, ū</li> <li><strong>U-umlauts with Macron (Pinyin):</strong> ǖ, ǘ, ǚ, ǜ</li></ul> <hr/> <h3><strong>6. Hindi / Sanskrit (Devanagari Script - Abugida)</strong></h3> <ul><li><strong>Consonants (ka-varga):</strong> क, ख, ग, घ, ङ</li> <li><strong>Consonants (cha-varga):</strong> च, छ, ज, झ, ञ</li> <li><strong>Consonants (Ta-varga):</strong> ट, ठ, ड, ढ, ण</li> <li><strong>Consonants (ta-varga):</strong> त, थ, द, ध, न</li> <li><strong>Consonants (pa-varga):</strong> प, फ, ब, भ, म</li> <li><strong>Semi-vowels &amp; Sibilants:</strong> य, र, ल, व, श, ष, स, ह</li> <li><strong>Basic Vowels:</strong> अ, आ, इ, ई, उ, ऊ, ऋ, ए, ऐ, ओ, औ</li> <li><strong>Vowels with Diacritics (for length etc.):</strong> ā, ī, ū, ṛ, ḷ</li></ul> <hr/> <h3><strong>7. Japanese (Syllabaries)</strong></h3> <h4><strong>Hiragana (for native words)</strong></h4> <ul><li><strong>Basic (Gojūon):</strong> あ, い, う, え, お</li> <li><strong>K-series:</strong> か, き, く, け, こ</li> <li><strong>S-series:</strong> さ, し, す, せ, そ</li> <li><strong>T-series:</strong> た, ち, つ, て, と</li> <li><strong>N-series:</strong> な, に, ぬ, ね, の</li> <li><strong>H-series:</strong> は, ひ, ふ, へ, ほ</li> <li><strong>M-series:</strong> ま, み, む, め, も</li> <li><strong>Y-series:</strong> や, ゆ, よ</li> <li><strong>R-series:</strong> ら, り, る, れ, ろ</li> <li><strong>W-series &amp; N:</strong> わ, を, ん</li> <li><strong>Voiced (Dakuten) Examples:</strong> が, ぎ, ぐ, げ, ご (from ka-line); ざ, じ, ず, ぜ, ぞ (from sa-line)</li> <li><strong>Combined (Yo-on) Examples:</strong> きゃ, きゅ, きょ (kya, kyu, kyo)</li></ul> <h4><strong>Katakana (for foreign words and emphasis)</strong></h4> <ul><li><strong>Basic (Gojūon):</strong> ア, イ, ウ, エ, オ</li> <li><strong>K-series:</strong> カ, キ, ク, ケ, コ</li> <li><strong>S-series:</strong> サ, シ, ス, セ, ソ</li> <li><strong>T-series:</strong> タ, チ, ツ, テ, ト</li> <li><strong>N-series:</strong> ナ, ニ, ヌ, ネ, ノ</li> <li><strong>H-series:</strong> ハ, ヒ, フ, ヘ, ホ</li> <li><strong>M-series:</strong> マ, ミ, ム, メ, モ</li> <li><strong>Y-series:</strong> ヤ, ユ, ヨ</li> <li><strong>R-series:</strong> ラ, リ, ル, レ, ロ</li> <li><strong>W-series &amp; N:</strong> ワ, ヲ, ン</li> <li><strong>Voiced (Dakuten) Examples:</strong> ガ, ギ, グ, ゲ, ゴ; ザ, ジ, ズ, ゼ, ゾ</li> <li><strong>Combined (Yo-on) Examples:</strong> キャ, キュ, キョ (kya, kyu, kyo)</li></ul> <p>Claro! Existem centenas de alfabetos no mundo, cada um com sua própria história e beleza. Eles podem ser agrupados em famílias com base em sua origem. Aqui está uma lista expandida de alguns dos alfabetos mais notáveis, organizados por famílias principais.</p> <h3>1. Família do Alfabeto Latino (Baseado no Romano)</h3> <p>É o sistema de escrita mais usado no mundo. A lista abaixo inclui versões estendidas de línguas que usam o alfabeto latino com diacríticos ou letras adicionais.</p> <ul><li><strong>Inglês:</strong> 26 letras básicas.</li> <li><strong>Português:</strong> 26 letras + ç, e diacríticos (ã, õ, á, é, â, ê, etc.).</li> <li><strong>Francês:</strong> 26 letras + ç, œ, æ, e diacríticos (é, è, ê, ë, à, â, etc.).</li> <li><strong>Espanhol:</strong> 27 letras (inclui “ñ”).</li> <li><strong>Alemão:</strong> 26 letras + ä, ö, ü, ß (já detalhado).</li> <li><strong>Polonês:</strong> Usa diacríticos como ć, ń, ś, ź, ż, ł, ę, ą.</li> <li><strong>Tcheco/Slovaco:</strong> Usa letras como č, ř, ž, š, ď, ť, ľ, Ľ, etc.</li> <li><strong>Turco:</strong> 29 letras, incluindo ı, ğ, ş, ç, ö, ü (sem q, w, x).</li> <li><strong>Vietnamita:</strong> Um dos mais complexos, usa um sistema extenso de diacríticos para marcar tons (ex: à, ả, ã, á, ạ).</li></ul> <h3>2. Família do Alfabeto Cirílico (Baseado no Grego)</h3> <p>Usado por várias línguas eslavas e de outras regiões da Eurásia.</p> <ul><li><strong>Russo:</strong> 33 letras (já detalhado).</li> <li><strong>Ucraniano:</strong> 33 letras, mas difere do russo. Tem І, Ï, Є, Ґ (um som de “g”) e não tem Ы, Ё, Э, Ъ.</li> <li><strong>Bielorrusso:</strong> 32 letras.</li> <li><strong>Búlgaro:</strong> 30 letras.</li> <li><strong>Sérvio:</strong> 30 letras (também pode ser escrito em latino).</li> <li><strong>Macedônio:</strong> 31 letras.</li> <li><strong>Cazaque:</strong> Está em processo de transição do cirílico para o latino.</li> <li><strong>Mongol:</strong> Usa uma variante do alfabeto cirílico.</li></ul> <h3>3. Família do Alfabeto Grego</h3> <ul><li><strong>Grego Moderno:</strong> 24 letras (já detalhado). É a base direta do alfabeto cirílico e influenciou o latino.</li></ul> <h3>4. Família do Alfabeto Armênio e Georgiano (Alfabetos Únicos do Cáucaso)</h3> <ul><li><strong>Armênio:</strong> Possui 39 letras. Criado no século V d.C. por Mesrop Mashtots. <ul><li>Exemplo: Ա, Բ, Գ, Դ, Ե, Զ, …</li></ul></li> <li><strong>Georgiano (Mkhedruli):</strong> Possui 33 letras. É conhecido por suas formas curvilíneas e únicas. <ul><li>Exemplo: ა, ბ, გ, დ, ე, ვ, …</li></ul></li></ul> <h3>5. Alfabetos do Sul da Ásia (Abugidas ou Alfassilabários)</h3> <p>Nestes sistemas, as consoantes carregam uma vogal inerente, que é modificada por diacríticos.</p> <ul><li><strong>Devanagari:</strong> Usado para: <ul><li><strong>Sânscrito</strong></li> <li><strong>Hindi</strong> (48 letras principais)</li> <li><strong>Nepali</strong></li> <li><strong>Marati</strong></li> <li>Exemplo: क, ख, ग, घ, ङ, …</li></ul></li> <li><strong>Bengali/Assamês:</strong> Usado para Bengali e Assamês.</li> <li><strong>Gurmukhi:</strong> Usado para a língua Punjau.</li> <li><strong>Guzerate:</strong> Usado para a língua guzerate.</li> <li><strong>Tâmil:</strong> Usado para a língua tâmil, notável por ter menos consoantes conjunctas que outros sistemas indianos.</li> <li><strong>Telugo, Canarim, Malaiala:</strong> Outros alfabetos importantes da Índia.</li></ul> <h3>6. Alfabetos do Leste Asiático (Sistemas Logográficos e Silábicos)</h3> <p>É importante notar que chinês e japonês não são puramente alfabéticos.</p> <ul><li><strong>Chinês (Mandarim):</strong> Usa <strong>caracteres Han (logogramas)</strong>, onde cada caractere representa uma unidade de significado (um morfema). Existem dezenas de milhares de caracteres.</li> <li><strong>Japonês:</strong> Usa um sistema de escrita misto: <ul><li><strong>Hiragana:</strong> Silabário de 46 caracteres básicos, usado para palavras gramaticais e inflexões. <ul><li>Exemplo: あ, い, う, え, お (a, i, u, e, o)</li></ul></li> <li><strong>Katakana:</strong> Silabário de 46 caracteres básicos, usado para palavras estrangeiras e onomatopeias. <ul><li>Exemplo: ア, イ, ウ, エ, オ (a, i, u, e, o)</li></ul></li> <li><strong>Kanji:</strong> Caracteres chineses adaptados, usados para a raiz das palavras.</li></ul></li> <li><strong>Coreano:</strong> <ul><li><strong>Hangul:</strong> Um alfabeto fonético único e científico, criado no século XV. As letras são agrupadas em sílabas em “blocos”. <ul><li>Exemplo: 한글 (Han-geul) - o nome do próprio alfabeto.</li></ul></li></ul></li></ul> <h3>7. Alfabetos Semíticos (Abjads)</h3> <p>Estes sistemas são predominantemente consonantais, onde as vogais são marcadas opcionalmente com diacríticos.</p> <ul><li><strong>Árabe:</strong> Escrito da direita para a esquerda. As letras mudam de forma dependendo da sua posição na palavra. <ul><li>Exemplo: أ, ب, ت, ث, ج, … (Alif, Bā’, Tā’, Thā’, Jīm…)</li></ul></li> <li><strong>Hebraico:</strong> Também escrito da direita para a esquerda. <ul><li>Exemplo: א, ב, ג, ד, ה, … (Alef, Bet, Gimel, Dalet, He…)</li></ul></li> <li><strong>Siríaco:</strong> Um alfabeto histórico ainda usado por algumas comunidades cristãs.</li></ul> <h3>8. Alfabetos da Ásia Central e do Leste</h3> <ul><li><strong>Tibetano:</strong> Um abugida com uma aparência distinta e vertical.</li> <li><strong>Tailândes:</strong> Um abugida com 44 consoantes e 15 símbolos vocálicos.</li> <li><strong>Birmanês (Myanmar):</strong> Conhecido por suas formas circulares.</li></ul> <h3>9. Alfabetos Criados no Século XX</h3> <ul><li><strong>Hangul Coreano:</strong> (Mencionado acima, mas é um ótimo exemplo de criação planejada).</li> <li><strong>Pinyin:</strong> Sistema de romanização para o chinês mandarim, usando o alfabeto latino e diacríticos para os tons.</li></ul> <h3>10. Alfabetos Históricos (Não mais em uso comum)</h3> <ul><li><strong>Rúnico (Futhark):</strong> Usado pelas línguas germânicas.</li> <li><strong>Gótico:</strong> Usado para a língua góica.</li> <li><strong>Copta:</strong> Alfabeto egípcio final, baseado no grego com adições demóticas.</li> <li><strong>Glagolítico:</strong> O alfabeto eslavo mais antigo, precursor do cirílico.</li></ul> <p>Esta lista é apenas uma amostra da incrível diversidade de sistemas de escrita que a humanidade desenvolveu. Cada um é uma janela para uma cultura, história e maneira única de ver o mundo.</p><!--]--><!----></div></div></article></div><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

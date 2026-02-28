@@ -1,0 +1,168 @@
+{
+	"/": [
+		"src/routes/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/api/filter": [
+		"src/routes/api/filter/+server.ts"
+	],
+	"/api/frequency/[language]": [
+		"src/routes/api/frequency/[language]/+server.ts"
+	],
+	"/api/home": [
+		"src/routes/api/home/+server.ts"
+	],
+	"/api/posts": [
+		"src/routes/api/posts/+server.ts"
+	],
+	"/api/sentences": [
+		"src/routes/api/sentences/+server.ts"
+	],
+	"/api/translate": [
+		"src/routes/api/translate/+server.ts"
+	],
+	"/api/words": [
+		"src/routes/api/words/+server.ts"
+	],
+	"/blog/posts/[slug]": [
+		"src/routes/blog/posts/[slug]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/cinema": [
+		"src/routes/+layout.ts"
+	],
+	"/courses": [
+		"src/routes/+layout.ts"
+	],
+	"/debug": [
+		"src/routes/+layout.ts"
+	],
+	"/favorite-movies": [
+		"src/routes/+layout.ts"
+	],
+	"/frequency": [
+		"src/routes/+layout.ts"
+	],
+	"/frequency/[language]": [
+		"src/routes/frequency/[language]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/grammar": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/advanced-sentences": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/conjugation": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/doubt": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/endings": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/nouns-adjectives": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/pronominal-composition": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/science": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/sentences": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/songs": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/spelling-words": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/spelling": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/arabic/vocabulary": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-character-stroke-order": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-character-stroke-search": [
+		"src/routes/grammar/chinese/chinese-character-stroke-search/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-syntax-improved": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-syntax": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-transliteration-simple": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/chinese/chinese-transliteration": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/hindi": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/hindi/pronominal-composition": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/hindi/songs": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/hindi/spelling": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/japanese/pronominal-composition": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/languages-test": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian/pronominal-composition": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian/russian-declensions": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian/science": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian/songs": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/science": [
+		"src/routes/+layout.ts"
+	],
+	"/list": [
+		"src/routes/list/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/melancholic-machines": [
+		"src/routes/+layout.ts"
+	],
+	"/posts": [
+		"src/routes/posts/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/sentences": [
+		"src/routes/+layout.ts"
+	],
+	"/transliteration": [
+		"src/routes/+layout.ts"
+	],
+	"/words": [
+		"src/routes/+layout.ts"
+	]
+}

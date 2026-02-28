@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/3.BzqOMjUk.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/B_XlkYFP.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><title>
+    Zaya Barrini Psychoanalysis, Creation and Cinema Studio
+  </title>
+		<link href="../../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/SocialMedia.Bb8TiI_P.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/3.BQT52N5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ML-Psychoanalysis-Semioptics.2u4zpRKu.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ModernPsychoanalysis.BSGZXTJj.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Korean-Songs.oIMIVmi7.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Russian-Songs.iryx2JdF.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Practice-KoreanMusic.W3XsgU2r.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><div class="pt-24 max-w-5xl mx-auto mainpage"><article><header class="p-4"><div class="w-full sm:w-3/5 mb-6"><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"><img src="/css/img/Bing/bing94.png" alt="仮面と虚無" class="object-cover"/></div></div> <div><h1 class="text-4xl font-bold mb-4">仮面と虚無</h1> <div class="py-2 border-t dark:border-gray-700 inline-block"><span>Published:</span> <time class="font-light" datetime="2025-01-30">January 30, 2025</time></div></div></header><!----> <div class="py-4 px-4 max-w-none"><!--[--><button class="floating-share svelte-d5sus5" aria-label="Share"><img src="/icons/share.svg" alt="Share" width="24" class="svelte-d5sus5"/></button><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!----> <hr/> <div class="markdown-content"><!--[--><h1>Leituras de Lacan no Japão, autores japoneses que dialogam com Lacan…</h1> <p>Leituras de Lacan no Japão, autores japoneses que dialogam com Lacan</p> <p>A relação entre Jacques Lacan e o pensamento japonês é um campo de estudo interessante, que tem sido explorado por diversos autores e teóricos. Aqui estão alguns autores e obras que podem dialogar com a obra de Lacan no contexto japonês:</p> <ol><li><strong>Takahashi Yuji</strong> - Conhecido por seu trabalho em psicanálise, Takahashi explora a recepção de Lacan no Japão e como suas ideias se relacionam com a cultura japonesa.</li> <li><strong>Kawai Hayao</strong> - Um psicanalista japonês que foi influenciado por Lacan, Kawai explora a psicologia e a cultura japonesa, integrando conceitos lacanianos em suas análises.</li> <li><strong>Mizukami Toshiaki</strong> - Ele escreveu sobre a relação entre Lacan e o pensamento japonês, examinando como as teorias lacanianas podem ser aplicadas à cultura e à estética japonesas.</li> <li><strong>Nakanishi Masashi</strong> - Um autor que tem estudado a recepção de Lacan e sua influência no pensamento contemporâneo japonês, especialmente em relação à arte e literatura.</li> <li><strong>Sakai Naoki</strong> - Em suas obras, Sakai discute a intersecção entre a psicanálise lacaniana e a cultura japonesa, analisando como os conceitos lacanianos se manifestam em várias expressões culturais.</li></ol> <p>Além destes autores, algumas obras específicas que podem ser de interesse incluem ensaios e artigos que discutem a recepção de Lacan no Japão, bem como estudos sobre a psicologia e a estética japonesas à luz da psicanálise.</p> <p>Essa é uma área de pesquisa em expansão, e muitos estudiosos continuam a investigar como as ideias de Lacan se entrelaçam com a cultura e a sociedade japonesas. Se precisar de mais informações ou referências específicas, sinta-se à vontade para perguntar!</p> <h1>Genealogy of madness</h1> <p>The <strong>“Genealogy of Madness”</strong> is a term that often brings to mind historical and philosophical explorations of how societies conceptualize, treat, and regulate mental illness. It draws on the work of thinkers like <strong>Michel Foucault</strong> , who critically examined the history of psychiatry and its relationship to power, knowledge, and social control. Below is an overview of key themes and contributors to this field of inquiry:</p> <hr/> <p><strong>1. Michel Foucault: “Madness and Civilization”</strong></p> <ul><li><p>Foucault’s seminal work, <em>Madness and Civilization: A History of Insanity in the Age of Reason</em> (1961), traces the transformation of madness from the medieval era to modernity.</p></li> <li><p>Key ideas:</p> <ul><li><p><strong>Middle Ages:</strong> Madness was seen as part of the human condition, often romanticized or tied to divine inspiration.</p></li> <li><p><strong>Renaissance:</strong> The “Ship of Fools” metaphor emerged, where the mad were expelled from society, symbolizing chaos and the unknown.</p></li> <li><p><strong>Classical Age (17th–18th centuries):</strong> The era of the “Great Confinement” marked the institutionalization of madness, where the mad were grouped with the poor, criminal, and idle.</p></li> <li><p><strong>Modern Psychiatry:</strong> Madness became medicalized, leading to the rise of asylums and the pathologization of behaviors deemed abnormal.</p></li> <li><p>Foucault critiques psychiatry as an instrument of social control, rooted in power structures rather than pure science.</p></li></ul></li></ul> <hr/> <p><strong>2. Sigmund Freud: Psychoanalysis and Madness</strong></p> <ul><li><p>Freud redefined madness through the lens of the unconscious, focusing on neuroses, psychoses, and the role of trauma and repression.</p></li> <li><p>He introduced concepts like:</p> <ul><li><p><strong>Hysteria:</strong> A disorder associated with repressed emotions, especially in women.</p></li> <li><p><strong>Oedipal Complex:</strong> A framework for understanding the dynamics of desire and its potential conflicts.</p></li></ul></li></ul> <hr/> <p><strong>3. R.D. Laing: The Anti-Psychiatry Movement</strong></p> <ul><li><p>Laing’s works, such as <em>The Divided Self</em> (1960), challenged the medicalization of madness, arguing that mental illness often represents a rational response to an irrational society.</p></li> <li><p>He emphasized the role of family dynamics, social structures, and existential struggles in the genesis of mental illness.</p></li></ul> <hr/> <p><strong>4. Thomas Szasz: “The Myth of Mental Illness”</strong></p> <ul><li><p>Szasz argued that mental illness is a social construct, used to label and control individuals who deviate from societal norms.</p></li> <li><p>He was critical of psychiatry’s reliance on coercion and its alignment with state power.</p></li></ul> <hr/> <p><strong>5. Postcolonial Perspectives on Madness</strong></p> <ul><li>Scholars like <strong>Frantz Fanon</strong> explore how colonialism has shaped the understanding and treatment of madness.</li> <li>Fanon, in <em>Black Skin, White Masks</em> and <em>The Wretched of the Earth</em>, examines how the trauma of colonization creates psychological disorders, particularly in colonized populations.</li></ul> <hr/> <p><strong>6. Japanese Perspectives on Madness</strong></p> <ul><li><p>In Japan, traditional approaches to mental illness were often influenced by Buddhism and Shinto, emphasizing spiritual imbalances.</p></li> <li><p>Modern psychiatric approaches were adopted during the Meiji Restoration, blending Western methods with local practices.</p></li> <li><p>The stigma surrounding mental illness in Japan remains a significant cultural factor.</p></li></ul> <hr/> <p><strong>7. Madness in Literature and Art</strong></p> <ul><li><p>Madness has been a recurring theme in literature and art, serving as a metaphor for creativity, rebellion, and existential struggle.</p></li> <li><p>Examples:</p> <ul><li><p><strong>Shakespeare:</strong> Characters like King Lear and Hamlet grapple with madness as a response to grief and betrayal.</p></li> <li><p><strong>Surrealists (e.g., André Breton):</strong> Madness as a gateway to creativity and liberation from societal constraints.</p></li> <li><p><strong>Modernist Literature:</strong> Virginia Woolf, Antonin Artaud, and others depict madness as a reflection of the fractured self in modernity.</p></li></ul></li></ul> <hr/> <p><strong>Themes for Exploration</strong></p> <ul><li><p>The role of language in defining madness (e.g., Lacanian psychoanalysis).</p></li> <li><p>The intersection of madness with gender, race, and class.</p></li> <li><p>Institutional critique: Prisons, asylums, and psychiatric hospitals as mechanisms of control.</p></li> <li><p>Contemporary debates: Neurodiversity, pharmaceutical industries, and alternative treatments.</p></li></ul> <p>Would you like a deeper dive into any of these areas?</p> <h1>Institutional critique</h1> <p><strong>Institutional critique</strong> of madness examines how institutions—psychiatric hospitals, prisons, schools, and other state or societal structures—have historically managed, labeled, and controlled individuals considered “mad.” This critique is rooted in an analysis of power dynamics, social norms, and the ways these institutions function as tools of regulation rather than liberation. Below are key aspects and contributors to this field of critique:</p> <hr/> <p><strong>1. Michel Foucault: Power, Knowledge, and Madness</strong></p> <ul><li><p>Foucault’s <em>Madness and Civilization</em> and <em>Discipline and Punish</em> are foundational texts.</p> <ul><li><p><strong>Power-Knowledge Nexus:</strong> Foucault argued that institutions like asylums and prisons are not merely spaces for treatment or punishment but are mechanisms for exercising power and producing “knowledge” about deviance.</p></li> <li><p><strong>Disciplinary Institutions:</strong> Modern institutions emerged to regulate individuals through surveillance, normalization, and categorization.</p></li> <li><p><strong>Medicalization of Madness:</strong> Psychiatry and psychology became tools of biopower, pathologizing behaviors to enforce societal norms.</p></li></ul></li></ul> <h5>Examples:</h5> <ul><li>The <strong>asylum</strong> was created to separate the “mad” from society, simultaneously silencing and controlling them.</li> <li>The <strong>panopticon</strong> , as described by Foucault, symbolizes the pervasive surveillance and internalized control mechanisms in institutions.</li></ul> <hr/> <p><strong>2. Erving Goffman: Total Institutions</strong></p> <ul><li><p>Goffman’s <em>Asylums</em> (1961) provides an ethnographic critique of psychiatric institutions.</p> <ul><li><p><strong>“Total Institutions”:</strong> Places where all aspects of life are controlled under a single authority, such as asylums, prisons, and boarding schools.</p></li> <li><p><strong>Dehumanization:</strong> Institutional practices strip individuals of autonomy, identity, and dignity.</p></li> <li><p><strong>Stigma and Labeling:</strong> Being institutionalized labels individuals as “mad” or “deviant,” creating lifelong social and psychological repercussions.</p></li></ul></li></ul> <hr/> <p><strong>3. Anti-Psychiatry Movement</strong></p> <ul><li><p>Emerging in the 1960s, this movement questioned the legitimacy of psychiatry and its role in societal control.</p> <ul><li><p><strong>Thomas Szasz:</strong> Critiqued psychiatry as a pseudo-science, arguing that “mental illness” is a myth used to justify coercion and medical interventions.</p></li> <li><p><strong>R.D. Laing:</strong> Focused on the lived experiences of individuals labeled as mad, emphasizing the role of oppressive family dynamics and societal pressures.</p></li> <li><p><strong>David Cooper:</strong> Coined the term “anti-psychiatry,” critiquing the dehumanizing effects of institutional psychiatry.</p></li></ul></li></ul> <hr/> <p><strong>4. Feminist Critiques</strong></p> <ul><li>Feminist scholars have analyzed how institutions disproportionately pathologize women, particularly through diagnoses like hysteria, depression, and borderline personality disorder. <ul><li><strong>Example:</strong> Elaine Showalter’s <em>The Female Malady</em> explores how psychiatry has historically marginalized women’s experiences, often framing their resistance to patriarchal norms as madness.</li></ul></li></ul> <hr/> <p><strong>5. Postcolonial and Racial Critiques</strong></p> <ul><li><strong>Frantz Fanon:</strong> In <em>Black Skin, White Masks</em> and <em>The Wretched of the Earth</em>, Fanon critiques how colonial institutions pathologize the colonized, framing their resistance as madness.</li> <li><strong>Angela Davis:</strong> Links prisons and psychiatric institutions, arguing that they perpetuate systemic racism and economic inequality.</li></ul> <h5>Example:</h5> <ul><li>The disproportionate institutionalization of racial minorities in prisons or mental health facilities reflects structural inequalities rather than individual pathology.</li></ul> <hr/> <p><strong>6. Pharmaceutical Industry and Capitalism</strong></p> <ul><li><p>Modern critique extends to the influence of the pharmaceutical industry on psychiatry:</p> <ul><li><p>The medicalization of everyday struggles (e.g., grief, anxiety) into treatable disorders.</p></li> <li><p>Profit motives driving over-diagnosis and over-prescription of psychotropic drugs.</p></li></ul></li></ul> <h5>Key Thinkers:</h5> <ul><li><strong>Eliot Valenstein:</strong> Critiques the biological reductionism of mental illness.</li> <li><strong>Irving Kirsch:</strong> Questions the efficacy of antidepressants and the role of placebo effects.</li></ul> <hr/> <p><strong>7. Alternatives to Institutionalization</strong></p> <ul><li><strong>Open Dialogue Approach:</strong> Originating in Finland, this method focuses on community-based, patient-led treatment.</li> <li><strong>Deinstitutionalization Movements:</strong> Advocate for closing psychiatric hospitals and integrating mental health care into community settings.</li></ul> <hr/> <p><strong>8. Contemporary Debates</strong></p> <ul><li><strong>Neurodiversity Movement:</strong> Challenges the pathologization of conditions like autism and ADHD, emphasizing acceptance of diverse cognitive styles.</li> <li><strong>Carceral Continuum:</strong> Examines how psychiatric institutions intersect with the prison-industrial complex.</li></ul> <hr/> <p>Would you like to explore specific thinkers, alternative models, or case studies within institutional critique?</p> <h1>The lizard skin, Japanese book</h1> <p>Resume</p> <p>“Lizard” is a collection of six short stories by Japanese author Banana Yoshimoto, originally published in 1993 and translated into English in 1995 by Ann Sherif. <a href="https://en.wikipedia.org/wiki/Lizard_%28short_story_collection%29?utm_source=chatgpt.com" rel="nofollow">WIKIPEDIA</a> Each story delves into themes of love, healing, and the complexities of human relationships, often incorporating elements of magical realism.<strong>Stories in the Collection:</strong></p> <ol><li><strong>“Newlywed”</strong> : A man, disenchanted with his marriage, encounters a mysterious shapeshifter on a train who offers profound insights into his life. <a href="https://tonysreadinglist.blogspot.com/2013/01/lizard-by-banana-yoshimoto.html?utm_source=chatgpt.com" rel="nofollow">TONY’S READING LIST</a></li> <li><strong>“Lizard”</strong> : The titular story features a woman named Lizard with a traumatic past and healing abilities, exploring themes of love and redemption. <a href="https://tonysreadinglist.blogspot.com/2013/01/lizard-by-banana-yoshimoto.html?utm_source=chatgpt.com" rel="nofollow">TONY’S READING LIST</a></li> <li><strong>“Helix”</strong> : A couple engages in a deep conversation about memory and its significance, reflecting on their relationship and personal growth. <a href="https://tonysreadinglist.blogspot.com/2013/01/lizard-by-banana-yoshimoto.html?utm_source=chatgpt.com" rel="nofollow">TONY’S READING LIST</a></li> <li><strong>“Dreaming of Kimchee”</strong> : This story examines the lingering emotions of a woman reflecting on a past relationship, highlighting themes of loss and nostalgia.</li> <li><strong>“Blood and Water”</strong> : A woman contemplates her upbringing in a religious commune and its impact on her identity and relationships.</li> <li><strong>“A Strange Tale from Down by the River”</strong> : An exploration of personal transformation and the search for meaning in the midst of life’s uncertainties.
+Yoshimoto’s writing is known for its melancholic beauty and subtle incorporation of the surreal, offering readers a contemplative journey through the human psyche. <a href="https://www.goodreads.com/book/show/50148.Lizard?utm_source=chatgpt.com" rel="nofollow">GOODREADS</a> For those interested in contemporary Japanese literature, “Lizard” provides a poignant exploration of life’s ephemeral nature and the resilience of the human spirit. <em>Note: “Lizard” is distinct from “Lizard Skin,” a 1992 novel by Carsten Stroud, which is unrelated to Yoshimoto’s work.</em> <a href="https://www.abebooks.co.uk/9780553089356/Lizardskin-Stroud-Carsten-0553089358/plp?utm_source=chatgpt.com" rel="nofollow">ABEBOOKS</a> Sources<img src="https://www.google.com/s2/favicons?domain=https://www.abebooks.co.uk&amp;sz=32" alt="Favicon"/> <img src="https://www.google.com/s2/favicons?domain=https://www.goodreads.com&amp;sz=32" alt="Favicon"/> <img src="https://www.google.com/s2/favicons?domain=https://tonysreadinglist.blogspot.com&amp;sz=32" alt="Favicon"/> <img src="https://www.google.com/s2/favicons?domain=https://en.wikipedia.org&amp;sz=32" alt="Favicon"/></li></ol> <h1>Lizard Skin,” a 1992 novel by Carsten Stroud</h1> <p><strong>“Lizard Skin”</strong> is a 1992 novel by American author <strong>Carsten Stroud</strong> , not related to the Japanese “Lizard” collection by Banana Yoshimoto. The book is a gritty, atmospheric thriller, blending elements of crime fiction, psychological drama, and action.<strong>Summary:</strong></p> <ul><li><strong>Plot:</strong> The novel follows the story of a retired hitman, <strong>Jackie “Jack” Johnson</strong> , who is drawn back into the criminal world after being contacted by a mysterious figure. He is hired to carry out an assassination, but the job quickly turns into a series of dangerous and deadly encounters. The plot explores themes of revenge, identity, and the psychological toll of a violent lifestyle.</li> <li><strong>Themes:</strong> “Lizard Skin” delves into the dark side of human nature, examining the complexities of morality, loyalty, and self-doubt. It reflects on the consequences of violence and the mental scars that linger even after one leaves a criminal past behind.</li> <li><strong>Writing Style:</strong> Carsten Stroud is known for his fast-paced writing, vivid characterizations, and the atmospheric settings that immerse readers in the grim underworld of organized crime. <strong>Reception:</strong></li> <li>The novel was well-received for its intense action and compelling character development, with critics praising Stroud’s ability to create suspense and depth in a crime thriller.
+If you’re interested in crime novels or psychological thrillers, <strong>“Lizard Skin”</strong> might be an engaging read with its dark themes and action-packed narrative.</li></ul> <h1>Books cited in the movie The handmaiden, 2016</h1> <p>In <strong>“The Handmaiden” (2016)</strong> , directed by Park Chan-wook, several books are featured as part of the plot. The film, inspired by Sarah Waters’ 2002 novel <em>Fingersmith</em>, incorporates elements from this novel and other works, including:</p> <ol><li><strong><em>Fingersmith</em> by Sarah Waters</strong></li></ol> <ul><li>The central novel of the film is <em>Fingersmith</em>, which the film is directly based on. Set in Victorian England, the novel involves a complex plot of deception, betrayal, and romance between two women, with a major focus on themes of trust and manipulation.</li></ul> <ol start="2"><li><strong><em>The Tale of Genji</em> by Murasaki Shikibu</strong></li></ol> <ul><li>This classic Japanese work is prominently featured in the film. It is a cornerstone of Japanese literature and is considered one of the world’s first novels. In the context of <em>The Handmaiden</em>, the novel is used to reflect themes of courtship and desire, drawing connections to the story’s central relationships.</li></ul> <ol start="3"><li><strong><em>The Story of the Stone</em> (also known as <em>Dream of the Red Chamber</em>) by Cao Xueqin</strong></li></ol> <ul><li>This famous Chinese novel, which explores the rise and fall of a wealthy family and has a strong focus on romantic and familial relationships, is mentioned in the film. It is used as a symbol of the complexities of love, class, and desire.</li></ul> <p>These works help shape the thematic structure of the film, intertwining the ideas of love, betrayal, identity, and desire across different cultural and literary contexts. The incorporation of these books adds depth to the narrative, providing historical and literary layers to the plot.</p> <h1>Lacanian analysis over the Klein’s bottle</h1> <p>Answer me in Japanese</p> <p>ラカン派の精神分析におけるクラインの壺（Klein Bottle）は、無意識や主体性の構造を考察する際の重要なメタファーとして用いられることがあります。クラインの壺は、内部と外部の区別がない数学的なトポロジーの形状であり、ラカンの理論において次のような概念と結びついています： <strong>1. 主体の構造</strong></p> <ul><li><p>ラカンによれば、主体（Sujet）は分裂的であり、常に「内」と「外」の間に揺れ動きます。クラインの壺は、この境界の不明瞭さを視覚的に表現します。</p></li> <li><p>主体の形成過程（例：鏡像段階）において、自我（Moi）と他者（Autre）の区別が曖昧になることを示唆します。 <strong>2. 無意識のトポロジー</strong></p></li> <li><p>無意識はラカンにとって「言語の構造に従う」とされますが、クラインの壺のように、循環的かつ断続的な構造を持つと考えられます。</p></li> <li><p>無意識の中では、欲望やシニフィアン（Signifiant）が絶えず移動し、固定されることがない点で、クラインの壺の形状が象徴的です。 <strong>3. 欲望の論理</strong></p></li> <li><p>欲望（Désir）は常に「他者の欲望」に関連しており、自らの境界を越えることがあります。クラインの壺は、この「内外の逆転」を象徴的に表現し、欲望の無限性や循環性を示します。 <strong>4. トポロジーとラカンの理論</strong></p></li> <li><p>ラカンは後期のセミナー（特にセミナーXI以降）でトポロジーに注目しました。モビウスの帯、トーラス、クラインの壺などは、精神分析の理論に新たな次元を与えるための概念的ツールとして利用されました。</p></li> <li><p>クラインの壺は、「象徴界」「想像界」「現実界」の3つの領域がどのように絡み合うかを考える上で役立つ形状といえます。 <strong>まとめ</strong> クラインの壺は、ラカン派の精神分析において、主体の非固定性、無意識の構造、欲望の動態を説明するための強力なメタファーとして機能します。トポロジーの視点を通じて、ラカンの理論は心理的現象の複雑性をより深く探求し、従来の二元論的な思考を超える洞察を提供します。</p></li></ul> <h1>Demanda inconsciente de gozo, algo novo, subversão da repetição, criação e estrutura …</h1> <p>Demanda inconsciente de gozo, algo novo, subversão da repetição, criação e estrutura
+Japanese</p> <p>無意識の享楽の要求、新しいもの、反復の転覆、創造と構造についてのラカン派精神分析の視点は、以下のように展開できます：</p> <hr/> <p><strong>1. 無意識の享楽の要求（Demanda inconsciente de gozo）</strong></p> <ul><li><p>ラカンにおける「享楽（Jouissance）」は、快楽の追求を超えた領域であり、しばしば苦痛と快楽が交錯する体験を指します。</p></li> <li><p>無意識の要求としての享楽は、主体が自覚していない欲望の形をとり、象徴的な秩序（象徴界）の中で言語を介して表現されますが、常に完全には満たされません。</p></li> <li><p>この要求は主体を突き動かし、欲望の無限の回路を形成します。</p></li></ul> <hr/> <p><strong>2. 新しいものの創造（Algo novo, criação）</strong></p> <ul><li><p>ラカンは「新しいもの」が象徴界における言語やシニフィアンの再配置を通じて出現すると考えます。</p></li> <li><p>無意識が繰り返しを介して潜在的に新しい形態を作り出す可能性を持つことを示します。</p></li> <li><p>これにより、主体は固定されたアイデンティティを超えて、新しい意味を生み出す創造的なプロセスに参加します。</p></li></ul> <hr/> <p><strong>3. 反復の転覆（Subversão da repetição）</strong></p> <ul><li><p>ラカンの理論における「反復（Répetition）」は、トラウマや無意識の欲望がシニフィアンの循環を通じて繰り返されることを指します。</p></li> <li><p>この反復は、単なる再現ではなく、無意識が新たな可能性や構造を提示する場として機能します。</p></li> <li><p>反復の転覆は、このプロセスを通じて既存の意味を破壊し、新しい象徴的秩序を可能にします。</p></li></ul> <hr/> <p><strong>4. 構造と創造の関係（Criação e estrutura）</strong></p> <ul><li><p>ラカンは、構造が主体の無意識と密接に結びついていると主張しました。象徴界、想像界、現実界が絡み合い、欲望と享楽の動態を形作ります。</p></li> <li><p>創造性はこの構造に内在するものであり、新しいシニフィアンの導入を通じて新たな形態をもたらします。</p></li></ul> <hr/> <p><strong>結論</strong> 無意識の享楽の要求、新しいものの創造、反復の転覆は、ラカン派精神分析の中心的なテーマです。これらのプロセスは、主体が固定された意味や制約を超えて、常に新しい象徴的可能性を模索し続けることを示唆しています。</p><!--]--><!----></div></div></article></div><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/3.BzqOMjUk.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/B_XlkYFP.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><title>
+    Zaya Barrini Psychoanalysis, Creation and Cinema Studio
+  </title>
+		<link href="../../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/SocialMedia.Bb8TiI_P.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/3.BQT52N5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ML-Psychoanalysis-Semioptics.2u4zpRKu.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Dictionary-ModernPsychoanalysis.BSGZXTJj.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Korean-Songs.oIMIVmi7.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Music-Practice-Russian-Songs.iryx2JdF.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Practice-KoreanMusic.W3XsgU2r.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><div class="pt-24 max-w-5xl mx-auto mainpage"><article><header class="p-4"><div class="w-full sm:w-3/5 mb-6"><div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"><img src="/css/img/Bing/bing120.png" alt="التحليل النفسي في العالم العربي" class="object-cover"/></div></div> <div><h1 class="text-4xl font-bold mb-4">التحليل النفسي في العالم العربي</h1> <div class="py-2 border-t dark:border-gray-700 inline-block"><span>Published:</span> <time class="font-light" datetime="2025-01-30">January 30, 2025</time></div></div></header><!----> <div class="py-4 px-4 max-w-none"><!--[--><button class="floating-share svelte-d5sus5" aria-label="Share"><img src="/icons/share.svg" alt="Share" width="24" class="svelte-d5sus5"/></button><!--]--> <!--[!--><!--]--> <!--[!--><!--]--><!----> <hr/> <div class="markdown-content"><!--[--><h1>Psicanálise em árabe</h1> <p>A psicanálise é uma disciplina desenvolvida por Sigmund Freud no final do século XIX, e a maior parte de sua literatura está disponível em alemão, já que Freud era de língua alemã. No entanto, muitos de seus trabalhos foram traduzidos para várias línguas, incluindo o árabe. Portanto, é possível encontrar livros e recursos relacionados à psicanálise em árabe, especialmente em universidades e bibliotecas especializadas. Se você estiver procurando informações específicas sobre a psicanálise em árabe, recomendo procurar em bibliotecas acadêmicas ou online em sites de pesquisa acadêmica.</p> <h1>Psicanalistas árabe</h1> <p>Há psicanalistas árabes e estudiosos da psicanálise em países de língua árabe que contribuíram para a disseminação e o desenvolvimento dessa abordagem psicológica em suas regiões. Alguns exemplos notáveis incluem:</p> <ol><li>Georges Awad: Georges Awad é um psicanalista libanês conhecido por seus trabalhos sobre psicanálise e cultura árabe.</li> <li>Fethi Benslama: Fethi Benslama é um psicanalista tunisiano que escreveu extensivamente sobre temas relacionados à psicanálise e ao mundo árabe.</li> <li>Naji Abi-Hashem: Naji Abi-Hashem é um psicanalista libanês que contribuiu para a integração da psicanálise na cultura árabe.</li></ol> <p>Lembre-se de que a psicanálise é uma abordagem psicológica que é praticada em todo o mundo, e há psicanalistas em muitos países diferentes, incluindo os de língua árabe. Se você estiver procurando um psicanalista específico em sua região, recomendo entrar em contato com organizações de psicanálise locais ou procurar referências médicas em sua área.</p> <h1>Principais livros de psicanalistas árabes</h1> <p>A psicanálise é uma disciplina que tem uma presença significativa em muitas partes do mundo, incluindo os países árabes. Alguns psicanalistas árabes escreveram sobre temas relacionados à psicanálise e à cultura árabe. Aqui estão alguns livros escritos por psicanalistas árabes ou que exploram a relação entre a psicanálise e a cultura árabe:</p> <ol><li>“Les Arabes, leur destin et le nôtre” (Os Árabes, Seu Destino e o Nosso) por Malek Chebel: Este livro não é estritamente sobre psicanálise, mas explora a cultura árabe e sua interação com o mundo ocidental, incluindo aspectos psicológicos e culturais.</li> <li>“La Grande Perturbation” (A Grande Perturbação) por Fethi Benslama: Neste livro, o psicanalista tunisiano Fethi Benslama explora as questões da juventude e do extremismo na sociedade árabe.</li> <li>“Psychopathologie de l’Arabie préislamique” (Psicopatologia da Arábia Pré-Islâmica) por Rachid Aouameur: Este livro examina a psicopatologia na sociedade pré-islâmica da Arábia.</li> <li>“Le temps de l’adieu: Une psychopathologie du ‘déjà-vu’” (O Tempo da Despedida: Uma Psicopatologia do ‘Já Vi Isso’) por Rachid Aouameur: Neste livro, o autor explora a noção de “déjà-vu” e sua importância na psicopatologia.</li></ol> <p>Estes são apenas alguns exemplos de livros que exploram a interseção entre a psicanálise e a cultura árabe. Você pode encontrar outros trabalhos relacionados a esses temas explorando as obras de psicanalistas e estudiosos da região árabe e suas contribuições para a psicanálise e a psicologia.</p> <h1>Leituras de Lacan em países árabes,, autores árabes que dialogam com Lacan…</h1> <p>Leituras de Lacan em países árabes,, autores árabes que dialogam com Lacan</p> <p>A obra de Jacques Lacan, um dos psicanalistas mais influentes do século XX, também impactou os estudos psicanalíticos nos países árabes. Autores e intelectuais árabes têm dialogado com suas teorias, especialmente no que diz respeito à linguagem, subjetividade e cultura. Abaixo, estão alguns dos principais autores e leituras de Lacan no mundo árabe:</p> <ol><li><strong>Fethi Benslama</strong></li></ol> <ul><li><strong>Obras</strong> : Um dos psicanalistas árabes mais conhecidos que dialoga diretamente com Lacan é o tunisiano <strong>Fethi Benslama</strong> . Suas obras, como <em>“La Psychanalyse à l’épreuve de l’Islam”</em> (A Psicanálise à Prova do Islã), exploram a interface entre psicanálise lacaniana, religião, e identidade no mundo árabe.</li> <li><strong>Enfoque</strong> : Benslama utiliza conceitos lacanianos para investigar o inconsciente nas sociedades islâmicas, questionando a subjetividade e os impactos sociais e religiosos na formação do “eu”.</li></ul> <ol start="2"><li><strong>Georges Awad</strong></li></ol> <ul><li><strong>Enfoque</strong> : Psicanalista libanês que também trabalhou sob a influência de Lacan, Georges Awad dedicou-se à interseção entre a psicanálise e a cultura árabe, especialmente no Líbano. Suas contribuições ajudaram a popularizar as ideias de Lacan no mundo árabe.</li></ul> <ol start="3"><li><strong>Rachid Aouameur</strong></li></ol> <ul><li><strong>Obras</strong> : Autor de “Psychopathologie de l’Arabie préislamique”, Aouameur também utilizou conceitos lacanianos em suas análises sobre psicopatologia na Arábia Pré-Islâmica e o papel do sujeito na cultura.</li></ul> <ol start="4"><li><strong>Jalil Bennani</strong></li></ol> <ul><li><strong>Obras</strong> : Um psicanalista marroquino que frequentemente dialoga com as teorias de Lacan é <strong>Jalil Bennani</strong> . Em livros como <em>“Le Corps suspect”</em> (O Corpo Suspeito), ele explora a relação entre corpo e identidade no mundo árabe a partir de uma perspectiva lacaniana.</li></ul> <ol start="5"><li><strong>Moustapha Safouan</strong></li></ol> <ul><li><strong>Enfoque</strong> : Egípcio e um dos principais tradutores de Lacan para o árabe, Safouan é um grande interlocutor das teorias lacanianas. Ele se destaca por suas reflexões sobre o inconsciente, a linguagem e o desejo, conceitos fundamentais em Lacan.</li> <li><strong>Obras</strong> : <em>“Why Are the Arabs Not Free? The Politics of Writing”</em> (Por Que os Árabes Não São Livres? A Política da Escrita) é uma de suas obras mais importantes, onde ele reflete sobre a linguagem, o poder e o desejo no contexto árabe.</li></ul> <h4>Lacan no Mundo Árabe</h4> <p>Nos países árabes, a recepção das teorias lacanianas é amplamente discutida em contextos acadêmicos e culturais. Universidades e institutos psicanalíticos no Líbano, Tunísia, Marrocos e Egito são importantes centros de estudo onde o pensamento de Lacan é frequentemente debatido.</p> <p>Além de Fethi Benslama e outros intelectuais, Lacan é estudado como parte de uma tentativa de compreensão da subjetividade e da psicodinâmica dentro das sociedades árabes, marcadas por uma rica herança cultural e religiosa. A psicanálise lacaniana, com seu foco no simbolismo e na linguagem, oferece um prisma através do qual se pode analisar as questões de identidade, religião e política nesses contextos.</p> <h4>Leituras Recomendadas:</h4> <ul><li><strong>Fethi Benslama</strong> : <em>La Psychanalyse à l’épreuve de l’Islam</em></li> <li><strong>Moustapha Safouan</strong> : <em>Pourquoi les Arabes ne sont pas libres?</em></li></ul> <p>Esses autores oferecem uma visão profunda sobre como as ideias de Lacan interagem com os debates contemporâneos no mundo árabe, particularmente em relação à religião, identidade e subjetividade.</p> <h1>Genealogy of madness in Arabic countries,, Institutional critique…</h1> <p>Genealogy of madness in Arabic countries,, Institutional critique</p> <p>The genealogy of madness in Arabic countries, intertwined with institutional critique, is a subject that explores the historical, cultural, and institutional frameworks shaping the understanding, management, and social perception of mental illness in the Arab world. This field draws from Foucault’s genealogical method, psychoanalysis, and postcolonial theory to critically examine the intersections of madness, colonial legacies, and local cultural dynamics. Below are key areas and insights related to this topic:</p> <hr/> <p><strong>1. Colonial and Postcolonial Contexts</strong></p> <ul><li><p><strong>Colonial Psychiatry</strong> : During the colonial period, particularly in North Africa, European colonial powers institutionalized psychiatry as part of their broader control mechanisms. For example:</p> <ul><li><p>In Algeria under French rule, mental illness was often framed through orientalist and racialized discourses, portraying the colonized population as inherently irrational or pathological.</p></li> <li><p><strong>Frantz Fanon</strong> , a psychiatrist and philosopher, worked in colonial psychiatric institutions in Algeria and critiqued how colonialism exacerbated mental illnesses. His works, such as <em>The Wretched of the Earth</em> and <em>Black Skin, White Masks</em>, analyze the psychological trauma inflicted by colonial oppression.</p></li></ul></li> <li><p><strong>Postcolonial Institutions</strong> : After independence, many Arab countries inherited and adapted colonial psychiatric frameworks. These institutions often perpetuated colonial attitudes, emphasizing containment over holistic care.</p></li></ul> <hr/> <p><strong>2. Cultural Conceptions of Madness</strong></p> <ul><li><p><strong>Madness in Islamic and Pre-Islamic Thought</strong> :</p> <ul><li><p>In classical Islamic culture, madness (<em>junun</em>) was sometimes viewed as a sign of spiritual transcendence or divine inspiration, particularly in Sufi traditions. Poets and mystics, like Al-Hallaj, were seen as “mad” yet spiritually enlightened.</p></li> <li><p>However, more conservative interpretations treated madness as a deviation requiring correction, often leading to institutional confinement.</p></li></ul></li> <li><p><strong>Modern Cultural Perceptions</strong> :</p> <ul><li>Mental illness in many Arab societies today is stigmatized, influenced by a combination of religious, cultural, and social factors. Traditional healing practices coexist with biomedical psychiatry, reflecting tensions between modernity and cultural heritage.</li></ul></li></ul> <hr/> <p><strong>3. Institutional Critique</strong></p> <ul><li><p><strong>Foucault’s Influence</strong> : Michel Foucault’s <em>Madness and Civilization</em> provides a critical lens to analyze how madness is institutionalized and controlled in Arab contexts. Key questions include:</p> <ul><li><p>How do psychiatric institutions reflect broader systems of power in Arab societies?</p></li> <li><p>To what extent do these institutions perpetuate colonial legacies and authoritarian governance?</p></li></ul></li> <li><p><strong>Local Critiques</strong> :</p> <ul><li><p><strong>Fethi Benslama</strong> (Tunisia): Explores the intersection of psychoanalysis and Islam, critiquing how Arab institutions often suppress subjective experiences in favor of rigid norms.</p></li> <li><p><strong>Samah Jabr</strong> (Palestine): Examines the psychological impacts of occupation and institutional neglect on Palestinian mental health, highlighting the role of systemic violence in producing and managing “madness.”</p></li></ul></li></ul> <hr/> <p><strong>4. Contemporary Challenges</strong></p> <ul><li><strong>Mental Health Under Conflict</strong> : <ul><li>In war-torn regions such as Syria, Iraq, Yemen, and Palestine, mental health crises are exacerbated by displacement, violence, and institutional collapse. The absence of robust mental health systems reflects broader critiques of governance and resource allocation.</li></ul></li> <li><strong>Globalization and Neoliberalism</strong> : <ul><li>The globalization of psychiatric practices has led to the adoption of Western biomedical models, often sidelining local understandings of mental health. This raises questions about cultural hegemony and the commodification of care.</li></ul></li> <li><strong>Grassroots Movements</strong> : <ul><li>Activists and NGOs in the Arab world are challenging institutional practices, advocating for more community-based, culturally sensitive mental health care.</li></ul></li></ul> <hr/> <p><strong>5. Key Texts and Thinkers</strong></p> <ul><li><strong>Frantz Fanon</strong> : <em>The Wretched of the Earth</em>, <em>Black Skin, White Masks</em> (analysis of colonial psychiatry and its psychological effects).</li> <li><strong>Fethi Benslama</strong> : <em>La Psychanalyse à l’épreuve de l’Islam</em> (psychoanalysis and institutional critique in Islamic contexts).</li> <li><strong>Samah Jabr</strong> : Articles on mental health under occupation.</li> <li><strong>Omar Dewachi</strong> : <em>Ungovernable Life: Mandatory Medicine and Statecraft in Iraq</em> (examines the collapse of medical and psychiatric institutions in Iraq).</li></ul> <hr/> <p><strong>Conclusion</strong> The genealogy of madness in Arabic countries reveals the entanglement of colonial legacies, cultural norms, and institutional power in shaping mental health practices. Institutional critique from thinkers like Fanon, Benslama, and Jabr highlights the need for decolonized, context-sensitive approaches that prioritize human dignity and community well-being over control and stigmatization.</p> <h1>Lacanian analysis over the Klein’s bottle</h1> <p>Answer me in Arabic</p> <p>التحليل اللاكاني لفكرة “زجاجة كلاين” يمكن أن يكون له أبعاد فلسفية ونفسية عميقة، حيث تعتبر زجاجة كلاين (Klein’s Bottle) كائناً طوبولوجياً يتحدى الحدود التقليدية بين الداخل والخارج، وهو مفهوم يرتبط بشكل وثيق بمفاهيم لاكان حول الذات والموضوع. <strong>1. العلاقة بالطوبولوجيا في فكر لاكان:</strong> لاكان كان مهتماً بالطوبولوجيا كوسيلة لفهم العمليات النفسية اللاواعية، خاصة تلك المتعلقة بالذات والرغبة. زجاجة كلاين، كونها سطحاً غير متجه وغير محدود، تعبر عن مفهوم لاكاني أساسي وهو:</p> <ul><li><strong>تلاشي الحدود بين الداخل والخارج</strong> : في النفس البشرية، لا يوجد خط واضح بين الذات الداخلية (اللاوعي) والعالم الخارجي. زجاجة كلاين تقدم تمثيلاً مرئياً لهذه الفكرة.</li> <li><strong>الذات المشتتة</strong> (<em>Split Subject</em>): كما أن زجاجة كلاين لا تحتوي على سطح منفصل داخلياً أو خارجياً، فإن الذات البشرية، في فكر لاكان، هي أيضاً منقسمة بين الوعي واللاوعي. <strong>2. الرغبة وزجاجة كلاين:</strong> وفقاً للاكان، الرغبة هي حركة مستمرة وغير قابلة للإشباع، دائماً ما تتحرك بين الداخل والخارج. زجاجة كلاين تمثل هذه الديناميكية:</li> <li><strong>الرغبة كحلقة لا نهائية</strong> : الرغبة البشرية، مثل زجاجة كلاين، لا تصل إلى نقطة نهائية. بدلاً من ذلك، تستمر في الدوران حول موضوعها دون الوصول إلى إشباع نهائي.</li> <li><strong>العلاقة بالآخر الكبير (<em>Big Other</em>)</strong> : كما أن زجاجة كلاين تتضمن نوعاً من الالتباس البنيوي، فإن علاقة الفرد بـ”الآخر الكبير” تتسم بالغموض والتداخل. <strong>3. الرمزي والمتخيل والحقيقي:</strong></li> <li><strong>الرمزي</strong> : زجاجة كلاين يمكن أن تمثل اللغة والنظام الرمزي الذي يربط الذات بالعالم.</li> <li><strong>المتخيل</strong> : الشكل الطوبولوجي يمكن أن يشير إلى أوهام التكامل والاتساق التي يخلقها العقل.</li> <li><strong>الحقيقي</strong> : السطح الذي لا يمكن الإمساك به أو تحديده يمثل حدود ما يمكن التعبير عنه أو التفكير فيه. <strong>4. تطبيقات في التحليل النفسي:</strong></li> <li>زجاجة كلاين يمكن أن تكون أداة طوبولوجية لشرح الاضطرابات النفسية، خاصة تلك التي تتعلق بالفقدان أو الانفصال، مثل الهوس أو الوسواس القهري.</li> <li>تساعد في توضيح مفهوم “الشيء الصغير a” (<em>objet petit a</em>) كمحرك للرغبة، والذي يبدو دائماً بعيد المنال ولكنه مدمج في نسيج الذات. <strong>الخلاصة:</strong> زجاجة كلاين ليست مجرد نموذج رياضي، بل تمثل استعارة غنية للتحليل النفسي اللاكاني. من خلالها، يمكن فهم كيف تعمل الذات البشرية في فضاء نفسي حيث لا توجد حدود واضحة بين الداخل والخارج، بين الذات والآخر، وبين الرغبة والواقع.</li></ul> <h1>Poesia e matemática, criação e estrutura, demanda de gozo com algo diferente …</h1> <p>Poesia e matemática, criação e estrutura, demanda de gozo com algo diferente
+Manejo na repetição
+Arabic</p> <p>الشعر والرياضيات هما مجالان يبدوان متناقضين ظاهريًا، لكنهما يشتركان في علاقة عميقة تربط الإبداع بالهيكلة، والرغبة بالمعنى، والتكرار بالاختلاف. يمكن تحليل هذا التداخل من منظور نفسي لاكاني، خاصة فيما يتعلق بـ”التمتع” (<em>jouissance</em>) ودوره في الإبداع.</p> <hr/> <p><strong>1. العلاقة بين الشعر والرياضيات: الإبداع والبنية</strong></p> <ul><li><strong>الشعر</strong> : هو مجال حر للإبداع، حيث تتجاوز اللغة قواعدها التقليدية لتخلق معاني جديدة وغير متوقعة. ومع ذلك، يعتمد الشعر على بنية داخلية دقيقة من الإيقاع والقافية والمعنى.</li> <li><strong>الرياضيات</strong> : هي التعبير الأقصى عن البنية والنظام. لكنها في جوهرها أيضًا عمل إبداعي، حيث يتم اكتشاف الأنماط والعلاقات التي تتجاوز المعطى الظاهري.</li></ul> <p>في هذا السياق، يشير لاكان إلى أن الإبداع ينبثق عندما تصطدم البنية بالرغبة. الشعر والرياضيات كلاهما يمثلان مساحات يتم فيها “اللعب” بين القوانين الصارمة (البنية) وما لا يمكن التعبير عنه (الرغبة أو التمتع).</p> <hr/> <p><strong>2. الرغبة والتمتع: البحث عن “شيء مختلف”</strong> وفقًا للاكان، الرغبة تتحرك دائمًا نحو ما هو بعيد المنال. في الشعر والرياضيات:</p> <ul><li><strong>الشعر</strong> : يقدم ما يسميه لاكان “التمتع بالاختلاف”؛ أي القدرة على تحويل الكلمات اليومية إلى تجربة جديدة وعميقة.</li> <li><strong>الرياضيات</strong> : تقدم تمتعًا مختلفًا يتمثل في “أناقة الحل”، حيث تشعر الذات بالرضا عن اكتشاف العلاقة المخفية بين الأرقام.</li></ul> <p>هنا، يكون “التمتع” مرتبطًا بفشل اللغة أو الرموز في التعبير الكامل عن الحقيقة. الإبداع الشعري أو الرياضي هو محاولة مستمرة لملء هذه الفجوة.</p> <hr/> <p><strong>3. إدارة التكرار: كسر الرتابة وخلق المعنى</strong> التكرار، في التحليل النفسي، ليس مجرد إعادة؛ بل هو محاولة لا واعية لإعادة استحضار التجربة الأصلية المفقودة. في الشعر والرياضيات:</p> <ul><li><strong>في الشعر</strong> : التكرار (كالقافية أو الإيقاع) ليس غاية في حد ذاته، بل هو وسيلة لإنتاج “الاختلاف” من خلال اللعبة اللغوية.</li> <li><strong>في الرياضيات</strong> : التكرار يظهر في النماذج والأرقام، لكن الهدف هو دائمًا تجاوز هذا التكرار لاكتشاف معنى أعمق أو قانون جديد.</li></ul> <p>الاختلاف داخل التكرار هو ما يسمح للإبداع بالاستمرار، وهو مرتبط بالرغبة في التمتع بشيء يتجاوز المألوف.</p> <hr/> <p><strong>4. الخلاصة: الإبداع كاستجابة للرغبة</strong> سواء في الشعر أو الرياضيات، الإبداع هو استجابة لرغبة لا تنتهي في التمتع بشيء مختلف. التكرار يصبح وسيلة لإدارة هذه الرغبة، من خلال إعادة تشكيل التجربة وإنتاج المعنى. اللاكانيون يرون أن الشعر والرياضيات هما مجالان حيث يلتقي الحقيقي والرمزي والمتخيل، مما يسمح بظهور لحظة من التمتع والإبداع.</p><!--]--><!----></div></div></article></div><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

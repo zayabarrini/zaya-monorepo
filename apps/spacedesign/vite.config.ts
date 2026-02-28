@@ -2,8 +2,22 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig, type PluginOption } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { visualizer } from "rollup-plugin-visualizer";
+import path from 'path';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@zaya/country-adapters': path.resolve(__dirname, '../../packages/country-adapters/src'),
+      '@zaya/core': path.resolve(__dirname, '../../packages/core/src'),
+      '@zaya/stripe': path.resolve(__dirname, '../../packages/stripe/src'),
+    },
+  },
+  server: {
+    fs: {
+      allow: ['..']
+    }
+  },
+
   plugins: [
     sveltekit(),
     visualizer({

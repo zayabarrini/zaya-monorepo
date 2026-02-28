@@ -1,0 +1,1895 @@
+{
+  "../../node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "../../node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "../../node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "../../node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "../../node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "../../node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "_CircularParallax.js": {
+    "file": "chunks/CircularParallax.js",
+    "name": "CircularParallax",
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "_IconLink.js": {
+    "file": "chunks/IconLink.js",
+    "name": "IconLink",
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "_PostListing.js": {
+    "file": "chunks/PostListing.js",
+    "name": "PostListing",
+    "imports": [
+      "_vendor-svelte.js",
+      "_SocialMedia.js"
+    ]
+  },
+  "_SocialMedia.Bb8TiI_P.css": {
+    "file": "_app/immutable/assets/SocialMedia.Bb8TiI_P.css",
+    "src": "_SocialMedia.Bb8TiI_P.css"
+  },
+  "_SocialMedia.js": {
+    "file": "chunks/SocialMedia.js",
+    "name": "SocialMedia",
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/SocialMedia.Bb8TiI_P.css"
+    ]
+  },
+  "_TOC.js": {
+    "file": "chunks/TOC.js",
+    "name": "TOC",
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "_TranslationConfig.js": {
+    "file": "chunks/TranslationConfig.js",
+    "name": "TranslationConfig",
+    "imports": [
+      "_vendor-svelte.js",
+      "_languages.js"
+    ],
+    "css": [
+      "_app/immutable/assets/TranslationConfig.zBsiVAwJ.css"
+    ]
+  },
+  "_TranslationConfig.zBsiVAwJ.css": {
+    "file": "_app/immutable/assets/TranslationConfig.zBsiVAwJ.css",
+    "src": "_TranslationConfig.zBsiVAwJ.css"
+  },
+  "_app.CToo3IAm.css": {
+    "file": "_app/immutable/assets/app.CToo3IAm.css",
+    "src": "_app.CToo3IAm.css"
+  },
+  "_languages.js": {
+    "file": "chunks/languages.js",
+    "name": "languages"
+  },
+  "_parallaxData.js": {
+    "file": "chunks/parallaxData.js",
+    "name": "parallaxData",
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "_postsData.DCF-KTye.css": {
+    "file": "_app/immutable/assets/postsData.DCF-KTye.css",
+    "src": "_postsData.DCF-KTye.css"
+  },
+  "_postsData.js": {
+    "file": "chunks/postsData.js",
+    "name": "postsData",
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/postsData.DCF-KTye.css"
+    ]
+  },
+  "_style.DEKSbcmV.css": {
+    "file": "_app/immutable/assets/style.DEKSbcmV.css",
+    "src": "_style.DEKSbcmV.css"
+  },
+  "_vendor-svelte.js": {
+    "file": "chunks/vendor-svelte.js",
+    "name": "vendor-svelte",
+    "imports": [
+      "_vendor.js"
+    ]
+  },
+  "_vendor.DY7Szrf1.css": {
+    "file": "_app/immutable/assets/vendor.DY7Szrf1.css",
+    "src": "_vendor.DY7Szrf1.css"
+  },
+  "_vendor.js": {
+    "file": "chunks/vendor.js",
+    "name": "vendor",
+    "css": [
+      "_app/immutable/assets/vendor.DY7Szrf1.css"
+    ]
+  },
+  "src/posts/Arabic.md": {
+    "file": "chunks/Arabic.js",
+    "name": "Arabic",
+    "src": "src/posts/Arabic.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-CV-AudioVisual.md": {
+    "file": "chunks/CVs-CV-AudioVisual.js",
+    "name": "CVs-CV-AudioVisual",
+    "src": "src/posts/CVs-CV-AudioVisual.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-CV-IAs.md": {
+    "file": "chunks/CVs-CV-IAs.js",
+    "name": "CVs-CV-IAs",
+    "src": "src/posts/CVs-CV-IAs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md": {
+    "file": "chunks/CVs-CV-Talles-Barrini-Writing-Performance.js",
+    "name": "CVs-CV-Talles-Barrini-Writing-Performance",
+    "src": "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-Cv-strategies.md": {
+    "file": "chunks/CVs-Cv-strategies.js",
+    "name": "CVs-Cv-strategies",
+    "src": "src/posts/CVs-Cv-strategies.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-Dev-CV.md": {
+    "file": "chunks/CVs-Dev-CV.js",
+    "name": "CVs-Dev-CV",
+    "src": "src/posts/CVs-Dev-CV.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-Path-to-Psychoanalysis.md": {
+    "file": "chunks/CVs-Path-to-Psychoanalysis.js",
+    "name": "CVs-Path-to-Psychoanalysis",
+    "src": "src/posts/CVs-Path-to-Psychoanalysis.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md": {
+    "file": "chunks/CVs-Presentation-school-of-cinema-art-psychoanalysis.js",
+    "name": "CVs-Presentation-school-of-cinema-art-psychoanalysis",
+    "src": "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-School-cinema-art-psychoanalysis.md": {
+    "file": "chunks/CVs-School-cinema-art-psychoanalysis.js",
+    "name": "CVs-School-cinema-art-psychoanalysis",
+    "src": "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/CVs-Startup-Checklist.md": {
+    "file": "chunks/CVs-Startup-Checklist.js",
+    "name": "CVs-Startup-Checklist",
+    "src": "src/posts/CVs-Startup-Checklist.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Cinema-Quotes-Theather-Performance.md": {
+    "file": "chunks/Cinema-Quotes-Theather-Performance.js",
+    "name": "Cinema-Quotes-Theather-Performance",
+    "src": "src/posts/Cinema-Quotes-Theather-Performance.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Cinema-Quotes.md": {
+    "file": "chunks/Cinema-Quotes.js",
+    "name": "Cinema-Quotes",
+    "src": "src/posts/Cinema-Quotes.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Cinema-QuotesFavoriteMovies.md": {
+    "file": "chunks/Cinema-QuotesFavoriteMovies.js",
+    "name": "Cinema-QuotesFavoriteMovies",
+    "src": "src/posts/Cinema-QuotesFavoriteMovies.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Cinema-Structure-of-tragedy.md": {
+    "file": "chunks/Cinema-Structure-of-tragedy.js",
+    "name": "Cinema-Structure-of-tragedy",
+    "src": "src/posts/Cinema-Structure-of-tragedy.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Cvs-Data.md": {
+    "file": "chunks/Cvs-Data.js",
+    "name": "Cvs-Data",
+    "src": "src/posts/Cvs-Data.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-100DifficultSentences.md": {
+    "file": "chunks/Dictionary-100DifficultSentences.js",
+    "name": "Dictionary-100DifficultSentences",
+    "src": "src/posts/Dictionary-100DifficultSentences.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-100Sentences.md": {
+    "file": "chunks/Dictionary-100Sentences.js",
+    "name": "Dictionary-100Sentences",
+    "src": "src/posts/Dictionary-100Sentences.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Actress-Actor-Director.md": {
+    "file": "chunks/Dictionary-Actress-Actor-Director.js",
+    "name": "Dictionary-Actress-Actor-Director",
+    "src": "src/posts/Dictionary-Actress-Actor-Director.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-AdvancedConjunctions.md": {
+    "file": "chunks/Dictionary-AdvancedConjunctions.js",
+    "name": "Dictionary-AdvancedConjunctions",
+    "src": "src/posts/Dictionary-AdvancedConjunctions.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Business.md": {
+    "file": "chunks/Dictionary-Business.js",
+    "name": "Dictionary-Business",
+    "src": "src/posts/Dictionary-Business.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-ChildPsychoanalysis.md": {
+    "file": "chunks/Dictionary-ChildPsychoanalysis.js",
+    "name": "Dictionary-ChildPsychoanalysis",
+    "src": "src/posts/Dictionary-ChildPsychoanalysis.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-GrammaticalWords.md": {
+    "file": "chunks/Dictionary-GrammaticalWords.js",
+    "name": "Dictionary-GrammaticalWords",
+    "src": "src/posts/Dictionary-GrammaticalWords.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-HSK.md": {
+    "file": "chunks/Dictionary-HSK.js",
+    "name": "Dictionary-HSK",
+    "src": "src/posts/Dictionary-HSK.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-LGBTWorld.md": {
+    "file": "chunks/Dictionary-LGBTWorld.js",
+    "name": "Dictionary-LGBTWorld",
+    "src": "src/posts/Dictionary-LGBTWorld.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Lacan.md": {
+    "file": "chunks/Dictionary-Lacan.js",
+    "name": "Dictionary-Lacan",
+    "src": "src/posts/Dictionary-Lacan.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md": {
+    "file": "chunks/Dictionary-ML-Psychoanalysis-Semioptics.js",
+    "name": "Dictionary-ML-Psychoanalysis-Semioptics",
+    "src": "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+    "isDynamicEntry": true,
+    "css": [
+      "_app/immutable/assets/Dictionary-ML-Psychoanalysis-Semioptics.2u4zpRKu.css"
+    ]
+  },
+  "src/posts/Dictionary-Mobius-Klein.md": {
+    "file": "chunks/Dictionary-Mobius-Klein.js",
+    "name": "Dictionary-Mobius-Klein",
+    "src": "src/posts/Dictionary-Mobius-Klein.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-ModernPsychoanalysis.md": {
+    "file": "chunks/Dictionary-ModernPsychoanalysis.js",
+    "name": "Dictionary-ModernPsychoanalysis",
+    "src": "src/posts/Dictionary-ModernPsychoanalysis.md",
+    "isDynamicEntry": true,
+    "css": [
+      "_app/immutable/assets/Dictionary-ModernPsychoanalysis.BSGZXTJj.css"
+    ]
+  },
+  "src/posts/Dictionary-Movies.md": {
+    "file": "chunks/Dictionary-Movies.js",
+    "name": "Dictionary-Movies",
+    "src": "src/posts/Dictionary-Movies.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Music.md": {
+    "file": "chunks/Dictionary-Music.js",
+    "name": "Dictionary-Music",
+    "src": "src/posts/Dictionary-Music.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Numbers.md": {
+    "file": "chunks/Dictionary-Numbers.js",
+    "name": "Dictionary-Numbers",
+    "src": "src/posts/Dictionary-Numbers.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Philosophy.md": {
+    "file": "chunks/Dictionary-Philosophy.js",
+    "name": "Dictionary-Philosophy",
+    "src": "src/posts/Dictionary-Philosophy.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Psychoanalysis.md": {
+    "file": "chunks/Dictionary-Psychoanalysis.js",
+    "name": "Dictionary-Psychoanalysis",
+    "src": "src/posts/Dictionary-Psychoanalysis.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Sade.md": {
+    "file": "chunks/Dictionary-Sade.js",
+    "name": "Dictionary-Sade",
+    "src": "src/posts/Dictionary-Sade.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Theology.md": {
+    "file": "chunks/Dictionary-Theology.js",
+    "name": "Dictionary-Theology",
+    "src": "src/posts/Dictionary-Theology.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-Volleyball.md": {
+    "file": "chunks/Dictionary-Volleyball.js",
+    "name": "Dictionary-Volleyball",
+    "src": "src/posts/Dictionary-Volleyball.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Dictionary-WordList.md": {
+    "file": "chunks/Dictionary-WordList.js",
+    "name": "Dictionary-WordList",
+    "src": "src/posts/Dictionary-WordList.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Hindi.md": {
+    "file": "chunks/Hindi.js",
+    "name": "Hindi",
+    "src": "src/posts/Hindi.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Alphabets.md": {
+    "file": "chunks/Languages-Alphabets.js",
+    "name": "Languages-Alphabets",
+    "src": "src/posts/Languages-Alphabets.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-Arabic.md": {
+    "file": "chunks/Languages-Frequency-Arabic.js",
+    "name": "Languages-Frequency-Arabic",
+    "src": "src/posts/Languages-Frequency-Arabic.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-French.md": {
+    "file": "chunks/Languages-Frequency-French.js",
+    "name": "Languages-Frequency-French",
+    "src": "src/posts/Languages-Frequency-French.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-German.md": {
+    "file": "chunks/Languages-Frequency-German.js",
+    "name": "Languages-Frequency-German",
+    "src": "src/posts/Languages-Frequency-German.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-Hindi.md": {
+    "file": "chunks/Languages-Frequency-Hindi.js",
+    "name": "Languages-Frequency-Hindi",
+    "src": "src/posts/Languages-Frequency-Hindi.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-Italian.md": {
+    "file": "chunks/Languages-Frequency-Italian.js",
+    "name": "Languages-Frequency-Italian",
+    "src": "src/posts/Languages-Frequency-Italian.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Frequency-Russian.md": {
+    "file": "chunks/Languages-Frequency-Russian.js",
+    "name": "Languages-Frequency-Russian",
+    "src": "src/posts/Languages-Frequency-Russian.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-ar.md": {
+    "file": "chunks/Languages-Phonetics-ar.js",
+    "name": "Languages-Phonetics-ar",
+    "src": "src/posts/Languages-Phonetics-ar.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-ch.md": {
+    "file": "chunks/Languages-Phonetics-ch.js",
+    "name": "Languages-Phonetics-ch",
+    "src": "src/posts/Languages-Phonetics-ch.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-de.md": {
+    "file": "chunks/Languages-Phonetics-de.js",
+    "name": "Languages-Phonetics-de",
+    "src": "src/posts/Languages-Phonetics-de.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-hi.md": {
+    "file": "chunks/Languages-Phonetics-hi.js",
+    "name": "Languages-Phonetics-hi",
+    "src": "src/posts/Languages-Phonetics-hi.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-ja.md": {
+    "file": "chunks/Languages-Phonetics-ja.js",
+    "name": "Languages-Phonetics-ja",
+    "src": "src/posts/Languages-Phonetics-ja.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Languages-Phonetics-ru.md": {
+    "file": "chunks/Languages-Phonetics-ru.js",
+    "name": "Languages-Phonetics-ru",
+    "src": "src/posts/Languages-Phonetics-ru.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-2025-1D-BS-db-ar.md": {
+    "file": "chunks/Music-2025-1D-BS-db-ar.js",
+    "name": "Music-2025-1D-BS-db-ar",
+    "src": "src/posts/Music-2025-1D-BS-db-ar.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-2025.md": {
+    "file": "chunks/Music-2025.js",
+    "name": "Music-2025",
+    "src": "src/posts/Music-2025.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-BTS-Ja.md": {
+    "file": "chunks/Music-BTS-Ja.js",
+    "name": "Music-BTS-Ja",
+    "src": "src/posts/Music-BTS-Ja.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Britney.md": {
+    "file": "chunks/Music-Britney.js",
+    "name": "Music-Britney",
+    "src": "src/posts/Music-Britney.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Get-Together.md": {
+    "file": "chunks/Music-Get-Together.js",
+    "name": "Music-Get-Together",
+    "src": "src/posts/Music-Get-Together.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Languages.md": {
+    "file": "chunks/Music-Languages.js",
+    "name": "Music-Languages",
+    "src": "src/posts/Music-Languages.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Mulheres-Apaixonadas.md": {
+    "file": "chunks/Music-Mulheres-Apaixonadas.js",
+    "name": "Music-Mulheres-Apaixonadas",
+    "src": "src/posts/Music-Mulheres-Apaixonadas.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-NB-Mansionair-DR.md": {
+    "file": "chunks/Music-NB-Mansionair-DR.js",
+    "name": "Music-NB-Mansionair-DR",
+    "src": "src/posts/Music-NB-Mansionair-DR.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-OneDirection.md": {
+    "file": "chunks/Music-OneDirection.js",
+    "name": "Music-OneDirection",
+    "src": "src/posts/Music-OneDirection.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Arabic-Songs.md": {
+    "file": "chunks/Music-Practice-Arabic-Songs.js",
+    "name": "Music-Practice-Arabic-Songs",
+    "src": "src/posts/Music-Practice-Arabic-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Chinese-Songs.md": {
+    "file": "chunks/Music-Practice-Chinese-Songs.js",
+    "name": "Music-Practice-Chinese-Songs",
+    "src": "src/posts/Music-Practice-Chinese-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-French-Songs.md": {
+    "file": "chunks/Music-Practice-French-Songs.js",
+    "name": "Music-Practice-French-Songs",
+    "src": "src/posts/Music-Practice-French-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Hindi-Songs.md": {
+    "file": "chunks/Music-Practice-Hindi-Songs.js",
+    "name": "Music-Practice-Hindi-Songs",
+    "src": "src/posts/Music-Practice-Hindi-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Italian-Songs.md": {
+    "file": "chunks/Music-Practice-Italian-Songs.js",
+    "name": "Music-Practice-Italian-Songs",
+    "src": "src/posts/Music-Practice-Italian-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md": {
+    "file": "chunks/Music-Practice-Japanese-Songs-Spotify-Lyrics.js",
+    "name": "Music-Practice-Japanese-Songs-Spotify-Lyrics",
+    "src": "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Japanese-Songs-mixed.md": {
+    "file": "chunks/Music-Practice-Japanese-Songs-mixed.js",
+    "name": "Music-Practice-Japanese-Songs-mixed",
+    "src": "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Japanese-Songs.md": {
+    "file": "chunks/Music-Practice-Japanese-Songs.js",
+    "name": "Music-Practice-Japanese-Songs",
+    "src": "src/posts/Music-Practice-Japanese-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Korean-Songs.md": {
+    "file": "chunks/Music-Practice-Korean-Songs.js",
+    "name": "Music-Practice-Korean-Songs",
+    "src": "src/posts/Music-Practice-Korean-Songs.md",
+    "isDynamicEntry": true,
+    "css": [
+      "_app/immutable/assets/Music-Practice-Korean-Songs.oIMIVmi7.css"
+    ]
+  },
+  "src/posts/Music-Practice-Languages-Music.md": {
+    "file": "chunks/Music-Practice-Languages-Music.js",
+    "name": "Music-Practice-Languages-Music",
+    "src": "src/posts/Music-Practice-Languages-Music.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Practice-Russian-Songs.md": {
+    "file": "chunks/Music-Practice-Russian-Songs.js",
+    "name": "Music-Practice-Russian-Songs",
+    "src": "src/posts/Music-Practice-Russian-Songs.md",
+    "isDynamicEntry": true,
+    "css": [
+      "_app/immutable/assets/Music-Practice-Russian-Songs.iryx2JdF.css"
+    ]
+  },
+  "src/posts/Music-Practive-German-Songs.md": {
+    "file": "chunks/Music-Practive-German-Songs.js",
+    "name": "Music-Practive-German-Songs",
+    "src": "src/posts/Music-Practive-German-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-SingAlong.md": {
+    "file": "chunks/Music-SingAlong.js",
+    "name": "Music-SingAlong",
+    "src": "src/posts/Music-SingAlong.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Songs.md": {
+    "file": "chunks/Music-Songs.js",
+    "name": "Music-Songs",
+    "src": "src/posts/Music-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Songs_Lyrics-db-ar.md": {
+    "file": "chunks/Music-Songs_Lyrics-db-ar.js",
+    "name": "Music-Songs_Lyrics-db-ar",
+    "src": "src/posts/Music-Songs_Lyrics-db-ar.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Woman.md": {
+    "file": "chunks/Music-Woman.js",
+    "name": "Music-Woman",
+    "src": "src/posts/Music-Woman.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Music-Zayn-Room-Under-the-stairs.md": {
+    "file": "chunks/Music-Zayn-Room-Under-the-stairs.js",
+    "name": "Music-Zayn-Room-Under-the-stairs",
+    "src": "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Practice-Conversing.md": {
+    "file": "chunks/Practice-Conversing.js",
+    "name": "Practice-Conversing",
+    "src": "src/posts/Practice-Conversing.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Practice-KoreanMusic.md": {
+    "file": "chunks/Practice-KoreanMusic.js",
+    "name": "Practice-KoreanMusic",
+    "src": "src/posts/Practice-KoreanMusic.md",
+    "isDynamicEntry": true,
+    "css": [
+      "_app/immutable/assets/Practice-KoreanMusic.W3XsgU2r.css"
+    ]
+  },
+  "src/posts/Practice-Signs.md": {
+    "file": "chunks/Practice-Signs.js",
+    "name": "Practice-Signs",
+    "src": "src/posts/Practice-Signs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Practice-Songs.md": {
+    "file": "chunks/Practice-Songs.js",
+    "name": "Practice-Songs",
+    "src": "src/posts/Practice-Songs.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Practice-Structure.md": {
+    "file": "chunks/Practice-Structure.js",
+    "name": "Practice-Structure",
+    "src": "src/posts/Practice-Structure.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Arabic.md": {
+    "file": "chunks/Psychoanalysis-Language-Arabic.js",
+    "name": "Psychoanalysis-Language-Arabic",
+    "src": "src/posts/Psychoanalysis-Language-Arabic.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Chinese.md": {
+    "file": "chunks/Psychoanalysis-Language-Chinese.js",
+    "name": "Psychoanalysis-Language-Chinese",
+    "src": "src/posts/Psychoanalysis-Language-Chinese.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-German.md": {
+    "file": "chunks/Psychoanalysis-Language-German.js",
+    "name": "Psychoanalysis-Language-German",
+    "src": "src/posts/Psychoanalysis-Language-German.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Hindi.md": {
+    "file": "chunks/Psychoanalysis-Language-Hindi.js",
+    "name": "Psychoanalysis-Language-Hindi",
+    "src": "src/posts/Psychoanalysis-Language-Hindi.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Japanese.md": {
+    "file": "chunks/Psychoanalysis-Language-Japanese.js",
+    "name": "Psychoanalysis-Language-Japanese",
+    "src": "src/posts/Psychoanalysis-Language-Japanese.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Korean.md": {
+    "file": "chunks/Psychoanalysis-Language-Korean.js",
+    "name": "Psychoanalysis-Language-Korean",
+    "src": "src/posts/Psychoanalysis-Language-Korean.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Language-Russian.md": {
+    "file": "chunks/Psychoanalysis-Language-Russian.js",
+    "name": "Psychoanalysis-Language-Russian",
+    "src": "src/posts/Psychoanalysis-Language-Russian.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md": {
+    "file": "chunks/Psychoanalysis-Parenting-LGBTQAPI_.js",
+    "name": "Psychoanalysis-Parenting-LGBTQAPI_",
+    "src": "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md": {
+    "file": "chunks/Psychoanalysis-Semiotics-LGBTQAPI_Women.js",
+    "name": "Psychoanalysis-Semiotics-LGBTQAPI_Women",
+    "src": "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Semiotics-Linguistics.md": {
+    "file": "chunks/Psychoanalysis-Semiotics-Linguistics.js",
+    "name": "Psychoanalysis-Semiotics-Linguistics",
+    "src": "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Semiotics-Topology.md": {
+    "file": "chunks/Psychoanalysis-Semiotics-Topology.js",
+    "name": "Psychoanalysis-Semiotics-Topology",
+    "src": "src/posts/Psychoanalysis-Semiotics-Topology.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Psychoanalysis-Semiotics.md": {
+    "file": "chunks/Psychoanalysis-Semiotics.js",
+    "name": "Psychoanalysis-Semiotics",
+    "src": "src/posts/Psychoanalysis-Semiotics.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Theater-DragRaceS05E01.md": {
+    "file": "chunks/Theater-DragRaceS05E01.js",
+    "name": "Theater-DragRaceS05E01",
+    "src": "src/posts/Theater-DragRaceS05E01.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Theater-Quotes.md": {
+    "file": "chunks/Theater-Quotes.js",
+    "name": "Theater-Quotes",
+    "src": "src/posts/Theater-Quotes.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/Theater-SurvivorAuS08E07.md": {
+    "file": "chunks/Theater-SurvivorAuS08E07.js",
+    "name": "Theater-SurvivorAuS08E07",
+    "src": "src/posts/Theater-SurvivorAuS08E07.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md": {
+    "file": "chunks/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.js",
+    "name": "cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru",
+    "src": "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+    "isDynamicEntry": true
+  },
+  "src/posts/music-languages-ml-practice.md": {
+    "file": "chunks/music-languages-ml-practice.js",
+    "name": "music-languages-ml-practice",
+    "src": "src/posts/music-languages-ml-practice.md",
+    "isDynamicEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_IconLink.js",
+      "_vendor.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.DH8-s0cv.css",
+      "_app/immutable/assets/app.CToo3IAm.css",
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "name": "entries/pages/_layout.ts",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_PostListing.js",
+      "_postsData.js",
+      "_parallaxData.js"
+    ],
+    "css": [
+      "_app/immutable/assets/app.CToo3IAm.css",
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/+page.ts": {
+    "file": "entries/pages/_page.ts.js",
+    "name": "entries/pages/_page.ts",
+    "src": "src/routes/+page.ts",
+    "isEntry": true
+  },
+  "src/routes/api/filter/+server.ts": {
+    "file": "entries/endpoints/api/filter/_server.ts.js",
+    "name": "entries/endpoints/api/filter/_server.ts",
+    "src": "src/routes/api/filter/+server.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/posts/Arabic.md",
+      "src/posts/CVs-CV-AudioVisual.md",
+      "src/posts/CVs-CV-IAs.md",
+      "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+      "src/posts/CVs-Cv-strategies.md",
+      "src/posts/CVs-Dev-CV.md",
+      "src/posts/CVs-Path-to-Psychoanalysis.md",
+      "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-Startup-Checklist.md",
+      "src/posts/Cinema-Quotes-Theather-Performance.md",
+      "src/posts/Cinema-Quotes.md",
+      "src/posts/Cinema-QuotesFavoriteMovies.md",
+      "src/posts/Cinema-Structure-of-tragedy.md",
+      "src/posts/Cvs-Data.md",
+      "src/posts/Dictionary-100DifficultSentences.md",
+      "src/posts/Dictionary-100Sentences.md",
+      "src/posts/Dictionary-Actress-Actor-Director.md",
+      "src/posts/Dictionary-AdvancedConjunctions.md",
+      "src/posts/Dictionary-Business.md",
+      "src/posts/Dictionary-ChildPsychoanalysis.md",
+      "src/posts/Dictionary-GrammaticalWords.md",
+      "src/posts/Dictionary-HSK.md",
+      "src/posts/Dictionary-LGBTWorld.md",
+      "src/posts/Dictionary-Lacan.md",
+      "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+      "src/posts/Dictionary-Mobius-Klein.md",
+      "src/posts/Dictionary-ModernPsychoanalysis.md",
+      "src/posts/Dictionary-Movies.md",
+      "src/posts/Dictionary-Music.md",
+      "src/posts/Dictionary-Numbers.md",
+      "src/posts/Dictionary-Philosophy.md",
+      "src/posts/Dictionary-Psychoanalysis.md",
+      "src/posts/Dictionary-Sade.md",
+      "src/posts/Dictionary-Theology.md",
+      "src/posts/Dictionary-Volleyball.md",
+      "src/posts/Dictionary-WordList.md",
+      "src/posts/Hindi.md",
+      "src/posts/Languages-Alphabets.md",
+      "src/posts/Languages-Frequency-Arabic.md",
+      "src/posts/Languages-Frequency-French.md",
+      "src/posts/Languages-Frequency-German.md",
+      "src/posts/Languages-Frequency-Hindi.md",
+      "src/posts/Languages-Frequency-Italian.md",
+      "src/posts/Languages-Frequency-Russian.md",
+      "src/posts/Languages-Phonetics-ar.md",
+      "src/posts/Languages-Phonetics-ch.md",
+      "src/posts/Languages-Phonetics-de.md",
+      "src/posts/Languages-Phonetics-hi.md",
+      "src/posts/Languages-Phonetics-ja.md",
+      "src/posts/Languages-Phonetics-ru.md",
+      "src/posts/Music-2025-1D-BS-db-ar.md",
+      "src/posts/Music-2025.md",
+      "src/posts/Music-BTS-Ja.md",
+      "src/posts/Music-Britney.md",
+      "src/posts/Music-Get-Together.md",
+      "src/posts/Music-Languages.md",
+      "src/posts/Music-Mulheres-Apaixonadas.md",
+      "src/posts/Music-NB-Mansionair-DR.md",
+      "src/posts/Music-OneDirection.md",
+      "src/posts/Music-Practice-Arabic-Songs.md",
+      "src/posts/Music-Practice-Chinese-Songs.md",
+      "src/posts/Music-Practice-French-Songs.md",
+      "src/posts/Music-Practice-Hindi-Songs.md",
+      "src/posts/Music-Practice-Italian-Songs.md",
+      "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+      "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+      "src/posts/Music-Practice-Japanese-Songs.md",
+      "src/posts/Music-Practice-Korean-Songs.md",
+      "src/posts/Music-Practice-Languages-Music.md",
+      "src/posts/Music-Practice-Russian-Songs.md",
+      "src/posts/Music-Practive-German-Songs.md",
+      "src/posts/Music-SingAlong.md",
+      "src/posts/Music-Songs.md",
+      "src/posts/Music-Songs_Lyrics-db-ar.md",
+      "src/posts/Music-Woman.md",
+      "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+      "src/posts/Practice-Conversing.md",
+      "src/posts/Practice-KoreanMusic.md",
+      "src/posts/Practice-Signs.md",
+      "src/posts/Practice-Songs.md",
+      "src/posts/Practice-Structure.md",
+      "src/posts/Psychoanalysis-Language-Arabic.md",
+      "src/posts/Psychoanalysis-Language-Chinese.md",
+      "src/posts/Psychoanalysis-Language-German.md",
+      "src/posts/Psychoanalysis-Language-Hindi.md",
+      "src/posts/Psychoanalysis-Language-Japanese.md",
+      "src/posts/Psychoanalysis-Language-Korean.md",
+      "src/posts/Psychoanalysis-Language-Russian.md",
+      "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+      "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+      "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+      "src/posts/Psychoanalysis-Semiotics-Topology.md",
+      "src/posts/Psychoanalysis-Semiotics.md",
+      "src/posts/Theater-DragRaceS05E01.md",
+      "src/posts/Theater-Quotes.md",
+      "src/posts/Theater-SurvivorAuS08E07.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+      "src/posts/music-languages-ml-practice.md"
+    ]
+  },
+  "src/routes/api/frequency/[language]/+server.ts": {
+    "file": "entries/endpoints/api/frequency/_language_/_server.ts.js",
+    "name": "entries/endpoints/api/frequency/_language_/_server.ts",
+    "src": "src/routes/api/frequency/[language]/+server.ts",
+    "isEntry": true,
+    "imports": [
+      "_languages.js"
+    ]
+  },
+  "src/routes/api/home/+server.ts": {
+    "file": "entries/endpoints/api/home/_server.ts.js",
+    "name": "entries/endpoints/api/home/_server.ts",
+    "src": "src/routes/api/home/+server.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/posts/Arabic.md",
+      "src/posts/CVs-CV-AudioVisual.md",
+      "src/posts/CVs-CV-IAs.md",
+      "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+      "src/posts/CVs-Cv-strategies.md",
+      "src/posts/CVs-Dev-CV.md",
+      "src/posts/CVs-Path-to-Psychoanalysis.md",
+      "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-Startup-Checklist.md",
+      "src/posts/Cinema-Quotes-Theather-Performance.md",
+      "src/posts/Cinema-Quotes.md",
+      "src/posts/Cinema-QuotesFavoriteMovies.md",
+      "src/posts/Cinema-Structure-of-tragedy.md",
+      "src/posts/Cvs-Data.md",
+      "src/posts/Dictionary-100DifficultSentences.md",
+      "src/posts/Dictionary-100Sentences.md",
+      "src/posts/Dictionary-Actress-Actor-Director.md",
+      "src/posts/Dictionary-AdvancedConjunctions.md",
+      "src/posts/Dictionary-Business.md",
+      "src/posts/Dictionary-ChildPsychoanalysis.md",
+      "src/posts/Dictionary-GrammaticalWords.md",
+      "src/posts/Dictionary-HSK.md",
+      "src/posts/Dictionary-LGBTWorld.md",
+      "src/posts/Dictionary-Lacan.md",
+      "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+      "src/posts/Dictionary-Mobius-Klein.md",
+      "src/posts/Dictionary-ModernPsychoanalysis.md",
+      "src/posts/Dictionary-Movies.md",
+      "src/posts/Dictionary-Music.md",
+      "src/posts/Dictionary-Numbers.md",
+      "src/posts/Dictionary-Philosophy.md",
+      "src/posts/Dictionary-Psychoanalysis.md",
+      "src/posts/Dictionary-Sade.md",
+      "src/posts/Dictionary-Theology.md",
+      "src/posts/Dictionary-Volleyball.md",
+      "src/posts/Dictionary-WordList.md",
+      "src/posts/Hindi.md",
+      "src/posts/Languages-Alphabets.md",
+      "src/posts/Languages-Frequency-Arabic.md",
+      "src/posts/Languages-Frequency-French.md",
+      "src/posts/Languages-Frequency-German.md",
+      "src/posts/Languages-Frequency-Hindi.md",
+      "src/posts/Languages-Frequency-Italian.md",
+      "src/posts/Languages-Frequency-Russian.md",
+      "src/posts/Languages-Phonetics-ar.md",
+      "src/posts/Languages-Phonetics-ch.md",
+      "src/posts/Languages-Phonetics-de.md",
+      "src/posts/Languages-Phonetics-hi.md",
+      "src/posts/Languages-Phonetics-ja.md",
+      "src/posts/Languages-Phonetics-ru.md",
+      "src/posts/Music-2025-1D-BS-db-ar.md",
+      "src/posts/Music-2025.md",
+      "src/posts/Music-BTS-Ja.md",
+      "src/posts/Music-Britney.md",
+      "src/posts/Music-Get-Together.md",
+      "src/posts/Music-Languages.md",
+      "src/posts/Music-Mulheres-Apaixonadas.md",
+      "src/posts/Music-NB-Mansionair-DR.md",
+      "src/posts/Music-OneDirection.md",
+      "src/posts/Music-Practice-Arabic-Songs.md",
+      "src/posts/Music-Practice-Chinese-Songs.md",
+      "src/posts/Music-Practice-French-Songs.md",
+      "src/posts/Music-Practice-Hindi-Songs.md",
+      "src/posts/Music-Practice-Italian-Songs.md",
+      "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+      "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+      "src/posts/Music-Practice-Japanese-Songs.md",
+      "src/posts/Music-Practice-Korean-Songs.md",
+      "src/posts/Music-Practice-Languages-Music.md",
+      "src/posts/Music-Practice-Russian-Songs.md",
+      "src/posts/Music-Practive-German-Songs.md",
+      "src/posts/Music-SingAlong.md",
+      "src/posts/Music-Songs.md",
+      "src/posts/Music-Songs_Lyrics-db-ar.md",
+      "src/posts/Music-Woman.md",
+      "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+      "src/posts/Practice-Conversing.md",
+      "src/posts/Practice-KoreanMusic.md",
+      "src/posts/Practice-Signs.md",
+      "src/posts/Practice-Songs.md",
+      "src/posts/Practice-Structure.md",
+      "src/posts/Psychoanalysis-Language-Arabic.md",
+      "src/posts/Psychoanalysis-Language-Chinese.md",
+      "src/posts/Psychoanalysis-Language-German.md",
+      "src/posts/Psychoanalysis-Language-Hindi.md",
+      "src/posts/Psychoanalysis-Language-Japanese.md",
+      "src/posts/Psychoanalysis-Language-Korean.md",
+      "src/posts/Psychoanalysis-Language-Russian.md",
+      "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+      "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+      "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+      "src/posts/Psychoanalysis-Semiotics-Topology.md",
+      "src/posts/Psychoanalysis-Semiotics.md",
+      "src/posts/Theater-DragRaceS05E01.md",
+      "src/posts/Theater-Quotes.md",
+      "src/posts/Theater-SurvivorAuS08E07.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+      "src/posts/music-languages-ml-practice.md"
+    ]
+  },
+  "src/routes/api/posts/+server.ts": {
+    "file": "entries/endpoints/api/posts/_server.ts.js",
+    "name": "entries/endpoints/api/posts/_server.ts",
+    "src": "src/routes/api/posts/+server.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/posts/Arabic.md",
+      "src/posts/CVs-CV-AudioVisual.md",
+      "src/posts/CVs-CV-IAs.md",
+      "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+      "src/posts/CVs-Cv-strategies.md",
+      "src/posts/CVs-Dev-CV.md",
+      "src/posts/CVs-Path-to-Psychoanalysis.md",
+      "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-Startup-Checklist.md",
+      "src/posts/Cinema-Quotes-Theather-Performance.md",
+      "src/posts/Cinema-Quotes.md",
+      "src/posts/Cinema-QuotesFavoriteMovies.md",
+      "src/posts/Cinema-Structure-of-tragedy.md",
+      "src/posts/Cvs-Data.md",
+      "src/posts/Dictionary-100DifficultSentences.md",
+      "src/posts/Dictionary-100Sentences.md",
+      "src/posts/Dictionary-Actress-Actor-Director.md",
+      "src/posts/Dictionary-AdvancedConjunctions.md",
+      "src/posts/Dictionary-Business.md",
+      "src/posts/Dictionary-ChildPsychoanalysis.md",
+      "src/posts/Dictionary-GrammaticalWords.md",
+      "src/posts/Dictionary-HSK.md",
+      "src/posts/Dictionary-LGBTWorld.md",
+      "src/posts/Dictionary-Lacan.md",
+      "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+      "src/posts/Dictionary-Mobius-Klein.md",
+      "src/posts/Dictionary-ModernPsychoanalysis.md",
+      "src/posts/Dictionary-Movies.md",
+      "src/posts/Dictionary-Music.md",
+      "src/posts/Dictionary-Numbers.md",
+      "src/posts/Dictionary-Philosophy.md",
+      "src/posts/Dictionary-Psychoanalysis.md",
+      "src/posts/Dictionary-Sade.md",
+      "src/posts/Dictionary-Theology.md",
+      "src/posts/Dictionary-Volleyball.md",
+      "src/posts/Dictionary-WordList.md",
+      "src/posts/Hindi.md",
+      "src/posts/Languages-Alphabets.md",
+      "src/posts/Languages-Frequency-Arabic.md",
+      "src/posts/Languages-Frequency-French.md",
+      "src/posts/Languages-Frequency-German.md",
+      "src/posts/Languages-Frequency-Hindi.md",
+      "src/posts/Languages-Frequency-Italian.md",
+      "src/posts/Languages-Frequency-Russian.md",
+      "src/posts/Languages-Phonetics-ar.md",
+      "src/posts/Languages-Phonetics-ch.md",
+      "src/posts/Languages-Phonetics-de.md",
+      "src/posts/Languages-Phonetics-hi.md",
+      "src/posts/Languages-Phonetics-ja.md",
+      "src/posts/Languages-Phonetics-ru.md",
+      "src/posts/Music-2025-1D-BS-db-ar.md",
+      "src/posts/Music-2025.md",
+      "src/posts/Music-BTS-Ja.md",
+      "src/posts/Music-Britney.md",
+      "src/posts/Music-Get-Together.md",
+      "src/posts/Music-Languages.md",
+      "src/posts/Music-Mulheres-Apaixonadas.md",
+      "src/posts/Music-NB-Mansionair-DR.md",
+      "src/posts/Music-OneDirection.md",
+      "src/posts/Music-Practice-Arabic-Songs.md",
+      "src/posts/Music-Practice-Chinese-Songs.md",
+      "src/posts/Music-Practice-French-Songs.md",
+      "src/posts/Music-Practice-Hindi-Songs.md",
+      "src/posts/Music-Practice-Italian-Songs.md",
+      "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+      "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+      "src/posts/Music-Practice-Japanese-Songs.md",
+      "src/posts/Music-Practice-Korean-Songs.md",
+      "src/posts/Music-Practice-Languages-Music.md",
+      "src/posts/Music-Practice-Russian-Songs.md",
+      "src/posts/Music-Practive-German-Songs.md",
+      "src/posts/Music-SingAlong.md",
+      "src/posts/Music-Songs.md",
+      "src/posts/Music-Songs_Lyrics-db-ar.md",
+      "src/posts/Music-Woman.md",
+      "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+      "src/posts/Practice-Conversing.md",
+      "src/posts/Practice-KoreanMusic.md",
+      "src/posts/Practice-Signs.md",
+      "src/posts/Practice-Songs.md",
+      "src/posts/Practice-Structure.md",
+      "src/posts/Psychoanalysis-Language-Arabic.md",
+      "src/posts/Psychoanalysis-Language-Chinese.md",
+      "src/posts/Psychoanalysis-Language-German.md",
+      "src/posts/Psychoanalysis-Language-Hindi.md",
+      "src/posts/Psychoanalysis-Language-Japanese.md",
+      "src/posts/Psychoanalysis-Language-Korean.md",
+      "src/posts/Psychoanalysis-Language-Russian.md",
+      "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+      "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+      "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+      "src/posts/Psychoanalysis-Semiotics-Topology.md",
+      "src/posts/Psychoanalysis-Semiotics.md",
+      "src/posts/Theater-DragRaceS05E01.md",
+      "src/posts/Theater-Quotes.md",
+      "src/posts/Theater-SurvivorAuS08E07.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+      "src/posts/music-languages-ml-practice.md"
+    ]
+  },
+  "src/routes/api/sentences/+server.ts": {
+    "file": "entries/endpoints/api/sentences/_server.ts.js",
+    "name": "entries/endpoints/api/sentences/_server.ts",
+    "src": "src/routes/api/sentences/+server.ts",
+    "isEntry": true
+  },
+  "src/routes/api/translate/+server.ts": {
+    "file": "entries/endpoints/api/translate/_server.ts.js",
+    "name": "entries/endpoints/api/translate/_server.ts",
+    "src": "src/routes/api/translate/+server.ts",
+    "isEntry": true
+  },
+  "src/routes/api/words/+server.ts": {
+    "file": "entries/endpoints/api/words/_server.ts.js",
+    "name": "entries/endpoints/api/words/_server.ts",
+    "src": "src/routes/api/words/+server.ts",
+    "isEntry": true
+  },
+  "src/routes/blog/posts/[slug]/+page.svelte": {
+    "file": "entries/pages/blog/posts/_slug_/_page.svelte.js",
+    "name": "entries/pages/blog/posts/_slug_/_page.svelte",
+    "src": "src/routes/blog/posts/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_SocialMedia.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BQT52N5F.css"
+    ]
+  },
+  "src/routes/blog/posts/[slug]/+page.ts": {
+    "file": "entries/pages/blog/posts/_slug_/_page.ts.js",
+    "name": "entries/pages/blog/posts/_slug_/_page.ts",
+    "src": "src/routes/blog/posts/[slug]/+page.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/posts/Arabic.md",
+      "src/posts/CVs-CV-AudioVisual.md",
+      "src/posts/CVs-CV-IAs.md",
+      "src/posts/CVs-CV-Talles-Barrini-Writing-Performance.md",
+      "src/posts/CVs-Cv-strategies.md",
+      "src/posts/CVs-Dev-CV.md",
+      "src/posts/CVs-Path-to-Psychoanalysis.md",
+      "src/posts/CVs-Presentation-school-of-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-School-cinema-art-psychoanalysis.md",
+      "src/posts/CVs-Startup-Checklist.md",
+      "src/posts/Cinema-Quotes-Theather-Performance.md",
+      "src/posts/Cinema-Quotes.md",
+      "src/posts/Cinema-QuotesFavoriteMovies.md",
+      "src/posts/Cinema-Structure-of-tragedy.md",
+      "src/posts/Cvs-Data.md",
+      "src/posts/Dictionary-100DifficultSentences.md",
+      "src/posts/Dictionary-100Sentences.md",
+      "src/posts/Dictionary-Actress-Actor-Director.md",
+      "src/posts/Dictionary-AdvancedConjunctions.md",
+      "src/posts/Dictionary-Business.md",
+      "src/posts/Dictionary-ChildPsychoanalysis.md",
+      "src/posts/Dictionary-GrammaticalWords.md",
+      "src/posts/Dictionary-HSK.md",
+      "src/posts/Dictionary-LGBTWorld.md",
+      "src/posts/Dictionary-Lacan.md",
+      "src/posts/Dictionary-ML-Psychoanalysis-Semioptics.md",
+      "src/posts/Dictionary-Mobius-Klein.md",
+      "src/posts/Dictionary-ModernPsychoanalysis.md",
+      "src/posts/Dictionary-Movies.md",
+      "src/posts/Dictionary-Music.md",
+      "src/posts/Dictionary-Numbers.md",
+      "src/posts/Dictionary-Philosophy.md",
+      "src/posts/Dictionary-Psychoanalysis.md",
+      "src/posts/Dictionary-Sade.md",
+      "src/posts/Dictionary-Theology.md",
+      "src/posts/Dictionary-Volleyball.md",
+      "src/posts/Dictionary-WordList.md",
+      "src/posts/Hindi.md",
+      "src/posts/Languages-Alphabets.md",
+      "src/posts/Languages-Frequency-Arabic.md",
+      "src/posts/Languages-Frequency-French.md",
+      "src/posts/Languages-Frequency-German.md",
+      "src/posts/Languages-Frequency-Hindi.md",
+      "src/posts/Languages-Frequency-Italian.md",
+      "src/posts/Languages-Frequency-Russian.md",
+      "src/posts/Languages-Phonetics-ar.md",
+      "src/posts/Languages-Phonetics-ch.md",
+      "src/posts/Languages-Phonetics-de.md",
+      "src/posts/Languages-Phonetics-hi.md",
+      "src/posts/Languages-Phonetics-ja.md",
+      "src/posts/Languages-Phonetics-ru.md",
+      "src/posts/Music-2025-1D-BS-db-ar.md",
+      "src/posts/Music-2025.md",
+      "src/posts/Music-BTS-Ja.md",
+      "src/posts/Music-Britney.md",
+      "src/posts/Music-Get-Together.md",
+      "src/posts/Music-Languages.md",
+      "src/posts/Music-Mulheres-Apaixonadas.md",
+      "src/posts/Music-NB-Mansionair-DR.md",
+      "src/posts/Music-OneDirection.md",
+      "src/posts/Music-Practice-Arabic-Songs.md",
+      "src/posts/Music-Practice-Chinese-Songs.md",
+      "src/posts/Music-Practice-French-Songs.md",
+      "src/posts/Music-Practice-Hindi-Songs.md",
+      "src/posts/Music-Practice-Italian-Songs.md",
+      "src/posts/Music-Practice-Japanese-Songs-Spotify-Lyrics.md",
+      "src/posts/Music-Practice-Japanese-Songs-mixed.md",
+      "src/posts/Music-Practice-Japanese-Songs.md",
+      "src/posts/Music-Practice-Korean-Songs.md",
+      "src/posts/Music-Practice-Languages-Music.md",
+      "src/posts/Music-Practice-Russian-Songs.md",
+      "src/posts/Music-Practive-German-Songs.md",
+      "src/posts/Music-SingAlong.md",
+      "src/posts/Music-Songs.md",
+      "src/posts/Music-Songs_Lyrics-db-ar.md",
+      "src/posts/Music-Woman.md",
+      "src/posts/Music-Zayn-Room-Under-the-stairs.md",
+      "src/posts/Practice-Conversing.md",
+      "src/posts/Practice-KoreanMusic.md",
+      "src/posts/Practice-Signs.md",
+      "src/posts/Practice-Songs.md",
+      "src/posts/Practice-Structure.md",
+      "src/posts/Psychoanalysis-Language-Arabic.md",
+      "src/posts/Psychoanalysis-Language-Chinese.md",
+      "src/posts/Psychoanalysis-Language-German.md",
+      "src/posts/Psychoanalysis-Language-Hindi.md",
+      "src/posts/Psychoanalysis-Language-Japanese.md",
+      "src/posts/Psychoanalysis-Language-Korean.md",
+      "src/posts/Psychoanalysis-Language-Russian.md",
+      "src/posts/Psychoanalysis-Parenting-LGBTQAPI+.md",
+      "src/posts/Psychoanalysis-Semiotics-LGBTQAPI+Women.md",
+      "src/posts/Psychoanalysis-Semiotics-Linguistics.md",
+      "src/posts/Psychoanalysis-Semiotics-Topology.md",
+      "src/posts/Psychoanalysis-Semiotics.md",
+      "src/posts/Theater-DragRaceS05E01.md",
+      "src/posts/Theater-Quotes.md",
+      "src/posts/Theater-SurvivorAuS08E07.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ar.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ch.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-de.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-fr.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-hi.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-it.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ja.md",
+      "src/posts/cinema-quotes-doubt-primordial-scence-fantasy-abuse-db-ru.md",
+      "src/posts/music-languages-ml-practice.md"
+    ]
+  },
+  "src/routes/cinema/+page.svelte": {
+    "file": "entries/pages/cinema/_page.svelte.js",
+    "name": "entries/pages/cinema/_page.svelte",
+    "src": "src/routes/cinema/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_postsData.js",
+      "_parallaxData.js",
+      "_CircularParallax.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/courses/+page.svelte": {
+    "file": "entries/pages/courses/_page.svelte.js",
+    "name": "entries/pages/courses/_page.svelte",
+    "src": "src/routes/courses/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_parallaxData.js",
+      "_CircularParallax.js",
+      "_TOC.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/debug/+page.svelte": {
+    "file": "entries/pages/debug/_page.svelte.js",
+    "name": "entries/pages/debug/_page.svelte",
+    "src": "src/routes/debug/+page.svelte",
+    "isEntry": true
+  },
+  "src/routes/favorite-movies/+page.svelte": {
+    "file": "entries/pages/favorite-movies/_page.svelte.js",
+    "name": "entries/pages/favorite-movies/_page.svelte",
+    "src": "src/routes/favorite-movies/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_parallaxData.js",
+      "_CircularParallax.js",
+      "_TOC.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/frequency/+page.svelte": {
+    "file": "entries/pages/frequency/_page.svelte.js",
+    "name": "entries/pages/frequency/_page.svelte",
+    "src": "src/routes/frequency/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_languages.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B_HAT-_s.css"
+    ]
+  },
+  "src/routes/frequency/[language]/+page.svelte": {
+    "file": "entries/pages/frequency/_language_/_page.svelte.js",
+    "name": "entries/pages/frequency/_language_/_page.svelte",
+    "src": "src/routes/frequency/[language]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_languages.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.y8rOdDMN.css"
+    ]
+  },
+  "src/routes/frequency/[language]/+page.ts": {
+    "file": "entries/pages/frequency/_language_/_page.ts.js",
+    "name": "entries/pages/frequency/_language_/_page.ts",
+    "src": "src/routes/frequency/[language]/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_languages.js"
+    ]
+  },
+  "src/routes/grammar/+page.svelte": {
+    "file": "entries/pages/grammar/_page.svelte.js",
+    "name": "entries/pages/grammar/_page.svelte",
+    "src": "src/routes/grammar/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_IconLink.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CtyYqGt8.css"
+    ]
+  },
+  "src/routes/grammar/arabic/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/_page.svelte",
+    "src": "src/routes/grammar/arabic/+page.svelte",
+    "isEntry": true
+  },
+  "src/routes/grammar/arabic/advanced-sentences/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/advanced-sentences/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/advanced-sentences/_page.svelte",
+    "src": "src/routes/grammar/arabic/advanced-sentences/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.WzukF1F4.css"
+    ]
+  },
+  "src/routes/grammar/arabic/conjugation/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/conjugation/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/conjugation/_page.svelte",
+    "src": "src/routes/grammar/arabic/conjugation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Cnbn_WgP.css"
+    ]
+  },
+  "src/routes/grammar/arabic/doubt/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/doubt/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/doubt/_page.svelte",
+    "src": "src/routes/grammar/arabic/doubt/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.qRsXhR_1.css"
+    ]
+  },
+  "src/routes/grammar/arabic/endings/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/endings/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/endings/_page.svelte",
+    "src": "src/routes/grammar/arabic/endings/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C6LK2bXN.css"
+    ]
+  },
+  "src/routes/grammar/arabic/nouns-adjectives/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/nouns-adjectives/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/nouns-adjectives/_page.svelte",
+    "src": "src/routes/grammar/arabic/nouns-adjectives/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Bxa5E10-.css"
+    ]
+  },
+  "src/routes/grammar/arabic/pronominal-composition/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/pronominal-composition/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/pronominal-composition/_page.svelte",
+    "src": "src/routes/grammar/arabic/pronominal-composition/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CUPCo6_H.css"
+    ]
+  },
+  "src/routes/grammar/arabic/science/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/science/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/science/_page.svelte",
+    "src": "src/routes/grammar/arabic/science/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "src/routes/grammar/arabic/sentences/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/sentences/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/sentences/_page.svelte",
+    "src": "src/routes/grammar/arabic/sentences/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Cv4UpfA2.css"
+    ]
+  },
+  "src/routes/grammar/arabic/songs/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/songs/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/songs/_page.svelte",
+    "src": "src/routes/grammar/arabic/songs/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BMC7EbiB.css"
+    ]
+  },
+  "src/routes/grammar/arabic/spelling-words/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/spelling-words/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/spelling-words/_page.svelte",
+    "src": "src/routes/grammar/arabic/spelling-words/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.EbU_kqlN.css"
+    ]
+  },
+  "src/routes/grammar/arabic/spelling/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/spelling/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/spelling/_page.svelte",
+    "src": "src/routes/grammar/arabic/spelling/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C75u3jtj.css"
+    ]
+  },
+  "src/routes/grammar/arabic/vocabulary/+page.svelte": {
+    "file": "entries/pages/grammar/arabic/vocabulary/_page.svelte.js",
+    "name": "entries/pages/grammar/arabic/vocabulary/_page.svelte",
+    "src": "src/routes/grammar/arabic/vocabulary/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.2wXFKfme.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-character-stroke-order/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-character-stroke-order/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-character-stroke-order/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-character-stroke-order/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DJ8TIyLP.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-character-stroke-search/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-character-stroke-search/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-character-stroke-search/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-character-stroke-search/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DwdKQDJH.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-character-stroke-search/+page.ts": {
+    "file": "entries/pages/grammar/chinese/chinese-character-stroke-search/_page.ts.js",
+    "name": "entries/pages/grammar/chinese/chinese-character-stroke-search/_page.ts",
+    "src": "src/routes/grammar/chinese/chinese-character-stroke-search/+page.ts",
+    "isEntry": true
+  },
+  "src/routes/grammar/chinese/chinese-syntax-improved/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-syntax-improved/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-syntax-improved/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-syntax-improved/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CdmDG2eY.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-syntax/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-syntax/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-syntax/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-syntax/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C3Q74v_u.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-transliteration-simple/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-transliteration-simple/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-transliteration-simple/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-transliteration-simple/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BMXTv61v.css"
+    ]
+  },
+  "src/routes/grammar/chinese/chinese-transliteration/+page.svelte": {
+    "file": "entries/pages/grammar/chinese/chinese-transliteration/_page.svelte.js",
+    "name": "entries/pages/grammar/chinese/chinese-transliteration/_page.svelte",
+    "src": "src/routes/grammar/chinese/chinese-transliteration/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.Bn7caSt9.css"
+    ]
+  },
+  "src/routes/grammar/hindi/+page.svelte": {
+    "file": "entries/pages/grammar/hindi/_page.svelte.js",
+    "name": "entries/pages/grammar/hindi/_page.svelte",
+    "src": "src/routes/grammar/hindi/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B0xvDmgN.css"
+    ]
+  },
+  "src/routes/grammar/hindi/pronominal-composition/+page.svelte": {
+    "file": "entries/pages/grammar/hindi/pronominal-composition/_page.svelte.js",
+    "name": "entries/pages/grammar/hindi/pronominal-composition/_page.svelte",
+    "src": "src/routes/grammar/hindi/pronominal-composition/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CpYon7KV.css"
+    ]
+  },
+  "src/routes/grammar/hindi/songs/+page.svelte": {
+    "file": "entries/pages/grammar/hindi/songs/_page.svelte.js",
+    "name": "entries/pages/grammar/hindi/songs/_page.svelte",
+    "src": "src/routes/grammar/hindi/songs/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DKwO_Yyg.css"
+    ]
+  },
+  "src/routes/grammar/hindi/spelling/+page.svelte": {
+    "file": "entries/pages/grammar/hindi/spelling/_page.svelte.js",
+    "name": "entries/pages/grammar/hindi/spelling/_page.svelte",
+    "src": "src/routes/grammar/hindi/spelling/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CzjcJMq8.css"
+    ]
+  },
+  "src/routes/grammar/japanese/pronominal-composition/+page.svelte": {
+    "file": "entries/pages/grammar/japanese/pronominal-composition/_page.svelte.js",
+    "name": "entries/pages/grammar/japanese/pronominal-composition/_page.svelte",
+    "src": "src/routes/grammar/japanese/pronominal-composition/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DKTcYlGK.css"
+    ]
+  },
+  "src/routes/grammar/languages-test/+page.svelte": {
+    "file": "entries/pages/grammar/languages-test/_page.svelte.js",
+    "name": "entries/pages/grammar/languages-test/_page.svelte",
+    "src": "src/routes/grammar/languages-test/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CpJ7vTgO.css"
+    ]
+  },
+  "src/routes/grammar/russian/+page.svelte": {
+    "file": "entries/pages/grammar/russian/_page.svelte.js",
+    "name": "entries/pages/grammar/russian/_page.svelte",
+    "src": "src/routes/grammar/russian/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CNL47D4s.css"
+    ]
+  },
+  "src/routes/grammar/russian/pronominal-composition/+page.svelte": {
+    "file": "entries/pages/grammar/russian/pronominal-composition/_page.svelte.js",
+    "name": "entries/pages/grammar/russian/pronominal-composition/_page.svelte",
+    "src": "src/routes/grammar/russian/pronominal-composition/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.NH_xnlHv.css"
+    ]
+  },
+  "src/routes/grammar/russian/russian-declensions/+page.svelte": {
+    "file": "entries/pages/grammar/russian/russian-declensions/_page.svelte.js",
+    "name": "entries/pages/grammar/russian/russian-declensions/_page.svelte",
+    "src": "src/routes/grammar/russian/russian-declensions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.MWKK1Jwm.css"
+    ]
+  },
+  "src/routes/grammar/russian/science/+page.svelte": {
+    "file": "entries/pages/grammar/russian/science/_page.svelte.js",
+    "name": "entries/pages/grammar/russian/science/_page.svelte",
+    "src": "src/routes/grammar/russian/science/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DB3XL1x-.css"
+    ]
+  },
+  "src/routes/grammar/russian/songs/+page.svelte": {
+    "file": "entries/pages/grammar/russian/songs/_page.svelte.js",
+    "name": "entries/pages/grammar/russian/songs/_page.svelte",
+    "src": "src/routes/grammar/russian/songs/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DyMUuvSk.css"
+    ]
+  },
+  "src/routes/grammar/science/+page.svelte": {
+    "file": "entries/pages/grammar/science/_page.svelte.js",
+    "name": "entries/pages/grammar/science/_page.svelte",
+    "src": "src/routes/grammar/science/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CpDTx-iM.css"
+    ]
+  },
+  "src/routes/list/+page.svelte": {
+    "file": "entries/pages/list/_page.svelte.js",
+    "name": "entries/pages/list/_page.svelte",
+    "src": "src/routes/list/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_PostListing.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/list/+page.ts": {
+    "file": "entries/pages/list/_page.ts.js",
+    "name": "entries/pages/list/_page.ts",
+    "src": "src/routes/list/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js"
+    ]
+  },
+  "src/routes/melancholic-machines/+page.svelte": {
+    "file": "entries/pages/melancholic-machines/_page.svelte.js",
+    "name": "entries/pages/melancholic-machines/_page.svelte",
+    "src": "src/routes/melancholic-machines/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_parallaxData.js",
+      "_CircularParallax.js",
+      "_TOC.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/posts/+page.svelte": {
+    "file": "entries/pages/posts/_page.svelte.js",
+    "name": "entries/pages/posts/_page.svelte",
+    "src": "src/routes/posts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_PostListing.js"
+    ],
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/posts/+page.ts": {
+    "file": "entries/pages/posts/_page.ts.js",
+    "name": "entries/pages/posts/_page.ts",
+    "src": "src/routes/posts/+page.ts",
+    "isEntry": true
+  },
+  "src/routes/sentences/+page.svelte": {
+    "file": "entries/pages/sentences/_page.svelte.js",
+    "name": "entries/pages/sentences/_page.svelte",
+    "src": "src/routes/sentences/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_TranslationConfig.js",
+      "_languages.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DPIBD0pf.css"
+    ]
+  },
+  "src/routes/transliteration/+page.svelte": {
+    "file": "entries/pages/transliteration/_page.svelte.js",
+    "name": "entries/pages/transliteration/_page.svelte",
+    "src": "src/routes/transliteration/+page.svelte",
+    "isEntry": true,
+    "css": [
+      "_app/immutable/assets/style.DEKSbcmV.css"
+    ]
+  },
+  "src/routes/words/+page.svelte": {
+    "file": "entries/pages/words/_page.svelte.js",
+    "name": "entries/pages/words/_page.svelte",
+    "src": "src/routes/words/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-svelte.js",
+      "_TranslationConfig.js",
+      "_languages.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C6j4Kfaq.css"
+    ]
+  }
+}

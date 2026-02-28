@@ -1,0 +1,7598 @@
+[
+  {
+    "hi": "में",
+    "en": "In"
+  },
+  {
+    "hi": "है",
+    "en": "Is"
+  },
+  {
+    "hi": "हैं",
+    "en": "Are"
+  },
+  {
+    "hi": "नहीं",
+    "en": "No"
+  },
+  {
+    "hi": "लिए",
+    "en": "For"
+  },
+  {
+    "hi": "गया",
+    "en": "Went"
+  },
+  {
+    "hi": "तथा",
+    "en": "and"
+  },
+  {
+    "hi": "अपने",
+    "en": "Our"
+  },
+  {
+    "hi": "कुछ",
+    "en": "Some?"
+  },
+  {
+    "hi": "साथ",
+    "en": "with"
+  },
+  {
+    "hi": "होता",
+    "en": "Would"
+  },
+  {
+    "hi": "था",
+    "en": "Was"
+  },
+  {
+    "hi": "दिया",
+    "en": "Gave"
+  },
+  {
+    "hi": "हुए",
+    "en": "happened"
+  },
+  {
+    "hi": "कोई",
+    "en": "Any"
+  },
+  {
+    "hi": "रूप",
+    "en": "Form"
+  },
+  {
+    "hi": "से",
+    "en": "From"
+  },
+  {
+    "hi": "मैं",
+    "en": "I"
+  },
+  {
+    "hi": "रहा",
+    "en": "remained"
+  },
+  {
+    "hi": "हुआ",
+    "en": "Happened"
+  },
+  {
+    "hi": "बात",
+    "en": "talk"
+  },
+  {
+    "hi": "कहा",
+    "en": "Said"
+  },
+  {
+    "hi": "समय",
+    "en": "Time"
+  },
+  {
+    "hi": "क्या",
+    "en": "What"
+  },
+  {
+    "hi": "अपनी",
+    "en": "Own"
+  },
+  {
+    "hi": "होती",
+    "en": "was"
+  },
+  {
+    "hi": "प्रकार",
+    "en": "Type"
+  },
+  {
+    "hi": "बहुत",
+    "en": "Very"
+  },
+  {
+    "hi": "तरह",
+    "en": "Kind"
+  },
+  {
+    "hi": "बाद",
+    "en": "after"
+  },
+  {
+    "hi": "फिर",
+    "en": "Then"
+  },
+  {
+    "hi": "रहे",
+    "en": "are"
+  },
+  {
+    "hi": "द्वारा",
+    "en": "By"
+  },
+  {
+    "hi": "अधिक",
+    "en": "More"
+  },
+  {
+    "hi": "रही",
+    "en": "doing"
+  },
+  {
+    "hi": "होने",
+    "en": "being"
+  },
+  {
+    "hi": "एवं",
+    "en": "And"
+  },
+  {
+    "hi": "हुई",
+    "en": "Hui"
+  },
+  {
+    "hi": "थे",
+    "en": "Were"
+  },
+  {
+    "hi": "उनके",
+    "en": "Their"
+  },
+  {
+    "hi": "थी",
+    "en": "Was"
+  },
+  {
+    "hi": "वाले",
+    "en": "ones"
+  },
+  {
+    "hi": "चाहिए",
+    "en": "Needed"
+  },
+  {
+    "hi": "दिन",
+    "en": "the day"
+  },
+  {
+    "hi": "लेकिन",
+    "en": "But"
+  },
+  {
+    "hi": "काम",
+    "en": "Work"
+  },
+  {
+    "hi": "हूँ",
+    "en": "am"
+  },
+  {
+    "hi": "होते",
+    "en": "was"
+  },
+  {
+    "hi": "इसके",
+    "en": "Its"
+  },
+  {
+    "hi": "उन्हें",
+    "en": "Them"
+  },
+  {
+    "hi": "गये",
+    "en": "went"
+  },
+  {
+    "hi": "कभी",
+    "en": "Sometimes"
+  },
+  {
+    "hi": "आदि",
+    "en": "Etcetera"
+  },
+  {
+    "hi": "लोग",
+    "en": "People"
+  },
+  {
+    "hi": "बार",
+    "en": "Times"
+  },
+  {
+    "hi": "यहाँ",
+    "en": "here"
+  },
+  {
+    "hi": "दोनों",
+    "en": "Both"
+  },
+  {
+    "hi": "उन्होंने",
+    "en": "They"
+  },
+  {
+    "hi": "कार्य",
+    "en": "Work"
+  },
+  {
+    "hi": "पास",
+    "en": "Near"
+  },
+  {
+    "hi": "वहाँ",
+    "en": "There"
+  },
+  {
+    "hi": "भारत",
+    "en": "India"
+  },
+  {
+    "hi": "लिया",
+    "en": "took"
+  },
+  {
+    "hi": "प्राप्त",
+    "en": "get"
+  },
+  {
+    "hi": "उनकी",
+    "en": "His"
+  },
+  {
+    "hi": "लोगों",
+    "en": "people"
+  },
+  {
+    "hi": "गयी",
+    "en": "went"
+  },
+  {
+    "hi": "लगा",
+    "en": "Put"
+  },
+  {
+    "hi": "अन्य",
+    "en": "Other"
+  },
+  {
+    "hi": "होगा",
+    "en": "will be"
+  },
+  {
+    "hi": "इसी",
+    "en": "This "
+  },
+  {
+    "hi": "देश",
+    "en": "Country"
+  },
+  {
+    "hi": "यदि",
+    "en": "If"
+  },
+  {
+    "hi": "सभी",
+    "en": "All"
+  },
+  {
+    "hi": "नाम",
+    "en": "Name"
+  },
+  {
+    "hi": "वर्ष",
+    "en": "year"
+  },
+  {
+    "hi": "ऐसा",
+    "en": "As such"
+  },
+  {
+    "hi": "विकास",
+    "en": "Development"
+  },
+  {
+    "hi": "अपना",
+    "en": "own"
+  },
+  {
+    "hi": "ऐसे",
+    "en": "This way"
+  },
+  {
+    "hi": "दूसरे",
+    "en": "Others"
+  },
+  {
+    "hi": "हाथ",
+    "en": "Hand"
+  },
+  {
+    "hi": "भाषा",
+    "en": "Language"
+  },
+  {
+    "hi": "मेरे",
+    "en": "My"
+  },
+  {
+    "hi": "मैंने",
+    "en": "I"
+  },
+  {
+    "hi": "तुम",
+    "en": "You"
+  },
+  {
+    "hi": "बीच",
+    "en": "between"
+  },
+  {
+    "hi": "वाली",
+    "en": "wala"
+  },
+  {
+    "hi": "बड़े",
+    "en": "elder"
+  },
+  {
+    "hi": "प्रति",
+    "en": "Per"
+  },
+  {
+    "hi": "व्यक्ति",
+    "en": "Person"
+  },
+  {
+    "hi": "उनका",
+    "en": "their"
+  },
+  {
+    "hi": "लिये",
+    "en": "for"
+  },
+  {
+    "hi": "इसलिए",
+    "en": "so"
+  },
+  {
+    "hi": "तीन",
+    "en": "Three"
+  },
+  {
+    "hi": "इसका",
+    "en": "Its"
+  },
+  {
+    "hi": "ऐसी",
+    "en": "Such"
+  },
+  {
+    "hi": "विशेष",
+    "en": "Specific"
+  },
+  {
+    "hi": "बड़ी",
+    "en": "Big"
+  },
+  {
+    "hi": "अथवा",
+    "en": "Or"
+  },
+  {
+    "hi": "भाग",
+    "en": "Part"
+  },
+  {
+    "hi": "क्योंकि",
+    "en": "Because"
+  },
+  {
+    "hi": "सिंह",
+    "en": "Lion"
+  },
+  {
+    "hi": "ठीक",
+    "en": "Correct"
+  },
+  {
+    "hi": "स्थिति",
+    "en": "Situation"
+  },
+  {
+    "hi": "परन्तु",
+    "en": "But"
+  },
+  {
+    "hi": "स्थान",
+    "en": "place"
+  },
+  {
+    "hi": "यही",
+    "en": "This only"
+  },
+  {
+    "hi": "क्यों",
+    "en": "Why"
+  },
+  {
+    "hi": "गाँव",
+    "en": "Village"
+  },
+  {
+    "hi": "राज्य",
+    "en": "State"
+  },
+  {
+    "hi": "अलग",
+    "en": "apart"
+  },
+  {
+    "hi": "लेकर",
+    "en": "taking"
+  },
+  {
+    "hi": "अभी",
+    "en": "Now!"
+  },
+  {
+    "hi": "इसमें",
+    "en": "In this"
+  },
+  {
+    "hi": "विभिन्न",
+    "en": "Various"
+  },
+  {
+    "hi": "सी",
+    "en": "C"
+  },
+  {
+    "hi": "विचार",
+    "en": "thought"
+  },
+  {
+    "hi": "जिस",
+    "en": "That"
+  },
+  {
+    "hi": "बाहर",
+    "en": "Outside"
+  },
+  {
+    "hi": "ऊपर",
+    "en": "Above"
+  },
+  {
+    "hi": "बना",
+    "en": "made"
+  },
+  {
+    "hi": "तैयार",
+    "en": "Ready"
+  },
+  {
+    "hi": "अनेक",
+    "en": "Many"
+  },
+  {
+    "hi": "सामने",
+    "en": "Front"
+  },
+  {
+    "hi": "शिक्षा",
+    "en": "Education"
+  },
+  {
+    "hi": "शरीर",
+    "en": "Body"
+  },
+  {
+    "hi": "होकर",
+    "en": "through"
+  },
+  {
+    "hi": "दृष्टि",
+    "en": "Vision"
+  },
+  {
+    "hi": "श्री",
+    "en": "Mister"
+  },
+  {
+    "hi": "थीं",
+    "en": "were"
+  },
+  {
+    "hi": "दूर",
+    "en": "away"
+  },
+  {
+    "hi": "शब्द",
+    "en": "Word"
+  },
+  {
+    "hi": "ध्यान",
+    "en": "Attention"
+  },
+  {
+    "hi": "चार",
+    "en": "Four"
+  },
+  {
+    "hi": "मेरी",
+    "en": "My"
+  },
+  {
+    "hi": "बड़ा",
+    "en": "Big"
+  },
+  {
+    "hi": "पता",
+    "en": "Address"
+  },
+  {
+    "hi": "लगता",
+    "en": "It seems"
+  },
+  {
+    "hi": "आगे",
+    "en": "Ahead"
+  },
+  {
+    "hi": "किया",
+    "en": "Did"
+  },
+  {
+    "hi": "उत्तर",
+    "en": "Answer"
+  },
+  {
+    "hi": "किन्तु",
+    "en": "But"
+  },
+  {
+    "hi": "आने",
+    "en": "to come"
+  },
+  {
+    "hi": "लगे",
+    "en": "started"
+  },
+  {
+    "hi": "लगभग",
+    "en": "About"
+  },
+  {
+    "hi": "इसे",
+    "en": "This"
+  },
+  {
+    "hi": "लाख",
+    "en": "million"
+  },
+  {
+    "hi": "बारे",
+    "en": "About"
+  },
+  {
+    "hi": "होना",
+    "en": "Happen"
+  },
+  {
+    "hi": "इससे",
+    "en": "From this"
+  },
+  {
+    "hi": "मात्रा",
+    "en": "amount"
+  },
+  {
+    "hi": "अध्ययन",
+    "en": "Study"
+  },
+  {
+    "hi": "वाला",
+    "en": "gonna"
+  },
+  {
+    "hi": "जिसमें",
+    "en": "in which"
+  },
+  {
+    "hi": "नीचे",
+    "en": "Below"
+  },
+  {
+    "hi": "अर्थ",
+    "en": "Meaning"
+  },
+  {
+    "hi": "लोक",
+    "en": "people"
+  },
+  {
+    "hi": "आवश्यक",
+    "en": "necessary"
+  },
+  {
+    "hi": "हो",
+    "en": "yes"
+  },
+  {
+    "hi": "माँ",
+    "en": "Mother"
+  },
+  {
+    "hi": "छोटे",
+    "en": "Small"
+  },
+  {
+    "hi": "प्रतिशत",
+    "en": "percent"
+  },
+  {
+    "hi": "शुरू",
+    "en": "Start"
+  },
+  {
+    "hi": "अगर",
+    "en": "If"
+  },
+  {
+    "hi": "इतना",
+    "en": "This much"
+  },
+  {
+    "hi": "आया",
+    "en": "Came"
+  },
+  {
+    "hi": "होगी",
+    "en": "will"
+  },
+  {
+    "hi": "मिल",
+    "en": "Mill"
+  },
+  {
+    "hi": "स्वयं",
+    "en": "Self"
+  },
+  {
+    "hi": "रात",
+    "en": "Night"
+  },
+  {
+    "hi": "बिना",
+    "en": "Without"
+  },
+  {
+    "hi": "हमें",
+    "en": "Us"
+  },
+  {
+    "hi": "उपयोग",
+    "en": "Use"
+  },
+  {
+    "hi": "किए",
+    "en": "did"
+  },
+  {
+    "hi": "महत्वपूर्ण",
+    "en": "Important"
+  },
+  {
+    "hi": "मुख्य",
+    "en": "main"
+  },
+  {
+    "hi": "साल",
+    "en": "Year"
+  },
+  {
+    "hi": "ज्यादा",
+    "en": "More"
+  },
+  {
+    "hi": "साहित्य",
+    "en": "Material"
+  },
+  {
+    "hi": "पूर्व",
+    "en": "East"
+  },
+  {
+    "hi": "निर्माण",
+    "en": "Construction"
+  },
+  {
+    "hi": "विषय",
+    "en": "Subject"
+  },
+  {
+    "hi": "जिससे",
+    "en": "By which"
+  },
+  {
+    "hi": "देख",
+    "en": "See"
+  },
+  {
+    "hi": "चित्र",
+    "en": "picture"
+  },
+  {
+    "hi": "लगी",
+    "en": "started"
+  },
+  {
+    "hi": "प्रत्येक",
+    "en": "each"
+  },
+  {
+    "hi": "मनुष्य",
+    "en": "man"
+  },
+  {
+    "hi": "गई",
+    "en": "Went"
+  },
+  {
+    "hi": "स्पष्ट",
+    "en": "Clear"
+  },
+  {
+    "hi": "दिनों",
+    "en": "days"
+  },
+  {
+    "hi": "रंग",
+    "en": "Colour"
+  },
+  {
+    "hi": "इसकी",
+    "en": "his"
+  },
+  {
+    "hi": "स्तर",
+    "en": "level"
+  },
+  {
+    "hi": "मेरा",
+    "en": "My"
+  },
+  {
+    "hi": "दूसरी",
+    "en": "Second"
+  },
+  {
+    "hi": "अच्छा",
+    "en": "Good"
+  },
+  {
+    "hi": "रोग",
+    "en": "Disease"
+  },
+  {
+    "hi": "काल",
+    "en": "period"
+  },
+  {
+    "hi": "अच्छी",
+    "en": "Good"
+  },
+  {
+    "hi": "विज्ञान",
+    "en": "Science"
+  },
+  {
+    "hi": "भाई",
+    "en": "Brother"
+  },
+  {
+    "hi": "ज्ञान",
+    "en": "Knowledge"
+  },
+  {
+    "hi": "दिल्ली",
+    "en": "Delhi"
+  },
+  {
+    "hi": "बनाने",
+    "en": "create"
+  },
+  {
+    "hi": "रुपये",
+    "en": "Rs"
+  },
+  {
+    "hi": "रखा",
+    "en": "kept"
+  },
+  {
+    "hi": "आवश्यकता",
+    "en": "Need"
+  },
+  {
+    "hi": "आता",
+    "en": "now"
+  },
+  {
+    "hi": "कौन",
+    "en": "Who"
+  },
+  {
+    "hi": "हों",
+    "en": "be"
+  },
+  {
+    "hi": "आर्थिक",
+    "en": "financial"
+  },
+  {
+    "hi": "सहायता",
+    "en": "Help"
+  },
+  {
+    "hi": "अतिरिक्त",
+    "en": "Excessive"
+  },
+  {
+    "hi": "देर",
+    "en": "Late"
+  },
+  {
+    "hi": "तरफ",
+    "en": "on the side"
+  },
+  {
+    "hi": "लेने",
+    "en": "take"
+  },
+  {
+    "hi": "चला",
+    "en": "walked"
+  },
+  {
+    "hi": "सामाजिक",
+    "en": "Social"
+  },
+  {
+    "hi": "समझ",
+    "en": "Understanding"
+  },
+  {
+    "hi": "मगर",
+    "en": "But"
+  },
+  {
+    "hi": "आते",
+    "en": "coming"
+  },
+  {
+    "hi": "बच्चे",
+    "en": "Children"
+  },
+  {
+    "hi": "कला",
+    "en": "Art"
+  },
+  {
+    "hi": "पत्र",
+    "en": "Letter"
+  },
+  {
+    "hi": "भीतर",
+    "en": "inside"
+  },
+  {
+    "hi": "संस्कृति",
+    "en": "Culture"
+  },
+  {
+    "hi": "उनमें",
+    "en": "Among them"
+  },
+  {
+    "hi": "वर्ग",
+    "en": "Social class"
+  },
+  {
+    "hi": "विभाग",
+    "en": "Department"
+  },
+  {
+    "hi": "चाहता",
+    "en": "wants"
+  },
+  {
+    "hi": "सिर",
+    "en": "Head"
+  },
+  {
+    "hi": "बताया",
+    "en": "told"
+  },
+  {
+    "hi": "जगह",
+    "en": "Place"
+  },
+  {
+    "hi": "वही",
+    "en": "Same"
+  },
+  {
+    "hi": "इतनी",
+    "en": "So much"
+  },
+  {
+    "hi": "स्थापित",
+    "en": "Established"
+  },
+  {
+    "hi": "राष्ट्रीय",
+    "en": "National"
+  },
+  {
+    "hi": "स्वर",
+    "en": "voice"
+  },
+  {
+    "hi": "क्षेत्रों",
+    "en": "Areas"
+  },
+  {
+    "hi": "जिसके",
+    "en": "whose"
+  },
+  {
+    "hi": "जन्म",
+    "en": "Birth"
+  },
+  {
+    "hi": "जाए",
+    "en": "go"
+  },
+  {
+    "hi": "दौरान",
+    "en": "during"
+  },
+  {
+    "hi": "गांधी",
+    "en": "Gandhi"
+  },
+  {
+    "hi": "हाँ",
+    "en": "Yes"
+  },
+  {
+    "hi": "जनता",
+    "en": "public"
+  },
+  {
+    "hi": "किस",
+    "en": "What"
+  },
+  {
+    "hi": "केन्द्र",
+    "en": "center"
+  },
+  {
+    "hi": "साहब",
+    "en": "Sir"
+  },
+  {
+    "hi": "पूर्ण",
+    "en": "complete"
+  },
+  {
+    "hi": "पुलिस",
+    "en": "Police"
+  },
+  {
+    "hi": "बोला",
+    "en": "spoke"
+  },
+  {
+    "hi": "थईआ",
+    "en": "Thaia"
+  },
+  {
+    "hi": "कमी",
+    "en": "less"
+  },
+  {
+    "hi": "समस्या",
+    "en": "the problem"
+  },
+  {
+    "hi": "कार्यक्रम",
+    "en": "program"
+  },
+  {
+    "hi": "विवाह",
+    "en": "Marriage"
+  },
+  {
+    "hi": "भूमि",
+    "en": "land"
+  },
+  {
+    "hi": "भाव",
+    "en": "expressions"
+  },
+  {
+    "hi": "देखकर",
+    "en": "after seeing"
+  },
+  {
+    "hi": "करोड़",
+    "en": "Ten million"
+  },
+  {
+    "hi": "प्रथम",
+    "en": "First"
+  },
+  {
+    "hi": "मूल",
+    "en": "Original"
+  },
+  {
+    "hi": "परिवर्तन",
+    "en": "change"
+  },
+  {
+    "hi": "बच्चों",
+    "en": "Children"
+  },
+  {
+    "hi": "लाभ",
+    "en": "Benefit"
+  },
+  {
+    "hi": "प्रदान",
+    "en": "provide"
+  },
+  {
+    "hi": "आये",
+    "en": "come"
+  },
+  {
+    "hi": "छोटी",
+    "en": "Small"
+  },
+  {
+    "hi": "स्त्री",
+    "en": "Woman"
+  },
+  {
+    "hi": "सेवा",
+    "en": "service"
+  },
+  {
+    "hi": "व्यवहार",
+    "en": "Behaviour"
+  },
+  {
+    "hi": "राम",
+    "en": "Ram"
+  },
+  {
+    "hi": "रचना",
+    "en": "structure"
+  },
+  {
+    "hi": "की",
+    "en": "of"
+  },
+  {
+    "hi": "भिन्न",
+    "en": "Different"
+  },
+  {
+    "hi": "मिट्टी",
+    "en": "Soil"
+  },
+  {
+    "hi": "देशों",
+    "en": "Countries"
+  },
+  {
+    "hi": "इनके",
+    "en": "Their"
+  },
+  {
+    "hi": "आती",
+    "en": "comes"
+  },
+  {
+    "hi": "सही",
+    "en": "Correct"
+  },
+  {
+    "hi": "उपलब्ध",
+    "en": "Available"
+  },
+  {
+    "hi": "बल्कि",
+    "en": "Rather"
+  },
+  {
+    "hi": "प्राय",
+    "en": "usually"
+  },
+  {
+    "hi": "बिजली",
+    "en": "Electricity"
+  },
+  {
+    "hi": "लेते",
+    "en": "taking"
+  },
+  {
+    "hi": "जान",
+    "en": "to go"
+  },
+  {
+    "hi": "बढ़",
+    "en": "increase"
+  },
+  {
+    "hi": "सारे",
+    "en": "all"
+  },
+  {
+    "hi": "शायद",
+    "en": "Perhaps"
+  },
+  {
+    "hi": "सरकारी",
+    "en": "official"
+  },
+  {
+    "hi": "पड़",
+    "en": "fall"
+  },
+  {
+    "hi": "चुका",
+    "en": "paid"
+  },
+  {
+    "hi": "पड़ा",
+    "en": "had"
+  },
+  {
+    "hi": "विधि",
+    "en": "Method"
+  },
+  {
+    "hi": "छोड़",
+    "en": "leave"
+  },
+  {
+    "hi": "लिखा",
+    "en": "wrote"
+  },
+  {
+    "hi": "जबकि",
+    "en": "Whereas"
+  },
+  {
+    "hi": "सिर्फ",
+    "en": "Only"
+  },
+  {
+    "hi": "दर्शन",
+    "en": "Visit"
+  },
+  {
+    "hi": "प्रक्रिया",
+    "en": "Process"
+  },
+  {
+    "hi": "दिखाई",
+    "en": "appear"
+  },
+  {
+    "hi": "कुल",
+    "en": "Total"
+  },
+  {
+    "hi": "शब्दों",
+    "en": "words"
+  },
+  {
+    "hi": "लाल",
+    "en": "Red"
+  },
+  {
+    "hi": "निकल",
+    "en": "Out"
+  },
+  {
+    "hi": "नये",
+    "en": "should not"
+  },
+  {
+    "hi": "रखने",
+    "en": "Keeping"
+  },
+  {
+    "hi": "पंजाब",
+    "en": "Punjab"
+  },
+  {
+    "hi": "नदी",
+    "en": "River"
+  },
+  {
+    "hi": "गए",
+    "en": "Went"
+  },
+  {
+    "hi": "मृत्यु",
+    "en": "death"
+  },
+  {
+    "hi": "स्वीकार",
+    "en": "Accept"
+  },
+  {
+    "hi": "अन्तरिक्ष",
+    "en": "Space"
+  },
+  {
+    "hi": "आकर",
+    "en": "come"
+  },
+  {
+    "hi": "याद",
+    "en": "Memory"
+  },
+  {
+    "hi": "उठा",
+    "en": "picking"
+  },
+  {
+    "hi": "दूध",
+    "en": "Milk"
+  },
+  {
+    "hi": "कांग्रेस",
+    "en": "Congress"
+  },
+  {
+    "hi": "सारी",
+    "en": "all"
+  },
+  {
+    "hi": "माध्यम",
+    "en": "Channel"
+  },
+  {
+    "hi": "दूसरा",
+    "en": "Second"
+  },
+  {
+    "hi": "संबंध",
+    "en": "relationship"
+  },
+  {
+    "hi": "जिन",
+    "en": "Gin"
+  },
+  {
+    "hi": "चाहे",
+    "en": "whether"
+  },
+  {
+    "hi": "चाहते",
+    "en": "Want"
+  },
+  {
+    "hi": "प्रणाली",
+    "en": "System"
+  },
+  {
+    "hi": "तभी",
+    "en": "then"
+  },
+  {
+    "hi": "होंगे",
+    "en": "will"
+  },
+  {
+    "hi": "इनमें",
+    "en": "Among these"
+  },
+  {
+    "hi": "सन",
+    "en": "Sun"
+  },
+  {
+    "hi": "मान",
+    "en": "Value"
+  },
+  {
+    "hi": "पुत्र",
+    "en": "Son"
+  },
+  {
+    "hi": "उद्देश्य",
+    "en": "Objective"
+  },
+  {
+    "hi": "विश्वास",
+    "en": "faith"
+  },
+  {
+    "hi": "पिछले",
+    "en": "Previous"
+  },
+  {
+    "hi": "ताकि",
+    "en": "So that"
+  },
+  {
+    "hi": "निश्चित",
+    "en": "Fixed"
+  },
+  {
+    "hi": "जिसका",
+    "en": "Whose"
+  },
+  {
+    "hi": "जानकारी",
+    "en": "Information"
+  },
+  {
+    "hi": "नेता",
+    "en": "the leader"
+  },
+  {
+    "hi": "बालक",
+    "en": "Boy"
+  },
+  {
+    "hi": "अन्त",
+    "en": "the end"
+  },
+  {
+    "hi": "उचित",
+    "en": "Appropriate"
+  },
+  {
+    "hi": "संगीत",
+    "en": "music"
+  },
+  {
+    "hi": "जल्दी",
+    "en": "Quick"
+  },
+  {
+    "hi": "क्षमता",
+    "en": "Capacity"
+  },
+  {
+    "hi": "हजार",
+    "en": "a thousand"
+  },
+  {
+    "hi": "जाएगा",
+    "en": "will"
+  },
+  {
+    "hi": "बनाया",
+    "en": "made"
+  },
+  {
+    "hi": "पति",
+    "en": "Husband"
+  },
+  {
+    "hi": "कोशिश",
+    "en": "Effort"
+  },
+  {
+    "hi": "चुके",
+    "en": "already"
+  },
+  {
+    "hi": "खाने",
+    "en": "eat"
+  },
+  {
+    "hi": "फसल",
+    "en": "Crop"
+  },
+  {
+    "hi": "प्रकृति",
+    "en": "Nature"
+  },
+  {
+    "hi": "पौधों",
+    "en": "Plants"
+  },
+  {
+    "hi": "प्रकट",
+    "en": "Revealed"
+  },
+  {
+    "hi": "पक्ष",
+    "en": "Party"
+  },
+  {
+    "hi": "नीति",
+    "en": "Policy"
+  },
+  {
+    "hi": "यद्यपि",
+    "en": "Although"
+  },
+  {
+    "hi": "मात्र",
+    "en": "Only"
+  },
+  {
+    "hi": "भारी",
+    "en": "Heavy"
+  },
+  {
+    "hi": "पुस्तकालय",
+    "en": "Library"
+  },
+  {
+    "hi": "चले",
+    "en": "let's go"
+  },
+  {
+    "hi": "समिति",
+    "en": "Committee"
+  },
+  {
+    "hi": "सामग्री",
+    "en": "Material"
+  },
+  {
+    "hi": "चाहिये",
+    "en": "should"
+  },
+  {
+    "hi": "अन्तर्गत",
+    "en": "under"
+  },
+  {
+    "hi": "माल",
+    "en": "Goods"
+  },
+  {
+    "hi": "शामिल",
+    "en": "Involved"
+  },
+  {
+    "hi": "बोली",
+    "en": "Languages"
+  },
+  {
+    "hi": "उनसे",
+    "en": "From them"
+  },
+  {
+    "hi": "अपेक्षा",
+    "en": "Expectation"
+  },
+  {
+    "hi": "हेतु",
+    "en": "For"
+  },
+  {
+    "hi": "नगर",
+    "en": "City"
+  },
+  {
+    "hi": "दिये",
+    "en": "Lamps"
+  },
+  {
+    "hi": "सम्बन्धी",
+    "en": "related to"
+  },
+  {
+    "hi": "पुस्तक",
+    "en": "Book"
+  },
+  {
+    "hi": "खुद",
+    "en": "Self"
+  },
+  {
+    "hi": "वर्णन",
+    "en": "Description"
+  },
+  {
+    "hi": "बने",
+    "en": "become"
+  },
+  {
+    "hi": "जोर",
+    "en": "Emphasis"
+  },
+  {
+    "hi": "करें",
+    "en": "do"
+  },
+  {
+    "hi": "जिनमें",
+    "en": "In which"
+  },
+  {
+    "hi": "लक्षण",
+    "en": "symptoms"
+  },
+  {
+    "hi": "नामक",
+    "en": "namesake"
+  },
+  {
+    "hi": "वहीं",
+    "en": "There itself"
+  },
+  {
+    "hi": "तुम्हारे",
+    "en": "Your"
+  },
+  {
+    "hi": "विश्व",
+    "en": "World"
+  },
+  {
+    "hi": "शासन",
+    "en": "Government"
+  },
+  {
+    "hi": "वैसे",
+    "en": "By the way"
+  },
+  {
+    "hi": "युग",
+    "en": "Era"
+  },
+  {
+    "hi": "बैठ",
+    "en": "sit"
+  },
+  {
+    "hi": "स्थापना",
+    "en": "Installation"
+  },
+  {
+    "hi": "अर्थात",
+    "en": "In other words"
+  },
+  {
+    "hi": "सारा",
+    "en": "Sarah"
+  },
+  {
+    "hi": "लेता",
+    "en": "takes"
+  },
+  {
+    "hi": "लगती",
+    "en": "it seems"
+  },
+  {
+    "hi": "शैली",
+    "en": "Style"
+  },
+  {
+    "hi": "लें",
+    "en": "take"
+  },
+  {
+    "hi": "पार्टी",
+    "en": "the party"
+  },
+  {
+    "hi": "गीत",
+    "en": "song"
+  },
+  {
+    "hi": "अवसर",
+    "en": "opportunity"
+  },
+  {
+    "hi": "युद्ध",
+    "en": "war"
+  },
+  {
+    "hi": "मालूम",
+    "en": "Known"
+  },
+  {
+    "hi": "चारों",
+    "en": "all four"
+  },
+  {
+    "hi": "प्रकाश",
+    "en": "Light"
+  },
+  {
+    "hi": "जायेगा",
+    "en": "will go"
+  },
+  {
+    "hi": "बैठे",
+    "en": "sitting"
+  },
+  {
+    "hi": "तुम्हें",
+    "en": "to you"
+  },
+  {
+    "hi": "समाप्त",
+    "en": "End"
+  },
+  {
+    "hi": "जाय",
+    "en": "go"
+  },
+  {
+    "hi": "साफ",
+    "en": "Clean"
+  },
+  {
+    "hi": "धार्मिक",
+    "en": "Religious"
+  },
+  {
+    "hi": "ताप",
+    "en": "fever"
+  },
+  {
+    "hi": "उल्लेख",
+    "en": "Mention"
+  },
+  {
+    "hi": "वर्तमान",
+    "en": "present"
+  },
+  {
+    "hi": "लेना",
+    "en": "Take"
+  },
+  {
+    "hi": "थोड़ी",
+    "en": "a little"
+  },
+  {
+    "hi": "इनका",
+    "en": "Their"
+  },
+  {
+    "hi": "विकसित",
+    "en": "advanced"
+  },
+  {
+    "hi": "बन्द",
+    "en": "off"
+  },
+  {
+    "hi": "प्रसिद्ध",
+    "en": "famous"
+  },
+  {
+    "hi": "विशिष्ट",
+    "en": "Specific"
+  },
+  {
+    "hi": "प्रेम",
+    "en": "Love"
+  },
+  {
+    "hi": "चली",
+    "en": "went"
+  },
+  {
+    "hi": "रखते",
+    "en": "keeping"
+  },
+  {
+    "hi": "भावना",
+    "en": "Emotion"
+  },
+  {
+    "hi": "चलता",
+    "en": "walks"
+  },
+  {
+    "hi": "सिद्ध",
+    "en": "proven"
+  },
+  {
+    "hi": "वालों",
+    "en": "those"
+  },
+  {
+    "hi": "चित्रों",
+    "en": "Pictures"
+  },
+  {
+    "hi": "पुरुष",
+    "en": "Male"
+  },
+  {
+    "hi": "पदार्थ",
+    "en": "Substance"
+  },
+  {
+    "hi": "चर्चा",
+    "en": "Discussion"
+  },
+  {
+    "hi": "खाना",
+    "en": "Eat"
+  },
+  {
+    "hi": "उच्च",
+    "en": "High"
+  },
+  {
+    "hi": "इतने",
+    "en": "So much"
+  },
+  {
+    "hi": "दी",
+    "en": "Gave"
+  },
+  {
+    "hi": "दिए",
+    "en": "gave"
+  },
+  {
+    "hi": "सीमा",
+    "en": "Limit"
+  },
+  {
+    "hi": "वस्तु",
+    "en": "object"
+  },
+  {
+    "hi": "पड़ी",
+    "en": "lay"
+  },
+  {
+    "hi": "गति",
+    "en": "motion"
+  },
+  {
+    "hi": "अत्यन्त",
+    "en": "extremely"
+  },
+  {
+    "hi": "संगठन",
+    "en": "Organization"
+  },
+  {
+    "hi": "कितना",
+    "en": "How much"
+  },
+  {
+    "hi": "इस्तेमाल",
+    "en": "Use"
+  },
+  {
+    "hi": "बाबा",
+    "en": "Dad"
+  },
+  {
+    "hi": "प्रकाशित",
+    "en": "published"
+  },
+  {
+    "hi": "ढंग",
+    "en": "Manner"
+  },
+  {
+    "hi": "अधिकार",
+    "en": "right"
+  },
+  {
+    "hi": "उधर",
+    "en": "there"
+  },
+  {
+    "hi": "पड़े",
+    "en": "lie"
+  },
+  {
+    "hi": "सके",
+    "en": "could"
+  },
+  {
+    "hi": "सूचना",
+    "en": "Information"
+  },
+  {
+    "hi": "अंग्रेजी",
+    "en": "English"
+  },
+  {
+    "hi": "सुन्दर",
+    "en": "beautiful"
+  },
+  {
+    "hi": "पुनः",
+    "en": "again"
+  },
+  {
+    "hi": "केंद्रीय",
+    "en": "Central"
+  },
+  {
+    "hi": "आधुनिक",
+    "en": "Modern"
+  },
+  {
+    "hi": "शहर",
+    "en": "City "
+  },
+  {
+    "hi": "प्रधानमंत्री",
+    "en": "Prime Minister"
+  },
+  {
+    "hi": "ब्राह्मण",
+    "en": "Brahmin"
+  },
+  {
+    "hi": "उनको",
+    "en": "his"
+  },
+  {
+    "hi": "महीने",
+    "en": "month"
+  },
+  {
+    "hi": "अच्छे",
+    "en": "good"
+  },
+  {
+    "hi": "हवा",
+    "en": "the air"
+  },
+  {
+    "hi": "शाम",
+    "en": "Evening"
+  },
+  {
+    "hi": "इधर",
+    "en": "here"
+  },
+  {
+    "hi": "संसार",
+    "en": "World"
+  },
+  {
+    "hi": "विरोध",
+    "en": "Oppose"
+  },
+  {
+    "hi": "रखना",
+    "en": "Keep"
+  },
+  {
+    "hi": "प्रशिक्षण",
+    "en": "Training"
+  },
+  {
+    "hi": "संघ",
+    "en": "union"
+  },
+  {
+    "hi": "बनी",
+    "en": "Bunny"
+  },
+  {
+    "hi": "पृथ्वी",
+    "en": "Earth"
+  },
+  {
+    "hi": "ऊर्जा",
+    "en": "energy"
+  },
+  {
+    "hi": "हमने",
+    "en": "We"
+  },
+  {
+    "hi": "वास्तविक",
+    "en": "Real"
+  },
+  {
+    "hi": "सहयोग",
+    "en": "support"
+  },
+  {
+    "hi": "तेल",
+    "en": "Oil"
+  },
+  {
+    "hi": "अवधि",
+    "en": "Duration"
+  },
+  {
+    "hi": "सात",
+    "en": "Seven"
+  },
+  {
+    "hi": "लगते",
+    "en": "it seems"
+  },
+  {
+    "hi": "मार्ग",
+    "en": "way"
+  },
+  {
+    "hi": "बंद",
+    "en": "off"
+  },
+  {
+    "hi": "प्रचलित",
+    "en": "prevalent"
+  },
+  {
+    "hi": "संघर्ष",
+    "en": "Conflict"
+  },
+  {
+    "hi": "दिशा",
+    "en": "Direction"
+  },
+  {
+    "hi": "स्थित",
+    "en": "Located"
+  },
+  {
+    "hi": "बैठा",
+    "en": "sat"
+  },
+  {
+    "hi": "वर्षों",
+    "en": "years"
+  },
+  {
+    "hi": "अधिकांश",
+    "en": "most of"
+  },
+  {
+    "hi": "शादी",
+    "en": "Marriage"
+  },
+  {
+    "hi": "वातावरण",
+    "en": "environment"
+  },
+  {
+    "hi": "तुलना",
+    "en": "Compare"
+  },
+  {
+    "hi": "राजीव",
+    "en": "Rajeev"
+  },
+  {
+    "hi": "साधारण",
+    "en": "ordinary"
+  },
+  {
+    "hi": "सम्पूर्ण",
+    "en": "the whole"
+  },
+  {
+    "hi": "राजस्थान",
+    "en": "Rajasthan"
+  },
+  {
+    "hi": "सफल",
+    "en": "successful"
+  },
+  {
+    "hi": "कितने",
+    "en": "How many?"
+  },
+  {
+    "hi": "वापस",
+    "en": "Back"
+  },
+  {
+    "hi": "मानसिक",
+    "en": "Mental"
+  },
+  {
+    "hi": "परम्परा",
+    "en": "tradition"
+  },
+  {
+    "hi": "बोले",
+    "en": "Speak"
+  },
+  {
+    "hi": "बीज",
+    "en": "Seed"
+  },
+  {
+    "hi": "खेल",
+    "en": "the game"
+  },
+  {
+    "hi": "अंग",
+    "en": "Organ"
+  },
+  {
+    "hi": "बैठक",
+    "en": "meeting"
+  },
+  {
+    "hi": "जरूरत",
+    "en": "Need"
+  },
+  {
+    "hi": "ग्रामीण",
+    "en": "Rural"
+  },
+  {
+    "hi": "इनकी",
+    "en": "Their"
+  },
+  {
+    "hi": "कथा",
+    "en": "Story"
+  },
+  {
+    "hi": "आयु",
+    "en": "age"
+  },
+  {
+    "hi": "बातचीत",
+    "en": "Conversation"
+  },
+  {
+    "hi": "प्रभावित",
+    "en": "Affected"
+  },
+  {
+    "hi": "निर्धारित",
+    "en": "Determined"
+  },
+  {
+    "hi": "निकाल",
+    "en": "Remove"
+  },
+  {
+    "hi": "घटना",
+    "en": "Event"
+  },
+  {
+    "hi": "कितनी",
+    "en": "How many"
+  },
+  {
+    "hi": "कवि",
+    "en": "Poet"
+  },
+  {
+    "hi": "रक्त",
+    "en": "blood"
+  },
+  {
+    "hi": "बालकों",
+    "en": "Lads"
+  },
+  {
+    "hi": "किसान",
+    "en": "Farmer"
+  },
+  {
+    "hi": "इच्छा",
+    "en": "Desire"
+  },
+  {
+    "hi": "आयी",
+    "en": "came"
+  },
+  {
+    "hi": "बजे",
+    "en": "o'clock"
+  },
+  {
+    "hi": "चेहरे",
+    "en": "Faces"
+  },
+  {
+    "hi": "गुण",
+    "en": "Property"
+  },
+  {
+    "hi": "आकार",
+    "en": "size"
+  },
+  {
+    "hi": "हृदय",
+    "en": "Heart"
+  },
+  {
+    "hi": "राज",
+    "en": "Rule"
+  },
+  {
+    "hi": "मार",
+    "en": "Kill"
+  },
+  {
+    "hi": "चुकी",
+    "en": "chuki"
+  },
+  {
+    "hi": "यात्रा",
+    "en": "Travel"
+  },
+  {
+    "hi": "नष्ट",
+    "en": "Destroyed"
+  },
+  {
+    "hi": "खेती",
+    "en": "Farming"
+  },
+  {
+    "hi": "सुबह",
+    "en": "Morning"
+  },
+  {
+    "hi": "नयी",
+    "en": "New"
+  },
+  {
+    "hi": "जिन्हें",
+    "en": "whom"
+  },
+  {
+    "hi": "आरम्भ",
+    "en": "Beginning"
+  },
+  {
+    "hi": "सुनकर",
+    "en": "Hearing"
+  },
+  {
+    "hi": "वायु",
+    "en": "Air"
+  },
+  {
+    "hi": "नजर",
+    "en": "sight"
+  },
+  {
+    "hi": "थोड़ा",
+    "en": "Little"
+  },
+  {
+    "hi": "खाली",
+    "en": "below"
+  },
+  {
+    "hi": "ॐ",
+    "en": "Om"
+  },
+  {
+    "hi": "खोज",
+    "en": "Search"
+  },
+  {
+    "hi": "एकदम",
+    "en": "At once"
+  },
+  {
+    "hi": "व्यक्तियों",
+    "en": "Individuals"
+  },
+  {
+    "hi": "राजनीतिक",
+    "en": "Political"
+  },
+  {
+    "hi": "आँखें",
+    "en": "eyes"
+  },
+  {
+    "hi": "संबंधित",
+    "en": "related to"
+  },
+  {
+    "hi": "तेज",
+    "en": "Quick"
+  },
+  {
+    "hi": "जरा",
+    "en": "just"
+  },
+  {
+    "hi": "व्यक्तित्व",
+    "en": "Persona"
+  },
+  {
+    "hi": "बदल",
+    "en": "change"
+  },
+  {
+    "hi": "सवाल",
+    "en": "Question"
+  },
+  {
+    "hi": "उपभोक्ता",
+    "en": "consumer"
+  },
+  {
+    "hi": "उपज",
+    "en": "Yield"
+  },
+  {
+    "hi": "सुख",
+    "en": "Happiness"
+  },
+  {
+    "hi": "मानते",
+    "en": "believes"
+  },
+  {
+    "hi": "मकान",
+    "en": "House"
+  },
+  {
+    "hi": "तेजी",
+    "en": "speed"
+  },
+  {
+    "hi": "जुलाई",
+    "en": "july"
+  },
+  {
+    "hi": "प्रयत्न",
+    "en": "try"
+  },
+  {
+    "hi": "देवता",
+    "en": "God"
+  },
+  {
+    "hi": "जानते",
+    "en": "Know"
+  },
+  {
+    "hi": "कपड़े",
+    "en": "Clothes"
+  },
+  {
+    "hi": "संभव",
+    "en": "possible"
+  },
+  {
+    "hi": "सकता",
+    "en": "Can"
+  },
+  {
+    "hi": "मदद",
+    "en": "Help"
+  },
+  {
+    "hi": "वास्तव",
+    "en": "really"
+  },
+  {
+    "hi": "निकट",
+    "en": "near"
+  },
+  {
+    "hi": "चलते",
+    "en": "Go"
+  },
+  {
+    "hi": "बाकी",
+    "en": "Balance"
+  },
+  {
+    "hi": "सोच",
+    "en": "Thinking"
+  },
+  {
+    "hi": "समस्त",
+    "en": "all"
+  },
+  {
+    "hi": "सदस्य",
+    "en": "Member"
+  },
+  {
+    "hi": "कठिन",
+    "en": "difficult"
+  },
+  {
+    "hi": "अरे",
+    "en": "oh"
+  },
+  {
+    "hi": "राज्यों",
+    "en": "States"
+  },
+  {
+    "hi": "नया",
+    "en": "New"
+  },
+  {
+    "hi": "सीधे",
+    "en": "Straight"
+  },
+  {
+    "hi": "फूल",
+    "en": "Flower"
+  },
+  {
+    "hi": "किस्म",
+    "en": "Variety"
+  },
+  {
+    "hi": "अभाव",
+    "en": "lack of"
+  },
+  {
+    "hi": "जरूरी",
+    "en": "Necessary"
+  },
+  {
+    "hi": "सेना",
+    "en": "Army"
+  },
+  {
+    "hi": "श्रम",
+    "en": "labor"
+  },
+  {
+    "hi": "विदेशी",
+    "en": "the foreigner"
+  },
+  {
+    "hi": "बाल",
+    "en": "Hair"
+  },
+  {
+    "hi": "पुराने",
+    "en": "Old"
+  },
+  {
+    "hi": "किंतु",
+    "en": "But"
+  },
+  {
+    "hi": "विस्तार",
+    "en": "expansion"
+  },
+  {
+    "hi": "जाएगी",
+    "en": "will go"
+  },
+  {
+    "hi": "छोटा",
+    "en": "Small"
+  },
+  {
+    "hi": "वनस्पति",
+    "en": "Vegetation"
+  },
+  {
+    "hi": "खर्च",
+    "en": "Expenditure"
+  },
+  {
+    "hi": "पार",
+    "en": "Par"
+  },
+  {
+    "hi": "अधिकारी",
+    "en": "Officer"
+  },
+  {
+    "hi": "चलने",
+    "en": "Walking"
+  },
+  {
+    "hi": "आशा",
+    "en": "Hope"
+  },
+  {
+    "hi": "सुधार",
+    "en": "improvement"
+  },
+  {
+    "hi": "विशाल",
+    "en": "Huge"
+  },
+  {
+    "hi": "पूर्ति",
+    "en": "Fulfilment"
+  },
+  {
+    "hi": "डाल",
+    "en": "put"
+  },
+  {
+    "hi": "जानता",
+    "en": "knows"
+  },
+  {
+    "hi": "महसूस",
+    "en": "Feel"
+  },
+  {
+    "hi": "बोल",
+    "en": "Lyrics"
+  },
+  {
+    "hi": "प्रतीत",
+    "en": "seems"
+  },
+  {
+    "hi": "अध्यक्ष",
+    "en": "Chairman"
+  },
+  {
+    "hi": "सीखने",
+    "en": "learning"
+  },
+  {
+    "hi": "वर्ण",
+    "en": "Character"
+  },
+  {
+    "hi": "व्यापक",
+    "en": "Comprehensive"
+  },
+  {
+    "hi": "भविष्य",
+    "en": "Future"
+  },
+  {
+    "hi": "ध्वनि",
+    "en": "Sound"
+  },
+  {
+    "hi": "प्रयुक्त",
+    "en": "Used"
+  },
+  {
+    "hi": "प्रचार",
+    "en": "Publicity"
+  },
+  {
+    "hi": "प्यार",
+    "en": "Love"
+  },
+  {
+    "hi": "शिक्षण",
+    "en": "Education"
+  },
+  {
+    "hi": "शेष",
+    "en": "Remanent"
+  },
+  {
+    "hi": "मार्च",
+    "en": "march"
+  },
+  {
+    "hi": "दुनिया",
+    "en": "World"
+  },
+  {
+    "hi": "ख्याल",
+    "en": "care"
+  },
+  {
+    "hi": "प्रगति",
+    "en": "progress"
+  },
+  {
+    "hi": "गैस",
+    "en": "Gas"
+  },
+  {
+    "hi": "लगातार",
+    "en": "Continuous"
+  },
+  {
+    "hi": "तौर",
+    "en": "manner"
+  },
+  {
+    "hi": "उन्हीं",
+    "en": "those"
+  },
+  {
+    "hi": "सुरक्षित",
+    "en": "Safe"
+  },
+  {
+    "hi": "सभा",
+    "en": "gathering"
+  },
+  {
+    "hi": "लौट",
+    "en": "return"
+  },
+  {
+    "hi": "लागत",
+    "en": "Cost"
+  },
+  {
+    "hi": "बनाये",
+    "en": "Make"
+  },
+  {
+    "hi": "दर्द",
+    "en": "Pain"
+  },
+  {
+    "hi": "आखिर",
+    "en": "after all"
+  },
+  {
+    "hi": "सोचा",
+    "en": "thought"
+  },
+  {
+    "hi": "दें",
+    "en": "Give"
+  },
+  {
+    "hi": "चीज",
+    "en": "Thing"
+  },
+  {
+    "hi": "कल्पना",
+    "en": "imagination"
+  },
+  {
+    "hi": "लक्ष्य",
+    "en": "target"
+  },
+  {
+    "hi": "चाय",
+    "en": "Tea"
+  },
+  {
+    "hi": "खूब",
+    "en": "Plenty"
+  },
+  {
+    "hi": "श्रीमती",
+    "en": "Mrs"
+  },
+  {
+    "hi": "लाने",
+    "en": "bring"
+  },
+  {
+    "hi": "मुक्त",
+    "en": "Free"
+  },
+  {
+    "hi": "बुद्धि",
+    "en": "Intelligence"
+  },
+  {
+    "hi": "पश्चिम",
+    "en": "West"
+  },
+  {
+    "hi": "खेत",
+    "en": "Farm"
+  },
+  {
+    "hi": "होनी",
+    "en": "to be"
+  },
+  {
+    "hi": "चाहती",
+    "en": "wants"
+  },
+  {
+    "hi": "उपयुक्त",
+    "en": "Suitable"
+  },
+  {
+    "hi": "अंत",
+    "en": "Ending"
+  },
+  {
+    "hi": "साधन",
+    "en": "Resource"
+  },
+  {
+    "hi": "संकेत",
+    "en": "Signal"
+  },
+  {
+    "hi": "वस्तुओं",
+    "en": "Objects"
+  },
+  {
+    "hi": "मामले",
+    "en": "Cases"
+  },
+  {
+    "hi": "बनाकर",
+    "en": "By making"
+  },
+  {
+    "hi": "सहज",
+    "en": "easily"
+  },
+  {
+    "hi": "सदा",
+    "en": "Always"
+  },
+  {
+    "hi": "शारीरिक",
+    "en": "physical"
+  },
+  {
+    "hi": "पकड़",
+    "en": "grasp"
+  },
+  {
+    "hi": "उपाय",
+    "en": "remedy"
+  },
+  {
+    "hi": "संस्थान",
+    "en": "Institute"
+  },
+  {
+    "hi": "सफलता",
+    "en": "Success"
+  },
+  {
+    "hi": "बाबू",
+    "en": "Baboo"
+  },
+  {
+    "hi": "तुम्हारी",
+    "en": "yours"
+  },
+  {
+    "hi": "भूल",
+    "en": "Mistake"
+  },
+  {
+    "hi": "आत्मा",
+    "en": "Soul"
+  },
+  {
+    "hi": "विचारों",
+    "en": "Thoughts"
+  },
+  {
+    "hi": "रखी",
+    "en": "laid"
+  },
+  {
+    "hi": "भूमिका",
+    "en": "Role"
+  },
+  {
+    "hi": "पैर",
+    "en": "Feet"
+  },
+  {
+    "hi": "करे",
+    "en": "Do"
+  },
+  {
+    "hi": "हाथों",
+    "en": "Hands"
+  },
+  {
+    "hi": "भवन",
+    "en": "the building"
+  },
+  {
+    "hi": "नियम",
+    "en": "Rule"
+  },
+  {
+    "hi": "दिल",
+    "en": "Heart"
+  },
+  {
+    "hi": "तकनीकी",
+    "en": "technology"
+  },
+  {
+    "hi": "जिसकी",
+    "en": "whose"
+  },
+  {
+    "hi": "शिशु",
+    "en": "baby"
+  },
+  {
+    "hi": "व्यय",
+    "en": "Expense"
+  },
+  {
+    "hi": "पेट",
+    "en": "stomach"
+  },
+  {
+    "hi": "नींद",
+    "en": "Sleep"
+  },
+  {
+    "hi": "नेताओं",
+    "en": "Leaders"
+  },
+  {
+    "hi": "अंदर",
+    "en": "Inside"
+  },
+  {
+    "hi": "लागू",
+    "en": "Applicable"
+  },
+  {
+    "hi": "बनने",
+    "en": "Becoming"
+  },
+  {
+    "hi": "त्वचा",
+    "en": "skin"
+  },
+  {
+    "hi": "गायन",
+    "en": "Singing"
+  },
+  {
+    "hi": "राजनीति",
+    "en": "Politics"
+  },
+  {
+    "hi": "जमा",
+    "en": "Deposit"
+  },
+  {
+    "hi": "सुविधा",
+    "en": "Facility"
+  },
+  {
+    "hi": "बोर्ड",
+    "en": "Board"
+  },
+  {
+    "hi": "कानून",
+    "en": "Law"
+  },
+  {
+    "hi": "शुरु",
+    "en": "start"
+  },
+  {
+    "hi": "लेखक",
+    "en": "Author"
+  },
+  {
+    "hi": "बावजूद",
+    "en": "inspite of"
+  },
+  {
+    "hi": "क्रम",
+    "en": "sequence"
+  },
+  {
+    "hi": "लगने",
+    "en": "to seem"
+  },
+  {
+    "hi": "तुमने",
+    "en": "you have"
+  },
+  {
+    "hi": "हाल",
+    "en": "Condition"
+  },
+  {
+    "hi": "सम्भव",
+    "en": "possible"
+  },
+  {
+    "hi": "स्टेशन",
+    "en": "station"
+  },
+  {
+    "hi": "अगले",
+    "en": "Next"
+  },
+  {
+    "hi": "रास्ते",
+    "en": "Ways"
+  },
+  {
+    "hi": "मस्तिष्क",
+    "en": "Brain"
+  },
+  {
+    "hi": "गर्म",
+    "en": "warm"
+  },
+  {
+    "hi": "संबंधी",
+    "en": "relative"
+  },
+  {
+    "hi": "यानी",
+    "en": "i.e"
+  },
+  {
+    "hi": "पुरानी",
+    "en": "Old"
+  },
+  {
+    "hi": "चित्रण",
+    "en": "Illustration"
+  },
+  {
+    "hi": "अधिकारियों",
+    "en": "Officials"
+  },
+  {
+    "hi": "संस्कृत",
+    "en": "Sanskrit"
+  },
+  {
+    "hi": "सुन",
+    "en": "listen"
+  },
+  {
+    "hi": "युवक",
+    "en": "young man"
+  },
+  {
+    "hi": "पाठ",
+    "en": "Lesson, "
+  },
+  {
+    "hi": "स्थानों",
+    "en": "Locations"
+  },
+  {
+    "hi": "वर्षा",
+    "en": "Rain"
+  },
+  {
+    "hi": "रखकर",
+    "en": "By placing"
+  },
+  {
+    "hi": "पशु",
+    "en": "Animal"
+  },
+  {
+    "hi": "किसानों",
+    "en": "Farmers"
+  },
+  {
+    "hi": "सत्ता",
+    "en": "Power"
+  },
+  {
+    "hi": "प्राप्ति",
+    "en": "Receipt"
+  },
+  {
+    "hi": "दवा",
+    "en": "Medicine"
+  },
+  {
+    "hi": "खास",
+    "en": "Special"
+  },
+  {
+    "hi": "कमेटी",
+    "en": "Committee"
+  },
+  {
+    "hi": "अंक",
+    "en": "score"
+  },
+  {
+    "hi": "हानि",
+    "en": "Loss"
+  },
+  {
+    "hi": "सरल",
+    "en": "Easy"
+  },
+  {
+    "hi": "सिंचाई",
+    "en": "Irrigation"
+  },
+  {
+    "hi": "शिकार",
+    "en": "Hunt"
+  },
+  {
+    "hi": "वृक्ष",
+    "en": "Tree"
+  },
+  {
+    "hi": "करेंगे",
+    "en": "do"
+  },
+  {
+    "hi": "औद्योगिक",
+    "en": "Industrial"
+  },
+  {
+    "hi": "आधारित",
+    "en": "based"
+  },
+  {
+    "hi": "हत्या",
+    "en": "Murder"
+  },
+  {
+    "hi": "सहकारी",
+    "en": "cooperative"
+  },
+  {
+    "hi": "विवरण",
+    "en": "Description"
+  },
+  {
+    "hi": "रोज",
+    "en": "Daily"
+  },
+  {
+    "hi": "मुझसे",
+    "en": "Me"
+  },
+  {
+    "hi": "आना",
+    "en": "come"
+  },
+  {
+    "hi": "मौसम",
+    "en": "Season"
+  },
+  {
+    "hi": "आँखों",
+    "en": "Eyes"
+  },
+  {
+    "hi": "शुद्ध",
+    "en": "Pure"
+  },
+  {
+    "hi": "भेद",
+    "en": "distinction"
+  },
+  {
+    "hi": "विपरीत",
+    "en": "Adverse"
+  },
+  {
+    "hi": "लम्बी",
+    "en": "Long"
+  },
+  {
+    "hi": "बनाना",
+    "en": "Make"
+  },
+  {
+    "hi": "दृष्टिकोण",
+    "en": "Approach"
+  },
+  {
+    "hi": "गलत",
+    "en": "Wrong"
+  },
+  {
+    "hi": "समर्थन",
+    "en": "Support"
+  },
+  {
+    "hi": "सम्मेलन",
+    "en": "Conference"
+  },
+  {
+    "hi": "सचमुच",
+    "en": "Really"
+  },
+  {
+    "hi": "बुद्ध",
+    "en": "Buddha"
+  },
+  {
+    "hi": "बच्चा",
+    "en": "Child"
+  },
+  {
+    "hi": "दीवार",
+    "en": "Wall"
+  },
+  {
+    "hi": "आंखों",
+    "en": "Eyes"
+  },
+  {
+    "hi": "अध्याय",
+    "en": "Chapter"
+  },
+  {
+    "hi": "अत्यधिक",
+    "en": "Excessive"
+  },
+  {
+    "hi": "सहित",
+    "en": "including"
+  },
+  {
+    "hi": "योग",
+    "en": "sum"
+  },
+  {
+    "hi": "मुख",
+    "en": "the mouth"
+  },
+  {
+    "hi": "बिहार",
+    "en": "Bihar"
+  },
+  {
+    "hi": "काव्य",
+    "en": "Poetry"
+  },
+  {
+    "hi": "सिद्धांत",
+    "en": "Principle"
+  },
+  {
+    "hi": "सार्वजनिक",
+    "en": "public"
+  },
+  {
+    "hi": "लघु",
+    "en": "Short"
+  },
+  {
+    "hi": "बता",
+    "en": "tell"
+  },
+  {
+    "hi": "परस्पर",
+    "en": "Mutually"
+  },
+  {
+    "hi": "तार",
+    "en": "Wire"
+  },
+  {
+    "hi": "चूर्ण",
+    "en": "Powder"
+  },
+  {
+    "hi": "आयोजन",
+    "en": "events"
+  },
+  {
+    "hi": "सांस्कृतिक",
+    "en": "Cultural"
+  },
+  {
+    "hi": "समझने",
+    "en": "understand"
+  },
+  {
+    "hi": "वाद्य",
+    "en": "musical instrument"
+  },
+  {
+    "hi": "प्रतीक",
+    "en": "Sign "
+  },
+  {
+    "hi": "तुम्हारा",
+    "en": "yours"
+  },
+  {
+    "hi": "छात्र",
+    "en": "Student"
+  },
+  {
+    "hi": "चुप",
+    "en": "Silent"
+  },
+  {
+    "hi": "अक्सर",
+    "en": "Often"
+  },
+  {
+    "hi": "जायेगी",
+    "en": "will go"
+  },
+  {
+    "hi": "रखे",
+    "en": "keep"
+  },
+  {
+    "hi": "भार",
+    "en": "Burden"
+  },
+  {
+    "hi": "फलों",
+    "en": "Fruits"
+  },
+  {
+    "hi": "जीवित",
+    "en": "alive"
+  },
+  {
+    "hi": "आजकल",
+    "en": "Nowadays"
+  },
+  {
+    "hi": "विस्तृत",
+    "en": "Detailed"
+  },
+  {
+    "hi": "गिर",
+    "en": "fall"
+  },
+  {
+    "hi": "गुरू",
+    "en": "Guru"
+  },
+  {
+    "hi": "खाद्य",
+    "en": "Food"
+  },
+  {
+    "hi": "उतर",
+    "en": "Descent"
+  },
+  {
+    "hi": "अमेरिका",
+    "en": "America"
+  },
+  {
+    "hi": "सुना",
+    "en": "heard"
+  },
+  {
+    "hi": "स्थानीय",
+    "en": "local"
+  },
+  {
+    "hi": "विषयों",
+    "en": "Themes"
+  },
+  {
+    "hi": "घंटे",
+    "en": "hours"
+  },
+  {
+    "hi": "कराने",
+    "en": "to conduct"
+  },
+  {
+    "hi": "उतना",
+    "en": "that much"
+  },
+  {
+    "hi": "शताब्दी",
+    "en": "Century"
+  },
+  {
+    "hi": "व्यवसाय",
+    "en": "Business"
+  },
+  {
+    "hi": "मंदिर",
+    "en": "Temple"
+  },
+  {
+    "hi": "परिचय",
+    "en": "Introduction"
+  },
+  {
+    "hi": "गांवों",
+    "en": "Villages"
+  },
+  {
+    "hi": "बाँध",
+    "en": "dam"
+  },
+  {
+    "hi": "निश्चय",
+    "en": "Determination"
+  },
+  {
+    "hi": "उपकरण",
+    "en": "equipment"
+  },
+  {
+    "hi": "आतंकवादियों",
+    "en": "Terrorists"
+  },
+  {
+    "hi": "वैदिक",
+    "en": "Vedic"
+  },
+  {
+    "hi": "भागों",
+    "en": "Parts"
+  },
+  {
+    "hi": "अंश",
+    "en": "Part"
+  },
+  {
+    "hi": "सूत्र",
+    "en": "Formula"
+  },
+  {
+    "hi": "विविध",
+    "en": "Various"
+  },
+  {
+    "hi": "बारह",
+    "en": "Twelve"
+  },
+  {
+    "hi": "फलस्वरूप",
+    "en": "As a result"
+  },
+  {
+    "hi": "काट",
+    "en": "cutting"
+  },
+  {
+    "hi": "अधिकतर",
+    "en": "mostly"
+  },
+  {
+    "hi": "स्वाभाविक",
+    "en": "Natural"
+  },
+  {
+    "hi": "वाक्य",
+    "en": "Sentence"
+  },
+  {
+    "hi": "बैठी",
+    "en": "sitting"
+  },
+  {
+    "hi": "परिस्थितियों",
+    "en": "Circumstances"
+  },
+  {
+    "hi": "सूर्य",
+    "en": "Sun"
+  },
+  {
+    "hi": "शत्रु",
+    "en": "enemy"
+  },
+  {
+    "hi": "पत्तियों",
+    "en": "Leaves"
+  },
+  {
+    "hi": "नियोजन",
+    "en": "Planning"
+  },
+  {
+    "hi": "ग्रन्थ",
+    "en": "Granthas"
+  },
+  {
+    "hi": "कही",
+    "en": "somewhere"
+  },
+  {
+    "hi": "उम्र",
+    "en": "Age"
+  },
+  {
+    "hi": "अग्नि",
+    "en": "Fire"
+  },
+  {
+    "hi": "सिख",
+    "en": "Sikh"
+  },
+  {
+    "hi": "बाप",
+    "en": "Father"
+  },
+  {
+    "hi": "पाकिस्तान",
+    "en": "Pakistan"
+  },
+  {
+    "hi": "पश्चात्",
+    "en": "after"
+  },
+  {
+    "hi": "चिन्ता",
+    "en": "worry"
+  },
+  {
+    "hi": "आयोजित",
+    "en": "organized"
+  },
+  {
+    "hi": "यहीं",
+    "en": "right here"
+  },
+  {
+    "hi": "वाद्यों",
+    "en": "Instrumentals"
+  },
+  {
+    "hi": "मुसलमान",
+    "en": "Muslim"
+  },
+  {
+    "hi": "भेज",
+    "en": "send"
+  },
+  {
+    "hi": "बैंक",
+    "en": "Bank"
+  },
+  {
+    "hi": "नारी",
+    "en": "Woman"
+  },
+  {
+    "hi": "अंतिम",
+    "en": "Last"
+  },
+  {
+    "hi": "समुद्र",
+    "en": "Sea"
+  },
+  {
+    "hi": "संग्रह",
+    "en": "Collection"
+  },
+  {
+    "hi": "लेती",
+    "en": "taking"
+  },
+  {
+    "hi": "दृश्य",
+    "en": "Scene"
+  },
+  {
+    "hi": "खाद",
+    "en": "Fertilizer"
+  },
+  {
+    "hi": "आलोचना",
+    "en": "Criticism"
+  },
+  {
+    "hi": "हैक्टर",
+    "en": "Hector"
+  },
+  {
+    "hi": "विरोधी",
+    "en": "anti"
+  },
+  {
+    "hi": "पश्चिमी",
+    "en": "Western"
+  },
+  {
+    "hi": "धान",
+    "en": "Paddy"
+  },
+  {
+    "hi": "डाक",
+    "en": "Post"
+  },
+  {
+    "hi": "कदम",
+    "en": "step"
+  },
+  {
+    "hi": "आकाश",
+    "en": "Sky"
+  },
+  {
+    "hi": "स्थायी",
+    "en": "permanent"
+  },
+  {
+    "hi": "वितरण",
+    "en": "Distribution"
+  },
+  {
+    "hi": "वंश",
+    "en": "Linage"
+  },
+  {
+    "hi": "रोक",
+    "en": "Stoppage"
+  },
+  {
+    "hi": "प्रेरणा",
+    "en": "Inspiration"
+  },
+  {
+    "hi": "चीनी",
+    "en": "Sugar"
+  },
+  {
+    "hi": "औरत",
+    "en": "women"
+  },
+  {
+    "hi": "अप्रैल",
+    "en": "april"
+  },
+  {
+    "hi": "अनिवार्य",
+    "en": "compulsory"
+  },
+  {
+    "hi": "सकें",
+    "en": "could"
+  },
+  {
+    "hi": "महिला",
+    "en": "Woman"
+  },
+  {
+    "hi": "पहचान",
+    "en": "Identification"
+  },
+  {
+    "hi": "क्रमशः",
+    "en": "Respectively"
+  },
+  {
+    "hi": "सैनिक",
+    "en": "the soldier"
+  },
+  {
+    "hi": "वजह",
+    "en": "Reason"
+  },
+  {
+    "hi": "लकड़ी",
+    "en": "Wood"
+  },
+  {
+    "hi": "रुपये",
+    "en": "Rs"
+  },
+  {
+    "hi": "बढ़ा",
+    "en": "increased"
+  },
+  {
+    "hi": "पीठ",
+    "en": "Back"
+  },
+  {
+    "hi": "पाई",
+    "en": "Pie"
+  },
+  {
+    "hi": "डाक्टर",
+    "en": "doctor"
+  },
+  {
+    "hi": "सम्पर्क",
+    "en": "contact"
+  },
+  {
+    "hi": "वीं",
+    "en": "th"
+  },
+  {
+    "hi": "माननीय",
+    "en": "Honorable"
+  },
+  {
+    "hi": "मूल्यांकन",
+    "en": "Evaluation"
+  },
+  {
+    "hi": "गाय",
+    "en": "Cow"
+  },
+  {
+    "hi": "क्षण",
+    "en": "Moment"
+  },
+  {
+    "hi": "हालत",
+    "en": "Condition"
+  },
+  {
+    "hi": "संदर्भ",
+    "en": "Reference"
+  },
+  {
+    "hi": "बीस",
+    "en": "Twenty"
+  },
+  {
+    "hi": "दोष",
+    "en": "Shortcoming"
+  },
+  {
+    "hi": "जीव",
+    "en": "life"
+  },
+  {
+    "hi": "चित्रित",
+    "en": "Pictured"
+  },
+  {
+    "hi": "खान",
+    "en": "Mine"
+  },
+  {
+    "hi": "खुशी",
+    "en": "Happiness"
+  },
+  {
+    "hi": "रोजगार",
+    "en": "employment"
+  },
+  {
+    "hi": "रिपोर्ट",
+    "en": "Report"
+  },
+  {
+    "hi": "मंत्रालय",
+    "en": "Ministry"
+  },
+  {
+    "hi": "प्राथमिक",
+    "en": "primary"
+  },
+  {
+    "hi": "प्रदर्शित",
+    "en": "displayed"
+  },
+  {
+    "hi": "धारणा",
+    "en": "perception"
+  },
+  {
+    "hi": "ताल",
+    "en": "lake"
+  },
+  {
+    "hi": "जंगल",
+    "en": "Forest"
+  },
+  {
+    "hi": "सका",
+    "en": "could"
+  },
+  {
+    "hi": "यान",
+    "en": "vehicle"
+  },
+  {
+    "hi": "उपक्रम",
+    "en": "activity"
+  },
+  {
+    "hi": "अंकित",
+    "en": "Ankit"
+  },
+  {
+    "hi": "शिव",
+    "en": "Shiva"
+  },
+  {
+    "hi": "त्याग",
+    "en": "Sacrifice"
+  },
+  {
+    "hi": "जिसने",
+    "en": "who"
+  },
+  {
+    "hi": "गरम",
+    "en": "hot"
+  },
+  {
+    "hi": "समाचार",
+    "en": "News"
+  },
+  {
+    "hi": "शाखा",
+    "en": "Branch"
+  },
+  {
+    "hi": "बुरी",
+    "en": "bad"
+  },
+  {
+    "hi": "डाला",
+    "en": "inserted"
+  },
+  {
+    "hi": "जून",
+    "en": "june"
+  },
+  {
+    "hi": "ज्ञात",
+    "en": "Known"
+  },
+  {
+    "hi": "गर्भ",
+    "en": "Pregnancy"
+  },
+  {
+    "hi": "कर्मचारियों",
+    "en": "Employees"
+  },
+  {
+    "hi": "मामलों",
+    "en": "Affairs"
+  },
+  {
+    "hi": "बजाय",
+    "en": "instead"
+  },
+  {
+    "hi": "तरीके",
+    "en": "Methods"
+  },
+  {
+    "hi": "आदर्श",
+    "en": "Ideal"
+  },
+  {
+    "hi": "हिस्सा",
+    "en": "Part"
+  },
+  {
+    "hi": "संरचना",
+    "en": "structure"
+  },
+  {
+    "hi": "स्पर्श",
+    "en": "touch"
+  },
+  {
+    "hi": "जनवरी",
+    "en": "January"
+  },
+  {
+    "hi": "चित्रकला",
+    "en": "drawing"
+  },
+  {
+    "hi": "चरित्र",
+    "en": "Character"
+  },
+  {
+    "hi": "क्षेत्रीय",
+    "en": "Regional"
+  },
+  {
+    "hi": "क्यू",
+    "en": "Why"
+  },
+  {
+    "hi": "रखता",
+    "en": "maintains"
+  },
+  {
+    "hi": "बिक्री",
+    "en": "sales"
+  },
+  {
+    "hi": "पुस्तकों",
+    "en": "Books"
+  },
+  {
+    "hi": "निर्मित",
+    "en": "made"
+  },
+  {
+    "hi": "जैन",
+    "en": "Jain"
+  },
+  {
+    "hi": "गले",
+    "en": "Throat"
+  },
+  {
+    "hi": "ग्रा",
+    "en": "Gr"
+  },
+  {
+    "hi": "खराब",
+    "en": "Bad"
+  },
+  {
+    "hi": "करो",
+    "en": "do it"
+  },
+  {
+    "hi": "कक्षा",
+    "en": "Class"
+  },
+  {
+    "hi": "आश्चर्य",
+    "en": "Wonder"
+  },
+  {
+    "hi": "रास्ता",
+    "en": "way"
+  },
+  {
+    "hi": "युक्त",
+    "en": "containing"
+  },
+  {
+    "hi": "बनाए",
+    "en": "Create"
+  },
+  {
+    "hi": "बेटा",
+    "en": "Son"
+  },
+  {
+    "hi": "बेटे",
+    "en": "Son"
+  },
+  {
+    "hi": "प्रबन्ध",
+    "en": "management"
+  },
+  {
+    "hi": "निम्नलिखित",
+    "en": "Following"
+  },
+  {
+    "hi": "चेहरा",
+    "en": "the face"
+  },
+  {
+    "hi": "अर्जुन",
+    "en": "Arjun"
+  },
+  {
+    "hi": "सम्मान",
+    "en": "respect"
+  },
+  {
+    "hi": "यथार्थ",
+    "en": "reality"
+  },
+  {
+    "hi": "बहू",
+    "en": "Daughter in law"
+  },
+  {
+    "hi": "ध्वनियों",
+    "en": "Sounds"
+  },
+  {
+    "hi": "जिन्होंने",
+    "en": "who"
+  },
+  {
+    "hi": "छाया",
+    "en": "Shadow"
+  },
+  {
+    "hi": "खबर",
+    "en": "the news"
+  },
+  {
+    "hi": "संकट",
+    "en": "crisis"
+  },
+  {
+    "hi": "बेटी",
+    "en": "Daughter"
+  },
+  {
+    "hi": "पशुओं",
+    "en": "Animals"
+  },
+  {
+    "hi": "अति",
+    "en": "too much"
+  },
+  {
+    "hi": "समझता",
+    "en": "understands"
+  },
+  {
+    "hi": "रोकने",
+    "en": "Preventing"
+  },
+  {
+    "hi": "भक्ति",
+    "en": "Devotion"
+  },
+  {
+    "hi": "दशा",
+    "en": "condition"
+  },
+  {
+    "hi": "चलती",
+    "en": "moving"
+  },
+  {
+    "hi": "घास",
+    "en": "Grass"
+  },
+  {
+    "hi": "कथन",
+    "en": "statement"
+  },
+  {
+    "hi": "सामान",
+    "en": "stuff"
+  },
+  {
+    "hi": "मजदूरी",
+    "en": "Labour"
+  },
+  {
+    "hi": "भरी",
+    "en": "filled"
+  },
+  {
+    "hi": "बिलकुल",
+    "en": "Absolutely"
+  },
+  {
+    "hi": "दूसरों",
+    "en": "Others"
+  },
+  {
+    "hi": "गरीब",
+    "en": "Poor"
+  },
+  {
+    "hi": "अस्तित्व",
+    "en": "Existence"
+  },
+  {
+    "hi": "अकेले",
+    "en": "Lonely"
+  },
+  {
+    "hi": "सौन्दर्य",
+    "en": "the beauty"
+  },
+  {
+    "hi": "साहसी",
+    "en": "Daring"
+  },
+  {
+    "hi": "समझते",
+    "en": "understand"
+  },
+  {
+    "hi": "विद्युत",
+    "en": "Electricity"
+  },
+  {
+    "hi": "लिखी",
+    "en": "wrote"
+  },
+  {
+    "hi": "नाटक",
+    "en": "Drama"
+  },
+  {
+    "hi": "धूप",
+    "en": "Sunlight"
+  },
+  {
+    "hi": "दरवाजे",
+    "en": "Doors"
+  },
+  {
+    "hi": "कमजोर",
+    "en": "weak"
+  },
+  {
+    "hi": "आदत",
+    "en": "Habit"
+  },
+  {
+    "hi": "सम्प्रदाय",
+    "en": "Sect"
+  },
+  {
+    "hi": "शोध",
+    "en": "Search"
+  },
+  {
+    "hi": "वीर",
+    "en": "Daring"
+  },
+  {
+    "hi": "रुपया",
+    "en": "Rupee"
+  },
+  {
+    "hi": "मौत",
+    "en": "Death"
+  },
+  {
+    "hi": "भले",
+    "en": "well"
+  },
+  {
+    "hi": "प्रसन्न",
+    "en": "Happy"
+  },
+  {
+    "hi": "निजी",
+    "en": "Private"
+  },
+  {
+    "hi": "जातियों",
+    "en": "Castes"
+  },
+  {
+    "hi": "गीतों",
+    "en": "Songs"
+  },
+  {
+    "hi": "कीट",
+    "en": "Pests"
+  },
+  {
+    "hi": "उतनी",
+    "en": "that much"
+  },
+  {
+    "hi": "अभ्यास",
+    "en": "Study"
+  },
+  {
+    "hi": "रंगों",
+    "en": "Shades"
+  },
+  {
+    "hi": "मान्यता",
+    "en": "Recognition"
+  },
+  {
+    "hi": "मजबूत",
+    "en": "Strong"
+  },
+  {
+    "hi": "भीड़",
+    "en": "Crowd"
+  },
+  {
+    "hi": "नियमों",
+    "en": "Rules"
+  },
+  {
+    "hi": "उठता",
+    "en": "Arising"
+  },
+  {
+    "hi": "आनन्द",
+    "en": "joy"
+  },
+  {
+    "hi": "विष",
+    "en": "Toxin"
+  },
+  {
+    "hi": "प्र",
+    "en": "Pr"
+  },
+  {
+    "hi": "तमाम",
+    "en": "all"
+  },
+  {
+    "hi": "चिन्ह",
+    "en": "Sign"
+  },
+  {
+    "hi": "स्थिर",
+    "en": "steady"
+  },
+  {
+    "hi": "शराब",
+    "en": "Liquor"
+  },
+  {
+    "hi": "वैज्ञानिकों",
+    "en": "Scientists"
+  },
+  {
+    "hi": "पहुंचा",
+    "en": "reached"
+  },
+  {
+    "hi": "नियमित",
+    "en": "Regular"
+  },
+  {
+    "hi": "नवीन",
+    "en": "New"
+  },
+  {
+    "hi": "गहरी",
+    "en": "deep"
+  },
+  {
+    "hi": "ऊष्मा",
+    "en": "Heat"
+  },
+  {
+    "hi": "उत्तम",
+    "en": "great"
+  },
+  {
+    "hi": "शास्त्र",
+    "en": "ethology"
+  },
+  {
+    "hi": "माह",
+    "en": "Month"
+  },
+  {
+    "hi": "मालिक",
+    "en": "Owner"
+  },
+  {
+    "hi": "भला",
+    "en": "well"
+  },
+  {
+    "hi": "भरे",
+    "en": "filled"
+  },
+  {
+    "hi": "बनाई",
+    "en": "made"
+  },
+  {
+    "hi": "गरीबी",
+    "en": "poverty"
+  },
+  {
+    "hi": "आन्दोलन",
+    "en": "movement"
+  },
+  {
+    "hi": "विद्या",
+    "en": "Knowledge"
+  },
+  {
+    "hi": "पारिवारिक",
+    "en": "family"
+  },
+  {
+    "hi": "तोड़",
+    "en": "Break"
+  },
+  {
+    "hi": "चीजें",
+    "en": "Things"
+  },
+  {
+    "hi": "कठोर",
+    "en": "tough"
+  },
+  {
+    "hi": "अनुपात",
+    "en": "Ratio"
+  },
+  {
+    "hi": "हरियाणा",
+    "en": "Haryana"
+  },
+  {
+    "hi": "सम्पन्न",
+    "en": "completed"
+  },
+  {
+    "hi": "विधान",
+    "en": "Legislation"
+  },
+  {
+    "hi": "राय",
+    "en": "Opinion"
+  },
+  {
+    "hi": "तुरन्त",
+    "en": "instantly"
+  },
+  {
+    "hi": "आपस",
+    "en": "among themselves"
+  },
+  {
+    "hi": "अधीन",
+    "en": "under"
+  },
+  {
+    "hi": "शिक्षक",
+    "en": "Teacher"
+  },
+  {
+    "hi": "विजय",
+    "en": "Victory"
+  },
+  {
+    "hi": "लेख",
+    "en": "Article"
+  },
+  {
+    "hi": "महोदय",
+    "en": "Sir"
+  },
+  {
+    "hi": "भी",
+    "en": "Too"
+  },
+  {
+    "hi": "फरवरी",
+    "en": "February"
+  },
+  {
+    "hi": "पित्त",
+    "en": "Bile"
+  },
+  {
+    "hi": "प्रत्यक्ष",
+    "en": "directly"
+  },
+  {
+    "hi": "तर्क",
+    "en": "logic"
+  },
+  {
+    "hi": "जेल",
+    "en": "Jail"
+  },
+  {
+    "hi": "चुपचाप",
+    "en": "silent"
+  },
+  {
+    "hi": "करा",
+    "en": "do"
+  },
+  {
+    "hi": "अनुकूल",
+    "en": "Friendly"
+  },
+  {
+    "hi": "विष्णु",
+    "en": "Vishnu"
+  },
+  {
+    "hi": "यों",
+    "en": "like this"
+  },
+  {
+    "hi": "भूख",
+    "en": "hunger"
+  },
+  {
+    "hi": "बांस",
+    "en": "bamboo"
+  },
+  {
+    "hi": "बनता",
+    "en": "becoming"
+  },
+  {
+    "hi": "बनकर",
+    "en": "By becoming"
+  },
+  {
+    "hi": "बैठकर",
+    "en": "sitting"
+  },
+  {
+    "hi": "पात्र",
+    "en": "character"
+  },
+  {
+    "hi": "पूर्वी",
+    "en": "Eastern"
+  },
+  {
+    "hi": "कठिनाई",
+    "en": "Difficulty"
+  },
+  {
+    "hi": "इत्यादि",
+    "en": "etc"
+  },
+  {
+    "hi": "सदस्यों",
+    "en": "Members"
+  },
+  {
+    "hi": "मूत्र",
+    "en": "Urine"
+  },
+  {
+    "hi": "भरा",
+    "en": "filled"
+  },
+  {
+    "hi": "बुरा",
+    "en": "bad"
+  },
+  {
+    "hi": "घोषणा",
+    "en": "announcement"
+  },
+  {
+    "hi": "खोल",
+    "en": "Shell"
+  },
+  {
+    "hi": "खुश",
+    "en": "Happy "
+  },
+  {
+    "hi": "खेतों",
+    "en": "Fields"
+  },
+  {
+    "hi": "कोश",
+    "en": "Thesaurus"
+  },
+  {
+    "hi": "उपस्थित",
+    "en": "present"
+  },
+  {
+    "hi": "अभिव्यक्ति",
+    "en": "expression"
+  },
+  {
+    "hi": "श्रेष्ठ",
+    "en": "best"
+  },
+  {
+    "hi": "नाग",
+    "en": "snake"
+  },
+  {
+    "hi": "नाक",
+    "en": "nose"
+  },
+  {
+    "hi": "जाता",
+    "en": "go"
+  },
+  {
+    "hi": "छूट",
+    "en": "Discount"
+  },
+  {
+    "hi": "घरों",
+    "en": "Houses"
+  },
+  {
+    "hi": "खून",
+    "en": "Blood"
+  },
+  {
+    "hi": "करेगा",
+    "en": "will do"
+  },
+  {
+    "hi": "उतार",
+    "en": "ebb"
+  },
+  {
+    "hi": "अपराध",
+    "en": "crime"
+  },
+  {
+    "hi": "अधिनियम",
+    "en": "Act"
+  },
+  {
+    "hi": "साहस",
+    "en": "Bravery"
+  },
+  {
+    "hi": "सर्वप्रथम",
+    "en": "First of all"
+  },
+  {
+    "hi": "पढ़ाई",
+    "en": "studies"
+  },
+  {
+    "hi": "दिखायी",
+    "en": "shown"
+  },
+  {
+    "hi": "दुख",
+    "en": "Sadness"
+  },
+  {
+    "hi": "अगस्त",
+    "en": "august"
+  },
+  {
+    "hi": "साथी",
+    "en": "friend"
+  },
+  {
+    "hi": "सक्रिय",
+    "en": "Active"
+  },
+  {
+    "hi": "पढ़ने",
+    "en": "reading"
+  },
+  {
+    "hi": "पढ़",
+    "en": "read"
+  },
+  {
+    "hi": "चालू",
+    "en": "on"
+  },
+  {
+    "hi": "आधा",
+    "en": "half"
+  },
+  {
+    "hi": "समितियों",
+    "en": "Committees"
+  },
+  {
+    "hi": "सूची",
+    "en": "List"
+  },
+  {
+    "hi": "विवेचन",
+    "en": "Interpretation"
+  },
+  {
+    "hi": "मनोविज्ञान",
+    "en": "Psychology"
+  },
+  {
+    "hi": "पहुंचे",
+    "en": "arrived"
+  },
+  {
+    "hi": "पुस्तकें",
+    "en": "Books"
+  },
+  {
+    "hi": "किशोरी",
+    "en": "teenager"
+  },
+  {
+    "hi": "इस्पात",
+    "en": "steel"
+  },
+  {
+    "hi": "सामना",
+    "en": "confront"
+  },
+  {
+    "hi": "व्याख्या",
+    "en": "Explanation"
+  },
+  {
+    "hi": "फुट",
+    "en": "Foot"
+  },
+  {
+    "hi": "दिमाग",
+    "en": "Brain"
+  },
+  {
+    "hi": "कर्मचारी",
+    "en": "Employee"
+  },
+  {
+    "hi": "असर",
+    "en": "impact"
+  },
+  {
+    "hi": "अफसर",
+    "en": "Officer"
+  },
+  {
+    "hi": "सतह",
+    "en": "surface"
+  },
+  {
+    "hi": "विचित्र",
+    "en": "strange"
+  },
+  {
+    "hi": "बैल",
+    "en": "Bull"
+  },
+  {
+    "hi": "तहत",
+    "en": "under"
+  },
+  {
+    "hi": "केन्द्रों",
+    "en": "Centres"
+  },
+  {
+    "hi": "अम्ल",
+    "en": "Acid"
+  },
+  {
+    "hi": "संरक्षण",
+    "en": "Protection"
+  },
+  {
+    "hi": "सुनने",
+    "en": "listen"
+  },
+  {
+    "hi": "वाणी",
+    "en": "Voice"
+  },
+  {
+    "hi": "लोहे",
+    "en": "Iron"
+  },
+  {
+    "hi": "यंत्र",
+    "en": "machine"
+  },
+  {
+    "hi": "भाषाविज्ञान",
+    "en": "Linguistics"
+  },
+  {
+    "hi": "बोलने",
+    "en": "to speak"
+  },
+  {
+    "hi": "बोध",
+    "en": "Realization"
+  },
+  {
+    "hi": "प्रकाशन",
+    "en": "publication"
+  },
+  {
+    "hi": "दादा",
+    "en": "Grandfather"
+  },
+  {
+    "hi": "टूट",
+    "en": "Breakdown"
+  },
+  {
+    "hi": "चरक",
+    "en": "Charaka"
+  },
+  {
+    "hi": "खाते",
+    "en": "Accounts"
+  },
+  {
+    "hi": "कान",
+    "en": "Ear"
+  },
+  {
+    "hi": "उद्योगों",
+    "en": "Industries"
+  },
+  {
+    "hi": "आक्रमण",
+    "en": "attack"
+  },
+  {
+    "hi": "अंग्रेजों",
+    "en": "British"
+  },
+  {
+    "hi": "संभावना",
+    "en": "Possibility"
+  },
+  {
+    "hi": "यथा",
+    "en": "as"
+  },
+  {
+    "hi": "भेजा",
+    "en": "Sent"
+  },
+  {
+    "hi": "बनाते",
+    "en": "making"
+  },
+  {
+    "hi": "नरेश",
+    "en": "Naresh"
+  },
+  {
+    "hi": "दो",
+    "en": "Two"
+  },
+  {
+    "hi": "चोरी",
+    "en": "Theft"
+  },
+  {
+    "hi": "चित्रकार",
+    "en": "Painter"
+  },
+  {
+    "hi": "कहे",
+    "en": "saying"
+  },
+  {
+    "hi": "स्वतन्त्र",
+    "en": "independent"
+  },
+  {
+    "hi": "सूरज",
+    "en": "Sun"
+  },
+  {
+    "hi": "सूक्ष्म",
+    "en": "Micro"
+  },
+  {
+    "hi": "विशेषता",
+    "en": "Speciality"
+  },
+  {
+    "hi": "लिख",
+    "en": "write"
+  },
+  {
+    "hi": "मास",
+    "en": "Mass"
+  },
+  {
+    "hi": "पंचायत",
+    "en": "Panchayat"
+  },
+  {
+    "hi": "चरण",
+    "en": "phase"
+  },
+  {
+    "hi": "गली",
+    "en": "Street"
+  },
+  {
+    "hi": "खुले",
+    "en": "open"
+  },
+  {
+    "hi": "कुर्सी",
+    "en": "Chair"
+  },
+  {
+    "hi": "सन्दर्भ",
+    "en": "context"
+  },
+  {
+    "hi": "स्त्रोत",
+    "en": "source"
+  },
+  {
+    "hi": "वर्गीकरण",
+    "en": "Classification"
+  },
+  {
+    "hi": "महाभारत",
+    "en": "Mahabharata"
+  },
+  {
+    "hi": "फैल",
+    "en": "Spread"
+  },
+  {
+    "hi": "पेश",
+    "en": "Presented"
+  },
+  {
+    "hi": "प्रौद्योगिकी",
+    "en": "Technology"
+  },
+  {
+    "hi": "पुराण",
+    "en": "Puranas"
+  },
+  {
+    "hi": "निर्धारण",
+    "en": "determine"
+  },
+  {
+    "hi": "चीन",
+    "en": "China"
+  },
+  {
+    "hi": "शिकायत",
+    "en": "Complaint"
+  },
+  {
+    "hi": "विद्यालय",
+    "en": "the school"
+  },
+  {
+    "hi": "वस्तुतः",
+    "en": "In fact"
+  },
+  {
+    "hi": "लाया",
+    "en": "brought"
+  },
+  {
+    "hi": "बहन",
+    "en": "Sister"
+  },
+  {
+    "hi": "पक्षी",
+    "en": "the bird"
+  },
+  {
+    "hi": "निर्यात",
+    "en": "export"
+  },
+  {
+    "hi": "ना",
+    "en": "No"
+  },
+  {
+    "hi": "जाये",
+    "en": "go"
+  },
+  {
+    "hi": "ज्यों",
+    "en": "As"
+  },
+  {
+    "hi": "चक्कर",
+    "en": "dizzy"
+  },
+  {
+    "hi": "गोली",
+    "en": "bullet"
+  },
+  {
+    "hi": "कल्याण",
+    "en": "welfare"
+  },
+  {
+    "hi": "क्रोध",
+    "en": "Anger"
+  },
+  {
+    "hi": "कराया",
+    "en": "got it done"
+  },
+  {
+    "hi": "इंका",
+    "en": "Inca"
+  },
+  {
+    "hi": "सीधा",
+    "en": "Straight"
+  },
+  {
+    "hi": "संचार",
+    "en": "Communications"
+  },
+  {
+    "hi": "विरुद्ध",
+    "en": "against"
+  },
+  {
+    "hi": "विद्वानों",
+    "en": "Scholars"
+  },
+  {
+    "hi": "लम्बे",
+    "en": "taller"
+  },
+  {
+    "hi": "भुगतान",
+    "en": "Payment"
+  },
+  {
+    "hi": "तुझे",
+    "en": "to you"
+  },
+  {
+    "hi": "चयन",
+    "en": "Selection"
+  },
+  {
+    "hi": "घोड़े",
+    "en": "Horses"
+  },
+  {
+    "hi": "उच्चारण",
+    "en": "Pronunciation"
+  },
+  {
+    "hi": "सोने",
+    "en": "Gold"
+  },
+  {
+    "hi": "मौका",
+    "en": "Opportunity"
+  },
+  {
+    "hi": "मोटे",
+    "en": "fatty"
+  },
+  {
+    "hi": "भाषण",
+    "en": "speech"
+  },
+  {
+    "hi": "निकला",
+    "en": "turned out"
+  },
+  {
+    "hi": "देवताओं",
+    "en": "Gods"
+  },
+  {
+    "hi": "उत्पत्ति",
+    "en": "Produce"
+  },
+  {
+    "hi": "शहरी",
+    "en": "urban"
+  },
+  {
+    "hi": "शक्ति",
+    "en": "Power"
+  },
+  {
+    "hi": "राष्ट्रपति",
+    "en": "President"
+  },
+  {
+    "hi": "महाराज",
+    "en": "my lord"
+  },
+  {
+    "hi": "मन्दिर",
+    "en": "the temple"
+  },
+  {
+    "hi": "इन्द्र",
+    "en": "Indra"
+  },
+  {
+    "hi": "अपेक्षित",
+    "en": "expected"
+  },
+  {
+    "hi": "अंतर्गत",
+    "en": "internal"
+  },
+  {
+    "hi": "अजीब",
+    "en": "Strange"
+  },
+  {
+    "hi": "संस्कार",
+    "en": "rites"
+  },
+  {
+    "hi": "समाधान",
+    "en": "Solution"
+  },
+  {
+    "hi": "शूल",
+    "en": "colic"
+  },
+  {
+    "hi": "लिखे",
+    "en": "Write"
+  },
+  {
+    "hi": "रहेगा",
+    "en": "will remain"
+  },
+  {
+    "hi": "रमेश",
+    "en": "Ramesh"
+  },
+  {
+    "hi": "जड़",
+    "en": "Root"
+  },
+  {
+    "hi": "अधिगम",
+    "en": "learning"
+  },
+  {
+    "hi": "सर्वाधिक",
+    "en": "the most"
+  },
+  {
+    "hi": "मानता",
+    "en": "agrees"
+  },
+  {
+    "hi": "मन्त्री",
+    "en": "the minister"
+  },
+  {
+    "hi": "बाढ़",
+    "en": "flood"
+  },
+  {
+    "hi": "बजट",
+    "en": "Budget"
+  },
+  {
+    "hi": "नुकसान",
+    "en": "damage"
+  },
+  {
+    "hi": "थोड़े",
+    "en": "a little"
+  },
+  {
+    "hi": "जाल",
+    "en": "Net"
+  },
+  {
+    "hi": "जानने",
+    "en": "to know"
+  },
+  {
+    "hi": "कम्पनी",
+    "en": "company"
+  },
+  {
+    "hi": "कक्ष",
+    "en": "Room"
+  },
+  {
+    "hi": "उपकरणों",
+    "en": "Devices"
+  },
+  {
+    "hi": "उत्पन्न",
+    "en": "Yield"
+  },
+  {
+    "hi": "उठकर",
+    "en": "getting up"
+  },
+  {
+    "hi": "इसको",
+    "en": "This"
+  },
+  {
+    "hi": "साम्राज्य",
+    "en": "Empire"
+  },
+  {
+    "hi": "संशोधन",
+    "en": "Revision"
+  },
+  {
+    "hi": "राजाओं",
+    "en": "Kings"
+  },
+  {
+    "hi": "पसन्द",
+    "en": "Like"
+  },
+  {
+    "hi": "छात्रों",
+    "en": "Students"
+  },
+  {
+    "hi": "गहरा",
+    "en": "deep"
+  },
+  {
+    "hi": "किलोग्राम",
+    "en": "Kilogram"
+  },
+  {
+    "hi": "कालेज",
+    "en": "College"
+  },
+  {
+    "hi": "उल्लेखनीय",
+    "en": "notable"
+  },
+  {
+    "hi": "उपलब्धि",
+    "en": "achievement"
+  },
+  {
+    "hi": "उत्साह",
+    "en": "Excitement"
+  },
+  {
+    "hi": "मजदूर",
+    "en": "laborer"
+  },
+  {
+    "hi": "प्रार्थना",
+    "en": "Prayer"
+  },
+  {
+    "hi": "छिड़काव",
+    "en": "Spraying"
+  },
+  {
+    "hi": "समुदाय",
+    "en": "community"
+  },
+  {
+    "hi": "शोथ",
+    "en": "inflammation"
+  },
+  {
+    "hi": "लोरिक",
+    "en": "Lorik"
+  },
+  {
+    "hi": "बौद्ध",
+    "en": "Buddhist"
+  },
+  {
+    "hi": "बाग",
+    "en": "Garden"
+  },
+  {
+    "hi": "बचा",
+    "en": "left"
+  },
+  {
+    "hi": "पहाड़ी",
+    "en": "Hill"
+  },
+  {
+    "hi": "प्रोत्साहन",
+    "en": "Incentive"
+  },
+  {
+    "hi": "प्रबल",
+    "en": "Predominant"
+  },
+  {
+    "hi": "पदार्थों",
+    "en": "Substances"
+  },
+  {
+    "hi": "पूंजी",
+    "en": "capital"
+  },
+  {
+    "hi": "जगत",
+    "en": "universe"
+  },
+  {
+    "hi": "घोल",
+    "en": "Solution"
+  },
+  {
+    "hi": "एकता",
+    "en": "unity"
+  },
+  {
+    "hi": "सोचने",
+    "en": "to think"
+  },
+  {
+    "hi": "सामान्यतः",
+    "en": "Generally"
+  },
+  {
+    "hi": "स्वतंत्रता",
+    "en": "Freedom"
+  },
+  {
+    "hi": "वित्तीय",
+    "en": "Financial"
+  },
+  {
+    "hi": "मानकर",
+    "en": "by assuming"
+  },
+  {
+    "hi": "भौतिक",
+    "en": "physical"
+  },
+  {
+    "hi": "पाठ्यक्रम",
+    "en": "Syllabus"
+  },
+  {
+    "hi": "परिणामस्वरूप",
+    "en": "As a result"
+  },
+  {
+    "hi": "पर्वत",
+    "en": "Mountain"
+  },
+  {
+    "hi": "तलाश",
+    "en": "seek"
+  },
+  {
+    "hi": "गोद",
+    "en": "Lap"
+  },
+  {
+    "hi": "गांधीजी",
+    "en": "Gandhiji"
+  },
+  {
+    "hi": "का",
+    "en": "Of"
+  },
+  {
+    "hi": "अन्तर्राष्ट्रीय",
+    "en": "International"
+  },
+  {
+    "hi": "सहन",
+    "en": "endure"
+  },
+  {
+    "hi": "शेर",
+    "en": "Lion"
+  },
+  {
+    "hi": "वैसा",
+    "en": "like that"
+  },
+  {
+    "hi": "वस्त्र",
+    "en": "Clothing"
+  },
+  {
+    "hi": "लक्ष्मी",
+    "en": "Laxmi"
+  },
+  {
+    "hi": "रूक",
+    "en": "Rook"
+  },
+  {
+    "hi": "मुक्ति",
+    "en": "Freedom"
+  },
+  {
+    "hi": "प्रोटीन",
+    "en": "Protein"
+  },
+  {
+    "hi": "चलकर",
+    "en": "by walking"
+  },
+  {
+    "hi": "गंभीर",
+    "en": "serious"
+  },
+  {
+    "hi": "आधी",
+    "en": "Before"
+  },
+  {
+    "hi": "अंकन",
+    "en": "Marking"
+  },
+  {
+    "hi": "हिंदी",
+    "en": "Hindi"
+  },
+  {
+    "hi": "शान्त",
+    "en": "quiet"
+  },
+  {
+    "hi": "शांति",
+    "en": "Calmness"
+  },
+  {
+    "hi": "वर्गों",
+    "en": "Sections"
+  },
+  {
+    "hi": "वृक्षों",
+    "en": "trees"
+  },
+  {
+    "hi": "रोगों",
+    "en": "Diseases"
+  },
+  {
+    "hi": "बम्बई",
+    "en": "Bombay"
+  },
+  {
+    "hi": "प्रथा",
+    "en": "custom"
+  },
+  {
+    "hi": "चीजों",
+    "en": "things"
+  },
+  {
+    "hi": "अतएव",
+    "en": "Therefore"
+  },
+  {
+    "hi": "सकती",
+    "en": "can"
+  },
+  {
+    "hi": "महिलाओं",
+    "en": "Women"
+  },
+  {
+    "hi": "बाह्य",
+    "en": "external"
+  },
+  {
+    "hi": "प्रेरित",
+    "en": "Inspired"
+  },
+  {
+    "hi": "निहित",
+    "en": "vested"
+  },
+  {
+    "hi": "दिखाया",
+    "en": "showed"
+  },
+  {
+    "hi": "डालने",
+    "en": "insert"
+  },
+  {
+    "hi": "डेढ़",
+    "en": "one and half"
+  },
+  {
+    "hi": "गैर",
+    "en": "Non"
+  },
+  {
+    "hi": "सम्पत्ति",
+    "en": "property"
+  },
+  {
+    "hi": "श्रद्धा",
+    "en": "Admiration"
+  },
+  {
+    "hi": "वार्ता",
+    "en": "talk"
+  },
+  {
+    "hi": "लड़कों",
+    "en": "Boys"
+  },
+  {
+    "hi": "मानने",
+    "en": "to accept"
+  },
+  {
+    "hi": "मुझ",
+    "en": "Me"
+  },
+  {
+    "hi": "नमक",
+    "en": "Salt"
+  },
+  {
+    "hi": "छवि",
+    "en": "image"
+  },
+  {
+    "hi": "चाचा",
+    "en": "Uncle"
+  },
+  {
+    "hi": "चलो",
+    "en": "Let us go"
+  },
+  {
+    "hi": "करेगा",
+    "en": "will do"
+  },
+  {
+    "hi": "हिमाचल",
+    "en": "Himachal"
+  },
+  {
+    "hi": "स्मिता",
+    "en": "Smita"
+  },
+  {
+    "hi": "स्थल",
+    "en": "Place"
+  },
+  {
+    "hi": "रखती",
+    "en": "holds"
+  },
+  {
+    "hi": "रकम",
+    "en": "Amount"
+  },
+  {
+    "hi": "पहुंचने",
+    "en": "arriving"
+  },
+  {
+    "hi": "नाना",
+    "en": "Nana"
+  },
+  {
+    "hi": "दरवाजा",
+    "en": "Door"
+  },
+  {
+    "hi": "दुकान",
+    "en": "Shop"
+  },
+  {
+    "hi": "ठोस",
+    "en": "Solid"
+  },
+  {
+    "hi": "जेब",
+    "en": "Pocket"
+  },
+  {
+    "hi": "चिन्तन",
+    "en": "thinking"
+  },
+  {
+    "hi": "गर्मी",
+    "en": "Heat"
+  },
+  {
+    "hi": "खरीद",
+    "en": "Purchase"
+  },
+  {
+    "hi": "क्रांति",
+    "en": "Revolution"
+  },
+  {
+    "hi": "ऋतु",
+    "en": "season"
+  },
+  {
+    "hi": "सुनाई",
+    "en": "narrated"
+  },
+  {
+    "hi": "विद्यालयों",
+    "en": "Schools"
+  },
+  {
+    "hi": "लिखने",
+    "en": "write"
+  },
+  {
+    "hi": "लखनऊ",
+    "en": "Lucknow"
+  },
+  {
+    "hi": "राग",
+    "en": "anger"
+  },
+  {
+    "hi": "बरस",
+    "en": "Showers"
+  },
+  {
+    "hi": "ब्रज",
+    "en": "Braj"
+  },
+  {
+    "hi": "पश्चात",
+    "en": "after"
+  },
+  {
+    "hi": "डाली",
+    "en": "branch"
+  },
+  {
+    "hi": "गृह",
+    "en": "Home"
+  },
+  {
+    "hi": "अकाली",
+    "en": "prematurely"
+  },
+  {
+    "hi": "सावधानी",
+    "en": "Caution"
+  },
+  {
+    "hi": "सेवन",
+    "en": "Intake"
+  },
+  {
+    "hi": "स्वतन्त्रता",
+    "en": "freedom"
+  },
+  {
+    "hi": "शून्य",
+    "en": "Zero"
+  },
+  {
+    "hi": "विद्यार्थियों",
+    "en": "Pupils"
+  },
+  {
+    "hi": "मोटी",
+    "en": "fat"
+  },
+  {
+    "hi": "भ्रष्टाचार",
+    "en": "Corruption"
+  },
+  {
+    "hi": "देह",
+    "en": "body"
+  },
+  {
+    "hi": "तेरे",
+    "en": "yours"
+  },
+  {
+    "hi": "कार्रवाई",
+    "en": "action"
+  },
+  {
+    "hi": "कार्यवाही",
+    "en": "Proceeding"
+  },
+  {
+    "hi": "इस्लाम",
+    "en": "Islam"
+  },
+  {
+    "hi": "आश्रम",
+    "en": "Ashram"
+  },
+  {
+    "hi": "आकर्षण",
+    "en": "Attraction"
+  },
+  {
+    "hi": "हिस्से",
+    "en": "Parts"
+  },
+  {
+    "hi": "सम्राट",
+    "en": "King"
+  },
+  {
+    "hi": "परेशान",
+    "en": "Worried"
+  },
+  {
+    "hi": "परम्परागत",
+    "en": "Traditional"
+  },
+  {
+    "hi": "दिसम्बर",
+    "en": "December"
+  },
+  {
+    "hi": "जनसंख्या",
+    "en": "Population"
+  },
+  {
+    "hi": "घोषित",
+    "en": "Declared"
+  },
+  {
+    "hi": "ऋषि",
+    "en": "Sage"
+  },
+  {
+    "hi": "अखबार",
+    "en": "Newspaper"
+  },
+  {
+    "hi": "रूपों",
+    "en": "Forms"
+  },
+  {
+    "hi": "भस्म",
+    "en": "ashes"
+  },
+  {
+    "hi": "बगल",
+    "en": "Next"
+  },
+  {
+    "hi": "परिस्थिति",
+    "en": "situation"
+  },
+  {
+    "hi": "निगम",
+    "en": "Corporation"
+  },
+  {
+    "hi": "नारायण",
+    "en": "Narayan"
+  },
+  {
+    "hi": "तुरंत",
+    "en": "Immediately"
+  },
+  {
+    "hi": "ढोला",
+    "en": "Dhola"
+  },
+  {
+    "hi": "डालकर",
+    "en": "by putting"
+  },
+  {
+    "hi": "चावल",
+    "en": "Rice"
+  },
+  {
+    "hi": "गणेश",
+    "en": "Ganesh"
+  },
+  {
+    "hi": "कार्यक्रमों",
+    "en": "Programs"
+  },
+  {
+    "hi": "उठी",
+    "en": "got up"
+  },
+  {
+    "hi": "ईश्वर",
+    "en": "God"
+  },
+  {
+    "hi": "आतंकवादी",
+    "en": "Terrorist"
+  },
+  {
+    "hi": "आँख",
+    "en": "eye"
+  },
+  {
+    "hi": "अदालत",
+    "en": "court"
+  },
+  {
+    "hi": "होटल",
+    "en": "Hotel"
+  },
+  {
+    "hi": "हार",
+    "en": "Garland"
+  },
+  {
+    "hi": "हजारों",
+    "en": "thousands"
+  },
+  {
+    "hi": "संदेह",
+    "en": "Doubt"
+  },
+  {
+    "hi": "संक्षिप्त",
+    "en": "Short"
+  },
+  {
+    "hi": "विद्वान",
+    "en": "Scholar"
+  },
+  {
+    "hi": "व्रत",
+    "en": "Fast"
+  },
+  {
+    "hi": "महत्व",
+    "en": "Importance"
+  },
+  {
+    "hi": "भयंकर",
+    "en": "Terrible"
+  },
+  {
+    "hi": "बेहतर",
+    "en": "better"
+  },
+  {
+    "hi": "ब्रिटिश",
+    "en": "British"
+  },
+  {
+    "hi": "प्रिय",
+    "en": "Dear"
+  },
+  {
+    "hi": "नियुक्त",
+    "en": "appointed"
+  },
+  {
+    "hi": "गम्भीर",
+    "en": "serious"
+  },
+  {
+    "hi": "उक्त",
+    "en": "The said"
+  },
+  {
+    "hi": "अमल",
+    "en": "Implementation"
+  },
+  {
+    "hi": "हवाई",
+    "en": "Airport"
+  },
+  {
+    "hi": "हरे",
+    "en": "Hare"
+  },
+  {
+    "hi": "स्वर्णमंदिर",
+    "en": "Golden Temple"
+  },
+  {
+    "hi": "ली",
+    "en": "Took"
+  },
+  {
+    "hi": "मामला",
+    "en": "Case"
+  },
+  {
+    "hi": "मछली",
+    "en": "fish"
+  },
+  {
+    "hi": "बचपन",
+    "en": "Childhood"
+  },
+  {
+    "hi": "बैंकों",
+    "en": "Banks"
+  },
+  {
+    "hi": "पान",
+    "en": "Betel"
+  },
+  {
+    "hi": "प्राण",
+    "en": "Life"
+  },
+  {
+    "hi": "प्रतिक्रिया",
+    "en": "feedback"
+  },
+  {
+    "hi": "जीवाणु",
+    "en": "Bacteria"
+  },
+  {
+    "hi": "छाती",
+    "en": "Chest"
+  },
+  {
+    "hi": "गढ़वाल",
+    "en": "Garhwal"
+  },
+  {
+    "hi": "खुला",
+    "en": "open"
+  },
+  {
+    "hi": "कार",
+    "en": "car"
+  },
+  {
+    "hi": "क्रियाओं",
+    "en": "Actions"
+  },
+  {
+    "hi": "अम्मा",
+    "en": "Mother"
+  },
+  {
+    "hi": "अंगों",
+    "en": "Organs"
+  },
+  {
+    "hi": "सन्देह",
+    "en": "Doubt"
+  },
+  {
+    "hi": "विवाद",
+    "en": "dispute"
+  },
+  {
+    "hi": "लड़कियों",
+    "en": "Girls"
+  },
+  {
+    "hi": "बाहरी",
+    "en": "external"
+  },
+  {
+    "hi": "बारी",
+    "en": "Turn"
+  },
+  {
+    "hi": "प्लेग",
+    "en": "plague"
+  },
+  {
+    "hi": "पुरुष",
+    "en": "Male"
+  },
+  {
+    "hi": "दोपहर",
+    "en": "Afternoon"
+  },
+  {
+    "hi": "तमिल",
+    "en": "Tamil"
+  },
+  {
+    "hi": "चौधरी",
+    "en": "Chowdhary"
+  },
+  {
+    "hi": "आचरण",
+    "en": "Behaviour"
+  },
+  {
+    "hi": "अनाज",
+    "en": "Cereal"
+  },
+  {
+    "hi": "ही",
+    "en": "only"
+  },
+  {
+    "hi": "सिरे",
+    "en": "ends"
+  },
+  {
+    "hi": "साढ़े",
+    "en": "½"
+  },
+  {
+    "hi": "संयोग",
+    "en": "coincidence"
+  },
+  {
+    "hi": "विमर्श",
+    "en": "discussion"
+  },
+  {
+    "hi": "विधियों",
+    "en": "Methods"
+  },
+  {
+    "hi": "व्यावहारिक",
+    "en": "practical"
+  },
+  {
+    "hi": "वचन",
+    "en": "Promise"
+  },
+  {
+    "hi": "रात्रि",
+    "en": "Night"
+  },
+  {
+    "hi": "भावों",
+    "en": "Emotions"
+  },
+  {
+    "hi": "भेंट",
+    "en": "gift"
+  },
+  {
+    "hi": "बुआई",
+    "en": "Sowing"
+  },
+  {
+    "hi": "पैरों",
+    "en": "Feet"
+  },
+  {
+    "hi": "पुराना",
+    "en": "old"
+  },
+  {
+    "hi": "प्रतीक्षा",
+    "en": "waiting"
+  },
+  {
+    "hi": "पत्रों",
+    "en": "Papers"
+  },
+  {
+    "hi": "पड़ेगा",
+    "en": "will have to"
+  },
+  {
+    "hi": "जाओ",
+    "en": "Go"
+  },
+  {
+    "hi": "किस्मों",
+    "en": "Varieties"
+  },
+  {
+    "hi": "किन",
+    "en": "why"
+  },
+  {
+    "hi": "उठे",
+    "en": "got up"
+  },
+  {
+    "hi": "आचार्य",
+    "en": "Acharya"
+  },
+  {
+    "hi": "आई",
+    "en": "I"
+  },
+  {
+    "hi": "अफ्रीका",
+    "en": "Africa"
+  },
+  {
+    "hi": "अतीत",
+    "en": "past"
+  },
+  {
+    "hi": "हल्के",
+    "en": "Lightweight"
+  },
+  {
+    "hi": "सागर",
+    "en": "Sea"
+  },
+  {
+    "hi": "शाह",
+    "en": "Shah"
+  },
+  {
+    "hi": "शान्ति",
+    "en": "the peace"
+  },
+  {
+    "hi": "विदेश",
+    "en": "Abroad"
+  },
+  {
+    "hi": "वजन",
+    "en": "Weight"
+  },
+  {
+    "hi": "लाखों",
+    "en": "Millions"
+  },
+  {
+    "hi": "प्रारंभ",
+    "en": "Start"
+  },
+  {
+    "hi": "प्राणियों",
+    "en": "Creatures"
+  },
+  {
+    "hi": "निर्देश",
+    "en": "Instruction"
+  },
+  {
+    "hi": "दावा",
+    "en": "Claim"
+  },
+  {
+    "hi": "दे",
+    "en": "Give"
+  },
+  {
+    "hi": "चाहा",
+    "en": "wanted"
+  },
+  {
+    "hi": "उदास",
+    "en": "Downhearted"
+  },
+  {
+    "hi": "उत्तरी",
+    "en": "Northern"
+  },
+  {
+    "hi": "असली",
+    "en": "real"
+  },
+  {
+    "hi": "हिम्मत",
+    "en": "Courage"
+  },
+  {
+    "hi": "हरी",
+    "en": "green"
+  },
+  {
+    "hi": "स्नेह",
+    "en": "affection"
+  },
+  {
+    "hi": "शासक",
+    "en": "ruler"
+  },
+  {
+    "hi": "बदले",
+    "en": "change"
+  },
+  {
+    "hi": "बचाने",
+    "en": "save"
+  },
+  {
+    "hi": "प्रतिनिधि",
+    "en": "Representative"
+  },
+  {
+    "hi": "दरअसल",
+    "en": "In fact"
+  },
+  {
+    "hi": "देखभाल",
+    "en": "Care"
+  },
+  {
+    "hi": "तने",
+    "en": "Stems"
+  },
+  {
+    "hi": "जानती",
+    "en": "knows"
+  },
+  {
+    "hi": "केंद्र",
+    "en": "Center"
+  },
+  {
+    "hi": "औषधि",
+    "en": "medicine"
+  },
+  {
+    "hi": "उत्सव",
+    "en": "Celebration"
+  },
+  {
+    "hi": "इनसे",
+    "en": "from these"
+  },
+  {
+    "hi": "साथियों",
+    "en": "Friends"
+  },
+  {
+    "hi": "संसाधन",
+    "en": "resources"
+  },
+  {
+    "hi": "सदन",
+    "en": "House"
+  },
+  {
+    "hi": "सूखे",
+    "en": "Dried"
+  },
+  {
+    "hi": "संकल्प",
+    "en": "Resolution"
+  },
+  {
+    "hi": "शक्तिशाली",
+    "en": "powerful"
+  },
+  {
+    "hi": "व्यर्थ",
+    "en": "Useless"
+  },
+  {
+    "hi": "मिश्रण",
+    "en": "mixture"
+  },
+  {
+    "hi": "बोरोन",
+    "en": "Boron"
+  },
+  {
+    "hi": "निकालने",
+    "en": "Extract"
+  },
+  {
+    "hi": "घूम",
+    "en": "roaming around"
+  },
+  {
+    "hi": "गुस्सा",
+    "en": "Anger"
+  },
+  {
+    "hi": "क्षति",
+    "en": "damage"
+  },
+  {
+    "hi": "उठती",
+    "en": "rising"
+  },
+  {
+    "hi": "अरब",
+    "en": "Arab"
+  },
+  {
+    "hi": "अत्यंत",
+    "en": "extremely"
+  },
+  {
+    "hi": "अक्षर",
+    "en": "Letter"
+  },
+  {
+    "hi": "संस्थानों",
+    "en": "Institutions"
+  },
+  {
+    "hi": "सुपर",
+    "en": "Super"
+  },
+  {
+    "hi": "संगठनों",
+    "en": "Organizations"
+  },
+  {
+    "hi": "विशेषकर",
+    "en": "especially"
+  },
+  {
+    "hi": "वेद",
+    "en": "Veda"
+  },
+  {
+    "hi": "महाराजा",
+    "en": "King"
+  },
+  {
+    "hi": "भरत",
+    "en": "Bharat"
+  },
+  {
+    "hi": "बोझ",
+    "en": "Burden"
+  },
+  {
+    "hi": "बादल",
+    "en": "Cloud"
+  },
+  {
+    "hi": "बयान",
+    "en": "Statement"
+  },
+  {
+    "hi": "पत्तियां",
+    "en": "Leaves"
+  },
+  {
+    "hi": "चढ़",
+    "en": "climb"
+  },
+  {
+    "hi": "उम्मीद",
+    "en": "Hope"
+  },
+  {
+    "hi": "उपेक्षा",
+    "en": "Ignore"
+  },
+  {
+    "hi": "सिद्धान्तों",
+    "en": "Principles"
+  },
+  {
+    "hi": "स्व",
+    "en": "Self"
+  },
+  {
+    "hi": "सुनते",
+    "en": "listen"
+  },
+  {
+    "hi": "सकते",
+    "en": "Can"
+  },
+  {
+    "hi": "रबड़",
+    "en": "rubber"
+  },
+  {
+    "hi": "मेल",
+    "en": "Match"
+  },
+  {
+    "hi": "मेकअप",
+    "en": "Makeup"
+  },
+  {
+    "hi": "भूत",
+    "en": "Evil spirit"
+  },
+  {
+    "hi": "बनते",
+    "en": "becoming"
+  },
+  {
+    "hi": "प्रशंसा",
+    "en": "Appreciation"
+  },
+  {
+    "hi": "प्रतिदिन",
+    "en": "daily"
+  },
+  {
+    "hi": "पूछ",
+    "en": "ask"
+  },
+  {
+    "hi": "दबाव",
+    "en": "Pressure"
+  },
+  {
+    "hi": "दण्ड",
+    "en": "punishment"
+  },
+  {
+    "hi": "टुकड़े",
+    "en": "pieces"
+  },
+  {
+    "hi": "गहराई",
+    "en": "depth"
+  },
+  {
+    "hi": "खींच",
+    "en": "pulling"
+  },
+  {
+    "hi": "उर्वरक",
+    "en": "Fertilizer"
+  },
+  {
+    "hi": "हिंसा",
+    "en": "violence"
+  },
+  {
+    "hi": "साधना",
+    "en": "Sadhana"
+  },
+  {
+    "hi": "सेवाओं",
+    "en": "Services"
+  },
+  {
+    "hi": "सर्वथा",
+    "en": "absolutely"
+  },
+  {
+    "hi": "लेखन",
+    "en": "Writing"
+  },
+  {
+    "hi": "परेशानी",
+    "en": "Trouble"
+  },
+  {
+    "hi": "प्रताप",
+    "en": "Pratap"
+  },
+  {
+    "hi": "पेड़ों",
+    "en": "Trees"
+  },
+  {
+    "hi": "चेष्टा",
+    "en": "effort"
+  },
+  {
+    "hi": "व्याकरण",
+    "en": "grammar"
+  },
+  {
+    "hi": "लाइसेंस",
+    "en": "License"
+  },
+  {
+    "hi": "ललित",
+    "en": "Lalit"
+  },
+  {
+    "hi": "रूस",
+    "en": "Russia"
+  },
+  {
+    "hi": "मील",
+    "en": "Mile"
+  },
+  {
+    "hi": "बर्फ",
+    "en": "Ice"
+  },
+  {
+    "hi": "पाप",
+    "en": "Sin"
+  },
+  {
+    "hi": "पुत्री",
+    "en": "Daughter"
+  },
+  {
+    "hi": "दफ्तर",
+    "en": "Workplace"
+  },
+  {
+    "hi": "जानवर",
+    "en": "Animal"
+  },
+  {
+    "hi": "गाने",
+    "en": "Songs"
+  },
+  {
+    "hi": "कार्यकर्ता",
+    "en": "worker"
+  },
+  {
+    "hi": "कलाकारों",
+    "en": "Artists"
+  },
+  {
+    "hi": "करता",
+    "en": "does"
+  },
+  {
+    "hi": "उत्पाद",
+    "en": "product"
+  },
+  {
+    "hi": "आएँ",
+    "en": "come on"
+  },
+  {
+    "hi": "सोचते",
+    "en": "thinking"
+  },
+  {
+    "hi": "सीख",
+    "en": "Learn"
+  },
+  {
+    "hi": "सास",
+    "en": "Mother in law"
+  },
+  {
+    "hi": "वीणा",
+    "en": "Veena"
+  },
+  {
+    "hi": "यूरेनियम",
+    "en": "Uranium"
+  },
+  {
+    "hi": "मौलिक",
+    "en": "original"
+  },
+  {
+    "hi": "मारने",
+    "en": "kill"
+  },
+  {
+    "hi": "मुहम्मद",
+    "en": "Muhammad"
+  },
+  {
+    "hi": "बिल",
+    "en": "Bill"
+  },
+  {
+    "hi": "बचत",
+    "en": "Savings"
+  },
+  {
+    "hi": "प्रावधान",
+    "en": "provisions"
+  },
+  {
+    "hi": "पचास",
+    "en": "fifty"
+  },
+  {
+    "hi": "नागरिक",
+    "en": "citizen"
+  },
+  {
+    "hi": "नेहरू",
+    "en": "Nehru"
+  },
+  {
+    "hi": "देन",
+    "en": "donation"
+  },
+  {
+    "hi": "गिरने",
+    "en": "falling"
+  },
+  {
+    "hi": "गहरे",
+    "en": "deep"
+  },
+  {
+    "hi": "उपन्यास",
+    "en": "Novel"
+  },
+  {
+    "hi": "इलाके",
+    "en": "Localities"
+  },
+  {
+    "hi": "आन्तरिक",
+    "en": "internal"
+  },
+  {
+    "hi": "हिन्दुस्तान",
+    "en": "India"
+  },
+  {
+    "hi": "संसद",
+    "en": "Parliament"
+  },
+  {
+    "hi": "स्वीकृति",
+    "en": "Acknowledgment"
+  },
+  {
+    "hi": "संपर्क",
+    "en": "contact"
+  },
+  {
+    "hi": "विभाजन",
+    "en": "Division"
+  },
+  {
+    "hi": "लौटने",
+    "en": "Returning"
+  },
+  {
+    "hi": "यूरोप",
+    "en": "Europe"
+  },
+  {
+    "hi": "मंच",
+    "en": "stage"
+  },
+  {
+    "hi": "भाग्य",
+    "en": "Luck"
+  },
+  {
+    "hi": "बेहद",
+    "en": "extremely"
+  },
+  {
+    "hi": "बुलाया",
+    "en": "called"
+  },
+  {
+    "hi": "पाए",
+    "en": "got"
+  },
+  {
+    "hi": "प्रयोगशाला",
+    "en": "Laboratory"
+  },
+  {
+    "hi": "प्रमाणित",
+    "en": "proven"
+  },
+  {
+    "hi": "प्रभावशाली",
+    "en": "Impressive"
+  },
+  {
+    "hi": "जीत",
+    "en": "Victory"
+  },
+  {
+    "hi": "जानवरों",
+    "en": "Animals"
+  },
+  {
+    "hi": "गुस्से",
+    "en": "anger"
+  },
+  {
+    "hi": "गर्दन",
+    "en": "Neck"
+  },
+  {
+    "hi": "गुरू",
+    "en": "Guru"
+  },
+  {
+    "hi": "अधिकतम",
+    "en": "Maximum"
+  },
+  {
+    "hi": "सृष्टि",
+    "en": "Nature"
+  },
+  {
+    "hi": "शिक्षित",
+    "en": "Educated"
+  },
+  {
+    "hi": "शहद",
+    "en": "Honey"
+  },
+  {
+    "hi": "वरन",
+    "en": "But"
+  },
+  {
+    "hi": "रोम",
+    "en": "Rome"
+  },
+  {
+    "hi": "बदन",
+    "en": "body"
+  },
+  {
+    "hi": "फैला",
+    "en": "Spread"
+  },
+  {
+    "hi": "फेंक",
+    "en": "throw"
+  },
+  {
+    "hi": "पिछड़े",
+    "en": "Backward"
+  },
+  {
+    "hi": "परिश्रम",
+    "en": "labor"
+  },
+  {
+    "hi": "परिवारों",
+    "en": "Families"
+  },
+  {
+    "hi": "परिभाषा",
+    "en": "Definition"
+  },
+  {
+    "hi": "प्रारम्भिक",
+    "en": "initial"
+  },
+  {
+    "hi": "पुरुषों",
+    "en": "Men"
+  },
+  {
+    "hi": "निरीक्षण",
+    "en": "inspection"
+  },
+  {
+    "hi": "दास",
+    "en": "Slave"
+  },
+  {
+    "hi": "देव",
+    "en": "God"
+  },
+  {
+    "hi": "ताकत",
+    "en": "Strength"
+  },
+  {
+    "hi": "तंत्र",
+    "en": "Mechanism"
+  },
+  {
+    "hi": "तत्कालीन",
+    "en": "then"
+  },
+  {
+    "hi": "तकनीक",
+    "en": "Technology"
+  },
+  {
+    "hi": "चलाने",
+    "en": "run"
+  },
+  {
+    "hi": "गठन",
+    "en": "Formation"
+  },
+  {
+    "hi": "अनुभूति",
+    "en": "feeling"
+  },
+  {
+    "hi": "हिन्दुओं",
+    "en": "The Hindus"
+  },
+  {
+    "hi": "हिंदू",
+    "en": "Hindu"
+  },
+  {
+    "hi": "हालांकि",
+    "en": "Although"
+  },
+  {
+    "hi": "सामूहिक",
+    "en": "Collective"
+  },
+  {
+    "hi": "सरकारों",
+    "en": "Governments"
+  },
+  {
+    "hi": "संयंत्र",
+    "en": "plant"
+  },
+  {
+    "hi": "सुंदर",
+    "en": "beautiful"
+  },
+  {
+    "hi": "सृजन",
+    "en": "Creation"
+  },
+  {
+    "hi": "वैसी",
+    "en": "like that"
+  },
+  {
+    "hi": "लावनी",
+    "en": "Lavani"
+  },
+  {
+    "hi": "लक्षणों",
+    "en": "Symptoms"
+  },
+  {
+    "hi": "राहुलजी",
+    "en": "Rahulji"
+  },
+  {
+    "hi": "युवा",
+    "en": "youth"
+  },
+  {
+    "hi": "मूर्ति",
+    "en": "statue"
+  },
+  {
+    "hi": "बेर",
+    "en": "Berry"
+  },
+  {
+    "hi": "पाण्डु",
+    "en": "Pandu"
+  },
+  {
+    "hi": "ध्रुपद",
+    "en": "Dhrupad"
+  },
+  {
+    "hi": "तथ्यों",
+    "en": "Facts"
+  },
+  {
+    "hi": "ढेर",
+    "en": "heap"
+  },
+  {
+    "hi": "जायें",
+    "en": "Go"
+  },
+  {
+    "hi": "ग्रन्थों",
+    "en": "Texts"
+  },
+  {
+    "hi": "गणित",
+    "en": "Mathematic"
+  },
+  {
+    "hi": "कहानियों",
+    "en": "Stories"
+  },
+  {
+    "hi": "अशोक",
+    "en": "Ashoka"
+  },
+  {
+    "hi": "साबित",
+    "en": "prove"
+  },
+  {
+    "hi": "समझना",
+    "en": "Understand"
+  },
+  {
+    "hi": "संज्ञा",
+    "en": "Noun"
+  },
+  {
+    "hi": "शांत",
+    "en": "quiet"
+  },
+  {
+    "hi": "श्रीलंका",
+    "en": "Sri Lanka"
+  },
+  {
+    "hi": "श्रमिक",
+    "en": "worker"
+  },
+  {
+    "hi": "शर्त",
+    "en": "Condition"
+  },
+  {
+    "hi": "लिपि",
+    "en": "script"
+  },
+  {
+    "hi": "मानवीय",
+    "en": "Humane"
+  },
+  {
+    "hi": "पक्षियों",
+    "en": "Birds"
+  },
+  {
+    "hi": "निवासी",
+    "en": "Resident"
+  },
+  {
+    "hi": "तुलनात्मक",
+    "en": "comparative"
+  },
+  {
+    "hi": "चमक",
+    "en": "Glow"
+  },
+  {
+    "hi": "गोल",
+    "en": "round"
+  },
+  {
+    "hi": "खाकर",
+    "en": "by eating"
+  },
+  {
+    "hi": "कोट",
+    "en": "Coat"
+  },
+  {
+    "hi": "इंच",
+    "en": "Inch"
+  },
+  {
+    "hi": "आसन",
+    "en": "Posture"
+  },
+  {
+    "hi": "अकेला",
+    "en": "alone"
+  },
+  {
+    "hi": "शर्मा",
+    "en": "Sharma"
+  },
+  {
+    "hi": "विश्वविद्यालय",
+    "en": "university"
+  },
+  {
+    "hi": "विधायक",
+    "en": "Legislator"
+  },
+  {
+    "hi": "वर्मा",
+    "en": "Varma"
+  },
+  {
+    "hi": "वैद्य",
+    "en": "Vaidya"
+  },
+  {
+    "hi": "राजस्थानी",
+    "en": "Rajasthani"
+  },
+  {
+    "hi": "मानना",
+    "en": "Accept"
+  },
+  {
+    "hi": "भरपूर",
+    "en": "a lot"
+  },
+  {
+    "hi": "भगत",
+    "en": "follower"
+  },
+  {
+    "hi": "बस्ती",
+    "en": "settlement"
+  },
+  {
+    "hi": "बैठने",
+    "en": "Sitting"
+  },
+  {
+    "hi": "प्रतिभा",
+    "en": "Talent"
+  },
+  {
+    "hi": "प्रजा",
+    "en": "people"
+  },
+  {
+    "hi": "प्रकोप",
+    "en": "disaster"
+  },
+  {
+    "hi": "नायक",
+    "en": "hero"
+  },
+  {
+    "hi": "दोस्त",
+    "en": "Friend"
+  },
+  {
+    "hi": "तिवारी",
+    "en": "Tiwari"
+  },
+  {
+    "hi": "घड़ी",
+    "en": "Watch"
+  },
+  {
+    "hi": "गलती",
+    "en": "Mistake"
+  },
+  {
+    "hi": "कार्बन",
+    "en": "Carbon"
+  },
+  {
+    "hi": "उपचार",
+    "en": "treatment"
+  },
+  {
+    "hi": "ईसाई",
+    "en": "Christian"
+  },
+  {
+    "hi": "आवेदन",
+    "en": "Application"
+  },
+  {
+    "hi": "आयुर्वेद",
+    "en": "Ayurveda"
+  },
+  {
+    "hi": "आदर",
+    "en": "respect"
+  },
+  {
+    "hi": "अत्याचार",
+    "en": "torture"
+  },
+  {
+    "hi": "हिमालय",
+    "en": "Himalaya"
+  },
+  {
+    "hi": "हंस",
+    "en": "Swan"
+  },
+  {
+    "hi": "सोचता",
+    "en": "thinks"
+  },
+  {
+    "hi": "विश्वनाथ",
+    "en": "Vishwanath"
+  },
+  {
+    "hi": "वेतन",
+    "en": "Salary"
+  },
+  {
+    "hi": "मथुरा",
+    "en": "Mathura"
+  },
+  {
+    "hi": "भाभी",
+    "en": "Sister in law"
+  },
+  {
+    "hi": "भेजे",
+    "en": "send"
+  },
+  {
+    "hi": "ब्यूरो",
+    "en": "Bureau"
+  },
+  {
+    "hi": "बनती",
+    "en": "paired"
+  },
+  {
+    "hi": "पक्षों",
+    "en": "Sides"
+  },
+  {
+    "hi": "घरेलू",
+    "en": "domestic"
+  },
+  {
+    "hi": "गणना",
+    "en": "Calculations"
+  },
+  {
+    "hi": "कहलाता",
+    "en": "is called"
+  },
+  {
+    "hi": "कलावती",
+    "en": "Kalavati"
+  },
+  {
+    "hi": "करना",
+    "en": "to do"
+  },
+  {
+    "hi": "उदाहरणार्थ",
+    "en": "For example"
+  },
+  {
+    "hi": "उड़",
+    "en": "fly"
+  },
+  {
+    "hi": "आघात",
+    "en": "shock"
+  },
+  {
+    "hi": "हमला",
+    "en": "assault"
+  },
+  {
+    "hi": "व्यावसायिक",
+    "en": "commercial"
+  },
+  {
+    "hi": "लोकप्रिय",
+    "en": "popular"
+  },
+  {
+    "hi": "रेलवे",
+    "en": "Railway"
+  },
+  {
+    "hi": "मिश्रित",
+    "en": "miscellaneous"
+  },
+  {
+    "hi": "महान",
+    "en": "Great"
+  },
+  {
+    "hi": "मेहनत",
+    "en": "Hard work"
+  },
+  {
+    "hi": "बिन्दु",
+    "en": "the point"
+  },
+  {
+    "hi": "फलतः",
+    "en": "Consequently"
+  },
+  {
+    "hi": "प्रोफेसर",
+    "en": "Professor"
+  },
+  {
+    "hi": "प्रचलन",
+    "en": "trend"
+  },
+  {
+    "hi": "औसत",
+    "en": "average"
+  },
+  {
+    "hi": "एकाएक",
+    "en": "suddenly"
+  },
+  {
+    "hi": "उपस्थिति",
+    "en": "presence"
+  },
+  {
+    "hi": "उन्नति",
+    "en": "Development"
+  },
+  {
+    "hi": "आधे",
+    "en": "half"
+  },
+  {
+    "hi": "अली",
+    "en": "Ali"
+  },
+  {
+    "hi": "सरस्वती",
+    "en": "Saraswati"
+  },
+  {
+    "hi": "समर्थ",
+    "en": "capable of"
+  },
+  {
+    "hi": "सम्भवतः",
+    "en": "possibly"
+  },
+  {
+    "hi": "सड़कों",
+    "en": "Streets"
+  },
+  {
+    "hi": "विशेषज्ञ",
+    "en": "expert"
+  },
+  {
+    "hi": "विद्रोह",
+    "en": "Rebellion"
+  },
+  {
+    "hi": "वात",
+    "en": "vata"
+  },
+  {
+    "hi": "व्यस्त",
+    "en": "busy"
+  },
+  {
+    "hi": "लाकर",
+    "en": "by the locker"
+  },
+  {
+    "hi": "राव",
+    "en": "Rao"
+  },
+  {
+    "hi": "योजनाओं",
+    "en": "Plans"
+  },
+  {
+    "hi": "मंत्र",
+    "en": "mantra"
+  },
+  {
+    "hi": "बताने",
+    "en": "tell"
+  },
+  {
+    "hi": "बताते",
+    "en": "Explaining"
+  },
+  {
+    "hi": "प्रश्नों",
+    "en": "Questions"
+  },
+  {
+    "hi": "पकड़ा",
+    "en": "caught"
+  },
+  {
+    "hi": "नोट",
+    "en": "Note"
+  },
+  {
+    "hi": "निवेदन",
+    "en": "Request"
+  },
+  {
+    "hi": "न्याय",
+    "en": "Justice"
+  },
+  {
+    "hi": "धूल",
+    "en": "dust"
+  },
+  {
+    "hi": "दाने",
+    "en": "Rash"
+  },
+  {
+    "hi": "दान",
+    "en": "Donation"
+  },
+  {
+    "hi": "देवीगढ़",
+    "en": "Devigarh"
+  },
+  {
+    "hi": "तरल",
+    "en": "liquid"
+  },
+  {
+    "hi": "कोरियाई",
+    "en": "Korean"
+  },
+  {
+    "hi": "किलोमीटर",
+    "en": "Kilometer"
+  },
+  {
+    "hi": "किताब",
+    "en": "Book"
+  },
+  {
+    "hi": "क्षमा",
+    "en": "Forgiveness"
+  },
+  {
+    "hi": "इंजन",
+    "en": "engine"
+  },
+  {
+    "hi": "आए",
+    "en": "come"
+  },
+  {
+    "hi": "असफल",
+    "en": "failed"
+  },
+  {
+    "hi": "हल्की",
+    "en": "Light"
+  },
+  {
+    "hi": "सावित्री",
+    "en": "Savitri"
+  },
+  {
+    "hi": "सरदार",
+    "en": "Sardar"
+  },
+  {
+    "hi": "सगर्भता",
+    "en": "pregnancy"
+  },
+  {
+    "hi": "शुभ",
+    "en": "auspicious"
+  },
+  {
+    "hi": "लहर",
+    "en": "Wave"
+  },
+  {
+    "hi": "लेखा",
+    "en": "Accounting"
+  },
+  {
+    "hi": "मासिक",
+    "en": "monthly"
+  },
+  {
+    "hi": "मद्रास",
+    "en": "Madras"
+  },
+  {
+    "hi": "मंगल",
+    "en": "Fortunate"
+  },
+  {
+    "hi": "भली",
+    "en": "well"
+  },
+  {
+    "hi": "भेजने",
+    "en": "send"
+  },
+  {
+    "hi": "बिजलीघर",
+    "en": "Electricity house"
+  },
+  {
+    "hi": "बनाता",
+    "en": "makes"
+  },
+  {
+    "hi": "पवित्र",
+    "en": "Holy"
+  },
+  {
+    "hi": "परिषद",
+    "en": "council"
+  },
+  {
+    "hi": "परि",
+    "en": "Pari"
+  },
+  {
+    "hi": "पूछा",
+    "en": "Asked"
+  },
+  {
+    "hi": "नौकर",
+    "en": "Servant"
+  },
+  {
+    "hi": "निकालकर",
+    "en": "by removing"
+  },
+  {
+    "hi": "नासिक्य",
+    "en": "nasal"
+  },
+  {
+    "hi": "तापमान",
+    "en": "temperature"
+  },
+  {
+    "hi": "तरीका",
+    "en": "Method"
+  },
+  {
+    "hi": "झूठ",
+    "en": "Lie"
+  },
+  {
+    "hi": "जाती",
+    "en": "Caste"
+  },
+  {
+    "hi": "छुट्टी",
+    "en": "Holiday"
+  },
+  {
+    "hi": "घाट",
+    "en": "Ghats"
+  },
+  {
+    "hi": "गोबर",
+    "en": "Cow dung"
+  },
+  {
+    "hi": "कामों",
+    "en": "Errands"
+  },
+  {
+    "hi": "कश्मीर",
+    "en": "Kashmir"
+  },
+  {
+    "hi": "ऊंची",
+    "en": "high"
+  },
+  {
+    "hi": "उन्नत",
+    "en": "Advanced"
+  },
+  {
+    "hi": "आजाद",
+    "en": "Azad"
+  },
+  {
+    "hi": "आग्रह",
+    "en": "request"
+  },
+  {
+    "hi": "अमृतसर",
+    "en": "Amritsar"
+  },
+  {
+    "hi": "अनु",
+    "en": "Anu"
+  },
+  {
+    "hi": "अद्भुत",
+    "en": "Wonderful"
+  },
+  {
+    "hi": "अतः",
+    "en": "Therefore"
+  },
+  {
+    "hi": "सिखों",
+    "en": "Sikhs"
+  },
+  {
+    "hi": "साधु",
+    "en": "Saint"
+  },
+  {
+    "hi": "संदेश",
+    "en": "Message"
+  },
+  {
+    "hi": "लिखित",
+    "en": "written"
+  },
+  {
+    "hi": "लेप",
+    "en": "Coating"
+  },
+  {
+    "hi": "मर्यादा",
+    "en": "limitation"
+  },
+  {
+    "hi": "मेज",
+    "en": "Table"
+  },
+  {
+    "hi": "मुख्यतः",
+    "en": "mainly"
+  },
+  {
+    "hi": "भाजपा",
+    "en": "BJP"
+  },
+  {
+    "hi": "बेकार",
+    "en": "Useless"
+  },
+  {
+    "hi": "पैदावार",
+    "en": "yield"
+  },
+  {
+    "hi": "नाश",
+    "en": "destroy"
+  },
+  {
+    "hi": "दलों",
+    "en": "Parties"
+  },
+  {
+    "hi": "जापान",
+    "en": "Japan"
+  },
+  {
+    "hi": "गोपाल",
+    "en": "Gopal"
+  },
+  {
+    "hi": "कोशिकाओं",
+    "en": "Cells"
+  },
+  {
+    "hi": "काटने",
+    "en": "Bite"
+  },
+  {
+    "hi": "कूद",
+    "en": "Jump"
+  },
+  {
+    "hi": "उपदेश",
+    "en": "Sermon"
+  },
+  {
+    "hi": "उड़ान",
+    "en": "flight"
+  },
+  {
+    "hi": "अंतरिक्ष",
+    "en": "space"
+  },
+  {
+    "hi": "सहसा",
+    "en": "Usually"
+  },
+  {
+    "hi": "व्यास",
+    "en": "Diameter"
+  },
+  {
+    "hi": "मित्रों",
+    "en": "Friends"
+  },
+  {
+    "hi": "भोग",
+    "en": "Indulgence"
+  },
+  {
+    "hi": "बुला",
+    "en": "Call"
+  },
+  {
+    "hi": "प्रातः",
+    "en": "in the morning"
+  },
+  {
+    "hi": "पढ़ा",
+    "en": "read"
+  },
+  {
+    "hi": "पढ़ते",
+    "en": "reading"
+  },
+  {
+    "hi": "घोड़ा",
+    "en": "Horse"
+  },
+  {
+    "hi": "गुफा",
+    "en": "Cave"
+  },
+  {
+    "hi": "खुल",
+    "en": "open"
+  },
+  {
+    "hi": "खुराक",
+    "en": "diet"
+  },
+  {
+    "hi": "उपायों",
+    "en": "Measures"
+  },
+  {
+    "hi": "उपयोगिता",
+    "en": "utility"
+  },
+  {
+    "hi": "इलाज",
+    "en": "Treatment"
+  },
+  {
+    "hi": "आवाज़",
+    "en": "sound"
+  },
+  {
+    "hi": "आलू",
+    "en": "Potato"
+  },
+  {
+    "hi": "हटा",
+    "en": "Remove"
+  },
+  {
+    "hi": "स्वस्तिक",
+    "en": "Swastika"
+  },
+  {
+    "hi": "समीक्षा",
+    "en": "Review"
+  },
+  {
+    "hi": "संक्रमण",
+    "en": "Infection"
+  },
+  {
+    "hi": "सैकड़ों",
+    "en": "Hundreds"
+  },
+  {
+    "hi": "शोर",
+    "en": "Noise"
+  },
+  {
+    "hi": "शब्दावली",
+    "en": "vocabulary"
+  },
+  {
+    "hi": "यौगिक",
+    "en": "compound"
+  },
+  {
+    "hi": "मना",
+    "en": "deny"
+  },
+  {
+    "hi": "मंडल",
+    "en": "Board"
+  },
+  {
+    "hi": "बचने",
+    "en": "to avoid"
+  },
+  {
+    "hi": "प्रेमनाथ",
+    "en": "Premnath"
+  },
+  {
+    "hi": "परम",
+    "en": "Supreme"
+  },
+  {
+    "hi": "निधि",
+    "en": "Fund"
+  },
+  {
+    "hi": "नेताजी",
+    "en": "Netaji"
+  },
+  {
+    "hi": "चुनौती",
+    "en": "challenge"
+  },
+  {
+    "hi": "गौतम",
+    "en": "Gautam"
+  },
+  {
+    "hi": "खिड़की",
+    "en": "window"
+  },
+  {
+    "hi": "किस्में",
+    "en": "Varieties"
+  },
+  {
+    "hi": "करते",
+    "en": "Do"
+  },
+  {
+    "hi": "कटाई",
+    "en": "Harvesting"
+  },
+  {
+    "hi": "असाधारण",
+    "en": "Extraordinary"
+  },
+  {
+    "hi": "स्मरण",
+    "en": "remembrance"
+  },
+  {
+    "hi": "समग्र",
+    "en": "overall"
+  },
+  {
+    "hi": "सुनी",
+    "en": "heard"
+  },
+  {
+    "hi": "रेडियो",
+    "en": "radio"
+  },
+  {
+    "hi": "मामूली",
+    "en": "Modest"
+  },
+  {
+    "hi": "बीमार",
+    "en": "Sick"
+  },
+  {
+    "hi": "फायदा",
+    "en": "benefit"
+  },
+  {
+    "hi": "पुराणों",
+    "en": "Puranas"
+  },
+  {
+    "hi": "प्रस्तावों",
+    "en": "Proposals"
+  },
+  {
+    "hi": "प्रधानता",
+    "en": "primacy"
+  },
+  {
+    "hi": "पन्द्रह",
+    "en": "fifteen"
+  },
+  {
+    "hi": "नाव",
+    "en": "name"
+  },
+  {
+    "hi": "तुल्फ",
+    "en": "Tulf"
+  },
+  {
+    "hi": "तत्काल",
+    "en": "immediately"
+  },
+  {
+    "hi": "जोड़ा",
+    "en": "couple"
+  },
+  {
+    "hi": "चाल",
+    "en": "move"
+  },
+  {
+    "hi": "चूहे",
+    "en": "mice"
+  },
+  {
+    "hi": "चलना",
+    "en": "Walking"
+  },
+  {
+    "hi": "गाया",
+    "en": "sang"
+  },
+  {
+    "hi": "गला",
+    "en": "throat"
+  },
+  {
+    "hi": "खैर",
+    "en": "well"
+  },
+  {
+    "hi": "कोर्ट",
+    "en": "Court"
+  },
+  {
+    "hi": "कराना",
+    "en": "get it done"
+  },
+  {
+    "hi": "कंपनी",
+    "en": "Company"
+  },
+  {
+    "hi": "इसने",
+    "en": "It has"
+  },
+  {
+    "hi": "इनको",
+    "en": "To them"
+  },
+  {
+    "hi": "अर्थव्यवस्था",
+    "en": "economy"
+  },
+  {
+    "hi": "अंचल",
+    "en": "Zone"
+  },
+  {
+    "hi": "हल्का",
+    "en": "Light"
+  },
+  {
+    "hi": "सुनिश्चित",
+    "en": "ensure"
+  },
+  {
+    "hi": "वरना",
+    "en": "Otherwise"
+  },
+  {
+    "hi": "बुनियादी",
+    "en": "Basic"
+  },
+  {
+    "hi": "दैनिक",
+    "en": "daily"
+  },
+  {
+    "hi": "जुड़े",
+    "en": "Connected"
+  },
+  {
+    "hi": "घुस",
+    "en": "bribe"
+  },
+  {
+    "hi": "खुली",
+    "en": "open"
+  },
+  {
+    "hi": "कुमार",
+    "en": "Kumar"
+  },
+  {
+    "hi": "कुमाऊँ",
+    "en": "Kumaon"
+  },
+  {
+    "hi": "आंगन",
+    "en": "Courtyard"
+  }
+]

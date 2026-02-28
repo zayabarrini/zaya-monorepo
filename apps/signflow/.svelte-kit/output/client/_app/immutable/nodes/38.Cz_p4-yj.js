@@ -1,0 +1,381 @@
+import{A as c,a as s,D as n,f as l,z as d,$ as v}from"../chunks/-0HexQLS.js";var i=l('<meta charset="UTF-8" class="svelte-lum7k"/> <meta name="viewport" content="width=device-width, initial-scale=1.0" class="svelte-lum7k"/>',1),r=l(`<div class="container mainpage svelte-lum7k"><div class="intro svelte-lum7k"><p class="svelte-lum7k">Russian nouns change their endings based on case
+      (падеж), gender (род), and number (число). This page
+      uses color coding to help visualize these changes.
+      There are 6 cases in Russian, each with specific
+      grammatical functions.</p></div> <h2 class="svelte-lum7k">Color Legend for Cases</h2> <div class="color-legend svelte-lum7k"><div class="color-item svelte-lum7k"><div class="color-box case-nominative svelte-lum7k"></div> <span class="svelte-lum7k">Nominative (Именительный) - Subject</span></div> <div class="color-item svelte-lum7k"><div class="color-box case-genitive svelte-lum7k"></div> <span class="svelte-lum7k">Genitive (Родительный) - Possession</span></div> <div class="color-item svelte-lum7k"><div class="color-box case-dative svelte-lum7k"></div> <span class="svelte-lum7k">Dative (Дательный) - Indirect Object</span></div> <div class="color-item svelte-lum7k"><div class="color-box case-accusative svelte-lum7k"></div> <span class="svelte-lum7k">Accusative (Винительный) - Direct Object</span></div> <div class="color-item svelte-lum7k"><div class="color-box case-instrumental svelte-lum7k"></div> <span class="svelte-lum7k">Instrumental (Творительный) - Means/With</span></div> <div class="color-item svelte-lum7k"><div class="color-box case-prepositional svelte-lum7k"></div> <span class="svelte-lum7k">Prepositional (Предложный) - Location/About</span></div></div> <div class="gender-legend svelte-lum7k"><div class="gender-item svelte-lum7k"><div class="gender-box gender-masculine svelte-lum7k"></div> <span class="svelte-lum7k">Masculine (мужской род)</span></div> <div class="gender-item svelte-lum7k"><div class="gender-box gender-feminine svelte-lum7k"></div> <span class="svelte-lum7k">Feminine (женский род)</span></div> <div class="gender-item svelte-lum7k"><div class="gender-box gender-neuter svelte-lum7k"></div> <span class="svelte-lum7k">Neuter (средний род)</span></div></div> <h2 class="svelte-lum7k">First Declension (Masculine & Neuter Nouns)</h2> <div class="declension-section svelte-lum7k"><div class="declension-type svelte-lum7k">Masculine Nouns Ending in Consonant or -й</div> <table class="declension-table svelte-lum7k"><thead class="svelte-lum7k"><tr class="svelte-lum7k"><th class="svelte-lum7k">Case</th><th class="svelte-lum7k">студент (student)</th><th class="svelte-lum7k">музей (museum)</th><th class="svelte-lum7k">трамвай (streetcar)</th></tr></thead><tbody class="svelte-lum7k"><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Nominative<span class="case-abbr svelte-lum7k">(Nom.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">студент</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">музей</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">ей</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">трамвай</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">й</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Genitive<span class="case-abbr svelte-lum7k">(Gen.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">студента</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">а</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">музея</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">ея</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">трамвая</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">я</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Dative<span class="case-abbr svelte-lum7k">(Dat.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">студенту</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">у</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">музею</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">ею</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">трамваю</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">ю</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Accusative<span class="case-abbr svelte-lum7k">(Acc.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">студента</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">а</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">музей</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">ей</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">трамвай</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">й</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Instrumental<span class="case-abbr svelte-lum7k">(Instr.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">студентом</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ом</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">музеем</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">еем</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">трамваем</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ем</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Prepositional<span class="case-abbr svelte-lum7k">(Prep.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о студенте</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">студент</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о музее</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">муз</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">ее</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о трамвае</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">трамва</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td></tr></tbody></table> <div class="declension-type svelte-lum7k">Neuter Nouns Ending in -о or -е</div> <table class="declension-table svelte-lum7k"><thead class="svelte-lum7k"><tr class="svelte-lum7k"><th class="svelte-lum7k">Case</th><th class="svelte-lum7k">окно (window)</th><th class="svelte-lum7k">море (sea)</th><th class="svelte-lum7k">здание (building)</th></tr></thead><tbody class="svelte-lum7k"><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Nominative<span class="case-abbr svelte-lum7k">(Nom.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">окно</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">о</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">море</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">здание</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">е</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Genitive<span class="case-abbr svelte-lum7k">(Gen.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">окна</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">а</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">моря</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">я</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">здания</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">я</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Dative<span class="case-abbr svelte-lum7k">(Dat.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">окну</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">у</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">морю</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">ю</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">зданию</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">ю</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Accusative<span class="case-abbr svelte-lum7k">(Acc.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">окно</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">о</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">море</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">здание</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">е</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Instrumental<span class="case-abbr svelte-lum7k">(Instr.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">окном</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ом</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">морем</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ем</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">зданием</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ем</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Prepositional<span class="case-abbr svelte-lum7k">(Prep.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">об окне</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">окн</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о море</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мор</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о здании</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">здани</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">и</span></div></td></tr></tbody></table></div> <h2 class="svelte-lum7k">Second Declension (Feminine Nouns)</h2> <div class="declension-section svelte-lum7k"><div class="declension-type svelte-lum7k">Feminine Nouns Ending in -а or -я</div> <table class="declension-table svelte-lum7k"><thead class="svelte-lum7k"><tr class="svelte-lum7k"><th class="svelte-lum7k">Case</th><th class="svelte-lum7k">книга (book)</th><th class="svelte-lum7k">неделя (week)</th><th class="svelte-lum7k">мама (mom)</th></tr></thead><tbody class="svelte-lum7k"><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Nominative<span class="case-abbr svelte-lum7k">(Nom.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">книга</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">а</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">неделя</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">я</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">мама</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">а</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Genitive<span class="case-abbr svelte-lum7k">(Gen.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">книги</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">недели</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">мамы</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">ы</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Dative<span class="case-abbr svelte-lum7k">(Dat.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">книге</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">неделе</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">маме</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">е</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Accusative<span class="case-abbr svelte-lum7k">(Acc.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">книгу</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">у</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">неделю</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">ю</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">маму</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">у</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Instrumental<span class="case-abbr svelte-lum7k">(Instr.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">книгой</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ой</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">неделей</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ей</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">мамой</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ой</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Prepositional<span class="case-abbr svelte-lum7k">(Prep.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о книге</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">книг</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о неделе</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">недел</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о маме</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">мам</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">е</span></div></td></tr></tbody></table> <div class="declension-type svelte-lum7k">Feminine Nouns Ending in -ь (Soft Sign)</div> <table class="declension-table svelte-lum7k"><thead class="svelte-lum7k"><tr class="svelte-lum7k"><th class="svelte-lum7k">Case</th><th class="svelte-lum7k">ночь (night)</th><th class="svelte-lum7k">дверь (door)</th><th class="svelte-lum7k">тетрадь (notebook)</th></tr></thead><tbody class="svelte-lum7k"><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Nominative<span class="case-abbr svelte-lum7k">(Nom.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">ночь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">ь</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">дверь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">ь</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">тетрадь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-nominative svelte-lum7k" style="color: #3498db; font-weight: bold">ь</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Genitive<span class="case-abbr svelte-lum7k">(Gen.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">ночи</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">двери</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">тетради</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-genitive svelte-lum7k" style="color: #2ecc71; font-weight: bold">и</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Dative<span class="case-abbr svelte-lum7k">(Dat.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">ночи</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">двери</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">тетради</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-dative svelte-lum7k" style="color: #e74c3c; font-weight: bold">и</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Accusative<span class="case-abbr svelte-lum7k">(Acc.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">ночь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">ь</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">дверь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">ь</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">тетрадь</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-accusative svelte-lum7k" style="color: #f39c12; font-weight: bold">ь</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Instrumental<span class="case-abbr svelte-lum7k">(Instr.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">ночью</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ью</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">дверью</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ью</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">тетрадью</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-instrumental svelte-lum7k" style="color: #9b59b6; font-weight: bold">ью</span></div></td></tr><tr class="svelte-lum7k"><td class="svelte-lum7k"><span class="case-name svelte-lum7k">Prepositional<span class="case-abbr svelte-lum7k">(Prep.)</span></span></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о ночи</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">ноч</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о двери</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">двер</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">и</span></div></td><td class="svelte-lum7k"><div class="noun-form svelte-lum7k">о тетради</div> <div class="color-coded svelte-lum7k"><span class="noun-root svelte-lum7k" style="
+                    background-color: #2c3e50;
+                    color: white;
+                    padding: 2px 4px;
+                    border-radius: 3px;
+                  ">тетрад</span><span class="case-prepositional svelte-lum7k" style="color: #1abc9c; font-weight: bold">и</span></div></td></tr></tbody></table></div> <h2 class="svelte-lum7k">Example Sentences with Color-Coded Declensions</h2> <div class="sentences-container svelte-lum7k"><div class="sentence svelte-lum7k"><div class="sentence-ru svelte-lum7k"><span class="noun-highlight svelte-lum7k" style="background-color: #3498db; color: white">Студент</span> читает <span class="noun-highlight svelte-lum7k" style="background-color: #f39c12; color: white">книгу</span> в <span class="noun-highlight svelte-lum7k" style="background-color: #1abc9c; color: white">библиотеке</span>.</div> <div class="sentence-en svelte-lum7k">The student (Nom.) reads a book (Acc.) in the
+        library (Prep.).</div></div> <div class="sentence svelte-lum7k"><div class="sentence-ru svelte-lum7k">Я даю <span class="noun-highlight svelte-lum7k" style="background-color: #e74c3c; color: white">другу</span> <span class="noun-highlight svelte-lum7k" style="background-color: #f39c12; color: white">подарок</span> от <span class="noun-highlight svelte-lum7k" style="background-color: #2ecc71; color: white">мамы</span>.</div> <div class="sentence-en svelte-lum7k">I give a gift (Acc.) to a friend (Dat.) from mom
+        (Gen.).</div></div> <div class="sentence svelte-lum7k"><div class="sentence-ru svelte-lum7k">Мы пишем <span class="noun-highlight svelte-lum7k" style="background-color: #9b59b6; color: white">ручкой</span> в <span class="noun-highlight svelte-lum7k" style="background-color: #f39c12; color: white">тетрадь</span> о <span class="noun-highlight svelte-lum7k" style="background-color: #1abc9c; color: white">путешествии</span>.</div> <div class="sentence-en svelte-lum7k">We write with a pen (Instr.) in a notebook (Acc.)
+        about a journey (Prep.).</div></div> <div class="sentence svelte-lum7k"><div class="sentence-ru svelte-lum7k"><span class="noun-highlight svelte-lum7k" style="background-color: #3498db; color: white">Окно</span> <span class="noun-highlight svelte-lum7k" style="background-color: #2ecc71; color: white">комнаты</span> выходит на <span class="noun-highlight svelte-lum7k" style="background-color: #f39c12; color: white">улицу</span>.</div> <div class="sentence-en svelte-lum7k">The window (Nom.) of the room (Gen.) faces the
+        street (Acc.).</div></div> <div class="sentence svelte-lum7k"><div class="sentence-ru svelte-lum7k">Он говорит <span class="noun-highlight svelte-lum7k" style="background-color: #e74c3c; color: white">сестре</span> о <span class="noun-highlight svelte-lum7k" style="background-color: #1abc9c; color: white">проблеме</span> с <span class="noun-highlight svelte-lum7k" style="background-color: #9b59b6; color: white">помощью</span> <span class="noun-highlight svelte-lum7k" style="background-color: #2ecc71; color: white">телефона</span>.</div> <div class="sentence-en svelte-lum7k">He talks to his sister (Dat.) about a problem
+        (Prep.) with the help (Instr.) of a phone (Gen.).</div></div></div> <div class="note svelte-lum7k"><h3 class="svelte-lum7k">Key Points about Russian Declensions</h3> <p class="svelte-lum7k"><strong class="svelte-lum7k">1. Cases indicate grammatical function:</strong></p> <div class="case-explanation svelte-lum7k"><p class="svelte-lum7k"><strong class="svelte-lum7k">Nominative:</strong> Subject of the sentence (who/what
+        is doing the action)</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">Genitive:</strong> Possession, absence, after
+        certain prepositions and numbers</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">Dative:</strong> Indirect object (to/for whom),
+        after certain verbs</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">Accusative:</strong> Direct object (whom/what
+        the action affects), after certain prepositions</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">Instrumental:</strong> Means by which action is
+        done (with what), after certain prepositions</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">Prepositional:</strong> Always used with prepositions
+        (about, in, on)</p></div> <p class="svelte-lum7k"><strong class="svelte-lum7k">2. Gender matters:</strong> Masculine, feminine,
+      and neuter nouns have different declension patterns.</p> <p class="svelte-lum7k"><strong class="svelte-lum7k">3. Animacy affects accusative:</strong> For masculine
+      animate nouns, the accusative form is the same as genitive,
+      not nominative.</p></div> <footer class="svelte-lum7k"><p class="svelte-lum7k">Created for Russian language learners • Color coding
+      helps visualize noun declension patterns • Each case
+      has a distinct color</p></footer></div>`);function p(e){var a=r();c("lum7k",t=>{var o=i();d(2),n(()=>{v.title="Russian Noun Declensions - Color Coded"}),s(t,o)}),s(e,a)}export{p as component};

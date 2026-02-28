@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="../../favicon.png"
+    />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vZTGFMhNs91QlTjf3Fz3jbNvmtKw8eO1poFskfdmVxr3kENTKWgynxJpVp8LOKfj"
+      crossorigin="anonymous"
+    /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link href="../../_app/immutable/entry/start.zT2sQUIe.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/-0HexQLS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/ChVxeZXD.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.50XNgmhX.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/Ct5FWWRu.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.EgXnl0y6.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DOiDhcps.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/26.CA8V3cW4.js" rel="modulepreload">
+		<!--12qhfyh--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Satisfy&amp;display=swap" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Playball|Sedgwick+Ave+Display|Zilla+Slab+Highlight" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Pacifico|Playfair+Display|Roboto|Roboto+Condensed|Slabo+27px" rel="stylesheet"/> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  <script>
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        // ScrollReveal initialization
+        if (typeof ScrollReveal !== "undefined") {
+          window.sr = ScrollReveal();
+
+          const revealConfigs = {
+            ".navbar": { duration: 2000 },
+            ".showcase-left": {
+              duration: 2000,
+              origin: "top",
+              distance: "10em"
+            },
+            ".showcase-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em"
+            },
+            ".showcase-btn": {
+              duration: 2000,
+              delay: 2000,
+              origin: "bottom"
+            },
+            "#testimonial div": {
+              duration: 2000,
+              origin: "bottom"
+            },
+            ".info-left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".info-down": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            ".section": {
+              duration: 2000,
+              origin: "down",
+              distance: "10em"
+            },
+            "#contact form": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            },
+            ".header-collection": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".left": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".center": {
+              duration: 2000,
+              origin: "bottom",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".right": {
+              duration: 2000,
+              origin: "right",
+              distance: "10em",
+              viewFactor: 0.2
+            },
+            ".footer": {
+              duration: 2000,
+              origin: "left",
+              distance: "10em"
+            }
+          };
+
+          Object.entries(revealConfigs).forEach(
+            ([selector, config]) => {
+              window.sr.reveal(selector, config);
+            }
+          );
+        }
+
+        // Smooth scrolling
+        if (typeof $ !== "undefined") {
+          $('a[href*="#"]:not([href="#"])').click(
+            function (e) {
+              if (
+                location.pathname.replace(/^\//, "") ===
+                  this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+              ) {
+                const target =
+                  $(this.hash) ||
+                  $(`[name=${this.hash.slice(1)}]`);
+                if (target.length) {
+                  $("html, body").animate(
+                    { scrollTop: target.offset().top },
+                    1000
+                  );
+                  e.preventDefault();
+                }
+              }
+            }
+          );
+        }
+      }
+    );
+  </script><!----><!--1w9jrm5--><script>
+    window.prefersDarkmode = false;
+
+    if (
+      localStorage.theme === "dark" ||
+      (!localStorage.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)")
+          .matches)
+    ) {
+      window.prefersDarkmode = true;
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script><!----><!----><!--1goqh3g--><meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <link rel="stylesheet" href="/css/styles-color-coded-ch.css"/><!----><title>Chinese Syntax Analyzer</title>
+		<link href="../../_app/immutable/assets/vendor.DY7Szrf1.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.DH8-s0cv.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/app.CToo3IAm.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/style.CGw2Wy5F.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/26.C3Q74v_u.css" rel="stylesheet">
+  </head>
+  <body
+    data-sveltekit-preload-data="hover"
+    class="bg-white text-black dark:bg-dark-background dark:text-white"
+  >
+    <div class="background-blobs"></div>
+    <div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!----><div><main><header class="fixed inset-x-0 bg-white top-0 z-20 border-b bg-white dark:border-gray-800 dark:bg-dark-background"><nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4"><a href="/"><span class="zaya notranslate">Zaya Barrini</span></a> <div class="hidden sm:flex items-center space-x-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Languages" target="_self"><!--[--><!---->Languages<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/grammar" target="_self"><!--[--><!---->Grammar<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></div> <button class="search-icon svelte-1jlqbwg" aria-label="Open search modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="currentColor"></path><path d="M23.7071 22.2929L18.7071 17.2929C18.3166 16.9024 17.6834 16.9024 17.2929 17.2929C16.9024 17.6834 16.9024 18.3166 17.2929 18.7071L22.2929 23.7071C22.6834 24.0976 23.3166 24.0976 23.7071 23.7071C24.0976 23.3166 24.0976 22.6834 23.7071 22.2929Z" fill="currentColor"></path></svg></button> <div class="modal  svelte-1jlqbwg" aria-hidden="true"><div class="modal-content svelte-1jlqbwg"><button class="close-modal svelte-1jlqbwg" aria-label="Close search modal">×</button> <form><input class="search-input svelte-1jlqbwg" type="text" value="" placeholder="Search..." aria-label="Search input"/></form></div></div><!----> <button class="sm:hidden p-2">☰</button></nav> <aside class="fixed inset-y-0 left-0 w-full bg-white dark:bg-dark-backgroud p-4 shadow-lg sidebar closed svelte-1rrec0"><div class="flex justify-between items-center"><a href="/"><div class="h-8 w-20"></div><!----></a> <button class="p-2 text-xl">✕</button></div> <nav class="mt-4 flex flex-col space-y-4"><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Psychoanalysis" target="_self"><!--[--><!---->Psychoanalysis<!--]--></a><!----><a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/posts" target="_self"><!--[--><!---->Posts<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/courses" target="_self"><!--[--><!---->Courses<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=Practice" target="_self"><!--[--><!---->Practice<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/cinema" target="_self"><!--[--><!---->Cinema<!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="/list?query=CVs" target="_self"><!--[--><span class="zaya notranslate">Zaya</span><!--]--></a><!----> <button class="p-2 text-purple-800 dark:text-yellow-200"><!--[!--><div><svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M3.722 3.193L3.226 4.528c-.12.323-.375.578-.698.698L1.193 5.722c-.257.096-.257.46 0 .555l1.335.496c.323.12.578.375.698.698l.496 1.335c.096.257.46.257.555 0l.496-1.335c.12-.323.375-.578.698-.698l1.335-.496c.257-.096.257-.46 0-.555L5.472 5.226c-.323-.12-.578-.375-.698-.698L4.278 3.193C4.182 2.936 3.818 2.936 3.722 3.193zM20.916 12.994c.603.006 1.091.516 1.008 1.113-.232 1.662-.986 3.267-2.263 4.553-3.13 3.12-8.19 3.12-11.32 0-3.12-3.13-3.12-8.19 0-11.32 1.285-1.277 2.891-2.032 4.553-2.263C13.49 4.993 14 5.481 14.006 6.084c.017 1.765.7 3.521 2.044 4.866C17.394 12.294 19.151 12.977 20.916 12.994z"></path></svg><!----></div><!--]--></button><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://www.youtube.com/@zayabarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path></svg><!--]--></a><!----> <a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800" href="https://github.com/tallesbarrini" target="_blank"><!--[--><svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6c0-0.4,0-0.9,0.2-1.3 C7.2,6.1,7.4,6,7.5,6c0,0,0.1,0,0.1,0C8.1,6.1,9.1,6.4,10,7.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3c0.9-0.9,2-1.2,2.5-1.3 c0,0,0.1,0,0.1,0c0.2,0,0.3,0.1,0.4,0.3C17,6.7,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4 c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3C22,6.1,16.9,1.4,10.9,2.1z"></path></svg><!--]--></a><!----></nav></aside></header><!----> <div id="translate-icon" aria-label="Translate" role="button" tabindex="0" class="svelte-10w8h3u"><img src="/icons/translate.svg" alt="Translate" class="svelte-10w8h3u"/></div> <div id="google_translate_element" class="svelte-10w8h3u"></div><!----> <!--[!--><!--]--><!----> <div class="read-aloud-button  svelte-1c10vhx" aria-label="Turn on Read Aloud" role="button" tabindex="0" title="Click to activate"><div class="translate-icon floating-share svelte-1c10vhx" id="translate-icon" aria-label="Read Aloud" role="button" tabindex="0"><img src="/icons/voice.png" alt="Read Aloud" class="svelte-1c10vhx"/></div></div><!---->  <!--[--><!--[--><div class="container mainpage svelte-1goqh3g"><h1>Chinese Syntax Analyzer</h1> <div class="legend"><span class="chip S">Subject (S)</span> <span class="chip O">Object (O)</span> <span class="chip V">Verb (V)</span> <span class="chip A">Adjunct: Time/Place/Manner (A)</span> <span class="chip C">Conjunction/Subordinator (C)</span> <span class="chip P">Preposition/Complement (P)</span> <span class="chip X">Other (X)</span></div> <div class="input-section"><form method="POST"><div class="form-group"><label for="text">Enter Text:</label> <textarea name="text" id="text" placeholder="Enter Chinese text here...">
+          临床和政治阅读
+          现代家谱的问题在于工作和传承之间的短路：父母不传递符号，只传递产品。
+          父母的象征性死亡（法律制度化）对于孩子的成长是必要的——没有它，这个国家就会变得“俄狄浦斯式幼稚化”。
+          跨性别是系统的断裂点——父亲之名被重新配置，享受从生产轴转移到审美和情色轴。</textarea></div> <div class="form-group"><label for="language">Language:</label> <select name="language" id="language"><option value="chinese">Chinese</option><option value="japanese">Japanese</option></select></div> <button type="submit">Analyze Syntax</button></form></div> <div class="result-section"><div class="sentence-display"><div class="sentence-title">Original Chinese Text:</div> <div class="word-breakdown"><ruby><rt class="translation">clinical</rt> <span class="word-token V">临床</span> <rt class="pinyin">lín chuáng</rt></ruby> <ruby><rt class="translation">and</rt> <span class="word-token C">和</span> <rt class="pinyin">hé</rt></ruby> <ruby><rt class="translation">politics</rt> <span class="word-token O">政治</span> <rt class="pinyin">zhèng zhì</rt></ruby> <ruby><rt class="translation">read</rt> <span class="word-token V">阅读</span> <rt class="pinyin">yuè dú</rt></ruby> <ruby><rt class="translation"></rt> <span class="word-token X"></span> <rt class="pinyin"></rt></ruby> <ruby><rt class="translation">modern</rt> <span class="word-token X">现代</span> <rt class="pinyin">xiàn dài</rt></ruby> <ruby><rt class="translation">genealogy</rt> <span class="word-token O">家谱</span> <rt class="pinyin">jiā pǔ</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <ruby><rt class="translation">question</rt> <span class="word-token O">问题</span> <rt class="pinyin">wèn tí</rt></ruby> <ruby><rt class="translation">lies in</rt> <span class="word-token V">在于</span> <rt class="pinyin">zài yú</rt></ruby> <ruby><rt class="translation">Work</rt> <span class="word-token V">工作</span> <rt class="pinyin">gōng zuò</rt></ruby> <ruby><rt class="translation">and</rt> <span class="word-token C">和</span> <rt class="pinyin">hé</rt></ruby> <ruby><rt class="translation">inheritance</rt> <span class="word-token V">传承</span> <rt class="pinyin">chuán chéng</rt></ruby> <ruby><rt class="translation">between</rt> <span class="word-token A">之间</span> <rt class="pinyin">zhī jiān</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <ruby><rt class="translation">short circuit</rt> <span class="word-token O">短路</span> <rt class="pinyin">duǎn lù</rt></ruby> <span class="punctuation-token">：</span> <ruby><rt class="translation">parents</rt> <span class="word-token O">父母</span> <rt class="pinyin">fù mǔ</rt></ruby> <ruby><rt class="translation">No</rt> <span class="word-token A">不</span> <rt class="pinyin">bù</rt></ruby> <ruby><rt class="translation">transfer</rt> <span class="word-token V">传递</span> <rt class="pinyin">chuán dì</rt></ruby> <ruby><rt class="translation">symbol</rt> <span class="word-token O">符号</span> <rt class="pinyin">fú hào</rt></ruby> <span class="punctuation-token">，</span> <ruby><rt class="translation">Only</rt> <span class="word-token A">只</span> <rt class="pinyin">zhǐ</rt></ruby> <ruby><rt class="translation">transfer</rt> <span class="word-token V">传递</span> <rt class="pinyin">chuán dì</rt></ruby> <ruby><rt class="translation">product</rt> <span class="word-token O">产品</span> <rt class="pinyin">chǎn pǐn</rt></ruby> <span class="punctuation-token">。</span> <ruby><rt class="translation"></rt> <span class="word-token X"></span> <rt class="pinyin"></rt></ruby> <ruby><rt class="translation">parents</rt> <span class="word-token O">父母</span> <rt class="pinyin">fù mǔ</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <ruby><rt class="translation">symbolic</rt> <span class="word-token O">象征性</span> <rt class="pinyin">xiàng zhēng xìng</rt></ruby> <ruby><rt class="translation">die</rt> <span class="word-token V">死亡</span> <rt class="pinyin">sǐ wáng</rt></ruby> <span class="punctuation-token">（</span> <ruby><rt class="translation">law</rt> <span class="word-token O">法律</span> <rt class="pinyin">fǎ lǜ</rt></ruby> <ruby><rt class="translation">institutionalized</rt> <span class="word-token O">制度化</span> <rt class="pinyin">zhì dù huà</rt></ruby> <span class="punctuation-token">）</span> <ruby><rt class="translation">for</rt> <span class="word-token P">对于</span> <rt class="pinyin">duì yú</rt></ruby> <ruby><rt class="translation">child</rt> <span class="word-token O">孩子</span> <rt class="pinyin">hái zi</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <ruby><rt class="translation">growing up</rt> <span class="word-token V">成长</span> <rt class="pinyin">chéng zhǎng</rt></ruby> <ruby><rt class="translation">yes</rt> <span class="word-token V">是</span> <rt class="pinyin">shì</rt></ruby> <ruby><rt class="translation">need</rt> <span class="word-token A">必要</span> <rt class="pinyin">bì yào</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <span class="punctuation-token">—</span> <span class="punctuation-token">—</span> <ruby><rt class="translation">No</rt> <span class="word-token V">没有</span> <rt class="pinyin">méi yǒu</rt></ruby> <ruby><rt class="translation">it</rt> <span class="word-token O">它</span> <rt class="pinyin">tā</rt></ruby> <span class="punctuation-token">，</span> <ruby><rt class="translation">this</rt> <span class="word-token S">这个</span> <rt class="pinyin">zhè ge</rt></ruby> <ruby><rt class="translation">nation</rt> <span class="word-token O">国家</span> <rt class="pinyin">guó jiā</rt></ruby> <ruby><rt class="translation">At once</rt> <span class="word-token A">就</span> <rt class="pinyin">jiù</rt></ruby> <ruby><rt class="translation">meeting</rt> <span class="word-token V">会</span> <rt class="pinyin">huì</rt></ruby> <ruby><rt class="translation">become</rt> <span class="word-token V">变得</span> <rt class="pinyin">biàn dé</rt></ruby> <span class="punctuation-token">“</span> <ruby><rt class="translation">Oedipus</rt> <span class="word-token O">俄狄浦斯</span> <rt class="pinyin">é dí pǔ sī</rt></ruby> <ruby><rt class="translation">Mode</rt> <span class="word-token X">式</span> <rt class="pinyin">shì</rt></ruby> <ruby><rt class="translation">childish</rt> <span class="word-token A">幼稚</span> <rt class="pinyin">yòu zhì</rt></ruby> <ruby><rt class="translation">change</rt> <span class="word-token O">化</span> <rt class="pinyin">huà</rt></ruby> <span class="punctuation-token">”</span> <span class="punctuation-token">。</span> <ruby><rt class="translation"></rt> <span class="word-token X"></span> <rt class="pinyin"></rt></ruby> <ruby><rt class="translation">across</rt> <span class="word-token V">跨</span> <rt class="pinyin">kuà</rt></ruby> <ruby><rt class="translation">gender</rt> <span class="word-token O">性别</span> <rt class="pinyin">xìng bié</rt></ruby> <ruby><rt class="translation">yes</rt> <span class="word-token V">是</span> <rt class="pinyin">shì</rt></ruby> <ruby><rt class="translation">system</rt> <span class="word-token O">系统</span> <rt class="pinyin">xì tǒng</rt></ruby> <ruby><rt class="translation">of</rt> <span class="word-token X">的</span> <rt class="pinyin">de</rt></ruby> <ruby><rt class="translation">breaking point</rt> <span class="word-token O">断裂点</span> <rt class="pinyin">duàn liè diǎn</rt></ruby> <span class="punctuation-token">—</span> <span class="punctuation-token">—</span> <ruby><rt class="translation">Father</rt> <span class="word-token O">父亲</span> <rt class="pinyin">fù qīn</rt></ruby> <ruby><rt class="translation">Of</rt> <span class="word-token P">之</span> <rt class="pinyin">zhī</rt></ruby> <ruby><rt class="translation">name</rt> <span class="word-token A">名</span> <rt class="pinyin">míng</rt></ruby> <ruby><rt class="translation">quilt</rt> <span class="word-token P">被</span> <rt class="pinyin">bèi</rt></ruby> <ruby><rt class="translation">Reconfigure</rt> <span class="word-token O">重新配置</span> <rt class="pinyin">chóng xīn pèi zhì</rt></ruby> <span class="punctuation-token">，</span> <ruby><rt class="translation">enjoy</rt> <span class="word-token V">享受</span> <rt class="pinyin">xiǎng shòu</rt></ruby> <ruby><rt class="translation">from</rt> <span class="word-token P">从</span> <rt class="pinyin">cóng</rt></ruby> <ruby><rt class="translation">Production</rt> <span class="word-token V">生产</span> <rt class="pinyin">shēng chǎn</rt></ruby> <ruby><rt class="translation">axis</rt> <span class="word-token O">轴</span> <rt class="pinyin">zhóu</rt></ruby> <ruby><rt class="translation">transfer</rt> <span class="word-token V">转移</span> <rt class="pinyin">zhuǎn yí</rt></ruby> <ruby><rt class="translation">arrive</rt> <span class="word-token V">到</span> <rt class="pinyin">dào</rt></ruby> <ruby><rt class="translation">Aesthetic</rt> <span class="word-token V">审美</span> <rt class="pinyin">shěn měi</rt></ruby> <ruby><rt class="translation">and</rt> <span class="word-token C">和</span> <rt class="pinyin">hé</rt></ruby> <ruby><rt class="translation">Erotic</rt> <span class="word-token O">情色</span> <rt class="pinyin">qíng sè</rt></ruby> <ruby><rt class="translation">axis</rt> <span class="word-token O">轴</span> <rt class="pinyin">zhóu</rt></ruby> <span class="punctuation-token">。</span></div> <div class="translation-display"><span class="translation-label">Full translation word by word:</span> clinical and politics read modern genealogy of
+        question lies in Work and inheritance between of
+        short circuit <span class="punctuation-token">：</span> parents No transfer symbol <span class="punctuation-token">，</span> Only transfer product <span class="punctuation-token">。</span> parents of symbolic die <span class="punctuation-token">（</span> law institutionalized <span class="punctuation-token">）</span> for child of growing up yes need of <span class="punctuation-token">—</span> <span class="punctuation-token">—</span> No it <span class="punctuation-token">，</span> this nation At once meeting become <span class="punctuation-token">“</span> Oedipus Mode childish change <span class="punctuation-token">”</span> <span class="punctuation-token">。</span> across gender yes system of breaking point <span class="punctuation-token">—</span> <span class="punctuation-token">—</span> Father Of name quilt Reconfigure <span class="punctuation-token">，</span> enjoy from Production axis transfer arrive Aesthetic
+        and Erotic axis <span class="punctuation-token">。</span></div> <div class="translation-display"><span class="translation-label">Full translation:</span> Clinical and political reading The problem with modern
+        genealogy is the short circuit between work and inheritance:
+        parents do not pass on symbols, only products. The symbolic
+        death of the parent (institutionalized by law) is necessary
+        for the child's development—without it, the country becomes
+        "Oedipal infantilized." Transgenderity is a rupture point
+        in the system - the name of the father is reconfigured
+        and enjoyment is shifted from the productive axis to the
+        aesthetic and erotic axis.</div></div> <table class="syntax-table"><thead><tr><th>Word</th><th>Pinyin</th><th>Translation</th><th>POS Tag</th><th>Syntax Role</th></tr></thead><tbody><tr><td><strong>临床</strong></td><td>lín chuáng</td><td>clinical</td><td><code class="pos-tag">vn</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>和</strong></td><td>hé</td><td>and</td><td><code class="pos-tag">c</code></td><td><span class="chip C">Conjunction</span></td></tr><tr><td><strong>政治</strong></td><td>zhèng zhì</td><td>politics</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>阅读</strong></td><td>yuè dú</td><td>read</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong></strong></td><td></td><td></td><td><code class="pos-tag">x</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>现代</strong></td><td>xiàn dài</td><td>modern</td><td><code class="pos-tag">t</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>家谱</strong></td><td>jiā pǔ</td><td>genealogy</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>问题</strong></td><td>wèn tí</td><td>question</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>在于</strong></td><td>zài yú</td><td>lies in</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>工作</strong></td><td>gōng zuò</td><td>Work</td><td><code class="pos-tag">vn</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>和</strong></td><td>hé</td><td>and</td><td><code class="pos-tag">c</code></td><td><span class="chip C">Conjunction</span></td></tr><tr><td><strong>传承</strong></td><td>chuán chéng</td><td>inheritance</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>之间</strong></td><td>zhī jiān</td><td>between</td><td><code class="pos-tag">f</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>短路</strong></td><td>duǎn lù</td><td>short circuit</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>父母</strong></td><td>fù mǔ</td><td>parents</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>不</strong></td><td>bù</td><td>No</td><td><code class="pos-tag">d</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>传递</strong></td><td>chuán dì</td><td>transfer</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>符号</strong></td><td>fú hào</td><td>symbol</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>只</strong></td><td>zhǐ</td><td>Only</td><td><code class="pos-tag">d</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>传递</strong></td><td>chuán dì</td><td>transfer</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>产品</strong></td><td>chǎn pǐn</td><td>product</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong></strong></td><td></td><td></td><td><code class="pos-tag">x</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>父母</strong></td><td>fù mǔ</td><td>parents</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>象征性</strong></td><td>xiàng zhēng xìng</td><td>symbolic</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>死亡</strong></td><td>sǐ wáng</td><td>die</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>法律</strong></td><td>fǎ lǜ</td><td>law</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>制度化</strong></td><td>zhì dù huà</td><td>institutionalized</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>对于</strong></td><td>duì yú</td><td>for</td><td><code class="pos-tag">p</code></td><td><span class="chip P">Preposition</span></td></tr><tr><td><strong>孩子</strong></td><td>hái zi</td><td>child</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>成长</strong></td><td>chéng zhǎng</td><td>growing up</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>是</strong></td><td>shì</td><td>yes</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>必要</strong></td><td>bì yào</td><td>need</td><td><code class="pos-tag">d</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>没有</strong></td><td>méi yǒu</td><td>No</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>它</strong></td><td>tā</td><td>it</td><td><code class="pos-tag">r</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>这个</strong></td><td>zhè ge</td><td>this</td><td><code class="pos-tag">r</code></td><td><span class="chip S">Subject</span></td></tr><tr><td><strong>国家</strong></td><td>guó jiā</td><td>nation</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>就</strong></td><td>jiù</td><td>At once</td><td><code class="pos-tag">d</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>会</strong></td><td>huì</td><td>meeting</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>变得</strong></td><td>biàn dé</td><td>become</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>俄狄浦斯</strong></td><td>é dí pǔ sī</td><td>Oedipus</td><td><code class="pos-tag">ns</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>式</strong></td><td>shì</td><td>Mode</td><td><code class="pos-tag">k</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>幼稚</strong></td><td>yòu zhì</td><td>childish</td><td><code class="pos-tag">a</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>化</strong></td><td>huà</td><td>change</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong></strong></td><td></td><td></td><td><code class="pos-tag">x</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>跨</strong></td><td>kuà</td><td>across</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>性别</strong></td><td>xìng bié</td><td>gender</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>是</strong></td><td>shì</td><td>yes</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>系统</strong></td><td>xì tǒng</td><td>system</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>的</strong></td><td>de</td><td>of</td><td><code class="pos-tag">uj</code></td><td><span class="chip X">Other</span></td></tr><tr><td><strong>断裂点</strong></td><td>duàn liè diǎn</td><td>breaking point</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>父亲</strong></td><td>fù qīn</td><td>Father</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>之</strong></td><td>zhī</td><td>Of</td><td><code class="pos-tag">u</code></td><td><span class="chip P">Preposition</span></td></tr><tr><td><strong>名</strong></td><td>míng</td><td>name</td><td><code class="pos-tag">q</code></td><td><span class="chip A">Adjunct</span></td></tr><tr><td><strong>被</strong></td><td>bèi</td><td>quilt</td><td><code class="pos-tag">p</code></td><td><span class="chip P">Preposition</span></td></tr><tr><td><strong>重新配置</strong></td><td>chóng xīn pèi zhì</td><td>Reconfigure</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>享受</strong></td><td>xiǎng shòu</td><td>enjoy</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>从</strong></td><td>cóng</td><td>from</td><td><code class="pos-tag">p</code></td><td><span class="chip P">Preposition</span></td></tr><tr><td><strong>生产</strong></td><td>shēng chǎn</td><td>Production</td><td><code class="pos-tag">vn</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>轴</strong></td><td>zhóu</td><td>axis</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>转移</strong></td><td>zhuǎn yí</td><td>transfer</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>到</strong></td><td>dào</td><td>arrive</td><td><code class="pos-tag">v</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>审美</strong></td><td>shěn měi</td><td>Aesthetic</td><td><code class="pos-tag">vn</code></td><td><span class="chip V">Verb</span></td></tr><tr><td><strong>和</strong></td><td>hé</td><td>and</td><td><code class="pos-tag">c</code></td><td><span class="chip C">Conjunction</span></td></tr><tr><td><strong>情色</strong></td><td>qíng sè</td><td>Erotic</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr><tr><td><strong>轴</strong></td><td>zhóu</td><td>axis</td><td><code class="pos-tag">n</code></td><td><span class="chip O">Object</span></td></tr></tbody></table></div></div><!--]--><!--]--> <footer class="bg-gray-900 text-white py-10 px-5 md:px-20"><div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-lg font-semibold mb-3">Main</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=CVs" class="hover:text-white">Zaya</a></li> <li><a href="/list?query=Cinema" class="hover:text-white">Cinema, Writing, Performance, Audiovisual</a></li> <li><a href="/list?query=School" class="hover:text-white">School of Cinema, Psychoanalysis and Art</a></li> <li><a href="/list?query=Psychoanalysis" class="hover:text-white">Psychoanalysis</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Resources</h4> <ul class="space-y-2 text-gray-300"><li><a href="/list?query=Study" class="hover:text-white">Study Groups</a></li> <li><a href="/list?query=Affiliates" class="hover:text-white">Affiliates</a></li> <li><a href="https://drive.google.com/drive/folders/1RVQs75Obb9ZXaLrUQwucCaye87eqvoHr?usp=drive_link" class="hover:text-white">Ebooks (Google Drive)</a></li> <li><a href="/list?query=Supervision" class="hover:text-white">Supervision</a></li> <li><a href="/courses" class="hover:text-white">Courses</a></li></ul></div> <div><h4 class="text-lg font-semibold mb-3">Community</h4> <ul class="space-y-2 text-gray-300"><li><a href="https://chat.whatsapp.com/JGlGyJQirVK2nshslvTsen" class="hover:text-white">WhatsApp Zaya Barrini</a></li> <li><a href="/list?query=Figures" class="hover:text-white">Figures in Analysis</a></li> <li><a href="/list?query=Dystopias" class="hover:text-white">Black Mirror</a></li> <li><a href="/list?query=Not-all" class="hover:text-white">Not-All, Transsexualities and Psychoanalysis</a></li> <li><a href="/list?query=Enlightenment" class="hover:text-white">Enlightenment</a></li> <li><a href="/list?query=Psychosis" class="hover:text-white">Psychoses</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Concepts</a></li> <li><a href="/list?query=Concepts" class="hover:text-white">Dev, Business, IA</a></li> <li><a href="/list?query=Language" class="hover:text-white">International Psychoanalysis, Languages</a></li> <li><a href="/list?query=Semiotics" class="hover:text-white">Semiotics</a></li> <li><a href="/list?query=Art" class="hover:text-white">Art</a></li> <li><a href="/list?query=Linktree" class="hover:text-white">Linktree</a></li></ul></div></div> <div class="border-t border-gray-700 mt-8 pt-2 text-center text-gray-400 text-sm"><p>© 2025 Zaya Barrini. All rights reserved.</p></div></footer><!----></main></div><!----><!--]--><!--]--><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_51wreh = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.zT2sQUIe.js"),
+						import("../../_app/immutable/entry/app.50XNgmhX.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 26],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado com sucesso:",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log(
+                "Falha ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
