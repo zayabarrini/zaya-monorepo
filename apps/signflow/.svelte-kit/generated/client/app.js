@@ -48,7 +48,8 @@ export const nodes = [
 	() => import('./nodes/44'),
 	() => import('./nodes/45'),
 	() => import('./nodes/46'),
-	() => import('./nodes/47')
+	() => import('./nodes/47'),
+	() => import('./nodes/48')
 ];
 
 export const server_loads = [];
@@ -86,20 +87,21 @@ export const dictionary = {
 		"/grammar/hindi/pronominal-composition": [31],
 		"/grammar/hindi/songs": [32],
 		"/grammar/hindi/spelling": [33],
-		"/grammar/japanese/pronominal-composition": [34],
-		"/grammar/languages-test": [35],
-		"/grammar/russian": [36],
-		"/grammar/russian/pronominal-composition": [37],
-		"/grammar/russian/russian-declensions": [38],
-		"/grammar/russian/science": [39],
-		"/grammar/russian/songs": [40],
-		"/grammar/science": [41],
-		"/list": [42],
-		"/melancholic-machines": [43],
-		"/posts": [44],
-		"/sentences": [45],
-		"/transliteration": [46],
-		"/words": [47]
+		"/grammar/japanese/japanese-transliteration": [34],
+		"/grammar/japanese/pronominal-composition": [35],
+		"/grammar/languages-test": [36],
+		"/grammar/russian": [37],
+		"/grammar/russian/pronominal-composition": [38],
+		"/grammar/russian/russian-declensions": [39],
+		"/grammar/russian/science": [40],
+		"/grammar/russian/songs": [41],
+		"/grammar/science": [42],
+		"/list": [43],
+		"/melancholic-machines": [44],
+		"/posts": [45],
+		"/sentences": [46],
+		"/transliteration": [47],
+		"/words": [48]
 	};
 
 export const hooks = {

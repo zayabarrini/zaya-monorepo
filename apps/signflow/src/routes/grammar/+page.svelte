@@ -182,6 +182,14 @@
       category: "Grammar"
     },
     {
+      title: "Japanese Transliteration",
+      href: "/grammar/japanese/japanese-transliteration",
+      description:
+        "Interactive Japanese transliteration tool",
+      icon: "📘",
+      category: "Grammar"
+    },
+    {
       title: "Chinese Verb Conjugation Table",
       href: "/grammar/chinese/chinese-syntax",
       description:

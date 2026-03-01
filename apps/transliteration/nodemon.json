@@ -1,0 +1,11 @@
+{
+  "watch": ["api", "src"],
+  "ext": "py, txt, json, yaml",
+  "ignore": ["**/__pycache__/**", "**/*.pyc", ".venv/**", "venv/**"],
+  "verbose": true,
+  "env": {
+    "FLASK_ENV": "development",
+    "FLASK_DEBUG": "1"
+  },
+  "delay": 1000
+}

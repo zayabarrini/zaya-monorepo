@@ -1,4 +1,4 @@
-your-monorepo/
+zaya-monorepo/
 ├── apps/
 │   ├── zayaslanguage/        # Web app - zayaslanguage.com
 │   ├── zayaweb/              # Webpage - zayaweb.com
@@ -30,6 +30,16 @@ Physical/Digital Space Design           Human Communication Technology
         ↓                                     ↓
 Institutions, Governments                Individuals, Organizations
 
+A global, multi-lingual AI platform with regional compliance
+- Data sovereignty (data stays in region)
+- Compliance (GDPR, CCPA, Russian 152-FZ, China Cybersecurity Law)
+- Performance (edge routing to nearest region)
+- Localization (language, currency, payment methods)
+- Cost control (regional cost tracking)
+- Security (region-specific encryption standards)
+- Flexibility (feature flags per region)
+
+usa/europe, ch, ru, hi, id, ja, ar
 
 # Zaya Monorepo
 

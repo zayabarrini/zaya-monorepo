@@ -26,6 +26,9 @@ indic-transliteration==1.8.0
 # Russian
 transliterate==1.10.2
 
+# Translation
+deep-translator==1.11.1
+
 # Utilities
 beautifulsoup4==4.12.2
 requests==2.31.0

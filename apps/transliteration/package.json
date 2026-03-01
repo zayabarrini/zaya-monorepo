@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "python api/index.py",
+    "dev": "nodemon --exec python3 api/index.py",
+    "dev:watch": "nodemon --watch api --watch src --exec python3 api/index.py",
     "build": "echo 'Python build complete'",
     "vercel-build": "pip install -r requirements.txt"
   }

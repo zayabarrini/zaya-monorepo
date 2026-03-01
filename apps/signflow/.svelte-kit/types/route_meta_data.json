@@ -121,6 +121,9 @@
 	"/grammar/hindi/spelling": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/japanese/japanese-transliteration": [
+		"src/routes/+layout.ts"
+	],
 	"/grammar/japanese/pronominal-composition": [
 		"src/routes/+layout.ts"
 	],

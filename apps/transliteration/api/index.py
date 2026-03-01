@@ -1,3 +1,5 @@
+# /home/zaya/Downloads/Zayas/zaya-monorepo/apps/transliteration/api/index.py
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import sys
@@ -15,7 +17,19 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS properly - SIMPLE AND CLEAN
+CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
+
+# Import Japanese analyzer
+try:
+    from japanese_analyzer import JapaneseSentenceAnalyzer
+
+    japanese_analyzer = JapaneseSentenceAnalyzer()
+    logger.info("Successfully imported Japanese analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Japanese analyzer: {e}")
+    japanese_analyzer = None
 
 # Import transliteration functions with error handling
 try:
@@ -55,6 +69,65 @@ except ImportError as e:
     is_language_text = lambda text, lang: True
 
 
+# In your index.py, update the analyze_japanese endpoint
+
+
+@app.route("/api/analyze/japanese", methods=["POST", "OPTIONS"])
+def analyze_japanese():
+    """Analyze Japanese text and return detailed word-by-word analysis"""
+    # Handle OPTIONS request for CORS preflight
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        target_language = data.get("target_language", "en")
+
+        logger.info(f"Analyzing Japanese text: {text[:50]}...")
+
+        # Analyze the text
+        if japanese_analyzer:
+            analysis = japanese_analyzer.analyze_sentence(text, target_language)
+
+            # Get full sentence translation
+            full_translation = japanese_analyzer.translate_sentence(
+                text, target_language
+            )
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "translated": full_translation,
+                    "analysis": analysis,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify(
+                    {
+                        "success": False,
+                        "error": "Japanese analyzer not available",
+                        "analysis": [],
+                        "translated": "",
+                    }
+                ),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Japanese analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route("/", methods=["GET"])
 def home():
     """Root endpoint with API info"""
@@ -66,6 +139,7 @@ def home():
                 "/api/transliterate": "POST - Transliterate text",
                 "/api/transliterate/chinese": "POST - Chinese-specific transliteration",
                 "/api/analyze/chinese": "POST - Detailed Chinese syntax analysis",
+                "/api/analyze/japanese": "POST - Detailed Japanese syntax analysis",
                 "/api/languages": "GET - List supported languages",
                 "/api/health": "GET - Health check",
             },
@@ -88,6 +162,8 @@ def health():
                 "transliteration": "transliteration" in sys.modules,
                 "jieba": "jieba" in sys.modules,
                 "pykakasi": "pykakasi" in sys.modules,
+                "fugashi": "fugashi" in sys.modules,
+                "japanese_analyzer": japanese_analyzer is not None,
             },
         }
     )
@@ -365,6 +441,30 @@ def detect_language():
     except Exception as e:
         logger.error(f"Language detection error: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
+
+
+# Add this function to download unidic if not present
+def ensure_unidic_downloaded():
+    """Ensure unidic is downloaded for fugashi"""
+    try:
+        import unidic
+
+        # This will download unidic if not already present
+        dic_dir = unidic.DICDIR
+        logger.info(f"unidic is available at: {dic_dir}")
+        return True
+    except ImportError:
+        logger.warning(
+            "unidic package not installed. Please install with: pip install unidic"
+        )
+        return False
+    except Exception as e:
+        logger.error(f"Error checking unidic: {e}")
+        return False
+
+
+# Call this when initializing the analyzer
+ensure_unidic_downloaded()
 
 
 # For local development

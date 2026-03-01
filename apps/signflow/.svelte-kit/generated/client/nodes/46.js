@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/transliteration/+page.svelte";
+export { default as component } from "../../../../src/routes/sentences/+page.svelte";

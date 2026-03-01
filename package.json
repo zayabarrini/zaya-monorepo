@@ -6,17 +6,22 @@
   "scripts": {
     "dev:spacedesign": "npm run dev --workspace=apps/spacedesign",
     "dev:signflow": "npm run dev --workspace=apps/signflow", 
-    "dev:transliteration": "cd apps/transliteration && python api/index.py",
+    "dev:transliteration": "npm run dev --workspace=apps/transliteration",
+    "dev:transliteration:watch": "npm run dev:watch --workspace=apps/transliteration",
     "build:spacedesign": "npm run build --workspace=apps/spacedesign",
     "build:signflow": "npm run build --workspace=apps/signflow",
     "build:transliteration": "echo 'Python build complete'",
-    "dev": "npm run dev:spacedesign"
+    "dev": "run-p dev:spacedesign dev:transliteration",
+    "dev:all": "run-p dev:spacedesign dev:signflow dev:transliteration",
+    "dev:with-api": "run-p dev:spacedesign dev:transliteration"
   },
   "workspaces": ["apps/*", "packages/*"],
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.0.0",
     "prettier-plugin-svelte": "^3.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "nodemon": "^3.0.0"
   },
   "engines": {
     "node": "18.x"
