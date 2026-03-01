@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
+  import JapaneseStrokeOrder from './JapaneseStrokeOrder.svelte';
 
   // Types for our data structure
   interface WordAnalysis {
@@ -65,6 +66,8 @@
   let error: string | null = null;
   let showSettings: boolean = false;
   let activeTab: 'display' | 'fields' = 'display';
+  let selectedCharacter: string = '';
+  let showStrokeOrder: boolean = true;
 
   // Display configuration - all enabled by default
   let displayConfig: DisplayConfig = {
@@ -78,6 +81,10 @@
     showHonorificLevel: true,
     showSemanticCategory: true
   };
+
+  $: kanjiCharacters = currentParagraph?.ja 
+    ? [...new Set(currentParagraph.ja.match(/[\u4e00-\u9faf\u3040-\u309f\u30a0-\u30ff]/g) || [])]
+    : [];
 
   // Derived values
   $: currentSection = sections[currentSectionIndex];
@@ -362,6 +369,11 @@
                 <span class="checkbox-custom"></span>
                 <span>Auto-analyze</span>
               </label>
+              <label class="checkbox-label">
+                <input type="checkbox" bind:checked={showStrokeOrder} />
+                <span class="checkbox-custom"></span>
+                <span>Show Stroke Order</span>
+              </label>
             </div>
           </div>
         {:else}
@@ -527,6 +539,56 @@
                   {/each}
                 </div>
               </div>
+              {#if showStrokeOrder && currentParagraph.analysis && currentParagraph.analysis.length > 0}
+      <div class="stroke-order-section">
+        <div class="section-header">
+          <h3>✍️ Stroke Order</h3>
+          <p class="section-description">Click on any character to see its stroke order</p>
+        </div>
+        
+        <div class="character-grid">
+          {#each kanjiCharacters as char}
+            <button 
+              class="character-button"
+              class:active={selectedCharacter === char}
+              on:click={() => selectedCharacter = char}
+            >
+              <span class="char">{char}</span>
+              <span class="char-info">
+                {char.codePointAt(0)?.toString(16).toUpperCase()}
+              </span>
+            </button>
+          {/each}
+        </div>
+        
+        {#if selectedCharacter}
+          <div class="stroke-order-detail">
+            <button 
+              class="close-button"
+              on:click={() => selectedCharacter = ''}
+              title="Close"
+            >
+              ✕
+            </button>
+            <JapaneseStrokeOrder 
+              character={selectedCharacter}
+              width={250}
+              height={250}
+              showStrokeNumber={true}
+              animationSpeed={1.0}
+              strokeColor="#2c3e50"
+              numberColor="#ff6b6b"
+              autoplay={true}
+            />
+          </div>
+        {:else}
+          <div class="stroke-order-prompt">
+            <span class="prompt-icon">👆</span>
+            <span>Select a character above to see its stroke order</span>
+          </div>
+        {/if}
+      </div>
+    {/if}
             {:else if analyzing}
               <div class="analyzing-message">
                 <div class="spinner-small"></div>
@@ -1582,6 +1644,195 @@
 
     .nav-text {
       display: none;
+    }
+  }
+
+    /* Stroke Order Section */
+  .stroke-order-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    border: 1px solid #e1e5e9;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 8px;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  .character-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    min-width: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .character-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+  }
+
+  .character-button.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: #5a67d8;
+  }
+
+  .character-button.active .char {
+    color: white;
+  }
+
+  .character-button.active .char-info {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .char {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: 'MS Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
+    line-height: 1;
+  }
+
+  .char-info {
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 0.25rem;
+  }
+
+  .stroke-order-detail {
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    animation: slideIn 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+
+  .close-button:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .stroke-order-prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    color: #666;
+    font-style: italic;
+  }
+
+  .prompt-icon {
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* Scrollbar styling for character grid */
+  .character-grid::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .character-grid::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 3px;
+  }
+
+  .character-grid::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 3px;
+  }
+
+  .character-grid::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .character-grid {
+      max-height: 100px;
+    }
+
+    .character-button {
+      min-width: 50px;
+      padding: 0.35rem;
+    }
+
+    .char {
+      font-size: 1.2rem;
+    }
+
+    .char-info {
+      font-size: 0.6rem;
     }
   }
 </style>
