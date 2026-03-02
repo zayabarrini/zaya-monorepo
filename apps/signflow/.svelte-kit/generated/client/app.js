@@ -49,7 +49,8 @@ export const nodes = [
 	() => import('./nodes/45'),
 	() => import('./nodes/46'),
 	() => import('./nodes/47'),
-	() => import('./nodes/48')
+	() => import('./nodes/48'),
+	() => import('./nodes/49')
 ];
 
 export const server_loads = [];
@@ -81,27 +82,28 @@ export const dictionary = {
 		"/grammar/chinese/chinese-character-stroke-search": [25],
 		"/grammar/chinese/chinese-syntax-improved": [27],
 		"/grammar/chinese/chinese-syntax": [26],
-		"/grammar/chinese/chinese-transliteration-simple": [29],
+		"/grammar/chinese/chinese-transliteration-api": [29],
+		"/grammar/chinese/chinese-transliteration-simple": [30],
 		"/grammar/chinese/chinese-transliteration": [28],
-		"/grammar/hindi": [30],
-		"/grammar/hindi/pronominal-composition": [31],
-		"/grammar/hindi/songs": [32],
-		"/grammar/hindi/spelling": [33],
-		"/grammar/japanese/japanese-transliteration": [34],
-		"/grammar/japanese/pronominal-composition": [35],
-		"/grammar/languages-test": [36],
-		"/grammar/russian": [37],
-		"/grammar/russian/pronominal-composition": [38],
-		"/grammar/russian/russian-declensions": [39],
-		"/grammar/russian/science": [40],
-		"/grammar/russian/songs": [41],
-		"/grammar/science": [42],
-		"/list": [43],
-		"/melancholic-machines": [44],
-		"/posts": [45],
-		"/sentences": [46],
-		"/transliteration": [47],
-		"/words": [48]
+		"/grammar/hindi": [31],
+		"/grammar/hindi/pronominal-composition": [32],
+		"/grammar/hindi/songs": [33],
+		"/grammar/hindi/spelling": [34],
+		"/grammar/japanese/japanese-transliteration": [35],
+		"/grammar/japanese/pronominal-composition": [36],
+		"/grammar/languages-test": [37],
+		"/grammar/russian": [38],
+		"/grammar/russian/pronominal-composition": [39],
+		"/grammar/russian/russian-declensions": [40],
+		"/grammar/russian/science": [41],
+		"/grammar/russian/songs": [42],
+		"/grammar/science": [43],
+		"/list": [44],
+		"/melancholic-machines": [45],
+		"/posts": [46],
+		"/sentences": [47],
+		"/transliteration": [48],
+		"/words": [49]
 	};
 
 export const hooks = {

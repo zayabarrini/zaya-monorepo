@@ -1,10 +1,11 @@
-from flask import Flask, render_template, request
-import jieba
-from pypinyin import pinyin, Style
+import time
+
 import fugashi
+import jieba
 import pykakasi
 from deep_translator import GoogleTranslator
-import time
+from flask import Flask, render_template, request
+from pypinyin import Style, pinyin
 
 app = Flask(__name__)
 
@@ -45,7 +46,7 @@ def process_chinese(text):
     result = []
     for word, pinyin_word, translation in zip(words, pinyin_result, translations):
         result.append({
-            'word': word,/home/zaya/Downloads/Workspace/color-coded-html
+            'word': word,
             'transliteration': pinyin_word,
             'translation': translation
         })
@@ -105,4 +106,4 @@ def index():
     return render_template('ChineseTranslator.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5003)
+    app.run(debug=True, port=5003)    app.run(debug=True, port=5003)

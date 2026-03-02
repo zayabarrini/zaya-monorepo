@@ -103,6 +103,9 @@
 	"/grammar/chinese/chinese-syntax": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/chinese/chinese-transliteration-api": [
+		"src/routes/+layout.ts"
+	],
 	"/grammar/chinese/chinese-transliteration-simple": [
 		"src/routes/+layout.ts"
 	],

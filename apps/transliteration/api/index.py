@@ -1,12 +1,13 @@
 # /home/zaya/Downloads/Zayas/zaya-monorepo/apps/transliteration/api/index.py
 
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import sys
-import os
 import json
 import logging
-from typing import Dict, Any, Optional
+import os
+import sys
+from typing import Any, Dict, Optional
+
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -34,14 +35,14 @@ except Exception as e:
 # Import transliteration functions with error handling
 try:
     from transliteration.transliteration import (
+        add_furigana,
+        filter_language_text,
+        get_detailed_pos_analysis,
+        is_language_text,
+        language_map,
+        process_chinese_advanced,
         transliterate,
         transliterate_chinese,
-        process_chinese_advanced,
-        get_detailed_pos_analysis,
-        add_furigana,
-        language_map,
-        filter_language_text,
-        is_language_text,
     )
 
     logger.info("Successfully imported transliteration module")
@@ -367,50 +368,50 @@ def transliterate_chinese_endpoint():
         return jsonify({"error": str(e)}), 500
 
 
-@app.route("/api/analyze/chinese", methods=["POST"])
-def analyze_chinese():
-    """Detailed Chinese syntax and POS analysis"""
-    try:
-        data = request.json
-        text = data.get("text", "")
+# @app.route("/api/analyze/chinese", methods=["POST"])
+# def analyze_chinese():
+#     """Detailed Chinese syntax and POS analysis"""
+#     try:
+#         data = request.json
+#         text = data.get("text", "")
 
-        if not text:
-            return jsonify({"error": "No text provided"}), 400
+#         if not text:
+#             return jsonify({"error": "No text provided"}), 400
 
-        # Get detailed analysis
-        analysis = get_detailed_pos_analysis(text)
+#         # Get detailed analysis
+#         analysis = get_detailed_pos_analysis(text)
 
-        # Also get word-by-word breakdown
-        words = []
-        for item in analysis:
-            words.append(
-                {
-                    "word": item["word"],
-                    "pos": item["pos"],
-                    "syntax": item["syntax"],
-                    "pinyin": item["pinyin"],
-                    "is_punctuation": item["is_punctuation"],
-                }
-            )
+#         # Also get word-by-word breakdown
+#         words = []
+#         for item in analysis:
+#             words.append(
+#                 {
+#                     "word": item["word"],
+#                     "pos": item["pos"],
+#                     "syntax": item["syntax"],
+#                     "pinyin": item["pinyin"],
+#                     "is_punctuation": item["is_punctuation"],
+#                 }
+#             )
 
-        # Get color-coded HTML version
-        html_result = transliterate_chinese(text, mode="color")
+#         # Get color-coded HTML version
+#         html_result = transliterate_chinese(text, mode="color")
 
-        return jsonify(
-            {
-                "original": text,
-                "words": words,
-                "html": (
-                    str(html_result)
-                    if hasattr(html_result, "prettify")
-                    else html_result
-                ),
-            }
-        )
+#         return jsonify(
+#             {
+#                 "original": text,
+#                 "words": words,
+#                 "html": (
+#                     str(html_result)
+#                     if hasattr(html_result, "prettify")
+#                     else html_result
+#                 ),
+#             }
+#         )
 
-    except Exception as e:
-        logger.error(f"Chinese analysis error: {e}", exc_info=True)
-        return jsonify({"error": str(e)}), 500
+#     except Exception as e:
+#         logger.error(f"Chinese analysis error: {e}", exc_info=True)
+#         return jsonify({"error": str(e)}), 500
 
 
 @app.route("/api/detect-language", methods=["POST"])
@@ -466,6 +467,59 @@ def ensure_unidic_downloaded():
 # Call this when initializing the analyzer
 ensure_unidic_downloaded()
 
+# Add to /home/zaya/Downloads/Zayas/zaya-monorepo/apps/transliteration/api/index.py
+
+# Import Chinese analyzer
+try:
+    from chinese_analyzer import ChineseSentenceAnalyzer
+    chinese_analyzer = ChineseSentenceAnalyzer()
+    logger.info("Successfully imported Chinese analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Chinese analyzer: {e}")
+    chinese_analyzer = None
+
+# Add Chinese analysis endpoint
+@app.route("/api/analyze/chinese", methods=["POST", "OPTIONS"])
+def analyze_chinese():
+    """Analyze Chinese text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return '', 200
+    
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+        
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+        
+        target_language = data.get("target_language", "en")
+        
+        logger.info(f"Analyzing Chinese text: {text[:50]}...")
+        
+        if chinese_analyzer:
+            analysis = chinese_analyzer.analyze_sentence(text, target_language)
+            
+            # Get full sentence translation
+            full_translation = chinese_analyzer.translate_sentence(text, target_language)
+            
+            return jsonify({
+                "success": True,
+                "original": text,
+                "analysis": analysis,
+                "full_translation": full_translation,
+                "word_count": len(analysis)
+            })
+        else:
+            return jsonify({
+                "success": False,
+                "error": "Chinese analyzer not available"
+            }), 500
+        
+    except Exception as e:
+        logger.error(f"Chinese analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
 
 # For local development
 if __name__ == "__main__":

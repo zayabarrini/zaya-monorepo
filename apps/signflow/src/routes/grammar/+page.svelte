@@ -228,6 +228,14 @@
       icon: "📘",
       category: "Grammar"
     },
+     {
+      title: "Chinese Transliteration - Downton Abbey Version",
+      href: "/grammar/chinese/chinese-transliteration-api",
+      description:
+        "Enhanced Chinese transliteration tool with doubt annotations",
+      icon: "📘",
+      category: "Grammar"
+    },
     {
       title: "Word Lists",
       href: "/words",
