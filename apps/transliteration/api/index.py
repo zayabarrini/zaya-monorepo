@@ -543,6 +543,61 @@ def analyze_chinese():
         return jsonify({"error": str(e)}), 500
 
 
+# Import Arabic analyzer
+try:
+    from arabic_analyzer import ArabicSentenceAnalyzer
+
+    arabic_analyzer = ArabicSentenceAnalyzer()
+    logger.info("Successfully imported Arabic analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Arabic analyzer: {e}")
+    arabic_analyzer = None
+
+
+# Add Arabic analysis endpoint
+@app.route("/api/analyze/arabic", methods=["POST", "OPTIONS"])
+def analyze_arabic():
+    """Analyze Arabic text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Arabic text: {text[:50]}...")
+
+        if arabic_analyzer:
+            analysis = arabic_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = arabic_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Arabic analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Arabic analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
 # For local development
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

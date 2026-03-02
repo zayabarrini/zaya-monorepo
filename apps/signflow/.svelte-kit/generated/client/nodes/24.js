@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/chinese/chinese-character-stroke-order/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/arabic/vocabulary/+page.svelte";

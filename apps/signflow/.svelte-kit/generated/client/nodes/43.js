@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/science/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/russian/songs/+page.svelte";

@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/arabic/pronominal-composition/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/arabic/nouns-adjectives/+page.svelte";

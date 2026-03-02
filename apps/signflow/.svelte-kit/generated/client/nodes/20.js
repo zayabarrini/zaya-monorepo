@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/arabic/songs/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/arabic/sentences/+page.svelte";

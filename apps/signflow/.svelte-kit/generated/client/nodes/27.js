@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/chinese/chinese-syntax-improved/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/chinese/chinese-syntax/+page.svelte";

@@ -102,6 +102,15 @@
       category: "Syntax"
     },
     {
+      title:
+        "Arabic Syntax Analysis - Downton Abbey Version",
+      href: "/grammar/arabic/arabic-transliteration-api",
+      description:
+        "Color-coded advanced sentence structure analysis",
+      icon: "🎨",
+      category: "Syntax"
+    },
+    {
       title: "Russian Noun Declensions",
       href: "/grammar/russian/russian-declensions",
       description:
@@ -228,8 +237,9 @@
       icon: "📘",
       category: "Grammar"
     },
-     {
-      title: "Chinese Transliteration - Downton Abbey Version",
+    {
+      title:
+        "Chinese Transliteration - Downton Abbey Version",
       href: "/grammar/chinese/chinese-transliteration-api",
       description:
         "Enhanced Chinese transliteration tool with doubt annotations",

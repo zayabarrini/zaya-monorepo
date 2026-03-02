@@ -57,6 +57,9 @@
 	"/grammar/arabic/advanced-sentences": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/arabic/arabic-transliteration-api": [
+		"src/routes/+layout.ts"
+	],
 	"/grammar/arabic/conjugation": [
 		"src/routes/+layout.ts"
 	],

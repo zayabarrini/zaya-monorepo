@@ -1,1 +1,3 @@
-export { default as component } from "../../../../src/routes/melancholic-machines/+page.svelte";
+import * as universal from "../../../../src/routes/list/+page.ts";
+export { universal };
+export { default as component } from "../../../../src/routes/list/+page.svelte";
