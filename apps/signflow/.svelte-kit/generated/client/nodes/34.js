@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/hindi/songs/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/hindi/pronominal-composition/+page.svelte";

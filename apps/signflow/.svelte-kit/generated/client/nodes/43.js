@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/russian/songs/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/russian/russian-transliteration-api/+page.svelte";

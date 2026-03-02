@@ -118,6 +118,9 @@
 	"/grammar/hindi": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/hindi/hindi-transliteration-api": [
+		"src/routes/+layout.ts"
+	],
 	"/grammar/hindi/pronominal-composition": [
 		"src/routes/+layout.ts"
 	],
@@ -143,6 +146,9 @@
 		"src/routes/+layout.ts"
 	],
 	"/grammar/russian/russian-declensions": [
+		"src/routes/+layout.ts"
+	],
+	"/grammar/russian/russian-transliteration-api": [
 		"src/routes/+layout.ts"
 	],
 	"/grammar/russian/science": [

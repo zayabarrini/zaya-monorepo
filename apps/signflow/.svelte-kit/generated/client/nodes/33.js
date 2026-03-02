@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/grammar/hindi/pronominal-composition/+page.svelte";
+export { default as component } from "../../../../src/routes/grammar/hindi/hindi-transliteration-api/+page.svelte";

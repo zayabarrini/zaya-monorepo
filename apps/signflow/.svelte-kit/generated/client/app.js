@@ -51,7 +51,9 @@ export const nodes = [
 	() => import('./nodes/47'),
 	() => import('./nodes/48'),
 	() => import('./nodes/49'),
-	() => import('./nodes/50')
+	() => import('./nodes/50'),
+	() => import('./nodes/51'),
+	() => import('./nodes/52')
 ];
 
 export const server_loads = [];
@@ -88,24 +90,26 @@ export const dictionary = {
 		"/grammar/chinese/chinese-transliteration-simple": [31],
 		"/grammar/chinese/chinese-transliteration": [29],
 		"/grammar/hindi": [32],
-		"/grammar/hindi/pronominal-composition": [33],
-		"/grammar/hindi/songs": [34],
-		"/grammar/hindi/spelling": [35],
-		"/grammar/japanese/japanese-transliteration": [36],
-		"/grammar/japanese/pronominal-composition": [37],
-		"/grammar/languages-test": [38],
-		"/grammar/russian": [39],
-		"/grammar/russian/pronominal-composition": [40],
-		"/grammar/russian/russian-declensions": [41],
-		"/grammar/russian/science": [42],
-		"/grammar/russian/songs": [43],
-		"/grammar/science": [44],
-		"/list": [45],
-		"/melancholic-machines": [46],
-		"/posts": [47],
-		"/sentences": [48],
-		"/transliteration": [49],
-		"/words": [50]
+		"/grammar/hindi/hindi-transliteration-api": [33],
+		"/grammar/hindi/pronominal-composition": [34],
+		"/grammar/hindi/songs": [35],
+		"/grammar/hindi/spelling": [36],
+		"/grammar/japanese/japanese-transliteration": [37],
+		"/grammar/japanese/pronominal-composition": [38],
+		"/grammar/languages-test": [39],
+		"/grammar/russian": [40],
+		"/grammar/russian/pronominal-composition": [41],
+		"/grammar/russian/russian-declensions": [42],
+		"/grammar/russian/russian-transliteration-api": [43],
+		"/grammar/russian/science": [44],
+		"/grammar/russian/songs": [45],
+		"/grammar/science": [46],
+		"/list": [47],
+		"/melancholic-machines": [48],
+		"/posts": [49],
+		"/sentences": [50],
+		"/transliteration": [51],
+		"/words": [52]
 	};
 
 export const hooks = {

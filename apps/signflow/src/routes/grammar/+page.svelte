@@ -183,6 +183,14 @@
       category: "Syntax"
     },
     {
+      title: "Hindi Syntax Analysis",
+      href: "/grammar/hindi/hindi-transliteration-api",
+      description:
+        "Color-coded advanced sentence structure analysis",
+      icon: "🎨",
+      category: "Syntax"
+    },
+    {
       title: "Japanese Pronominal Composition",
       href: "/grammar/japanese/pronominal-composition",
       description:
