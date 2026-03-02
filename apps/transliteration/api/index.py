@@ -19,8 +19,23 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 app = Flask(__name__)
 
+# Configure CORS for both development and production
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Local development
+    "http://localhost:5173",  # Vite default
+    "https://signflux.vercel.app",  # Production
+    "https://signflux.vercel.app",  # Add your production domain
+    "https://*.vercel.app",  # All Vercel preview deployments (if needed)
+]
+
+# Use environment variable for additional origins
+if os.environ.get("ALLOWED_ORIGINS"):
+    ALLOWED_ORIGINS.extend(os.environ.get("ALLOWED_ORIGINS").split(","))
+
+CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
+
 # Configure CORS properly - SIMPLE AND CLEAN
-CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
+# CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
 
 # Import Japanese analyzer
 try:
@@ -472,54 +487,61 @@ ensure_unidic_downloaded()
 # Import Chinese analyzer
 try:
     from chinese_analyzer import ChineseSentenceAnalyzer
+
     chinese_analyzer = ChineseSentenceAnalyzer()
     logger.info("Successfully imported Chinese analyzer")
 except Exception as e:
     logger.error(f"Failed to import Chinese analyzer: {e}")
     chinese_analyzer = None
 
+
 # Add Chinese analysis endpoint
 @app.route("/api/analyze/chinese", methods=["POST", "OPTIONS"])
 def analyze_chinese():
     """Analyze Chinese text and return detailed word-by-word analysis"""
     if request.method == "OPTIONS":
-        return '', 200
-    
+        return "", 200
+
     try:
         data = request.json
         if not data:
             return jsonify({"error": "No JSON data provided"}), 400
-        
+
         text = data.get("text", "")
         if not text:
             return jsonify({"error": "No text provided"}), 400
-        
+
         target_language = data.get("target_language", "en")
-        
+
         logger.info(f"Analyzing Chinese text: {text[:50]}...")
-        
+
         if chinese_analyzer:
             analysis = chinese_analyzer.analyze_sentence(text, target_language)
-            
+
             # Get full sentence translation
-            full_translation = chinese_analyzer.translate_sentence(text, target_language)
-            
-            return jsonify({
-                "success": True,
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis)
-            })
+            full_translation = chinese_analyzer.translate_sentence(
+                text, target_language
+            )
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
         else:
-            return jsonify({
-                "success": False,
-                "error": "Chinese analyzer not available"
-            }), 500
-        
+            return (
+                jsonify({"success": False, "error": "Chinese analyzer not available"}),
+                500,
+            )
+
     except Exception as e:
         logger.error(f"Chinese analysis error: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
+
 
 # For local development
 if __name__ == "__main__":

@@ -3,7 +3,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
-  import ChineseStrokeOrder from './ChineseStrokeOrder.svelte';
+  import ChineseStrokeOrder from "./ChineseStrokeOrder.svelte";
 
   // Types for our data structure
   interface WordAnalysis {
@@ -46,8 +46,11 @@
   }
 
   // Props
-  export let jsonPath: string = "/json/zh/epub_content_web-doubt.json";
-  export let apiUrl: string = "http://localhost:5000/api/analyze/chinese";
+  export let jsonPath: string =
+    "/json/zh/epub_content_web-doubt.json";
+  const API_BASE =
+    import.meta.env.VITE_API_URL || "http://localhost:5000";
+  export let apiUrl: string = `${API_BASE}/api/analyze/chinese`;
   export let initialSection: number = 0;
   export let initialParagraph: number = 0;
   export let showCleanVersion: boolean = true;
@@ -65,9 +68,9 @@
   let analyzing: boolean = false;
   let error: string | null = null;
   let showSettings: boolean = false;
-  let activeTab: 'display' | 'fields' = 'display';
-    let showStrokeOrder: boolean = true;
-  let selectedCharacter: string = '';
+  let activeTab: "display" | "fields" = "display";
+  let showStrokeOrder: boolean = true;
+  let selectedCharacter: string = "";
 
   // Display configuration - all enabled by default
   let displayConfig: DisplayConfig = {
@@ -81,21 +84,36 @@
 
   // Derived values
   $: currentSection = sections[currentSectionIndex];
-  $: currentParagraph = currentSection?.paragraphs[currentParagraphIndex];
-  $: hasPrevious = currentParagraphIndex > 0 || currentSectionIndex > 0;
-  $: hasNext = currentSectionIndex < sections.length - 1 || 
-               (currentSection && currentParagraphIndex < currentSection.paragraphs.length - 1);
+  $: currentParagraph =
+    currentSection?.paragraphs[currentParagraphIndex];
+  $: hasPrevious =
+    currentParagraphIndex > 0 || currentSectionIndex > 0;
+  $: hasNext =
+    currentSectionIndex < sections.length - 1 ||
+    (currentSection &&
+      currentParagraphIndex <
+        currentSection.paragraphs.length - 1);
   $: currentParagraphText = currentParagraph?.zh || "";
   // Get all unique Chinese characters from current paragraph
-  $: chineseCharacters = currentParagraph?.zh 
-    ? [...new Set(currentParagraph.zh.match(/[\u4e00-\u9fff]/g) || [])]
+  $: chineseCharacters = currentParagraph?.zh
+    ? [
+        ...new Set(
+          currentParagraph.zh.match(/[\u4e00-\u9fff]/g) ||
+            []
+        )
+      ]
     : [];
 
   onMount(async () => {
     await loadData();
   });
 
-  $: if (browser && currentParagraph && autoAnalyze && !currentParagraph.analysis) {
+  $: if (
+    browser &&
+    currentParagraph &&
+    autoAnalyze &&
+    !currentParagraph.analysis
+  ) {
     analyzeCurrentParagraph();
   }
 
@@ -104,12 +122,18 @@
       loading = true;
       const response = await fetch(jsonPath);
       if (!response.ok) {
-        throw new Error(`Failed to load: ${response.statusText}`);
+        throw new Error(
+          `Failed to load: ${response.statusText}`
+        );
       }
       sections = await response.json();
       error = null;
 
-      if (sections.length > 0 && sections[0].paragraphs.length > 0 && !sections[0].paragraphs[0].analysis) {
+      if (
+        sections.length > 0 &&
+        sections[0].paragraphs.length > 0 &&
+        !sections[0].paragraphs[0].analysis
+      ) {
         await analyzeCurrentParagraph();
       }
     } catch (err) {
@@ -121,10 +145,16 @@
   }
 
   async function analyzeCurrentParagraph() {
-    if (!currentParagraph || !currentParagraph.zh || analyzing) return;
+    if (
+      !currentParagraph ||
+      !currentParagraph.zh ||
+      analyzing
+    )
+      return;
 
     try {
       analyzing = true;
+      error = null;
 
       const response = await fetch(apiUrl, {
         method: "POST",
@@ -136,17 +166,33 @@
       });
 
       if (!response.ok) {
-        throw new Error(`API error: ${response.statusText}`);
+        const errorData = await response
+          .json()
+          .catch(() => ({}));
+        throw new Error(
+          errorData.error ||
+            `API error: ${response.statusText}`
+        );
       }
 
       const data = await response.json();
 
       if (data.success && data.analysis) {
         currentParagraph.analysis = data.analysis;
-        sections[currentSectionIndex].paragraphs[currentParagraphIndex].analysis = data.analysis;
+        sections[currentSectionIndex].paragraphs[
+          currentParagraphIndex
+        ].analysis = data.analysis;
+      } else {
+        throw new Error(data.error || "Unknown API error");
       }
     } catch (err) {
       console.error("Error analyzing paragraph:", err);
+      error = `Failed to analyze: ${err.message}. Please try again later.`;
+
+      // Show a user-friendly error message
+      if (!currentParagraph.analysis) {
+        currentParagraph.analysis = [];
+      }
     } finally {
       analyzing = false;
     }
@@ -155,7 +201,10 @@
   function next() {
     if (!currentSection) return;
 
-    if (currentParagraphIndex < currentSection.paragraphs.length - 1) {
+    if (
+      currentParagraphIndex <
+      currentSection.paragraphs.length - 1
+    ) {
       currentParagraphIndex++;
     } else if (currentSectionIndex < sections.length - 1) {
       currentSectionIndex++;
@@ -168,12 +217,16 @@
       currentParagraphIndex--;
     } else if (currentSectionIndex > 0) {
       currentSectionIndex--;
-      currentParagraphIndex = sections[currentSectionIndex].paragraphs.length - 1;
+      currentParagraphIndex =
+        sections[currentSectionIndex].paragraphs.length - 1;
     }
   }
 
   function goToSection(sectionIndex: number) {
-    if (sectionIndex >= 0 && sectionIndex < sections.length) {
+    if (
+      sectionIndex >= 0 &&
+      sectionIndex < sections.length
+    ) {
       currentSectionIndex = sectionIndex;
       currentParagraphIndex = 0;
     }
@@ -192,7 +245,7 @@
 
   function getPosClass(analysis: WordAnalysis): string {
     const pos = analysis.part_of_speech;
-    
+
     if (pos === "NOUN") return "noun";
     if (pos === "PRONOUN") return "pronoun";
     if (pos === "VERB") return "verb";
@@ -225,21 +278,38 @@
 
   function buildTooltip(analysis: WordAnalysis): string {
     const parts = [];
-    if (displayConfig.showTranslation && analysis.translation) 
+    if (
+      displayConfig.showTranslation &&
+      analysis.translation
+    )
       parts.push(`📖 ${analysis.translation}`);
-    if (displayConfig.showPartOfSpeech && analysis.part_of_speech !== "UNKNOWN") 
-      parts.push(`🏷️ ${analysis.part_of_speech.toLowerCase()}`);
-    if (displayConfig.showSyntaxRole && analysis.syntax_role !== "UNKNOWN") 
+    if (
+      displayConfig.showPartOfSpeech &&
+      analysis.part_of_speech !== "UNKNOWN"
+    )
+      parts.push(
+        `🏷️ ${analysis.part_of_speech.toLowerCase()}`
+      );
+    if (
+      displayConfig.showSyntaxRole &&
+      analysis.syntax_role !== "UNKNOWN"
+    )
       parts.push(`🔤 ${getSyntaxLabel(analysis)}`);
-    if (displayConfig.showSemanticCategory && analysis.semantic_category !== "GENERAL") 
-      parts.push(`📌 ${analysis.semantic_category.toLowerCase()}`);
-    if (analysis.pos_tag) 
+    if (
+      displayConfig.showSemanticCategory &&
+      analysis.semantic_category !== "GENERAL"
+    )
+      parts.push(
+        `📌 ${analysis.semantic_category.toLowerCase()}`
+      );
+    if (analysis.pos_tag)
       parts.push(`🔧 ${analysis.pos_tag}`);
     return parts.join(" • ");
   }
 
   // Count active display fields
-  $: activeFieldsCount = Object.values(displayConfig).filter(Boolean).length;
+  $: activeFieldsCount =
+    Object.values(displayConfig).filter(Boolean).length;
 </script>
 
 <!-- Loading State -->
@@ -249,23 +319,27 @@
     <p>Loading your Chinese reader...</p>
   </div>
 
-<!-- Error State -->
+  <!-- Error State -->
 {:else if error}
   <div class="error-container">
     <div class="error-icon">⚠️</div>
     <h3>Oops! Something went wrong</h3>
     <p>{error}</p>
-    <button on:click={loadData} class="retry-button">Try Again</button>
+    <button on:click={loadData} class="retry-button"
+      >Try Again</button
+    >
   </div>
 
-<!-- Main Content -->
+  <!-- Main Content -->
 {:else if sections.length > 0}
   <div class="chinese-reader">
     <!-- Beautiful Header -->
     <header class="reader-header">
       <div class="header-content">
         <h1>中文阅读器</h1>
-        <p class="subtitle">Chinese Reader with Grammar Analysis</p>
+        <p class="subtitle">
+          Chinese Reader with Grammar Analysis
+        </p>
       </div>
       <div class="header-controls">
         <button
@@ -277,14 +351,24 @@
           <span class="settings-icon">⚙️</span>
           <span>Settings</span>
           {#if activeFieldsCount < 6}
-            <span class="settings-badge">{activeFieldsCount}/6</span>
+            <span class="settings-badge"
+              >{activeFieldsCount}/6</span
+            >
           {/if}
         </button>
         <div class="progress-indicator">
-          <span class="section-badge">Section {currentSectionIndex + 1}/{sections.length}</span>
-          <span class="paragraph-badge">Paragraph {currentParagraphIndex + 1}/{currentSection?.paragraphs.length || 0}</span>
+          <span class="section-badge"
+            >Section {currentSectionIndex +
+              1}/{sections.length}</span
+          >
+          <span class="paragraph-badge"
+            >Paragraph {currentParagraphIndex +
+              1}/{currentSection?.paragraphs.length ||
+              0}</span
+          >
           {#if analyzing}
-            <span class="analyzing-badge">Analyzing...</span>
+            <span class="analyzing-badge">Analyzing...</span
+            >
           {/if}
         </div>
       </div>
@@ -294,61 +378,84 @@
     {#if showSettings}
       <div class="settings-panel">
         <div class="settings-tabs">
-          <button 
-            class="tab-button" 
-            class:active={activeTab === 'display'}
-            on:click={() => activeTab = 'display'}
+          <button
+            class="tab-button"
+            class:active={activeTab === "display"}
+            on:click={() => (activeTab = "display")}
           >
             Display Options
           </button>
-          <button 
-            class="tab-button" 
-            class:active={activeTab === 'fields'}
-            on:click={() => activeTab = 'fields'}
+          <button
+            class="tab-button"
+            class:active={activeTab === "fields"}
+            on:click={() => (activeTab = "fields")}
           >
-            Data Fields <span class="field-count">{activeFieldsCount}/6</span>
+            Data Fields <span class="field-count"
+              >{activeFieldsCount}/6</span
+            >
           </button>
         </div>
 
-        {#if activeTab === 'display'}
+        {#if activeTab === "display"}
           <div class="settings-section">
             <h3>Display Settings</h3>
             <div class="settings-grid">
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showCleanVersion} />
+                <input
+                  type="checkbox"
+                  bind:checked={showCleanVersion}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Clean Version</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showAnnotations} />
+                <input
+                  type="checkbox"
+                  bind:checked={showAnnotations}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Annotations</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showSyntaxLabels} />
+                <input
+                  type="checkbox"
+                  bind:checked={showSyntaxLabels}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Syntax Labels</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showTranslation} />
+                <input
+                  type="checkbox"
+                  bind:checked={showTranslation}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Full Translation</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showTransliteration} />
+                <input
+                  type="checkbox"
+                  bind:checked={showTransliteration}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Pinyin</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={autoAnalyze} />
+                <input
+                  type="checkbox"
+                  bind:checked={autoAnalyze}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Auto-analyze</span>
               </label>
               <label class="checkbox-label">
-  <input type="checkbox" bind:checked={showStrokeOrder} />
-  <span class="checkbox-custom"></span>
-  <span>Show Stroke Order</span>
-</label>
+                <input
+                  type="checkbox"
+                  bind:checked={showStrokeOrder}
+                />
+                <span class="checkbox-custom"></span>
+                <span>Show Stroke Order</span>
+              </label>
             </div>
           </div>
         {:else}
@@ -356,48 +463,94 @@
             <div class="settings-header">
               <h3>Data Fields to Display</h3>
               <div class="settings-actions">
-                <button class="settings-action" on:click={resetToDefaults}>Reset to Defaults</button>
+                <button
+                  class="settings-action"
+                  on:click={resetToDefaults}
+                  >Reset to Defaults</button
+                >
               </div>
             </div>
             <p class="settings-description">
-              Choose which linguistic data fields to show in the annotations.
+              Choose which linguistic data fields to show in
+              the annotations.
             </p>
             <div class="fields-grid">
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showWord} />
+                <input
+                  type="checkbox"
+                  bind:checked={displayConfig.showWord}
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Word</span>
-                <span class="field-badge">Chinese characters</span>
+                <span class="field-badge"
+                  >Chinese characters</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showTransliteration} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showTransliteration
+                  }
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Pinyin</span>
-                <span class="field-badge">Romanization</span>
+                <span class="field-badge">Romanization</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showTranslation} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showTranslation
+                  }
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Translation</span>
-                <span class="field-badge">English meaning</span>
+                <span class="field-badge"
+                  >English meaning</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showPartOfSpeech} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showPartOfSpeech
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Part of Speech</span>
+                <span class="field-name"
+                  >Part of Speech</span
+                >
                 <span class="field-badge">POS tag</span>
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showSyntaxRole} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showSyntaxRole
+                  }
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Syntax Role</span>
-                <span class="field-badge">Subject, object, etc.</span>
+                <span class="field-badge"
+                  >Subject, object, etc.</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showSemanticCategory} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showSemanticCategory
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Semantic Category</span>
-                <span class="field-badge">Time, location, etc.</span>
+                <span class="field-name"
+                  >Semantic Category</span
+                >
+                <span class="field-badge"
+                  >Time, location, etc.</span
+                >
               </label>
             </div>
           </div>
@@ -428,7 +581,9 @@
             <!-- Chinese Clean Version -->
             {#if showCleanVersion}
               <div class="clean-version">
-                <div class="clean-text">{currentParagraph.zh}</div>
+                <div class="clean-text">
+                  {currentParagraph.zh}
+                </div>
               </div>
             {/if}
 
@@ -438,39 +593,58 @@
                 <div class="annotated-text">
                   {#each currentParagraph.analysis as analysis (analysis.word + analysis.transliteration)}
                     {#if analysis.is_punctuation}
-                      <span class="punctuation-token">{analysis.word}</span>
+                      <span class="punctuation-token"
+                        >{analysis.word}</span
+                      >
                     {:else}
-                      {@const posClass = getPosClass(analysis)}
-                      {@const tooltip = buildTooltip(analysis)}
-                      
-                      <div 
-                        class="word-container word-{posClass}" 
+                      {@const posClass =
+                        getPosClass(analysis)}
+                      {@const tooltip =
+                        buildTooltip(analysis)}
+
+                      <div
+                        class="word-container word-{posClass}"
                         title={tooltip}
                       >
                         {#if displayConfig.showWord}
-                          <span class="word-field">{analysis.word}</span>
+                          <span class="word-field"
+                            >{analysis.word}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showTransliteration && analysis.transliteration}
-                          <span class="transliteration-field">{analysis.transliteration}</span>
+                          <span
+                            class="transliteration-field"
+                            >{analysis.transliteration}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showTranslation && analysis.translation}
-                          <span class="translation-field">{analysis.translation}</span>
+                          <span class="translation-field"
+                            >{analysis.translation}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showPartOfSpeech && analysis.part_of_speech !== "UNKNOWN"}
-                          <span class="pos-field pos-{analysis.part_of_speech.toLowerCase()}">
+                          <span
+                            class="pos-field pos-{analysis.part_of_speech.toLowerCase()}"
+                          >
                             {analysis.part_of_speech.toLowerCase()}
                           </span>
                         {/if}
-                        
+
                         {#if displayConfig.showSyntaxRole && analysis.syntax_role !== "UNKNOWN"}
-                          <span class="syntax-field">{getSyntaxLabel(analysis)}</span>
+                          <span class="syntax-field"
+                            >{getSyntaxLabel(
+                              analysis
+                            )}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showSemanticCategory && analysis.semantic_category !== "GENERAL"}
-                          <span class="semantic-field">{analysis.semantic_category.toLowerCase()}</span>
+                          <span class="semantic-field"
+                            >{analysis.semantic_category.toLowerCase()}</span
+                          >
                         {/if}
                       </div>
                     {/if}
@@ -478,61 +652,75 @@
                 </div>
               </div>
               <!-- Add this section after the annotated version and before the legend -->
-{#if showStrokeOrder && currentParagraph && currentParagraph.analysis && currentParagraph.analysis.length > 0}
-  <div class="stroke-order-section">
-    <div class="section-header">
-      <h3>✍️ Stroke Order</h3>
-      <p class="section-description">Click on any character to see its stroke order animation</p>
-    </div>
-    
-    <div class="character-grid">
-      {#each chineseCharacters as char}
-        <button 
-          class="character-button"
-          class:active={selectedCharacter === char}
-          on:click={() => selectedCharacter = char}
-        >
-          <span class="char">{char}</span>
-          <span class="char-info">
-            U+{char.codePointAt(0)?.toString(16).toUpperCase().padStart(4, '0')}
-          </span>
-        </button>
-      {/each}
-    </div>
-    
-    {#if selectedCharacter}
-      <div class="stroke-order-detail">
-        <button 
-          class="close-button"
-          on:click={() => selectedCharacter = ''}
-          title="Close"
-        >
-          ✕
-        </button>
-        <ChineseStrokeOrder 
-          character={selectedCharacter}
-          width={250}
-          height={250}
-          strokeColor="#2c3e50"
-          radicalColor="#c44536"
-          showOutline={true}
-          showCharacter={false}
-          strokeAnimationSpeed={1}
-          delayBetweenStrokes={80}
-          autoplay={true}
-          showStrokeNumber={true}
-          strokeNumberColor="#e67e22"
-          onComplete={() => console.log('Animation complete')}
-        />
-      </div>
-    {:else}
-      <div class="stroke-order-prompt">
-        <span class="prompt-icon">👆</span>
-        <span>Select a character above to see its stroke order</span>
-      </div>
-    {/if}
-  </div>
-{/if}
+              {#if showStrokeOrder && currentParagraph && currentParagraph.analysis && currentParagraph.analysis.length > 0}
+                <div class="stroke-order-section">
+                  <div class="section-header">
+                    <h3>✍️ Stroke Order</h3>
+                    <p class="section-description">
+                      Click on any character to see its
+                      stroke order animation
+                    </p>
+                  </div>
+
+                  <div class="character-grid">
+                    {#each chineseCharacters as char}
+                      <button
+                        class="character-button"
+                        class:active={selectedCharacter ===
+                          char}
+                        on:click={() =>
+                          (selectedCharacter = char)}
+                      >
+                        <span class="char">{char}</span>
+                        <span class="char-info">
+                          U+{char
+                            .codePointAt(0)
+                            ?.toString(16)
+                            .toUpperCase()
+                            .padStart(4, "0")}
+                        </span>
+                      </button>
+                    {/each}
+                  </div>
+
+                  {#if selectedCharacter}
+                    <div class="stroke-order-detail">
+                      <button
+                        class="close-button"
+                        on:click={() =>
+                          (selectedCharacter = "")}
+                        title="Close"
+                      >
+                        ✕
+                      </button>
+                      <ChineseStrokeOrder
+                        character={selectedCharacter}
+                        width={250}
+                        height={250}
+                        strokeColor="#2c3e50"
+                        radicalColor="#c44536"
+                        showOutline={true}
+                        showCharacter={false}
+                        strokeAnimationSpeed={1}
+                        delayBetweenStrokes={80}
+                        autoplay={true}
+                        showStrokeNumber={true}
+                        strokeNumberColor="#e67e22"
+                        onComplete={() =>
+                          console.log("Animation complete")}
+                      />
+                    </div>
+                  {:else}
+                    <div class="stroke-order-prompt">
+                      <span class="prompt-icon">👆</span>
+                      <span
+                        >Select a character above to see its
+                        stroke order</span
+                      >
+                    </div>
+                  {/if}
+                </div>
+              {/if}
             {:else if analyzing}
               <div class="analyzing-message">
                 <div class="spinner-small"></div>
@@ -540,9 +728,23 @@
               </div>
             {/if}
 
+            {#if error}
+              <div class="api-error">
+                <span class="error-icon">⚠️</span>
+                <span>{error}</span>
+                <button
+                  on:click={analyzeCurrentParagraph}
+                  class="retry-small">Retry</button
+                >
+              </div>
+            {/if}
+
             <!-- Manual Analysis Button -->
             {#if !currentParagraph.analysis && !analyzing}
-              <button class="analyze-button" on:click={analyzeCurrentParagraph}>
+              <button
+                class="analyze-button"
+                on:click={analyzeCurrentParagraph}
+              >
                 <span>🔍</span> Analyze This Paragraph
               </button>
             {/if}
@@ -555,44 +757,88 @@
     <div class="legend">
       <h3>Grammar Legend</h3>
       <div class="legend-items">
-        <span class="legend-item" data-category="NOUN">Noun</span>
-        <span class="legend-item" data-category="VERB">Verb</span>
-        <span class="legend-item" data-category="PRONOUN">Pronoun</span>
-        <span class="legend-item" data-category="ADJECTIVE">Adjective</span>
-        <span class="legend-item" data-category="ADVERB">Adverb</span>
-        <span class="legend-item" data-category="PREPOSITION">Preposition</span>
-        <span class="legend-item" data-category="CONJUNCTION">Conjunction</span>
-        <span class="legend-item" data-category="PARTICLE">Particle</span>
+        <span class="legend-item" data-category="NOUN"
+          >Noun</span
+        >
+        <span class="legend-item" data-category="VERB"
+          >Verb</span
+        >
+        <span class="legend-item" data-category="PRONOUN"
+          >Pronoun</span
+        >
+        <span class="legend-item" data-category="ADJECTIVE"
+          >Adjective</span
+        >
+        <span class="legend-item" data-category="ADVERB"
+          >Adverb</span
+        >
+        <span
+          class="legend-item"
+          data-category="PREPOSITION">Preposition</span
+        >
+        <span
+          class="legend-item"
+          data-category="CONJUNCTION">Conjunction</span
+        >
+        <span class="legend-item" data-category="PARTICLE"
+          >Particle</span
+        >
       </div>
     </div>
 
     <!-- Navigation Footer -->
     <footer class="reader-footer">
-      <button class="nav-button prev" on:click={previous} disabled={!hasPrevious || analyzing}>
+      <button
+        class="nav-button prev"
+        on:click={previous}
+        disabled={!hasPrevious || analyzing}
+      >
         <span class="nav-icon">←</span>
         <span class="nav-text">Previous</span>
       </button>
 
       <div class="nav-center">
-        <button class="nav-icon-button" on:click={() => goToSection(currentSectionIndex - 1)} 
-                disabled={currentSectionIndex === 0 || analyzing} title="Previous section">
+        <button
+          class="nav-icon-button"
+          on:click={() =>
+            goToSection(currentSectionIndex - 1)}
+          disabled={currentSectionIndex === 0 || analyzing}
+          title="Previous section"
+        >
           ⏪
         </button>
-        
-        <select class="section-selector" on:change={(e) => goToSection(parseInt(e.currentTarget.value))} 
-                value={currentSectionIndex} disabled={analyzing}>
+
+        <select
+          class="section-selector"
+          on:change={(e) =>
+            goToSection(parseInt(e.currentTarget.value))}
+          value={currentSectionIndex}
+          disabled={analyzing}
+        >
           {#each sections as section, index}
-            <option value={index}>Section {index + 1}: {section.id}</option>
+            <option value={index}
+              >Section {index + 1}: {section.id}</option
+            >
           {/each}
         </select>
-        
-        <button class="nav-icon-button" on:click={() => goToSection(currentSectionIndex + 1)} 
-                disabled={currentSectionIndex === sections.length - 1 || analyzing} title="Next section">
+
+        <button
+          class="nav-icon-button"
+          on:click={() =>
+            goToSection(currentSectionIndex + 1)}
+          disabled={currentSectionIndex ===
+            sections.length - 1 || analyzing}
+          title="Next section"
+        >
           ⏩
         </button>
       </div>
 
-      <button class="nav-button next" on:click={next} disabled={!hasNext || analyzing}>
+      <button
+        class="nav-button next"
+        on:click={next}
+        disabled={!hasNext || analyzing}
+      >
         <span class="nav-text">Next</span>
         <span class="nav-icon">→</span>
       </button>
@@ -616,7 +862,8 @@
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:
+      "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   /* Beautiful Header - Chinese Red Theme */
@@ -636,7 +883,8 @@
     font-weight: 300;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    font-family:
+      "Noto Sans SC", "Microsoft YaHei", sans-serif;
   }
 
   .subtitle {
@@ -695,7 +943,9 @@
     backdrop-filter: blur(10px);
   }
 
-  .section-badge, .paragraph-badge, .analyzing-badge {
+  .section-badge,
+  .paragraph-badge,
+  .analyzing-badge {
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -746,7 +996,7 @@
   }
 
   .tab-button.active::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1rem;
     left: 0;
@@ -765,9 +1015,13 @@
     margin-left: 0.5rem;
   }
 
-  .settings-grid, .fields-grid {
+  .settings-grid,
+  .fields-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    );
     gap: 1.5rem;
   }
 
@@ -821,12 +1075,16 @@
     flex-shrink: 0;
   }
 
-  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+  .checkbox-label
+    input[type="checkbox"]:checked
+    + .checkbox-custom {
     background: linear-gradient(135deg, #c44536, #b33939);
     border-color: transparent;
   }
 
-  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+  .checkbox-label
+    input[type="checkbox"]:checked
+    + .checkbox-custom::after {
     content: "✓";
     position: absolute;
     color: white;
@@ -850,7 +1108,8 @@
     font-size: 2rem;
     color: #2c3e50;
     font-weight: 300;
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    font-family:
+      "Noto Sans SC", "Microsoft YaHei", sans-serif;
     border-bottom: 3px solid #c44536;
     display: inline-block;
     padding-bottom: 0.5rem;
@@ -889,7 +1148,8 @@
     font-size: 2.5rem;
     line-height: 1.6;
     color: #2c3e50;
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    font-family:
+      "Noto Sans SC", "Microsoft YaHei", sans-serif;
     text-align: center;
   }
 
@@ -922,7 +1182,8 @@
     font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    font-family:
+      "Noto Sans SC", "Microsoft YaHei", sans-serif;
   }
 
   /* Transliteration field */
@@ -1194,13 +1455,22 @@
   }
 
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
   }
 
   /* Responsive */
@@ -1238,201 +1508,207 @@
   }
 
   .stroke-order-section {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-radius: 12px;
-  border: 1px solid #e1e5e9;
-}
-
-.section-header {
-  margin-bottom: 1.5rem;
-}
-
-.section-header h3 {
-  font-size: 1.2rem;
-  color: #2c3e50;
-  margin-bottom: 0.25rem;
-}
-
-.section-description {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.character-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  background: white;
-  border-radius: 8px;
-  max-height: 120px;
-  overflow-y: auto;
-  border: 1px solid #e1e5e9;
-}
-
-.character-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem;
-  min-width: 60px;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  background: white;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.character-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-color: #c44536;
-}
-
-.character-button.active {
-  background: linear-gradient(135deg, #c44536, #b33939);
-  border-color: #a33030;
-}
-
-.character-button.active .char {
-  color: white;
-}
-
-.character-button.active .char-info {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.char {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2c3e50;
-  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
-  line-height: 1;
-}
-
-.char-info {
-  font-size: 0.7rem;
-  color: #999;
-  margin-top: 0.25rem;
-}
-
-.stroke-order-detail {
-  position: relative;
-  margin-top: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 12px;
-  animation: slideIn 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 300px;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    border: 1px solid #e1e5e9;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .section-header {
+    margin-bottom: 1.5rem;
   }
-}
 
-.close-button {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 50%;
-  background: #f0f0f0;
-  color: #666;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  z-index: 10;
-}
+  .section-header h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+  }
 
-.close-button:hover {
-  background: #ff6b6b;
-  color: white;
-  transform: scale(1.1);
-}
+  .section-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
 
-.stroke-order-prompt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 2rem;
-  background: white;
-  border-radius: 8px;
-  color: #666;
-  font-style: italic;
-  border: 2px dashed #e1e5e9;
-}
-
-.prompt-icon {
-  font-size: 1.5rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
-
-/* Scrollbar styling for character grid */
-.character-grid::-webkit-scrollbar {
-  width: 6px;
-}
-
-.character-grid::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  border-radius: 3px;
-}
-
-.character-grid::-webkit-scrollbar-thumb {
-  background: #c44536;
-  border-radius: 3px;
-}
-
-.character-grid::-webkit-scrollbar-thumb:hover {
-  background: #b33939;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
   .character-grid {
-    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 8px;
+    max-height: 120px;
+    overflow-y: auto;
+    border: 1px solid #e1e5e9;
   }
 
   .character-button {
-    min-width: 50px;
-    padding: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    min-width: 60px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .character-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #c44536;
+  }
+
+  .character-button.active {
+    background: linear-gradient(135deg, #c44536, #b33939);
+    border-color: #a33030;
+  }
+
+  .character-button.active .char {
+    color: white;
+  }
+
+  .character-button.active .char-info {
+    color: rgba(255, 255, 255, 0.8);
   }
 
   .char {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family:
+      "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    line-height: 1;
   }
 
   .char-info {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    color: #999;
+    margin-top: 0.25rem;
   }
 
   .stroke-order-detail {
-    min-height: 250px;
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
   }
-}
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+
+  .close-button:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .stroke-order-prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    color: #666;
+    font-style: italic;
+    border: 2px dashed #e1e5e9;
+  }
+
+  .prompt-icon {
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Scrollbar styling for character grid */
+  .character-grid::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .character-grid::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 3px;
+  }
+
+  .character-grid::-webkit-scrollbar-thumb {
+    background: #c44536;
+    border-radius: 3px;
+  }
+
+  .character-grid::-webkit-scrollbar-thumb:hover {
+    background: #b33939;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .character-grid {
+      max-height: 100px;
+    }
+
+    .character-button {
+      min-width: 50px;
+      padding: 0.35rem;
+    }
+
+    .char {
+      font-size: 1.2rem;
+    }
+
+    .char-info {
+      font-size: 0.6rem;
+    }
+
+    .stroke-order-detail {
+      min-height: 250px;
+    }
+  }
 </style>

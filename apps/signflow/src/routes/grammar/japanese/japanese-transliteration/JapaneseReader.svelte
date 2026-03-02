@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
-  import JapaneseStrokeOrder from './JapaneseStrokeOrder.svelte';
+  import JapaneseStrokeOrder from "./JapaneseStrokeOrder.svelte";
 
   // Types for our data structure
   interface WordAnalysis {
@@ -46,8 +46,11 @@
   }
 
   // Props
-  export let jsonPath: string = "/json/ja/epub_content_web-Downton-abbey.json";
-  export let apiUrl: string = "http://localhost:5000/api/analyze/japanese";
+  export let jsonPath: string =
+    "/json/ja/epub_content_web-Downton-abbey.json";
+  const API_BASE =
+    import.meta.env.VITE_API_URL || "http://localhost:5000";
+  export let apiUrl: string = `${API_BASE}/api/analyze/japanese`;
   export let initialSection: number = 0;
   export let initialParagraph: number = 0;
   export let showCleanVersion: boolean = true;
@@ -65,8 +68,8 @@
   let analyzing: boolean = false;
   let error: string | null = null;
   let showSettings: boolean = false;
-  let activeTab: 'display' | 'fields' = 'display';
-  let selectedCharacter: string = '';
+  let activeTab: "display" | "fields" = "display";
+  let selectedCharacter: string = "";
   let showStrokeOrder: boolean = true;
 
   // Display configuration - all enabled by default
@@ -82,23 +85,39 @@
     showSemanticCategory: true
   };
 
-  $: kanjiCharacters = currentParagraph?.ja 
-    ? [...new Set(currentParagraph.ja.match(/[\u4e00-\u9faf\u3040-\u309f\u30a0-\u30ff]/g) || [])]
+  $: kanjiCharacters = currentParagraph?.ja
+    ? [
+        ...new Set(
+          currentParagraph.ja.match(
+            /[\u4e00-\u9faf\u3040-\u309f\u30a0-\u30ff]/g
+          ) || []
+        )
+      ]
     : [];
 
   // Derived values
   $: currentSection = sections[currentSectionIndex];
-  $: currentParagraph = currentSection?.paragraphs[currentParagraphIndex];
-  $: hasPrevious = currentParagraphIndex > 0 || currentSectionIndex > 0;
-  $: hasNext = currentSectionIndex < sections.length - 1 || 
-               (currentSection && currentParagraphIndex < currentSection.paragraphs.length - 1);
+  $: currentParagraph =
+    currentSection?.paragraphs[currentParagraphIndex];
+  $: hasPrevious =
+    currentParagraphIndex > 0 || currentSectionIndex > 0;
+  $: hasNext =
+    currentSectionIndex < sections.length - 1 ||
+    (currentSection &&
+      currentParagraphIndex <
+        currentSection.paragraphs.length - 1);
   $: currentParagraphText = currentParagraph?.ja || "";
 
   onMount(async () => {
     await loadData();
   });
 
-  $: if (browser && currentParagraph && autoAnalyze && !currentParagraph.analysis) {
+  $: if (
+    browser &&
+    currentParagraph &&
+    autoAnalyze &&
+    !currentParagraph.analysis
+  ) {
     analyzeCurrentParagraph();
   }
 
@@ -107,12 +126,18 @@
       loading = true;
       const response = await fetch(jsonPath);
       if (!response.ok) {
-        throw new Error(`Failed to load: ${response.statusText}`);
+        throw new Error(
+          `Failed to load: ${response.statusText}`
+        );
       }
       sections = await response.json();
       error = null;
 
-      if (sections.length > 0 && sections[0].paragraphs.length > 0 && !sections[0].paragraphs[0].analysis) {
+      if (
+        sections.length > 0 &&
+        sections[0].paragraphs.length > 0 &&
+        !sections[0].paragraphs[0].analysis
+      ) {
         await analyzeCurrentParagraph();
       }
     } catch (err) {
@@ -124,10 +149,16 @@
   }
 
   async function analyzeCurrentParagraph() {
-    if (!currentParagraph || !currentParagraph.ja || analyzing) return;
+    if (
+      !currentParagraph ||
+      !currentParagraph.ja ||
+      analyzing
+    )
+      return;
 
     try {
       analyzing = true;
+      error = null;
 
       const response = await fetch(apiUrl, {
         method: "POST",
@@ -139,17 +170,33 @@
       });
 
       if (!response.ok) {
-        throw new Error(`API error: ${response.statusText}`);
+        const errorData = await response
+          .json()
+          .catch(() => ({}));
+        throw new Error(
+          errorData.error ||
+            `API error: ${response.statusText}`
+        );
       }
 
       const data = await response.json();
 
       if (data.success && data.analysis) {
         currentParagraph.analysis = data.analysis;
-        sections[currentSectionIndex].paragraphs[currentParagraphIndex].analysis = data.analysis;
+        sections[currentSectionIndex].paragraphs[
+          currentParagraphIndex
+        ].analysis = data.analysis;
+      } else {
+        throw new Error(data.error || "Unknown API error");
       }
     } catch (err) {
       console.error("Error analyzing paragraph:", err);
+      error = `Failed to analyze: ${err.message}. Please try again later.`;
+
+      // Show a user-friendly error message
+      if (!currentParagraph.analysis) {
+        currentParagraph.analysis = [];
+      }
     } finally {
       analyzing = false;
     }
@@ -158,7 +205,10 @@
   function next() {
     if (!currentSection) return;
 
-    if (currentParagraphIndex < currentSection.paragraphs.length - 1) {
+    if (
+      currentParagraphIndex <
+      currentSection.paragraphs.length - 1
+    ) {
       currentParagraphIndex++;
     } else if (currentSectionIndex < sections.length - 1) {
       currentSectionIndex++;
@@ -171,12 +221,16 @@
       currentParagraphIndex--;
     } else if (currentSectionIndex > 0) {
       currentSectionIndex--;
-      currentParagraphIndex = sections[currentSectionIndex].paragraphs.length - 1;
+      currentParagraphIndex =
+        sections[currentSectionIndex].paragraphs.length - 1;
     }
   }
 
   function goToSection(sectionIndex: number) {
-    if (sectionIndex >= 0 && sectionIndex < sections.length) {
+    if (
+      sectionIndex >= 0 &&
+      sectionIndex < sections.length
+    ) {
       currentSectionIndex = sectionIndex;
       currentParagraphIndex = 0;
     }
@@ -198,7 +252,7 @@
 
   function getPosClass(analysis: WordAnalysis): string {
     const pos = analysis.part_of_speech;
-    
+
     if (pos === "NOUN") return "noun";
     if (pos === "PRONOUN") return "pronoun";
     if (pos === "VERB") return "verb";
@@ -230,41 +284,88 @@
     return role.replace(/_/g, " ").toLowerCase();
   }
 
-  function getParticleLabel(analysis: WordAnalysis): string {
-    if (analysis.particle_type === "None" || analysis.particle_type === "NONE") return "";
-    return analysis.particle_type.replace(/_/g, " ").toLowerCase();
+  function getParticleLabel(
+    analysis: WordAnalysis
+  ): string {
+    if (
+      analysis.particle_type === "None" ||
+      analysis.particle_type === "NONE"
+    )
+      return "";
+    return analysis.particle_type
+      .replace(/_/g, " ")
+      .toLowerCase();
   }
 
-  function getVerbFormLabel(analysis: WordAnalysis): string {
-    if (analysis.verb_form === "None" || analysis.verb_form === "NONE") return "";
-    return analysis.verb_form.replace(/_/g, " ").toLowerCase();
+  function getVerbFormLabel(
+    analysis: WordAnalysis
+  ): string {
+    if (
+      analysis.verb_form === "None" ||
+      analysis.verb_form === "NONE"
+    )
+      return "";
+    return analysis.verb_form
+      .replace(/_/g, " ")
+      .toLowerCase();
   }
 
   function buildTooltip(analysis: WordAnalysis): string {
     const parts = [];
-    if (displayConfig.showTranslation && analysis.translation) 
+    if (
+      displayConfig.showTranslation &&
+      analysis.translation
+    )
       parts.push(`📖 ${analysis.translation}`);
-    if (displayConfig.showPartOfSpeech && analysis.part_of_speech !== "UNKNOWN") 
-      parts.push(`🏷️ ${analysis.part_of_speech.toLowerCase()}`);
-    if (displayConfig.showSyntaxRole && analysis.syntax_role !== "UNKNOWN") 
+    if (
+      displayConfig.showPartOfSpeech &&
+      analysis.part_of_speech !== "UNKNOWN"
+    )
+      parts.push(
+        `🏷️ ${analysis.part_of_speech.toLowerCase()}`
+      );
+    if (
+      displayConfig.showSyntaxRole &&
+      analysis.syntax_role !== "UNKNOWN"
+    )
       parts.push(`🔤 ${getSyntaxLabel(analysis)}`);
-    if (displayConfig.showParticleType && analysis.particle_type !== "None" && analysis.particle_type !== "NONE") {
+    if (
+      displayConfig.showParticleType &&
+      analysis.particle_type !== "None" &&
+      analysis.particle_type !== "NONE"
+    ) {
       parts.push(`⚡ ${getParticleLabel(analysis)}`);
     }
-    if (displayConfig.showVerbForm && analysis.verb_form !== "None" && analysis.verb_form !== "NONE") {
+    if (
+      displayConfig.showVerbForm &&
+      analysis.verb_form !== "None" &&
+      analysis.verb_form !== "NONE"
+    ) {
       parts.push(`🔄 ${getVerbFormLabel(analysis)}`);
     }
-    if (displayConfig.showHonorificLevel && analysis.honorific_level !== "NEUTRAL" && analysis.honorific_level !== "PLAIN") {
-      parts.push(`👑 ${analysis.honorific_level.toLowerCase()}`);
+    if (
+      displayConfig.showHonorificLevel &&
+      analysis.honorific_level !== "NEUTRAL" &&
+      analysis.honorific_level !== "PLAIN"
+    ) {
+      parts.push(
+        `👑 ${analysis.honorific_level.toLowerCase()}`
+      );
     }
-    if (displayConfig.showSemanticCategory && analysis.semantic_category !== "GENERAL") {
-      parts.push(`📌 ${analysis.semantic_category.toLowerCase()}`);
+    if (
+      displayConfig.showSemanticCategory &&
+      analysis.semantic_category !== "GENERAL"
+    ) {
+      parts.push(
+        `📌 ${analysis.semantic_category.toLowerCase()}`
+      );
     }
     return parts.join(" • ");
   }
 
   // Count active display fields
-  $: activeFieldsCount = Object.values(displayConfig).filter(Boolean).length;
+  $: activeFieldsCount =
+    Object.values(displayConfig).filter(Boolean).length;
 </script>
 
 <!-- Loading State -->
@@ -274,23 +375,27 @@
     <p>Loading your Japanese reader...</p>
   </div>
 
-<!-- Error State -->
+  <!-- Error State -->
 {:else if error}
   <div class="error-container">
     <div class="error-icon">⚠️</div>
     <h3>Oops! Something went wrong</h3>
     <p>{error}</p>
-    <button on:click={loadData} class="retry-button">Try Again</button>
+    <button on:click={loadData} class="retry-button"
+      >Try Again</button
+    >
   </div>
 
-<!-- Main Content -->
+  <!-- Main Content -->
 {:else if sections.length > 0}
   <div class="japanese-reader">
     <!-- Beautiful Header with Gradient -->
     <header class="reader-header">
       <div class="header-content">
         <h1>日本語リーダー</h1>
-        <p class="subtitle">Japanese Reader with Grammar Analysis</p>
+        <p class="subtitle">
+          Japanese Reader with Grammar Analysis
+        </p>
       </div>
       <div class="header-controls">
         <button
@@ -302,14 +407,24 @@
           <span class="settings-icon">⚙️</span>
           <span>Settings</span>
           {#if activeFieldsCount < 9}
-            <span class="settings-badge">{activeFieldsCount}/9</span>
+            <span class="settings-badge"
+              >{activeFieldsCount}/9</span
+            >
           {/if}
         </button>
         <div class="progress-indicator">
-          <span class="section-badge">Section {currentSectionIndex + 1}/{sections.length}</span>
-          <span class="paragraph-badge">Paragraph {currentParagraphIndex + 1}/{currentSection?.paragraphs.length || 0}</span>
+          <span class="section-badge"
+            >Section {currentSectionIndex +
+              1}/{sections.length}</span
+          >
+          <span class="paragraph-badge"
+            >Paragraph {currentParagraphIndex +
+              1}/{currentSection?.paragraphs.length ||
+              0}</span
+          >
           {#if analyzing}
-            <span class="analyzing-badge">Analyzing...</span>
+            <span class="analyzing-badge">Analyzing...</span
+            >
           {/if}
         </div>
       </div>
@@ -319,58 +434,81 @@
     {#if showSettings}
       <div class="settings-panel">
         <div class="settings-tabs">
-          <button 
-            class="tab-button" 
-            class:active={activeTab === 'display'}
-            on:click={() => activeTab = 'display'}
+          <button
+            class="tab-button"
+            class:active={activeTab === "display"}
+            on:click={() => (activeTab = "display")}
           >
             Display Options
           </button>
-          <button 
-            class="tab-button" 
-            class:active={activeTab === 'fields'}
-            on:click={() => activeTab = 'fields'}
+          <button
+            class="tab-button"
+            class:active={activeTab === "fields"}
+            on:click={() => (activeTab = "fields")}
           >
-            Data Fields <span class="field-count">{activeFieldsCount}/9</span>
+            Data Fields <span class="field-count"
+              >{activeFieldsCount}/9</span
+            >
           </button>
         </div>
 
-        {#if activeTab === 'display'}
+        {#if activeTab === "display"}
           <div class="settings-section">
             <h3>Display Settings</h3>
             <div class="settings-grid">
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showCleanVersion} />
+                <input
+                  type="checkbox"
+                  bind:checked={showCleanVersion}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Clean Version</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showAnnotations} />
+                <input
+                  type="checkbox"
+                  bind:checked={showAnnotations}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Annotations</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showSyntaxLabels} />
+                <input
+                  type="checkbox"
+                  bind:checked={showSyntaxLabels}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Syntax Labels</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showTranslation} />
+                <input
+                  type="checkbox"
+                  bind:checked={showTranslation}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Full Translation</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showTransliteration} />
+                <input
+                  type="checkbox"
+                  bind:checked={showTransliteration}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Romaji</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={autoAnalyze} />
+                <input
+                  type="checkbox"
+                  bind:checked={autoAnalyze}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Auto-analyze</span>
               </label>
               <label class="checkbox-label">
-                <input type="checkbox" bind:checked={showStrokeOrder} />
+                <input
+                  type="checkbox"
+                  bind:checked={showStrokeOrder}
+                />
                 <span class="checkbox-custom"></span>
                 <span>Show Stroke Order</span>
               </label>
@@ -381,72 +519,142 @@
             <div class="settings-header">
               <h3>Data Fields to Display</h3>
               <div class="settings-actions">
-                <button class="settings-action" on:click={resetToDefaults}>Reset to Defaults</button>
+                <button
+                  class="settings-action"
+                  on:click={resetToDefaults}
+                  >Reset to Defaults</button
+                >
               </div>
             </div>
             <p class="settings-description">
-              Choose which linguistic data fields to show in the annotations. 
-              Hover over words to see all available data regardless of selection.
+              Choose which linguistic data fields to show in
+              the annotations. Hover over words to see all
+              available data regardless of selection.
             </p>
             <div class="fields-grid">
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showWord} />
+                <input
+                  type="checkbox"
+                  bind:checked={displayConfig.showWord}
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Word</span>
-                <span class="field-badge">Japanese text</span>
+                <span class="field-badge"
+                  >Japanese text</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showTransliteration} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showTransliteration
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Transliteration</span>
+                <span class="field-name"
+                  >Transliteration</span
+                >
                 <span class="field-badge">Romaji</span>
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showTranslation} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showTranslation
+                  }
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Translation</span>
-                <span class="field-badge">English meaning</span>
+                <span class="field-badge"
+                  >English meaning</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showPartOfSpeech} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showPartOfSpeech
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Part of Speech</span>
+                <span class="field-name"
+                  >Part of Speech</span
+                >
                 <span class="field-badge">POS tag</span>
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showSyntaxRole} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showSyntaxRole
+                  }
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Syntax Role</span>
-                <span class="field-badge">Subject, object, etc.</span>
+                <span class="field-badge"
+                  >Subject, object, etc.</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showParticleType} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showParticleType
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Particle Type</span>
-                <span class="field-badge">Case, connective, etc.</span>
+                <span class="field-name">Particle Type</span
+                >
+                <span class="field-badge"
+                  >Case, connective, etc.</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showVerbForm} />
+                <input
+                  type="checkbox"
+                  bind:checked={displayConfig.showVerbForm}
+                />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Verb Form</span>
                 <span class="field-badge">Conjugation</span>
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showHonorificLevel} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showHonorificLevel
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Honorific Level</span>
-                <span class="field-badge">Polite, humble, etc.</span>
+                <span class="field-name"
+                  >Honorific Level</span
+                >
+                <span class="field-badge"
+                  >Polite, humble, etc.</span
+                >
               </label>
               <label class="checkbox-label field-item">
-                <input type="checkbox" bind:checked={displayConfig.showSemanticCategory} />
+                <input
+                  type="checkbox"
+                  bind:checked={
+                    displayConfig.showSemanticCategory
+                  }
+                />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Semantic Category</span>
-                <span class="field-badge">Time, location, etc.</span>
+                <span class="field-name"
+                  >Semantic Category</span
+                >
+                <span class="field-badge"
+                  >Time, location, etc.</span
+                >
               </label>
             </div>
             <div class="settings-note">
               <span class="note-icon">💡</span>
-              <span>All data is always available in tooltips when hovering over words.</span>
+              <span
+                >All data is always available in tooltips
+                when hovering over words.</span
+              >
             </div>
           </div>
         {/if}
@@ -476,7 +684,9 @@
             <!-- Japanese Clean Version -->
             {#if showCleanVersion}
               <div class="clean-version">
-                <div class="clean-text">{currentParagraph.ja}</div>
+                <div class="clean-text">
+                  {currentParagraph.ja}
+                </div>
               </div>
             {/if}
 
@@ -486,53 +696,85 @@
                 <div class="annotated-text">
                   {#each currentParagraph.analysis as analysis (analysis.word + analysis.transliteration + analysis.part_of_speech)}
                     {#if analysis.is_punctuation}
-                      <span class="punctuation-token">{analysis.word}</span>
+                      <span class="punctuation-token"
+                        >{analysis.word}</span
+                      >
                     {:else}
-                      {@const posClass = getPosClass(analysis)}
-                      {@const syntaxRole = analysis.syntax_role.toLowerCase().replace(/_/g, "-")}
-                      {@const tooltip = buildTooltip(analysis)}
-                      
-                      <div 
-                        class="word-container word-{posClass} syntax-{syntaxRole}" 
+                      {@const posClass =
+                        getPosClass(analysis)}
+                      {@const syntaxRole =
+                        analysis.syntax_role
+                          .toLowerCase()
+                          .replace(/_/g, "-")}
+                      {@const tooltip =
+                        buildTooltip(analysis)}
+
+                      <div
+                        class="word-container word-{posClass} syntax-{syntaxRole}"
                         data-syntax={analysis.syntax_role}
                         title={tooltip}
                       >
                         {#if displayConfig.showWord}
-                          <span class="word-field">{analysis.word}</span>
+                          <span class="word-field"
+                            >{analysis.word}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showTransliteration && analysis.transliteration}
-                          <span class="transliteration-field">{analysis.transliteration}</span>
+                          <span
+                            class="transliteration-field"
+                            >{analysis.transliteration}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showTranslation && analysis.translation}
-                          <span class="translation-field">{analysis.translation}</span>
+                          <span class="translation-field"
+                            >{analysis.translation}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showPartOfSpeech && analysis.part_of_speech !== "UNKNOWN"}
-                          <span class="pos-field pos-{analysis.part_of_speech.toLowerCase()}">
+                          <span
+                            class="pos-field pos-{analysis.part_of_speech.toLowerCase()}"
+                          >
                             {analysis.part_of_speech.toLowerCase()}
                           </span>
                         {/if}
-                        
+
                         {#if displayConfig.showSyntaxRole && analysis.syntax_role !== "UNKNOWN"}
-                          <span class="syntax-field">{getSyntaxLabel(analysis)}</span>
+                          <span class="syntax-field"
+                            >{getSyntaxLabel(
+                              analysis
+                            )}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showParticleType && analysis.particle_type !== "None" && analysis.particle_type !== "NONE"}
-                          <span class="particle-field">{getParticleLabel(analysis)}</span>
+                          <span class="particle-field"
+                            >{getParticleLabel(
+                              analysis
+                            )}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showVerbForm && analysis.verb_form !== "None" && analysis.verb_form !== "NONE"}
-                          <span class="verb-form-field">{getVerbFormLabel(analysis)}</span>
+                          <span class="verb-form-field"
+                            >{getVerbFormLabel(
+                              analysis
+                            )}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showHonorificLevel && analysis.honorific_level !== "NEUTRAL" && analysis.honorific_level !== "PLAIN"}
-                          <span class="honorific-field">{analysis.honorific_level.toLowerCase()}</span>
+                          <span class="honorific-field"
+                            >{analysis.honorific_level.toLowerCase()}</span
+                          >
                         {/if}
-                        
+
                         {#if displayConfig.showSemanticCategory && analysis.semantic_category !== "GENERAL"}
-                          <span class="semantic-field">{analysis.semantic_category.toLowerCase()}</span>
+                          <span class="semantic-field"
+                            >{analysis.semantic_category.toLowerCase()}</span
+                          >
                         {/if}
                       </div>
                     {/if}
@@ -540,55 +782,67 @@
                 </div>
               </div>
               {#if showStrokeOrder && currentParagraph.analysis && currentParagraph.analysis.length > 0}
-      <div class="stroke-order-section">
-        <div class="section-header">
-          <h3>✍️ Stroke Order</h3>
-          <p class="section-description">Click on any character to see its stroke order</p>
-        </div>
-        
-        <div class="character-grid">
-          {#each kanjiCharacters as char}
-            <button 
-              class="character-button"
-              class:active={selectedCharacter === char}
-              on:click={() => selectedCharacter = char}
-            >
-              <span class="char">{char}</span>
-              <span class="char-info">
-                {char.codePointAt(0)?.toString(16).toUpperCase()}
-              </span>
-            </button>
-          {/each}
-        </div>
-        
-        {#if selectedCharacter}
-          <div class="stroke-order-detail">
-            <button 
-              class="close-button"
-              on:click={() => selectedCharacter = ''}
-              title="Close"
-            >
-              ✕
-            </button>
-            <JapaneseStrokeOrder 
-              character={selectedCharacter}
-              width={250}
-              height={250}
-              showStrokeNumber={true}
-              animationSpeed={1.0}
-              strokeColor="#2c3e50"
-              numberColor="#ff6b6b"
-              autoplay={true}
-            />
-          </div>
-        {:else}
-          <div class="stroke-order-prompt">
-            <span class="prompt-icon">👆</span>
-            <span>Select a character above to see its stroke order</span>
-          </div>
-        {/if}
-      </div>
-    {/if}
+                <div class="stroke-order-section">
+                  <div class="section-header">
+                    <h3>✍️ Stroke Order</h3>
+                    <p class="section-description">
+                      Click on any character to see its
+                      stroke order
+                    </p>
+                  </div>
+
+                  <div class="character-grid">
+                    {#each kanjiCharacters as char}
+                      <button
+                        class="character-button"
+                        class:active={selectedCharacter ===
+                          char}
+                        on:click={() =>
+                          (selectedCharacter = char)}
+                      >
+                        <span class="char">{char}</span>
+                        <span class="char-info">
+                          {char
+                            .codePointAt(0)
+                            ?.toString(16)
+                            .toUpperCase()}
+                        </span>
+                      </button>
+                    {/each}
+                  </div>
+
+                  {#if selectedCharacter}
+                    <div class="stroke-order-detail">
+                      <button
+                        class="close-button"
+                        on:click={() =>
+                          (selectedCharacter = "")}
+                        title="Close"
+                      >
+                        ✕
+                      </button>
+                      <JapaneseStrokeOrder
+                        character={selectedCharacter}
+                        width={250}
+                        height={250}
+                        showStrokeNumber={true}
+                        animationSpeed={1.0}
+                        strokeColor="#2c3e50"
+                        numberColor="#ff6b6b"
+                        autoplay={true}
+                      />
+                    </div>
+                  {:else}
+                    <div class="stroke-order-prompt">
+                      <span class="prompt-icon">👆</span>
+                      <span
+                        >Select a character above to see its
+                        stroke order</span
+                      >
+                    </div>
+                  {/if}
+                </div>
+              {/if}
             {:else if analyzing}
               <div class="analyzing-message">
                 <div class="spinner-small"></div>
@@ -598,9 +852,23 @@
 
             <!-- Manual Analysis Button -->
             {#if !currentParagraph.analysis && !analyzing}
-              <button class="analyze-button" on:click={analyzeCurrentParagraph}>
+              <button
+                class="analyze-button"
+                on:click={analyzeCurrentParagraph}
+              >
                 <span>🔍</span> Analyze This Paragraph
               </button>
+            {/if}
+
+            {#if error}
+              <div class="api-error">
+                <span class="error-icon">⚠️</span>
+                <span>{error}</span>
+                <button
+                  on:click={analyzeCurrentParagraph}
+                  class="retry-small">Retry</button
+                >
+              </div>
             {/if}
           </div>
         {/if}
@@ -611,44 +879,88 @@
     <div class="legend">
       <h3>Grammar Legend</h3>
       <div class="legend-items">
-        <span class="legend-item" data-category="NOUN">Noun</span>
-        <span class="legend-item" data-category="VERB">Verb</span>
-        <span class="legend-item" data-category="PRONOUN">Pronoun</span>
-        <span class="legend-item" data-category="ADJECTIVE_I">I-Adjective</span>
-        <span class="legend-item" data-category="ADJECTIVE_NA">Na-Adjective</span>
-        <span class="legend-item" data-category="PARTICLE">Particle</span>
-        <span class="legend-item" data-category="ADVERB">Adverb</span>
-        <span class="legend-item" data-category="AUXILIARY">Auxiliary</span>
+        <span class="legend-item" data-category="NOUN"
+          >Noun</span
+        >
+        <span class="legend-item" data-category="VERB"
+          >Verb</span
+        >
+        <span class="legend-item" data-category="PRONOUN"
+          >Pronoun</span
+        >
+        <span
+          class="legend-item"
+          data-category="ADJECTIVE_I">I-Adjective</span
+        >
+        <span
+          class="legend-item"
+          data-category="ADJECTIVE_NA">Na-Adjective</span
+        >
+        <span class="legend-item" data-category="PARTICLE"
+          >Particle</span
+        >
+        <span class="legend-item" data-category="ADVERB"
+          >Adverb</span
+        >
+        <span class="legend-item" data-category="AUXILIARY"
+          >Auxiliary</span
+        >
       </div>
     </div>
 
     <!-- Navigation Footer -->
     <footer class="reader-footer">
-      <button class="nav-button prev" on:click={previous} disabled={!hasPrevious || analyzing}>
+      <button
+        class="nav-button prev"
+        on:click={previous}
+        disabled={!hasPrevious || analyzing}
+      >
         <span class="nav-icon">←</span>
         <span class="nav-text">Previous</span>
       </button>
 
       <div class="nav-center">
-        <button class="nav-icon-button" on:click={() => goToSection(currentSectionIndex - 1)} 
-                disabled={currentSectionIndex === 0 || analyzing} title="Previous section">
+        <button
+          class="nav-icon-button"
+          on:click={() =>
+            goToSection(currentSectionIndex - 1)}
+          disabled={currentSectionIndex === 0 || analyzing}
+          title="Previous section"
+        >
           ⏪
         </button>
-        
-        <select class="section-selector" on:change={(e) => goToSection(parseInt(e.currentTarget.value))} 
-                value={currentSectionIndex} disabled={analyzing}>
+
+        <select
+          class="section-selector"
+          on:change={(e) =>
+            goToSection(parseInt(e.currentTarget.value))}
+          value={currentSectionIndex}
+          disabled={analyzing}
+        >
           {#each sections as section, index}
-            <option value={index}>Section {index + 1}: {section.id}</option>
+            <option value={index}
+              >Section {index + 1}: {section.id}</option
+            >
           {/each}
         </select>
-        
-        <button class="nav-icon-button" on:click={() => goToSection(currentSectionIndex + 1)} 
-                disabled={currentSectionIndex === sections.length - 1 || analyzing} title="Next section">
+
+        <button
+          class="nav-icon-button"
+          on:click={() =>
+            goToSection(currentSectionIndex + 1)}
+          disabled={currentSectionIndex ===
+            sections.length - 1 || analyzing}
+          title="Next section"
+        >
           ⏩
         </button>
       </div>
 
-      <button class="nav-button next" on:click={next} disabled={!hasNext || analyzing}>
+      <button
+        class="nav-button next"
+        on:click={next}
+        disabled={!hasNext || analyzing}
+      >
         <span class="nav-text">Next</span>
         <span class="nav-icon">→</span>
       </button>
@@ -671,7 +983,8 @@
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:
+      "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   /* Beautiful Header */
@@ -753,7 +1066,9 @@
     backdrop-filter: blur(10px);
   }
 
-  .section-badge, .paragraph-badge, .analyzing-badge {
+  .section-badge,
+  .paragraph-badge,
+  .analyzing-badge {
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -805,7 +1120,7 @@
   }
 
   .tab-button.active::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1rem;
     left: 0;
@@ -877,13 +1192,19 @@
 
   .settings-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    );
     gap: 1.5rem;
   }
 
   .fields-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
@@ -956,12 +1277,16 @@
     flex-shrink: 0;
   }
 
-  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+  .checkbox-label
+    input[type="checkbox"]:checked
+    + .checkbox-custom {
     background: linear-gradient(135deg, #667eea, #764ba2);
     border-color: transparent;
   }
 
-  .checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+  .checkbox-label
+    input[type="checkbox"]:checked
+    + .checkbox-custom::after {
     content: "✓";
     position: absolute;
     color: white;
@@ -991,7 +1316,8 @@
     font-weight: 300;
     display: inline-block;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid linear-gradient(135deg, #667eea, #764ba2);
+    border-bottom: 3px solid
+      linear-gradient(135deg, #667eea, #764ba2);
   }
 
   .paragraph-container {
@@ -1027,7 +1353,8 @@
     font-size: 2.5rem;
     line-height: 1.6;
     color: #2c3e50;
-    font-family: 'MS Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
+    font-family:
+      "MS Gothic", "Hiragino Sans", "Meiryo", sans-serif;
     text-align: center;
   }
 
@@ -1466,13 +1793,22 @@
   }
 
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
   }
 
   /* Error State */
@@ -1647,7 +1983,7 @@
     }
   }
 
-    /* Stroke Order Section */
+  /* Stroke Order Section */
   .stroke-order-section {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -1720,7 +2056,8 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: #2c3e50;
-    font-family: 'MS Gothic', 'Hiragino Sans', 'Meiryo', sans-serif;
+    font-family:
+      "MS Gothic", "Hiragino Sans", "Meiryo", sans-serif;
     line-height: 1;
   }
 
@@ -1793,8 +2130,13 @@
   }
 
   @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
   }
 
   /* Scrollbar styling for character grid */

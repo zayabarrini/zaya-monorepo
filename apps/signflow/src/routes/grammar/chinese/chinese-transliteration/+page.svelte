@@ -1,6 +1,6 @@
 <!-- src/routes/grammar/chinese/chinese-transliteration/+page.svelte -->
 <script>
-  import ChineseReader from "./ChineseReader.svelte";
+  import ChineseReader from "./ChineseReader-a.svelte";
   import { onMount } from "svelte";
 
   let jsonExists = true;

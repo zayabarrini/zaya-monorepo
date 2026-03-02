@@ -38,6 +38,7 @@
  * The above values will be the same _even if_ different values for `ENVIRONMENT` or `PUBLIC_BASE_URL` are set at runtime, as they are statically replaced in your code with their build time values.
  */
 declare module '$env/static/private' {
+	export const VITE_API_URL: string;
 	export const GITHUB_TOKEN: string;
 	export const USER: string;
 	export const EMAIL_PASSWORD: string;
@@ -228,6 +229,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		VITE_API_URL: string;
 		GITHUB_TOKEN: string;
 		USER: string;
 		EMAIL_PASSWORD: string;
