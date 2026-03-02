@@ -136,6 +136,9 @@
 	"/grammar/japanese/pronominal-composition": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/korean/korean-transliteration-api": [
+		"src/routes/+layout.ts"
+	],
 	"/grammar/languages-test": [
 		"src/routes/+layout.ts"
 	],

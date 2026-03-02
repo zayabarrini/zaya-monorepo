@@ -53,7 +53,8 @@ export const nodes = [
 	() => import('./nodes/49'),
 	() => import('./nodes/50'),
 	() => import('./nodes/51'),
-	() => import('./nodes/52')
+	() => import('./nodes/52'),
+	() => import('./nodes/53')
 ];
 
 export const server_loads = [];
@@ -96,20 +97,21 @@ export const dictionary = {
 		"/grammar/hindi/spelling": [36],
 		"/grammar/japanese/japanese-transliteration": [37],
 		"/grammar/japanese/pronominal-composition": [38],
-		"/grammar/languages-test": [39],
-		"/grammar/russian": [40],
-		"/grammar/russian/pronominal-composition": [41],
-		"/grammar/russian/russian-declensions": [42],
-		"/grammar/russian/russian-transliteration-api": [43],
-		"/grammar/russian/science": [44],
-		"/grammar/russian/songs": [45],
-		"/grammar/science": [46],
-		"/list": [47],
-		"/melancholic-machines": [48],
-		"/posts": [49],
-		"/sentences": [50],
-		"/transliteration": [51],
-		"/words": [52]
+		"/grammar/korean/korean-transliteration-api": [39],
+		"/grammar/languages-test": [40],
+		"/grammar/russian": [41],
+		"/grammar/russian/pronominal-composition": [42],
+		"/grammar/russian/russian-declensions": [43],
+		"/grammar/russian/russian-transliteration-api": [44],
+		"/grammar/russian/science": [45],
+		"/grammar/russian/songs": [46],
+		"/grammar/science": [47],
+		"/list": [48],
+		"/melancholic-machines": [49],
+		"/posts": [50],
+		"/sentences": [51],
+		"/transliteration": [52],
+		"/words": [53]
 	};
 
 export const hooks = {

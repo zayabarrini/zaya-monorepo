@@ -263,6 +263,15 @@
       category: "Grammar"
     },
     {
+      title:
+        "Korean Transliteration - Downton Abbey Version",
+      href: "/grammar/korean/korean-transliteration-api",
+      description:
+        "Enhanced Korean transliteration tool with doubt annotations",
+      icon: "📘",
+      category: "Grammar"
+    },
+    {
       title: "Word Lists",
       href: "/words",
       description: "Enhanced Word Lists tool",
