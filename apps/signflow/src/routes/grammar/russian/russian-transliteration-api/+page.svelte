@@ -1,16 +1,16 @@
 <script lang="ts">
-  import ArabicReader from "./ArabicReader.svelte";
+  import RussianReader from "./RussianReader.svelte";
 
   // Configuration
   let jsonPath =
-    "/json/ar/Downton-Abbey_Cinema-Screenplays-db.json";
+    "/json/ru/Downton-Abbey_Cinema-Screenplays-db-ru.json";
   let apiUrl = import.meta.env.VITE_API_URL
-    ? `${import.meta.env.VITE_API_URL}/api/analyze/arabic`
-    : "http://localhost:5000/api/analyze/arabic";
+    ? `${import.meta.env.VITE_API_URL}/api/analyze/russian`
+    : "http://localhost:5000/api/analyze/russian";
 </script>
 
 <div class="page-container">
-  <ArabicReader
+  <RussianReader
     {jsonPath}
     {apiUrl}
     initialSection={0}

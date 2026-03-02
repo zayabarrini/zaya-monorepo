@@ -653,6 +653,61 @@ def analyze_hindi():
         return jsonify({"error": str(e)}), 500
 
 
+# Import Russian analyzer
+try:
+    from russian_analyzer import RussianSentenceAnalyzer
+
+    russian_analyzer = RussianSentenceAnalyzer()
+    logger.info("Successfully imported Russian analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Russian analyzer: {e}")
+    russian_analyzer = None
+
+
+# Add Russian analysis endpoint
+@app.route("/api/analyze/russian", methods=["POST", "OPTIONS"])
+def analyze_russian():
+    """Analyze Russian text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Russian text: {text[:50]}...")
+
+        if russian_analyzer:
+            analysis = russian_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = russian_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Russian analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Russian analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
 # For local development
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

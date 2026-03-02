@@ -151,6 +151,14 @@
       category: "Syntax"
     },
     {
+      title: "Russian Syntax Analysis",
+      href: "/grammar/russian/russian-transliteration-api",
+      description:
+        "Color-coded advanced sentence structure analysis",
+      icon: "🎨",
+      category: "Syntax"
+    },
+    {
       title: "Hindi Sentence Builder",
       href: "/grammar/hindi",
       description:

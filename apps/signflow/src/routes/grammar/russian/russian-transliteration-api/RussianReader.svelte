@@ -5,26 +5,25 @@
   // Types for our data structure
   interface WordAnalysis {
     word: string;
-    base: string;
-    display: string;
     transliteration: string;
     translation: string;
     part_of_speech: string;
     syntax_role: string;
     particle_type: string;
     verb_form: string;
+    aspect?: string;
+    person?: string;
     honorific_level: string;
     is_punctuation: boolean;
     semantic_category: string;
     gender?: string;
     number?: string;
     grammatical_case?: string;
-    has_diacritics?: boolean;
-    definite?: string;
+    tense?: string;
   }
 
   interface Paragraph {
-    ar: string;
+    ru: string;
     en: string;
     analysis?: WordAnalysis[];
   }
@@ -33,7 +32,7 @@
     id: string;
     filename: string;
     title?: {
-      ar: string;
+      ru: string;
     };
     paragraphs: Paragraph[];
   }
@@ -48,16 +47,18 @@
     showGender: boolean;
     showNumber: boolean;
     showCase: boolean;
-    showDefinite: boolean;
+    showTense: boolean;
+    showAspect: boolean;
+    showPerson: boolean;
     showSemanticCategory: boolean;
   }
 
   // Props
   export let jsonPath: string =
-    "/json/ar/Downton-Abbey_Cinema-Screenplays-db.json";
+    "/json/ru/Downton-Abbey_Cinema-Screenplays-db-ru.json";
   export let apiUrl: string = import.meta.env.VITE_API_URL
-    ? `${import.meta.env.VITE_API_URL}/api/analyze/arabic`
-    : "http://localhost:5000/api/analyze/arabic";
+    ? `${import.meta.env.VITE_API_URL}/api/analyze/russian`
+    : "http://localhost:5000/api/analyze/russian";
   export let initialSection: number = 0;
   export let initialParagraph: number = 0;
   export let showCleanVersion: boolean = true;
@@ -87,7 +88,9 @@
     showGender: true,
     showNumber: true,
     showCase: true,
-    showDefinite: true,
+    showTense: true,
+    showAspect: true,
+    showPerson: true,
     showSemanticCategory: true
   };
 
@@ -102,7 +105,7 @@
     (currentSection &&
       currentParagraphIndex <
         currentSection.paragraphs.length - 1);
-  $: currentParagraphText = currentParagraph?.ar || "";
+  $: currentParagraphText = currentParagraph?.ru || "";
 
   onMount(async () => {
     await loadData();
@@ -147,7 +150,7 @@
   async function analyzeCurrentParagraph() {
     if (
       !currentParagraph ||
-      !currentParagraph.ar ||
+      !currentParagraph.ru ||
       analyzing
     )
       return;
@@ -160,7 +163,7 @@
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          text: currentParagraph.ar,
+          text: currentParagraph.ru,
           target_language: "en"
         })
       });
@@ -237,7 +240,9 @@
       showGender: true,
       showNumber: true,
       showCase: true,
-      showDefinite: true,
+      showTense: true,
+      showAspect: true,
+      showPerson: true,
       showSemanticCategory: true
     };
   }
@@ -254,7 +259,7 @@
     if (pos === "CONJUNCTION") return "conjunction";
     if (pos === "PARTICLE") return "particle";
     if (pos === "INTERJECTION") return "interjection";
-    if (pos === "QUESTION") return "question";
+    if (pos === "NUMERAL") return "numeral";
 
     const semantic = analysis.semantic_category;
     if (semantic === "TIME") return "time";
@@ -289,9 +294,17 @@
       analysis.syntax_role !== "UNKNOWN"
     )
       parts.push(`🔤 ${getSyntaxLabel(analysis)}`);
-    if (displayConfig.showGender && analysis.gender)
+    if (
+      displayConfig.showGender &&
+      analysis.gender &&
+      analysis.gender !== "UNKNOWN"
+    )
       parts.push(`⚥ ${analysis.gender.toLowerCase()}`);
-    if (displayConfig.showNumber && analysis.number)
+    if (
+      displayConfig.showNumber &&
+      analysis.number &&
+      analysis.number !== "UNKNOWN"
+    )
       parts.push(`#️⃣ ${analysis.number.toLowerCase()}`);
     if (
       displayConfig.showCase &&
@@ -302,11 +315,26 @@
         `📊 ${analysis.grammatical_case.toLowerCase()}`
       );
     if (
-      displayConfig.showDefinite &&
-      analysis.definite &&
-      analysis.definite !== "INDEFINITE"
+      displayConfig.showTense &&
+      analysis.tense &&
+      analysis.tense !== "UNKNOWN" &&
+      analysis.tense !== "NONE"
     )
-      parts.push(`🔒 ${analysis.definite.toLowerCase()}`);
+      parts.push(`⏰ ${analysis.tense.toLowerCase()}`);
+    if (
+      displayConfig.showAspect &&
+      analysis.aspect &&
+      analysis.aspect !== "UNKNOWN" &&
+      analysis.aspect !== "NONE"
+    )
+      parts.push(`🔄 ${analysis.aspect.toLowerCase()}`);
+    if (
+      displayConfig.showPerson &&
+      analysis.person &&
+      analysis.person !== "UNKNOWN" &&
+      analysis.person !== "NONE"
+    )
+      parts.push(`👤 ${analysis.person.toLowerCase()}`);
     if (
       displayConfig.showSemanticCategory &&
       analysis.semantic_category !== "GENERAL"
@@ -327,7 +355,7 @@
 {#if loading}
   <div class="loading-container">
     <div class="spinner"></div>
-    <p>Loading your Arabic reader...</p>
+    <p>Loading your Russian reader...</p>
   </div>
 
   <!-- Error State -->
@@ -343,13 +371,13 @@
 
   <!-- Main Content -->
 {:else if sections.length > 0}
-  <div class="arabic-reader" dir="rtl">
-    <!-- Beautiful Header - Arabic Theme -->
+  <div class="russian-reader">
+    <!-- Beautiful Header - Russian Red Theme -->
     <header class="reader-header">
       <div class="header-content">
-        <h1>القارئ العربي</h1>
+        <h1>Русский Читатель</h1>
         <p class="subtitle">
-          Arabic Reader with Grammar Analysis
+          Russian Reader with Grammar Analysis
         </p>
       </div>
       <div class="header-controls">
@@ -361,9 +389,9 @@
         >
           <span class="settings-icon">⚙️</span>
           <span>Settings</span>
-          {#if activeFieldsCount < 10}
+          {#if activeFieldsCount < 12}
             <span class="settings-badge"
-              >{activeFieldsCount}/10</span
+              >{activeFieldsCount}/12</span
             >
           {/if}
         </button>
@@ -387,7 +415,7 @@
 
     <!-- Settings Panel -->
     {#if showSettings}
-      <div class="settings-panel" dir="ltr">
+      <div class="settings-panel">
         <div class="settings-tabs">
           <button
             class="tab-button"
@@ -402,7 +430,7 @@
             on:click={() => (activeTab = "fields")}
           >
             Data Fields <span class="field-count"
-              >{activeFieldsCount}/10</span
+              >{activeFieldsCount}/12</span
             >
           </button>
         </div>
@@ -485,7 +513,9 @@
                 />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Word</span>
-                <span class="field-badge">Arabic text</span>
+                <span class="field-badge"
+                  >Cyrillic text</span
+                >
               </label>
               <label class="checkbox-label field-item">
                 <input
@@ -547,7 +577,9 @@
                 />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Gender</span>
-                <span class="field-badge">Masc/Fem</span>
+                <span class="field-badge"
+                  >Masc/Fem/Neut</span
+                >
               </label>
               <label class="checkbox-label field-item">
                 <input
@@ -567,20 +599,38 @@
                 />
                 <span class="checkbox-custom"></span>
                 <span class="field-name">Case</span>
+                <span class="field-badge">6 cases</span>
+              </label>
+              <label class="checkbox-label field-item">
+                <input
+                  type="checkbox"
+                  bind:checked={displayConfig.showTense}
+                />
+                <span class="checkbox-custom"></span>
+                <span class="field-name">Tense</span>
                 <span class="field-badge"
-                  >Nominative/Genitive/Accusative</span
+                  >Past/Present/Future</span
                 >
               </label>
               <label class="checkbox-label field-item">
                 <input
                   type="checkbox"
-                  bind:checked={displayConfig.showDefinite}
+                  bind:checked={displayConfig.showAspect}
                 />
                 <span class="checkbox-custom"></span>
-                <span class="field-name">Definiteness</span>
+                <span class="field-name">Aspect</span>
                 <span class="field-badge"
-                  >Definite/Indefinite</span
+                  >Perfective/Imperfective</span
                 >
+              </label>
+              <label class="checkbox-label field-item">
+                <input
+                  type="checkbox"
+                  bind:checked={displayConfig.showPerson}
+                />
+                <span class="checkbox-custom"></span>
+                <span class="field-name">Person</span>
+                <span class="field-badge">1st/2nd/3rd</span>
               </label>
               <label class="checkbox-label field-item">
                 <input
@@ -609,7 +659,7 @@
         <!-- Section Title -->
         {#if currentSection.title && currentParagraphIndex === 0}
           <div class="section-title">
-            <h2>{currentSection.title.ar}</h2>
+            <h2>{currentSection.title.ru}</h2>
           </div>
         {/if}
 
@@ -618,16 +668,16 @@
           <div class="paragraph-container">
             <!-- English Translation -->
             {#if showTranslation}
-              <div class="english-translation" dir="ltr">
+              <div class="english-translation">
                 <p>{currentParagraph.en}</p>
               </div>
             {/if}
 
-            <!-- Arabic Clean Version -->
+            <!-- Russian Clean Version -->
             {#if showCleanVersion}
               <div class="clean-version">
                 <div class="clean-text">
-                  {currentParagraph.ar}
+                  {currentParagraph.ru}
                 </div>
               </div>
             {/if}
@@ -635,7 +685,7 @@
             <!-- Annotated Version -->
             {#if showAnnotations && currentParagraph.analysis && currentParagraph.analysis.length > 0}
               <div class="annotated-version">
-                <div class="annotated-text" dir="rtl">
+                <div class="annotated-text">
                   {#each currentParagraph.analysis as analysis (analysis.word + analysis.transliteration)}
                     {#if analysis.is_punctuation}
                       <span class="punctuation-token"
@@ -686,13 +736,13 @@
                           >
                         {/if}
 
-                        {#if displayConfig.showGender && analysis.gender}
+                        {#if displayConfig.showGender && analysis.gender && analysis.gender !== "UNKNOWN"}
                           <span class="gender-field"
                             >{analysis.gender.toLowerCase()}</span
                           >
                         {/if}
 
-                        {#if displayConfig.showNumber && analysis.number}
+                        {#if displayConfig.showNumber && analysis.number && analysis.number !== "UNKNOWN"}
                           <span class="number-field"
                             >{analysis.number.toLowerCase()}</span
                           >
@@ -704,9 +754,21 @@
                           >
                         {/if}
 
-                        {#if displayConfig.showDefinite && analysis.definite && analysis.definite !== "INDEFINITE"}
-                          <span class="definite-field"
-                            >{analysis.definite.toLowerCase()}</span
+                        {#if displayConfig.showTense && analysis.tense && analysis.tense !== "UNKNOWN" && analysis.tense !== "NONE"}
+                          <span class="tense-field"
+                            >{analysis.tense.toLowerCase()}</span
+                          >
+                        {/if}
+
+                        {#if displayConfig.showAspect && analysis.aspect && analysis.aspect !== "UNKNOWN" && analysis.aspect !== "NONE"}
+                          <span class="aspect-field"
+                            >{analysis.aspect.toLowerCase()}</span
+                          >
+                        {/if}
+
+                        {#if displayConfig.showPerson && analysis.person && analysis.person !== "UNKNOWN" && analysis.person !== "NONE"}
+                          <span class="person-field"
+                            >{analysis.person.toLowerCase()}</span
                           >
                         {/if}
 
@@ -723,7 +785,7 @@
             {:else if analyzing}
               <div class="analyzing-message">
                 <div class="spinner-small"></div>
-                <p>Analyzing Arabic text...</p>
+                <p>Analyzing Russian text...</p>
               </div>
             {/if}
 
@@ -742,7 +804,7 @@
     </main>
 
     <!-- Legend -->
-    <div class="legend" dir="ltr">
+    <div class="legend">
       <h3>Grammar Legend</h3>
       <div class="legend-items">
         <span class="legend-item" data-category="NOUN"
@@ -775,7 +837,7 @@
     </div>
 
     <!-- Navigation Footer -->
-    <footer class="reader-footer" dir="ltr">
+    <footer class="reader-footer">
       <button
         class="nav-button prev"
         on:click={previous}
@@ -842,7 +904,7 @@
     box-sizing: border-box;
   }
 
-  .arabic-reader {
+  .russian-reader {
     max-width: 1200px;
     margin: 2rem auto;
     background: white;
@@ -853,9 +915,9 @@
       "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  /* Beautiful Header - Arabic Green Theme */
+  /* Beautiful Header - Russian Red Theme */
   .reader-header {
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
     color: white;
     padding: 2rem;
     display: flex;
@@ -870,8 +932,7 @@
     font-weight: 300;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
-    font-family:
-      "Amiri", "Scheherazade", "Traditional Arabic", serif;
+    font-family: "Segoe UI", "Arial", sans-serif;
   }
 
   .subtitle {
@@ -910,7 +971,7 @@
 
   .settings-button.active {
     background: white;
-    color: #2e7d32;
+    color: #d32f2f;
   }
 
   .settings-badge {
@@ -982,7 +1043,7 @@
   }
 
   .tab-button.active {
-    color: #2e7d32;
+    color: #d32f2f;
   }
 
   .tab-button.active::after {
@@ -992,7 +1053,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
     border-radius: 3px 3px 0 0;
   }
 
@@ -1068,7 +1129,7 @@
   .checkbox-label
     input[type="checkbox"]:checked
     + .checkbox-custom {
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
     border-color: transparent;
   }
 
@@ -1098,9 +1159,8 @@
     font-size: 2rem;
     color: #2c3e50;
     font-weight: 300;
-    font-family:
-      "Amiri", "Scheherazade", "Traditional Arabic", serif;
-    border-bottom: 3px solid #2e7d32;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    border-bottom: 3px solid #d32f2f;
     display: inline-block;
     padding-bottom: 0.5rem;
   }
@@ -1138,14 +1198,12 @@
     font-size: 2.5rem;
     line-height: 1.8;
     color: #2c3e50;
-    font-family:
-      "Amiri", "Scheherazade", "Traditional Arabic", serif;
+    font-family: "Segoe UI", "Arial", sans-serif;
     text-align: center;
-    direction: rtl;
   }
 
   /* Word Container */
-  .arabic-reader :global(.word-container) {
+  .russian-reader :global(.word-container) {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -1162,52 +1220,50 @@
     background: white;
   }
 
-  .arabic-reader :global(.word-container:hover) {
+  .russian-reader :global(.word-container:hover) {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     z-index: 10;
   }
 
   /* Word field */
-  .arabic-reader :global(.word-field) {
+  .russian-reader :global(.word-field) {
     font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
-    font-family:
-      "Amiri", "Scheherazade", "Traditional Arabic", serif;
-    direction: rtl;
+    font-family: "Segoe UI", "Arial", sans-serif;
   }
 
   /* Transliteration field */
-  .arabic-reader :global(.transliteration-field) {
+  .russian-reader :global(.transliteration-field) {
     font-size: 0.85rem;
     color: #666;
     font-style: italic;
     border-bottom: 1px dashed #ccc;
     padding-bottom: 0.2rem;
     margin: 0.2rem 0;
-    direction: ltr;
   }
 
   /* Translation field */
-  .arabic-reader :global(.translation-field) {
+  .russian-reader :global(.translation-field) {
     font-size: 0.8rem;
     color: #2c3e50;
-    background: rgba(46, 125, 50, 0.1);
+    background: rgba(211, 47, 47, 0.1);
     border-radius: 4px;
     padding: 0.2rem 0.4rem;
     margin: 0.2rem 0;
-    direction: ltr;
   }
 
   /* Metadata fields */
-  .arabic-reader :global(.pos-field),
-  .arabic-reader :global(.syntax-field),
-  .arabic-reader :global(.gender-field),
-  .arabic-reader :global(.number-field),
-  .arabic-reader :global(.case-field),
-  .arabic-reader :global(.definite-field),
-  .arabic-reader :global(.semantic-field) {
+  .russian-reader :global(.pos-field),
+  .russian-reader :global(.syntax-field),
+  .russian-reader :global(.gender-field),
+  .russian-reader :global(.number-field),
+  .russian-reader :global(.case-field),
+  .russian-reader :global(.tense-field),
+  .russian-reader :global(.aspect-field),
+  .russian-reader :global(.person-field),
+  .russian-reader :global(.semantic-field) {
     font-size: 0.65rem;
     padding: 0.15rem 0.3rem;
     border-radius: 4px;
@@ -1219,88 +1275,92 @@
     letter-spacing: 0.02em;
     white-space: nowrap;
     width: auto;
-    direction: ltr;
   }
 
-  .arabic-reader :global(.pos-field) {
+  .russian-reader :global(.pos-field) {
     background: #e3f2fd;
     color: #1976d2;
   }
 
-  .arabic-reader :global(.syntax-field) {
+  .russian-reader :global(.syntax-field) {
     background: #f3e5f5;
     color: #7b1fa2;
   }
 
-  .arabic-reader :global(.gender-field) {
+  .russian-reader :global(.gender-field) {
     background: #fce4ec;
     color: #c2185b;
   }
 
-  .arabic-reader :global(.number-field) {
+  .russian-reader :global(.number-field) {
     background: #e8f5e8;
     color: #2e7d32;
   }
 
-  .arabic-reader :global(.case-field) {
+  .russian-reader :global(.case-field) {
     background: #fff3e0;
     color: #f57c00;
   }
 
-  .arabic-reader :global(.definite-field) {
-    background: #e0f2f1;
-    color: #00796b;
-  }
-
-  .arabic-reader :global(.semantic-field) {
+  .russian-reader :global(.tense-field) {
     background: #e1f5fe;
     color: #0288d1;
   }
 
+  .russian-reader :global(.aspect-field) {
+    background: #ede7f6;
+    color: #5e35b1;
+  }
+
+  .russian-reader :global(.person-field) {
+    background: #ffebee;
+    color: #c62828;
+  }
+
+  .russian-reader :global(.semantic-field) {
+    background: #e0f2f1;
+    color: #00796b;
+  }
+
   /* Word container colors */
-  .arabic-reader :global(.word-noun) {
+  .russian-reader :global(.word-noun) {
     background: linear-gradient(135deg, #f1f8e9, #dcedc8);
     border-color: #8bc34a;
   }
 
-  .arabic-reader :global(.word-verb) {
+  .russian-reader :global(.word-verb) {
     background: linear-gradient(135deg, #ffebee, #ffcdd2);
     border-color: #ef5350;
   }
 
-  .arabic-reader :global(.word-pronoun) {
+  .russian-reader :global(.word-pronoun) {
     background: linear-gradient(135deg, #efebe9, #d7ccc8);
     border-color: #8d6e63;
   }
 
-  .arabic-reader :global(.word-adjective) {
+  .russian-reader :global(.word-adjective) {
     background: linear-gradient(135deg, #f3e5f5, #e1bee7);
     border-color: #ab47bc;
   }
 
-  .arabic-reader :global(.word-adverb) {
+  .russian-reader :global(.word-adverb) {
     background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
     border-color: #26c6da;
   }
 
-  .arabic-reader :global(.word-preposition) {
+  .russian-reader :global(.word-preposition) {
     background: linear-gradient(135deg, #fff3e0, #ffe0b2);
     border-color: #ffa726;
   }
 
-  .arabic-reader :global(.word-conjunction) {
+  .russian-reader :global(.word-conjunction) {
     background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
     border-color: #42a5f5;
   }
 
-  .arabic-reader :global(.word-particle) {
+  .russian-reader :global(.word-particle) {
     background: linear-gradient(135deg, #fce4ec, #f8bbd0);
     border-color: #ec407a;
-  }
-
-  .arabic-reader :global(.word-question) {
-    background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
-    border-color: #039be5;
   }
 
   /* Legend */
@@ -1377,7 +1437,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    background: linear-gradient(135deg, #d32f2f, #b71c1c);
     color: white;
   }
 
@@ -1445,7 +1505,7 @@
   }
 
   .section-selector option {
-    background: #2e7d32;
+    background: #d32f2f;
     color: white;
   }
 
@@ -1463,7 +1523,7 @@
     width: 50px;
     height: 50px;
     border: 3px solid #f3f3f3;
-    border-top: 3px solid #2e7d32;
+    border-top: 3px solid #d32f2f;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 1.5rem;
@@ -1473,7 +1533,7 @@
     width: 20px;
     height: 20px;
     border: 2px solid #f3f3f3;
-    border-top: 2px solid #2e7d32;
+    border-top: 2px solid #d32f2f;
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
@@ -1499,7 +1559,7 @@
 
   /* Responsive */
   @media (max-width: 768px) {
-    .arabic-reader {
+    .russian-reader {
       margin: 1rem;
     }
 
@@ -1512,7 +1572,7 @@
       font-size: 1.8rem;
     }
 
-    .arabic-reader :global(.word-field) {
+    .russian-reader :global(.word-field) {
       font-size: 1.5rem;
     }
 
