@@ -7,6 +7,10 @@ from kiwipiepy import Kiwi
 
 logger = logging.getLogger(__name__)
 
+import kiwipiepy
+
+print(kiwipiepy.__version__)
+
 
 class KoreanSentenceAnalyzer:
     def __init__(self):
@@ -593,4 +597,5 @@ class KoreanSentenceAnalyzer:
                 return self.translator.translate(sentence)
             except Exception as e:
                 logger.error(f"Sentence translation error: {e}")
+        return ""
         return ""
