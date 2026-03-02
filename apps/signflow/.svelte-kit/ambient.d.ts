@@ -128,8 +128,8 @@ declare module '$env/static/private' {
 	export const FZF_DEFAULT_COMMAND: string;
 	export const npm_execpath: string;
 	export const XDG_DATA_DIRS: string;
-	export const _P9K_TTY: string;
 	export const NVM_CD_FLAGS: string;
+	export const _P9K_TTY: string;
 	export const npm_config_global_prefix: string;
 	export const QTWEBENGINE_DICTIONARIES_PATH: string;
 	export const HOMEBREW_REPOSITORY: string;
@@ -319,8 +319,8 @@ declare module '$env/dynamic/private' {
 		FZF_DEFAULT_COMMAND: string;
 		npm_execpath: string;
 		XDG_DATA_DIRS: string;
-		_P9K_TTY: string;
 		NVM_CD_FLAGS: string;
+		_P9K_TTY: string;
 		npm_config_global_prefix: string;
 		QTWEBENGINE_DICTIONARIES_PATH: string;
 		HOMEBREW_REPOSITORY: string;

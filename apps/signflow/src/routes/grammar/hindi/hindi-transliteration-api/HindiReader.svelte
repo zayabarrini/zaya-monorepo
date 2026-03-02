@@ -56,9 +56,9 @@
   // Props
   export let jsonPath: string =
     "/json/hi/Downton-Abbey-Cinema-Screenplays-db-hi.json";
-  export let apiUrl: string = import.meta.env.VITE_API_URL
-    ? `${import.meta.env.VITE_API_URL}/api/analyze/hindi`
-    : "http://localhost:5000/api/analyze/hindi";
+  const API_BASE =
+    import.meta.env.VITE_API_URL || "http://localhost:5000";
+  export let apiUrl: string = `${API_BASE}/api/analyze/hindi`;
   export let initialSection: number = 0;
   export let initialParagraph: number = 0;
   export let showCleanVersion: boolean = true;

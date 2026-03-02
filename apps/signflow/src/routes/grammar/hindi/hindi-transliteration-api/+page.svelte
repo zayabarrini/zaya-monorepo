@@ -4,9 +4,7 @@
   // Configuration
   let jsonPath =
     "/json/hi/Downton-Abbey-Cinema-Screenplays-db-hi.json";
-  let apiUrl = import.meta.env.VITE_API_URL
-    ? `${import.meta.env.VITE_API_URL}/api/analyze/hindi`
-    : "http://localhost:5000/api/analyze/hindi";
+  let apiUrl = "http://localhost:5000/api/analyze/hindi";
 </script>
 
 <div class="page-container">
