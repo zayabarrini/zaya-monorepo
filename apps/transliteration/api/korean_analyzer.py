@@ -1,19 +1,23 @@
 import logging
-import re
-import unicodedata
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
-import hangul_romanize
-
-# Korean processing libraries
 from deep_translator import GoogleTranslator
-from hangul_romanize import Transliter
+from kiwipiepy import Token  # Import Token type for better type hints
+from kiwipiepy import Kiwi
 
 logger = logging.getLogger(__name__)
 
 
 class KoreanSentenceAnalyzer:
     def __init__(self):
+        # Initialize Kiwi for morphological analysis
+        try:
+            self.kiwi = Kiwi()
+            logger.info("Successfully initialized Kiwi analyzer")
+        except Exception as e:
+            logger.error(f"Failed to initialize Kiwi: {e}")
+            self.kiwi = None
+
         # Initialize translator
         try:
             self.translator = GoogleTranslator(source="ko", target="en")
@@ -22,49 +26,10 @@ class KoreanSentenceAnalyzer:
             logger.error(f"Failed to initialize translator: {e}")
             self.translator = None
 
-        # Initialize Hangul romanizer
-        try:
-            self.romanizer = Transliter()
-            logger.info("Successfully initialized Hangul romanizer")
-        except Exception as e:
-            logger.error(f"Failed to initialize Hangul romanizer: {e}")
-            self.romanizer = None
-
         # Translation cache
         self.translation_cache = {}
 
-        # Korean punctuation
-        self.punctuation_chars = {
-            " ",
-            ".",
-            ",",
-            "!",
-            "?",
-            ";",
-            ":",
-            "-",
-            "—",
-            "…",
-            "(",
-            ")",
-            "[",
-            "]",
-            "{",
-            "}",
-            '"',
-            "'",
-            "«",
-            "»",
-            "·",
-            "※",
-            "∼",
-            "～",
-            "\n",
-            "\r",
-            "\t",
-        }
-
-        # Korean consonants (자음)
+        # Korean consonants (자음) for romanization fallback
         self.consonants = {
             "ㄱ": "g",
             "ㄲ": "kk",
@@ -87,7 +52,7 @@ class KoreanSentenceAnalyzer:
             "ㅎ": "h",
         }
 
-        # Korean vowels (모음)
+        # Korean vowels (모음) for romanization fallback
         self.vowels = {
             "ㅏ": "a",
             "ㅐ": "ae",
@@ -112,7 +77,7 @@ class KoreanSentenceAnalyzer:
             "ㅣ": "i",
         }
 
-        # Korean final consonants (받침)
+        # Korean final consonants (받침) for romanization fallback
         self.final_consonants = {
             "ㄱ": "k",
             "ㄲ": "k",
@@ -144,222 +109,6 @@ class KoreanSentenceAnalyzer:
             "ㅎ": "t",
         }
 
-        # Korean particles (조사) - subject, topic, object markers
-        self.particles = {
-            "은": "TOPIC",
-            "는": "TOPIC",
-            "이": "SUBJECT",
-            "가": "SUBJECT",
-            "을": "OBJECT",
-            "를": "OBJECT",
-            "에": "LOCATION/TIME",
-            "에서": "LOCATION",
-            "으로": "DIRECTION",
-            "로": "DIRECTION",
-            "와": "AND",
-            "과": "AND",
-            "하고": "AND",
-            "도": "ALSO",
-            "만": "ONLY",
-            "처럼": "LIKE",
-            "보다": "THAN",
-            "의": "POSSESSIVE",
-            "께": "HONORIFIC_TO",
-            "에게": "TO",
-            "한테": "TO",
-            "께서": "HONORIFIC_SUBJECT",
-        }
-
-        # Korean verb endings (어미)
-        self.verb_endings = {
-            "다": "DICTIONARY",
-            "습니다": "FORMAL_POLITE",
-            "ㅂ니다": "FORMAL_POLITE",
-            "요": "INFORMAL_POLITE",
-            "아요": "INFORMAL_POLITE",
-            "어요": "INFORMAL_POLITE",
-            "여요": "INFORMAL_POLITE",
-            "았다": "PAST",
-            "었다": "PAST",
-            "였다": "PAST",
-            "았어요": "PAST_POLITE",
-            "었어요": "PAST_POLITE",
-            "였어요": "PAST_POLITE",
-            "겠": "FUTURE",
-            "ㄹ": "FUTURE",
-            "을": "FUTURE",
-            "고": "AND",
-            "면": "IF",
-            "서": "SO/THEN",
-            "니까": "BECAUSE",
-            "지만": "BUT",
-            "는데": "BUT/WHILE",
-            "려고": "INTENTION",
-            "러": "INTENTION",
-        }
-
-        # Common Korean words translation map
-        self.translation_map = {
-            # Pronouns
-            "저": "I (humble)",
-            "나": "I",
-            "제": "my (humble)",
-            "내": "my",
-            "너": "you",
-            "당신": "you",
-            "그": "he",
-            "그녀": "she",
-            "우리": "we",
-            "저희": "we (humble)",
-            "너희": "you (plural)",
-            "그들": "they",
-            "이것": "this",
-            "그것": "that",
-            "저것": "that (over there)",
-            "여기": "here",
-            "거기": "there",
-            "저기": "over there",
-            # Common verbs
-            "이다": "to be",
-            "아니다": "to not be",
-            "있다": "to exist/have",
-            "없다": "to not exist",
-            "하다": "to do",
-            "되다": "to become",
-            "가다": "to go",
-            "오다": "to come",
-            "먹다": "to eat",
-            "마시다": "to drink",
-            "보다": "to see/watch",
-            "듣다": "to listen",
-            "말하다": "to speak",
-            "읽다": "to read",
-            "쓰다": "to write/use",
-            "배우다": "to learn",
-            "알다": "to know",
-            "모르다": "to not know",
-            "생각하다": "to think",
-            "좋아하다": "to like",
-            "사랑하다": "to love",
-            "주다": "to give",
-            "받다": "to receive",
-            "만나다": "to meet",
-            "살다": "to live",
-            "일하다": "to work",
-            "공부하다": "to study",
-            # Common nouns
-            "사람": "person",
-            "남자": "man",
-            "여자": "woman",
-            "아이": "child",
-            "소년": "boy",
-            "소녀": "girl",
-            "집": "house",
-            "학교": "school",
-            "회사": "company",
-            "일": "work",
-            "책": "book",
-            "물": "water",
-            "음식": "food",
-            "시간": "time",
-            "날": "day",
-            "밤": "night",
-            "년": "year",
-            "이름": "name",
-            "도시": "city",
-            "나라": "country",
-            "세계": "world",
-            "인생": "life",
-            # Common adjectives
-            "좋다": "good",
-            "나쁘다": "bad",
-            "크다": "big",
-            "작다": "small",
-            "새롭다": "new",
-            "낡다": "old",
-            "아름답다": "beautiful",
-            "똑똑하다": "smart",
-            "재미있다": "interesting",
-            "어렵다": "difficult",
-            "쉽다": "easy",
-            "비싸다": "expensive",
-            "싸다": "cheap",
-            "덥다": "hot",
-            "춥다": "cold",
-            "많다": "many",
-            "적다": "few",
-            # Question words
-            "무엇": "what",
-            "누구": "who",
-            "어디": "where",
-            "언제": "when",
-            "어떻게": "how",
-            "왜": "why",
-            "몇": "how many",
-            "얼마": "how much",
-            "어느": "which",
-            # Adverbs
-            "아주": "very",
-            "매우": "very",
-            "조금": "a little",
-            "많이": "a lot",
-            "자주": "often",
-            "항상": "always",
-            "가끔": "sometimes",
-            "절대": "never",
-            "빨리": "quickly",
-            "천천히": "slowly",
-            "같이": "together",
-            "함께": "together",
-            # Conjunctions
-            "그리고": "and",
-            "또는": "or",
-            "하지만": "but",
-            "그러나": "however",
-            "왜냐하면": "because",
-            "그래서": "so/therefore",
-            "그런데": "but/however",
-            "만약": "if",
-            # Particles (for reference)
-            "은": "(topic)",
-            "는": "(topic)",
-            "이": "(subject)",
-            "가": "(subject)",
-            "을": "(object)",
-            "를": "(object)",
-            "에": "at/to",
-            "에서": "at/in/from",
-            "으로": "to/toward",
-            "와": "and/with",
-            "과": "and/with",
-            "도": "also/too",
-            "만": "only",
-            "의": "of",
-        }
-
-        # POS mapping
-        self.pos_mapping = {
-            "NOUN": "명사",
-            "PRONOUN": "대명사",
-            "VERB": "동사",
-            "ADJECTIVE": "형용사",
-            "ADVERB": "부사",
-            "PARTICLE": "조사",
-            "CONJUNCTION": "접속사",
-            "INTERJECTION": "감탄사",
-            "NUMERAL": "수사",
-            "DETERMINER": "관형사",
-            "SUFFIX": "접미사",
-            "ROOT": "어근",
-        }
-
-        # Reverse mapping for English display
-        self.pos_reverse = {v: k for k, v in self.pos_mapping.items()}
-
-    def is_punctuation(self, word: str) -> bool:
-        """Check if word is punctuation"""
-        return word in self.punctuation_chars
-
     def is_hangul(self, char: str) -> bool:
         """Check if character is Hangul"""
         if not char:
@@ -380,7 +129,6 @@ class KoreanSentenceAnalyzer:
         medial = ((code - final) // 28) % 21
         initial = ((code - final) // 28) // 21
 
-        # Jamo mappings
         initials = [
             "ㄱ",
             "ㄲ",
@@ -462,125 +210,328 @@ class KoreanSentenceAnalyzer:
             "final": finals[final],
         }
 
-    def detect_particle(self, word: str) -> Optional[str]:
-        """Detect if word is a particle"""
-        if word in self.particles:
-            return self.particles[word]
+    def analyze_sentence(self, sentence: str) -> List[Dict[str, Any]]:
+        """Analyze Korean sentence with full syntactic information"""
+        result = []
+
+        if not self.kiwi:
+            logger.error("Kiwi analyzer not available")
+            return result
+
+        try:
+            # Analyze with Kiwi - returns list of tuples (tokens, score)
+            analyses = self.kiwi.analyze(sentence)
+
+            if not analyses:
+                logger.warning("No analysis results returned")
+                return result
+
+            # Get the first analysis result (highest probability)
+            # Each analysis is a tuple: (list_of_tokens, score)
+            tokens_list, score = analyses[0]
+
+            logger.debug(
+                f"Analysis score: {score}, number of tokens: {len(tokens_list)}"
+            )
+
+            for token in tokens_list:
+                # Kiwi Token objects have form, tag, start, end attributes
+                word = token.form
+                pos_tag = token.tag
+
+                # Skip empty tokens
+                if not word or word.isspace():
+                    continue
+
+                # Get translation
+                translation = self._get_translation(word)
+
+                # Determine syntax role based on POS tag
+                syntax_role = self._map_pos_to_role(pos_tag)
+
+                # Determine semantic category
+                semantic_category = self._get_semantic_category(word)
+
+                # Detect particles (for Korean)
+                particle_info = self._detect_particle(word, pos_tag)
+
+                # Get romanization
+                transliteration = self._romanize(word)
+
+                # Get morphological details
+                morph_info = self._get_morphological_info(word, pos_tag)
+
+                result.append(
+                    {
+                        "word": word,
+                        "transliteration": transliteration,
+                        "translation": translation,
+                        "syntax_role": syntax_role,
+                        "part_of_speech": self._get_main_pos(pos_tag),
+                        "detailed_pos": pos_tag,
+                        "particle_type": (
+                            particle_info.get("type", "NONE")
+                            if particle_info
+                            else "NONE"
+                        ),
+                        "particle": (
+                            particle_info.get("particle", "") if particle_info else ""
+                        ),
+                        "verb_form": self._get_verb_form(word, pos_tag),
+                        "honorific_level": self._get_honorific_level(word, pos_tag),
+                        "is_punctuation": False,
+                        "semantic_category": semantic_category,
+                        "morphological_analysis": morph_info,
+                        "start_position": token.start,
+                        "end_position": token.end,
+                    }
+                )
+
+        except Exception as e:
+            logger.error(f"Error analyzing sentence: {e}", exc_info=True)
+
+        # If no tokens were found, try a simple space-based split as fallback
+        if not result:
+            logger.warning("Kiwi analysis returned no tokens, using fallback splitting")
+            result = self._fallback_analyze(sentence)
+
+        return result
+
+    def _fallback_analyze(self, sentence: str) -> List[Dict[str, Any]]:
+        """Fallback analysis when Kiwi fails"""
+        result = []
+        words = sentence.split()
+
+        for word in words:
+            result.append(
+                {
+                    "word": word,
+                    "transliteration": self._romanize(word),
+                    "translation": self._get_translation(word),
+                    "syntax_role": "UNKNOWN",
+                    "part_of_speech": "UNKNOWN",
+                    "detailed_pos": "UNKNOWN",
+                    "particle_type": "NONE",
+                    "particle": "",
+                    "verb_form": "NONE",
+                    "honorific_level": "PLAIN",
+                    "is_punctuation": False,
+                    "semantic_category": self._get_semantic_category(word),
+                    "morphological_analysis": {
+                        "morphemes": [],
+                        "has_complex_tag": False,
+                        "original_tag": "UNKNOWN",
+                    },
+                    "start_position": 0,
+                    "end_position": 0,
+                }
+            )
+
+        return result
+
+    def _get_main_pos(self, pos_tag: str) -> str:
+        """Extract main POS category from detailed tag"""
+        if not pos_tag or pos_tag == "UNKNOWN":
+            return "UNKNOWN"
+
+        if "+" in pos_tag:
+            # Handle combined tags like NNP+JKS
+            main_tags = []
+            for tag in pos_tag.split("+"):
+                if tag.startswith(("NNG", "NNP", "NNB")):
+                    main_tags.append("NOUN")
+                elif tag.startswith(("VV", "VA")):
+                    main_tags.append("VERB" if tag.startswith("VV") else "ADJECTIVE")
+                elif tag.startswith("MAG"):
+                    main_tags.append("ADVERB")
+                elif tag.startswith("JKS"):
+                    main_tags.append("PARTICLE")
+                else:
+                    main_tags.append(tag[:2])
+            return "+".join(main_tags)
+
+        # Single tag mapping
+        if pos_tag.startswith(("NNG", "NNP", "NNB")):
+            return "NOUN"
+        elif pos_tag.startswith(("NP",)):
+            return "PRONOUN"
+        elif pos_tag.startswith(("NR",)):
+            return "NUMERAL"
+        elif pos_tag.startswith(("VV",)):
+            return "VERB"
+        elif pos_tag.startswith(("VA",)):
+            return "ADJECTIVE"
+        elif pos_tag.startswith(("MM", "MD")):
+            return "DETERMINER"
+        elif pos_tag.startswith(("MAG", "MAJ")):
+            return "ADVERB"
+        elif pos_tag.startswith(("IC",)):
+            return "INTERJECTION"
+        elif pos_tag.startswith(("JKS", "JKC", "JKG", "JKO", "JKB", "JKV", "JKQ")):
+            return "PARTICLE"
+        elif pos_tag.startswith(("JC",)):
+            return "CONJUNCTION"
+        elif pos_tag.startswith(("EP", "EF", "EC", "ETN", "ETM")):
+            return "ENDING"
+        elif pos_tag.startswith(("XPN", "XSN", "XSV", "XSA")):
+            return "AFFIX"
+        else:
+            return pos_tag[:2]
+
+    def _map_pos_to_role(self, pos_tag: str) -> str:
+        """Map Kiwi POS tag to syntax role"""
+        if not pos_tag:
+            return "OTHER"
+
+        if pos_tag.startswith(("NNG", "NNP", "NNB")):
+            return "NOUN"
+        elif pos_tag.startswith(("NP", "NR")):
+            return "PRONOUN" if pos_tag.startswith("NP") else "NUMERAL"
+        elif pos_tag.startswith(("VV", "VA", "VX")):
+            return "VERB" if pos_tag.startswith("VV") else "ADJECTIVE"
+        elif pos_tag.startswith(("MM", "MD")):
+            return "DETERMINER"
+        elif pos_tag.startswith(("MAG", "MAJ")):
+            return "ADVERB"
+        elif pos_tag.startswith(("IC",)):
+            return "INTERJECTION"
+        elif pos_tag.startswith(("JKS", "JKC", "JKG", "JKO", "JKB", "JKV", "JKQ")):
+            return "PARTICLE"
+        elif pos_tag.startswith(("JC",)):
+            return "CONJUNCTION"
+        else:
+            return "OTHER"
+
+    def _detect_particle(self, word: str, pos_tag: str) -> Optional[Dict[str, str]]:
+        """Extract particle information from POS tag"""
+        particle_mapping = {
+            "JKS": "SUBJECT",
+            "JKC": "COMPLEMENT",
+            "JKG": "POSSESSIVE",
+            "JKO": "OBJECT",
+            "JKB": "ADVERBIAL",
+            "JKV": "VOCATIVE",
+            "JKQ": "QUOTATIVE",
+            "JC": "CONJUNCTION",
+            "JX": "AUXILIARY",
+        }
+
+        if "+" in pos_tag:
+            # Check each part of combined tag
+            for tag in pos_tag.split("+"):
+                for josa_code, particle_type in particle_mapping.items():
+                    if josa_code in tag:
+                        # Extract the particle (usually the last character)
+                        particle = word[-1] if len(word) > 1 else word
+                        return {
+                            "type": particle_type,
+                            "particle": particle,
+                            "code": josa_code,
+                        }
+        else:
+            # Single tag
+            for josa_code, particle_type in particle_mapping.items():
+                if josa_code == pos_tag:
+                    particle = word[-1] if len(word) > 1 else word
+                    return {
+                        "type": particle_type,
+                        "particle": particle,
+                        "code": josa_code,
+                    }
         return None
 
-    def get_verb_form(self, word: str) -> str:
-        """Detect verb ending form"""
-        for ending, form in self.verb_endings.items():
-            if word.endswith(ending):
-                return form
-        return "DICTIONARY"
+    def _get_morphological_info(self, word: str, pos_tag: str) -> Dict[str, Any]:
+        """Get detailed morphological information"""
+        morphemes = []
 
-    def get_honorific_level(self, word: str, pos: str) -> str:
-        """Determine honorific level in Korean"""
-        if pos in ["VERB", "ADJECTIVE"]:
-            if word.endswith(("습니다", "ㅂ니다")):
-                return "FORMAL_POLITE"
-            elif word.endswith("요"):
-                return "INFORMAL_POLITE"
-            elif "시" in word or "으시" in word:
-                return "HONORIFIC"
+        if "+" in pos_tag:
+            tags = pos_tag.split("+")
+            for tag in tags:
+                morphemes.append({"tag": tag})
 
-        # Check for humble pronouns
-        if word in ["저", "제", "저희"]:
+        return {
+            "morphemes": morphemes,
+            "has_complex_tag": "+" in pos_tag,
+            "original_tag": pos_tag,
+        }
+
+    def _get_verb_form(self, word: str, pos_tag: str) -> str:
+        """Determine verb form"""
+        if "VV" in pos_tag or "VA" in pos_tag:
+            if "EP" in pos_tag:
+                if "았" in word or "었" in word:
+                    return "PAST"
+                elif "겠" in word:
+                    return "FUTURE"
+                else:
+                    return "PROCESSIVE"
+            elif "EF" in pos_tag:
+                if "다" in word:
+                    return "DICTIONARY"
+                else:
+                    return "CONJUGATED"
+            elif "EC" in pos_tag:
+                return "CONNECTIVE"
+        return "NONE"
+
+    def _get_honorific_level(self, word: str, pos_tag: str) -> str:
+        """Determine honorific level"""
+        if "SH" in pos_tag:  # Subject honorific suffix
+            return "HONORIFIC"
+        elif word.endswith("습니다") or word.endswith("ㅂ니다"):
+            return "FORMAL_POLITE"
+        elif word.endswith("요"):
+            return "INFORMAL_POLITE"
+        elif word in ["저", "제", "저희"]:
             return "HUMBLE"
-
         return "PLAIN"
 
-    def get_part_of_speech(self, word: str, context: Optional[str] = None) -> str:
-        """Determine part of speech (simplified)"""
-        # Check if it's a particle
-        if word in self.particles:
-            return "PARTICLE"
+    def _get_translation(self, word: str) -> str:
+        """Get word translation with caching"""
+        if not word or word.isspace():
+            return ""
 
-        # Check common patterns
-        if word in self.translation_map:
-            # Could be noun, verb, etc. - will refine later
-            pass
+        if word in self.translation_cache:
+            return self.translation_cache[word]
 
-        # Verb patterns (ends with 다 or has verb endings)
-        if word.endswith("다") or any(
-            word.endswith(ending) for ending in self.verb_endings
-        ):
-            # Check if it's adjective (often ends with 다 but descriptive)
-            if word.endswith(("하다", "스럽다", "롭다")):
-                return "ADJECTIVE"
-            return "VERB"
+        if self.translator:
+            try:
+                translation = self.translator.translate(word)
+                if translation and translation != word:
+                    self.translation_cache[word] = translation
+                    return translation
+            except Exception as e:
+                logger.debug(f"Translation error for '{word}': {e}")
 
-        # Check for question words
-        question_words = [
-            "무엇",
-            "누구",
-            "어디",
-            "언제",
-            "어떻게",
-            "왜",
-            "몇",
-            "얼마",
-            "어느",
-        ]
-        if any(qw in word for qw in question_words):
-            return "PRONOUN"
+        return ""
 
-        # Default to noun
-        return "NOUN"
+    def _romanize(self, word: str) -> str:
+        """Romanize Korean text using decomposition fallback"""
+        try:
+            result = []
+            for char in word:
+                if self.is_hangul(char):
+                    decomposed = self.decompose_hangul(char)
+                    initial = self.consonants.get(decomposed["initial"], "")
+                    medial = self.vowels.get(decomposed["medial"], "")
+                    final = self.final_consonants.get(decomposed["final"], "")
 
-    def get_syntax_role(
-        self,
-        word: str,
-        pos: str,
-        particle: Optional[str],
-        index: int,
-        sentence_length: int,
-    ) -> str:
-        """Determine syntactic role based on particle and position"""
-        if particle:
-            if particle in ["TOPIC"]:
-                return "TOPIC"
-            elif particle in ["SUBJECT"]:
-                return "SUBJECT"
-            elif particle in ["OBJECT"]:
-                return "OBJECT"
-            elif particle in ["LOCATION/TIME", "LOCATION"]:
-                return "LOCATION"
-            elif particle in ["DIRECTION"]:
-                return "DIRECTION"
-            elif particle in ["POSSESSIVE"]:
-                return "POSSESSOR"
-            elif particle in ["AND"]:
-                return "CONJUNCTION"
-            elif particle in ["ALSO", "ONLY"]:
-                return "PARTICLE"
-            return "MODIFIER"
+                    romanized = initial + medial
+                    if final:
+                        romanized += final
+                    result.append(romanized)
+                else:
+                    result.append(char)
+            return " ".join(result)
+        except Exception as e:
+            logger.debug(f"Romanization error: {e}")
+            return word
 
-        if pos == "VERB":
-            if index >= sentence_length - 2:  # Verb often at end in Korean
-                return "PREDICATE"
-            return "VERB"
-        elif pos == "ADJECTIVE":
-            return "MODIFIER"
-        elif pos == "ADVERB":
-            return "MODIFIER"
-        elif pos == "CONJUNCTION":
-            return "CONJUNCTION"
-        elif pos == "PRONOUN":
-            if index == 0:
-                return "SUBJECT"
-            return "OBJECT"
-        elif pos == "NOUN":
-            if index == 0:
-                return "SUBJECT"
-            return "OBJECT"
+    def _get_semantic_category(self, word: str) -> str:
+        """Determine semantic category based on word"""
+        if not word:
+            return "GENERAL"
 
-        return "MODIFIER"
-
-    def get_semantic_category(self, word: str) -> str:
-        """Determine semantic category"""
-        # Time words
         time_words = [
             "시간",
             "날",
@@ -600,7 +551,6 @@ class KoreanSentenceAnalyzer:
         if any(tw in word for tw in time_words):
             return "TIME"
 
-        # Location words
         location_words = [
             "집",
             "학교",
@@ -618,7 +568,6 @@ class KoreanSentenceAnalyzer:
         if any(lw in word for lw in location_words):
             return "LOCATION"
 
-        # Person words
         person_words = [
             "사람",
             "남자",
@@ -637,162 +586,11 @@ class KoreanSentenceAnalyzer:
 
         return "GENERAL"
 
-    def get_transliteration(self, word: str) -> str:
-        """Get romanization using hangul_romanize"""
-        if self.is_punctuation(word) or not word:
-            return ""
-
-        try:
-            if self.romanizer:
-                # Try different possible method names for Transliter
-                if hasattr(self.romanizer, "translit"):
-                    return self.romanizer.translit(word)
-                elif hasattr(self.romanizer, "romanize"):
-                    return self.romanizer.romanize(word)
-                elif hasattr(self.romanizer, "translate"):
-                    return self.romanizer.translate(word)
-                else:
-                    # If no suitable method found, use fallback
-                    logger.debug(f"No romanization method found, using fallback")
-                    return self._fallback_romanization(word)
-            else:
-                # Fallback to simple decomposition
-                return self._fallback_romanization(word)
-        except Exception as e:
-            logger.debug(f"Transliteration error for '{word}': {e}")
-            return self._fallback_romanization(word)
-
-    def _fallback_romanization(self, word: str) -> str:
-        """Fallback romanization method using decomposition"""
-        try:
-            result = []
-            for char in word:
-                if self.is_hangul(char):
-                    decomposed = self.decompose_hangul(char)
-                    initial = self.consonants.get(decomposed["initial"], "")
-                    medial = self.vowels.get(decomposed["medial"], "")
-                    final = self.final_consonants.get(decomposed["final"], "")
-
-                    # Combine with proper formatting
-                    romanized = initial + medial
-                    if final:
-                        romanized += final
-                    result.append(romanized)
-                else:
-                    result.append(char)
-            return " ".join(result)
-        except Exception as e:
-            logger.debug(f"Fallback romanization error: {e}")
-            return word
-
-    def get_word_translation(self, word: str) -> str:
-        """Get translation with caching"""
-        # Check translation map
-        if word in self.translation_map:
-            return self.translation_map[word]
-
-        # Check cache
-        if word in self.translation_cache:
-            return self.translation_cache[word]
-
-        # Skip punctuation
-        if self.is_punctuation(word):
-            return ""
-
-        # Use Google Translate
-        if self.translator:
-            try:
-                translated = self.translator.translate(word)
-                if translated and translated != word:
-                    self.translation_cache[word] = translated
-                    return translated
-            except Exception as e:
-                logger.debug(f"Translation error for '{word}': {e}")
-
-        return ""
-
     def translate_sentence(self, sentence: str) -> str:
         """Translate entire sentence"""
-        try:
-            return self.translator.translate(sentence)
-        except Exception as e:
-            logger.error(f"Sentence translation error: {e}")
-            return ""
-
-    def analyze_sentence(self, sentence: str) -> List[Dict[str, Any]]:
-        """Analyze a Korean sentence and return detailed word information"""
-        result = []
-
-        try:
-            # Clean and split text
-            words = sentence.split()
-            sentence_length = len(words)
-
-            for i, word in enumerate(words):
-                # Skip punctuation-only words
-                if self.is_punctuation(word):
-                    continue
-
-                # Determine part of speech
-                pos = self.get_part_of_speech(word)
-
-                # Check for particle
-                particle_type = "NONE"
-                particle = self.detect_particle(word)
-                if particle:
-                    particle_type = particle
-
-                # Get verb form if applicable
-                verb_form = "NONE"
-                if pos in ["VERB", "ADJECTIVE"]:
-                    verb_form = self.get_verb_form(word)
-
-                # Get honorific level
-                honorific_level = self.get_honorific_level(word, pos)
-
-                # Get syntax role
-                syntax_role = self.get_syntax_role(
-                    word, pos, particle, i, sentence_length
-                )
-
-                # Get semantic category
-                semantic_category = self.get_semantic_category(word)
-
-                # Get transliteration
-                transliteration = self.get_transliteration(word)
-
-                # Get translation
-                translation = self.get_word_translation(word)
-
-                # Decompose Hangul for additional info
-                decomposition = {}
-                if any(self.is_hangul(char) for char in word):
-                    for char in word:
-                        if self.is_hangul(char):
-                            decomposition[char] = self.decompose_hangul(char)
-
-                # Log for debugging
-                logger.debug(
-                    f"Word: {word}, POS: {pos}, Particle: {particle}, Verb Form: {verb_form}"
-                )
-
-                result.append(
-                    {
-                        "word": word,
-                        "transliteration": transliteration,
-                        "translation": translation,
-                        "syntax_role": syntax_role,
-                        "part_of_speech": pos,
-                        "particle_type": particle_type,
-                        "verb_form": verb_form,
-                        "honorific_level": honorific_level,
-                        "is_punctuation": False,
-                        "semantic_category": semantic_category,
-                        "decomposition": decomposition,
-                    }
-                )
-
-        except Exception as e:
-            logger.error(f"Error in analyze_sentence: {e}", exc_info=True)
-
-        return result
+        if self.translator:
+            try:
+                return self.translator.translate(sentence)
+            except Exception as e:
+                logger.error(f"Sentence translation error: {e}")
+        return ""

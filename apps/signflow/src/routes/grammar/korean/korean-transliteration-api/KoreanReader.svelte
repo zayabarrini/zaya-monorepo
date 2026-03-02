@@ -48,7 +48,7 @@
 
   // Props
   export let jsonPath: string =
-    "/json/ko/Downton-Abbey_Cinema-Screenplays-db.json";
+    "/json/ko/Downton-Abbey_Cinema-Screenplays.json";
   const API_BASE =
     import.meta.env.VITE_API_URL || "http://localhost:5000";
   export let apiUrl: string = `${API_BASE}/api/analyze/korean`;
@@ -653,7 +653,7 @@
             {#if showAnnotations && currentParagraph.analysis && currentParagraph.analysis.length > 0}
               <div class="annotated-version">
                 <div class="annotated-text">
-                  {#each currentParagraph.analysis as analysis (analysis.word + analysis.transliteration)}
+                  {#each currentParagraph.analysis as analysis (analysis.word + "_" + analysis.start_position + "_" + analysis.end_position)}
                     {#if analysis.is_punctuation}
                       <span class="punctuation-token"
                         >{analysis.word}</span
