@@ -3,6 +3,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
+  import ChineseStrokeOrder from './ChineseStrokeOrder.svelte';
 
   // Types for our data structure
   interface WordAnalysis {
@@ -65,6 +66,8 @@
   let error: string | null = null;
   let showSettings: boolean = false;
   let activeTab: 'display' | 'fields' = 'display';
+    let showStrokeOrder: boolean = true;
+  let selectedCharacter: string = '';
 
   // Display configuration - all enabled by default
   let displayConfig: DisplayConfig = {
@@ -83,6 +86,10 @@
   $: hasNext = currentSectionIndex < sections.length - 1 || 
                (currentSection && currentParagraphIndex < currentSection.paragraphs.length - 1);
   $: currentParagraphText = currentParagraph?.zh || "";
+  // Get all unique Chinese characters from current paragraph
+  $: chineseCharacters = currentParagraph?.zh 
+    ? [...new Set(currentParagraph.zh.match(/[\u4e00-\u9fff]/g) || [])]
+    : [];
 
   onMount(async () => {
     await loadData();
@@ -337,6 +344,11 @@
                 <span class="checkbox-custom"></span>
                 <span>Auto-analyze</span>
               </label>
+              <label class="checkbox-label">
+  <input type="checkbox" bind:checked={showStrokeOrder} />
+  <span class="checkbox-custom"></span>
+  <span>Show Stroke Order</span>
+</label>
             </div>
           </div>
         {:else}
@@ -465,6 +477,62 @@
                   {/each}
                 </div>
               </div>
+              <!-- Add this section after the annotated version and before the legend -->
+{#if showStrokeOrder && currentParagraph && currentParagraph.analysis && currentParagraph.analysis.length > 0}
+  <div class="stroke-order-section">
+    <div class="section-header">
+      <h3>✍️ Stroke Order</h3>
+      <p class="section-description">Click on any character to see its stroke order animation</p>
+    </div>
+    
+    <div class="character-grid">
+      {#each chineseCharacters as char}
+        <button 
+          class="character-button"
+          class:active={selectedCharacter === char}
+          on:click={() => selectedCharacter = char}
+        >
+          <span class="char">{char}</span>
+          <span class="char-info">
+            U+{char.codePointAt(0)?.toString(16).toUpperCase().padStart(4, '0')}
+          </span>
+        </button>
+      {/each}
+    </div>
+    
+    {#if selectedCharacter}
+      <div class="stroke-order-detail">
+        <button 
+          class="close-button"
+          on:click={() => selectedCharacter = ''}
+          title="Close"
+        >
+          ✕
+        </button>
+        <ChineseStrokeOrder 
+          character={selectedCharacter}
+          width={250}
+          height={250}
+          strokeColor="#2c3e50"
+          radicalColor="#c44536"
+          showOutline={true}
+          showCharacter={false}
+          strokeAnimationSpeed={1}
+          delayBetweenStrokes={80}
+          autoplay={true}
+          showStrokeNumber={true}
+          strokeNumberColor="#e67e22"
+          onComplete={() => console.log('Animation complete')}
+        />
+      </div>
+    {:else}
+      <div class="stroke-order-prompt">
+        <span class="prompt-icon">👆</span>
+        <span>Select a character above to see its stroke order</span>
+      </div>
+    {/if}
+  </div>
+{/if}
             {:else if analyzing}
               <div class="analyzing-message">
                 <div class="spinner-small"></div>
@@ -1168,4 +1236,203 @@
       display: none;
     }
   }
+
+  .stroke-order-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  border: 1px solid #e1e5e9;
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.section-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  max-height: 120px;
+  overflow-y: auto;
+  border: 1px solid #e1e5e9;
+}
+
+.character-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  min-width: 60px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.character-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #c44536;
+}
+
+.character-button.active {
+  background: linear-gradient(135deg, #c44536, #b33939);
+  border-color: #a33030;
+}
+
+.character-button.active .char {
+  color: white;
+}
+
+.character-button.active .char-info {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.char {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  line-height: 1;
+}
+
+.char-info {
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+.stroke-order-detail {
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #666;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.close-button:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: scale(1.1);
+}
+
+.stroke-order-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  color: #666;
+  font-style: italic;
+  border: 2px dashed #e1e5e9;
+}
+
+.prompt-icon {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Scrollbar styling for character grid */
+.character-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.character-grid::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.character-grid::-webkit-scrollbar-thumb {
+  background: #c44536;
+  border-radius: 3px;
+}
+
+.character-grid::-webkit-scrollbar-thumb:hover {
+  background: #b33939;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .character-grid {
+    max-height: 100px;
+  }
+
+  .character-button {
+    min-width: 50px;
+    padding: 0.35rem;
+  }
+
+  .char {
+    font-size: 1.2rem;
+  }
+
+  .char-info {
+    font-size: 0.6rem;
+  }
+
+  .stroke-order-detail {
+    min-height: 250px;
+  }
+}
 </style>
