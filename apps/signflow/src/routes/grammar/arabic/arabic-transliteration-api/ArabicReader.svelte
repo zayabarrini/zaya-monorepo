@@ -188,6 +188,11 @@
     } catch (err) {
       console.error("Error analyzing paragraph:", err);
       error = `Failed to analyze: ${err.message}. Please try again later.`;
+
+      // Show a user-friendly error message
+      if (!currentParagraph.analysis) {
+        currentParagraph.analysis = [];
+      }
     } finally {
       analyzing = false;
     }
@@ -735,6 +740,16 @@
               >
                 <span>🔍</span> Analyze This Paragraph
               </button>
+            {/if}
+            {#if error}
+              <div class="api-error">
+                <span class="error-icon">⚠️</span>
+                <span>{error}</span>
+                <button
+                  on:click={analyzeCurrentParagraph}
+                  class="retry-small">Retry</button
+                >
+              </div>
             {/if}
           </div>
         {/if}
