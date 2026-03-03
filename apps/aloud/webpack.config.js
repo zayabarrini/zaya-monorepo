@@ -36,8 +36,10 @@ module.exports = {
       patterns: [
         { from: 'src/icons', to: 'icons' },
         { from: 'src/lib/languagePatterns.js', to: 'lib/languagePatterns.js' },
+        { from: 'src/lib/languagePatternsSyntax.js', to: 'lib/languagePatternsSyntax.js' },
         { from: 'src/popup/index.html', to: 'popup.html' },
         { from: 'src/styles.css', to: 'styles.css' },
+        { from: 'src/styles/syntax-modal.css', to: 'styles/syntax-modal.css' },
         { from: 'manifest.json', to: 'manifest.json' },
       ],
     }),

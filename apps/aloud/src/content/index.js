@@ -12,7 +12,7 @@ if (!window.readAloudInitialized) {
   window.readAloudInitialized = true;
   window.readAloudInstance = null;
 
-  // console.log('✅ Language patterns loaded:', Object.keys(languagePatterns));
+  console.log('✅ Language patterns loaded:', Object.keys(languagePatterns));
 
   // Setup keep-alive
   setupKeepAlive();

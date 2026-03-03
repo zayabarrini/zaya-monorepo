@@ -149,14 +149,14 @@ export class EventHandler {
 
   attachEvents() {
     document.addEventListener('click', (e) => this.handleClick(e));
-    // document.addEventListener('mouseover', (e) => this.handleHover(e));
-    // document.addEventListener('mouseout', (e) => this.handleMouseLeave(e));
+    document.addEventListener('mouseover', (e) => this.handleHover(e));
+    document.addEventListener('mouseout', (e) => this.handleMouseLeave(e));
   }
 
   detachEvents() {
     document.removeEventListener('click', (e) => this.handleClick(e));
-    // document.removeEventListener('mouseover', (e) => this.handleHover(e));
-    // document.removeEventListener('mouseout', (e) => this.handleMouseLeave(e));
+    document.removeEventListener('mouseover', (e) => this.handleHover(e));
+    document.removeEventListener('mouseout', (e) => this.handleMouseLeave(e));
     this.clearTimeouts();
   }
 }
