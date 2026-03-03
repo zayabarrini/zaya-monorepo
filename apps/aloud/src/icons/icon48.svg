@@ -1,0 +1,25 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g48" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E0C6"></stop>
+      <stop offset="100%" stop-color="#007CF0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="24" cy="24" r="22" fill="#0A0F1C"></circle>
+
+  <!-- Klein bottle contour -->
+  <path d="M24 8
+           C34 8, 40 18, 30 22
+           C20 26, 28 32, 38 30
+           C44 29, 40 42, 24 42
+           C8 42, 4 29, 10 30
+           C20 32, 28 26, 18 22
+           C8 18, 14 8, 24 8 Z" fill="none" stroke="url(#g48)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- Emission arcs -->
+  <path d="M36 20 Q42 24 36 28" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+
+  <path d="M39 17 Q48 24 39 31" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"></path>
+</svg>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test Page for Read Aloud Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .test-section {
+        margin: 30px 0;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+      }
+      #english-text,
+      #spanish-text,
+      #french-text,
+      #mixed-language-text {
+        padding: 10px;
+        margin: 10px 0;
+        background: #f5f5f5;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #english-text:hover,
+      #spanish-text:hover,
+      #french-text:hover,
+      #mixed-language-text:hover {
+        background: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Read Aloud Extension Test Page</h1>
+
+    <div class="test-section">
+      <h2>English Text</h2>
+      <div id="english-text">
+        The quick brown fox jumps over the lazy dog. This is a longer paragraph to test the read
+        aloud functionality. It contains multiple sentences and should work with single click,
+        double click, and hover features.
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2>Spanish Text</h2>
+      <div id="spanish-text">
+        El rápido zorro marrón salta sobre el perro perezoso. Este es un párrafo más largo para
+        probar la funcionalidad de lectura en voz alta. Contiene múltiples oraciones y debería
+        funcionar con clic simple, doble clic y características de hover.
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2>French Text</h2>
+      <div id="french-text">
+        Le renard brun rapide saute par-dessus le chien paresseux. Ceci est un paragraphe plus long
+        pour tester la fonctionnalité de lecture à voix haute. Il contient plusieurs phrases et
+        devrait fonctionner avec un simple clic, double clic et les fonctionnalités de survol.
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2>Mixed Language Text</h2>
+      <div id="mixed-language-text">
+        Hello world! ¿Cómo estás? Comment ça va? This is a mix of different languages to test
+        detection. Me gusta aprender idiomas. J'aime apprendre des langues.
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2>Interactive Elements (Should NOT trigger)</h2>
+      <button id="test-button">Test Button</button>
+      <input type="text" id="test-input" placeholder="Test input" />
+      <select id="test-select">
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+      <a href="#" id="test-link">Test Link</a>
+    </div>
+
+    <script>
+      // Expose read aloud instance for testing
+      window.__readAloudInstance = null;
+
+      // Listen for messages from tests
+      window.addEventListener('message', (event) => {
+        if (event.data.action === 'getState') {
+          window.postMessage(
+            {
+              action: 'stateResponse',
+              state: {
+                isSpeakingMode: window.__readAloudInstance?.isSpeakingMode || false,
+                currentLanguage: window.__readAloudInstance?.currentLanguage || 'en',
+              },
+            },
+            '*'
+          );
+        }
+      });
+
+      // Mock chrome API for testing
+      window.chrome = {
+        runtime: {
+          getURL: (path) => `/icons/${path}`,
+          onMessage: {
+            addListener: () => {},
+          },
+        },
+        storage: {
+          local: {
+            get: (keys, callback) => {
+              callback({
+                isSpeakingMode: true,
+                rate: 1.0,
+                detectedLanguage: 'English',
+              });
+            },
+            set: (data) => {
+              console.log('Storage set:', data);
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

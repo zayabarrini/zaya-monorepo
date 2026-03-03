@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E0C6"></stop>
+      <stop offset="100%" stop-color="#007CF0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Book -->
+  <path d="M3 4 L8 3 L13 4 L13 12 L8 11 L3 12 Z" fill="url(#g16)" stroke="#0A0F1C" stroke-width="0.5"></path>
+
+  <!-- Sound waves -->
+  <path d="M9.5 6 Q11 8 9.5 10" stroke="#FFFFFF" stroke-width="0.8" fill="none" stroke-linecap="round"></path>
+  <path d="M11 5 Q13 8 11 11" stroke="#FFFFFF" stroke-width="0.8" fill="none" stroke-linecap="round"></path>
+</svg>

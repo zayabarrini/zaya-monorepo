@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g48" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E0C6"></stop>
+      <stop offset="100%" stop-color="#007CF0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="24" cy="24" r="22" fill="#0A0F1C"></circle>
+
+  <!-- Book -->
+  <path d="M10 14 L24 10 L38 14 L38 36 L24 32 L10 36 Z" fill="url(#g48)" stroke="#FFFFFF" stroke-width="1.2"></path>
+
+  <!-- Sound waves -->
+  <path d="M27 18 Q34 24 27 30" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+  <path d="M31 15 Q42 24 31 33" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+</svg>

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Read Aloud - Text to Speech",
+  "version": "1.0.0",
+  "description": "Read text aloud with single click, double click, and hover features. Supports multiple languages.",
+  "permissions": ["storage", "<all_urls>"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": ["icons/*", "lib/*"],
+  "commands": {
+    "toggle-read-aloud": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Toggle Read Aloud on/off"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "read-aloud@example.com",
+      "strict_min_version": "57.0"
+    }
+  }
+}
