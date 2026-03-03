@@ -1,10 +1,13 @@
 import { getWordUnderCursor, getLineFromElement, isInteractiveElement, log } from './utils.js';
+import { SyntaxAnalysis } from './SyntaxAnalysis.js';
 
 export class EventHandler {
   constructor(speechManager, onLanguageDetected) {
     this.speechManager = speechManager;
     this.onLanguageDetected = onLanguageDetected;
     this.isEnabled = false;
+    this.syntaxAnalysis = new SyntaxAnalysis();
+
 
     // Timeout handlers
     this.hoverTimeout = null;
@@ -19,6 +22,8 @@ export class EventHandler {
 
   setEnabled(enabled) {
     this.isEnabled = enabled;
+    this.syntaxAnalysis.setEnabled(enabled);
+
     if (!enabled) {
       this.clearTimeouts();
     }
@@ -68,18 +73,22 @@ export class EventHandler {
 
     if (selectedText && selectedText.trim()) {
       text = selectedText;
-      log('Reading selected text:', text.substring(0, 50));
+
+      setTimeout(() => {
+        this.syntaxAnalysis.analyzeSelection(text);
+      }, 100);
+      // log('Reading selected text:', text.substring(0, 50));
     } else {
       const lineText = getLineFromElement(target);
       if (lineText) {
         text = lineText;
-        log('Reading line:', text.substring(0, 50));
+        // log('Reading line:', text.substring(0, 50));
       } else {
         return;
       }
     }
 
-    this.speakText(text);
+    // this.speakText(text);
   }
 
   handleDoubleClick(event) {
@@ -149,14 +158,16 @@ export class EventHandler {
 
   attachEvents() {
     document.addEventListener('click', (e) => this.handleClick(e));
-    document.addEventListener('mouseover', (e) => this.handleHover(e));
-    document.addEventListener('mouseout', (e) => this.handleMouseLeave(e));
+    // document.addEventListener('mouseover', (e) => this.handleHover(e));
+    // document.addEventListener('mouseout', (e) => this.handleMouseLeave(e));
   }
 
   detachEvents() {
     document.removeEventListener('click', (e) => this.handleClick(e));
-    document.removeEventListener('mouseover', (e) => this.handleHover(e));
-    document.removeEventListener('mouseout', (e) => this.handleMouseLeave(e));
+    // document.removeEventListener('mouseover', (e) => this.handleHover(e));
+    // document.removeEventListener('mouseout', (e) => this.handleMouseLeave(e));
     this.clearTimeouts();
   }
 }
+
+

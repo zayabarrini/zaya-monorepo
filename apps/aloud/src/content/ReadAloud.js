@@ -19,12 +19,12 @@ export class ReadAloud {
 
     // Set up speech callbacks
     this.speechManager.onStart = (languageName) => {
-      log(`Speech started in ${languageName}`);
+      // log(`Speech started in ${languageName}`);
       this.uiManager.updateButtonState(true, languageName, this.isReadingMode);
     };
 
     this.speechManager.onEnd = () => {
-      log('Speech ended');
+      // log('Speech ended');
       this.uiManager.updateButtonState(
         false,
         this.languageDetector.getLanguageName(this.speechManager.currentLanguage),
@@ -106,7 +106,7 @@ export class ReadAloud {
       this.isReadingMode
     );
 
-    log('UI updated - Extension:', this.isExtensionEnabled, 'Reading Mode:', this.isReadingMode);
+    // log('UI updated - Extension:', this.isExtensionEnabled, 'Reading Mode:', this.isReadingMode);
   }
 
   toggleReadingMode() {

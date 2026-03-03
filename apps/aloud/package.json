@@ -21,6 +21,7 @@
     "test:sound": "playwright test tests/e2e/sound-output.spec.js",
     "test:interactions": "playwright test tests/e2e/user-interactions.spec.js",
     "test:performance": "playwright test tests/e2e/performance.spec.js",
+    "test:syntax": "playwright test tests/unit/syntaxAnalysis.test.js",
     "test:all": "npm run test:unit && npm run test:e2e",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug"

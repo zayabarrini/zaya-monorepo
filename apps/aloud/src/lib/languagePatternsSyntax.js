@@ -1,13 +1,12 @@
 // languagePatternsSyntax.js - Language detection for syntax analysis
-// This is a simplified version focused on the 6 supported languages
 
 const syntaxLanguagePatterns = {
   ja: {
     name: 'Japanese',
     patterns: [
-      /[ぁ-ん]/i, // Hiragana
-      /[ァ-ン]/i, // Katakana
-      /[一-龯]/i, // Kanji
+      /[ぁ-ん]/g, // Hiragana
+      /[ァ-ン]/g, // Katakana
+      /[一-龯]/g, // Kanji
     ],
     endpoint: '/api/analyze/japanese',
     weight: 2.0,
@@ -16,7 +15,7 @@ const syntaxLanguagePatterns = {
   zh: {
     name: 'Chinese',
     patterns: [
-      /[一-龯]/i, // Hanzi
+      /[一-龯]/g, // Hanzi
     ],
     endpoint: '/api/analyze/chinese',
     weight: 2.0,
@@ -25,7 +24,7 @@ const syntaxLanguagePatterns = {
   ko: {
     name: 'Korean',
     patterns: [
-      /[가-힣]/i, // Hangul
+      /[가-힣]/g, // Hangul
     ],
     endpoint: '/api/analyze/korean',
     weight: 2.0,
@@ -34,7 +33,7 @@ const syntaxLanguagePatterns = {
   ar: {
     name: 'Arabic',
     patterns: [
-      /[\u0600-\u06FF]/i, // Arabic
+      /[\u0600-\u06FF]/g, // Arabic
     ],
     endpoint: '/api/analyze/arabic',
     weight: 1.5,
@@ -43,7 +42,7 @@ const syntaxLanguagePatterns = {
   ru: {
     name: 'Russian',
     patterns: [
-      /[а-яА-Я]/i, // Cyrillic
+      /[а-яА-Я]/g, // Cyrillic
     ],
     endpoint: '/api/analyze/russian',
     weight: 1.5,
@@ -51,7 +50,7 @@ const syntaxLanguagePatterns = {
   hi: {
     name: 'Hindi',
     patterns: [
-      /[\u0900-\u097F]/i, // Devanagari
+      /[\u0900-\u097F]/g, // Devanagari
     ],
     endpoint: '/api/analyze/hindi',
     weight: 1.5,
@@ -59,26 +58,58 @@ const syntaxLanguagePatterns = {
 };
 
 // Helper function to detect if text contains supported language
-export function detectSyntaxLanguage(text) {
-  if (!text || text.length < 2) return null;
+function detectSyntaxLanguage(text) {
+  // Guard clauses
+  if (!text || typeof text !== 'string' || text.length < 2) return null;
+  
+  // Ensure syntaxLanguagePatterns exists
+  if (!syntaxLanguagePatterns || typeof syntaxLanguagePatterns !== 'object') {
+    console.error('❌ syntaxLanguagePatterns is not available');
+    return null;
+  }
   
   const scores = {};
   
-  for (const [code, config] of Object.entries(syntaxLanguagePatterns)) {
-    let score = 0;
-    for (const pattern of config.patterns) {
-      const matches = text.match(pattern);
-      if (matches) {
-        score += matches.length;
+  try {
+    // Get only the language codes (filter out any non-language properties)
+    const languageCodes = Object.keys(syntaxLanguagePatterns);
+    
+    for (const code of languageCodes) {
+      const config = syntaxLanguagePatterns[code];
+      
+      if (!config || !config.patterns || !Array.isArray(config.patterns)) {
+        continue;
+      }
+      
+      let score = 0;
+      for (const pattern of config.patterns) {
+        if (!pattern) continue;
+        
+        try {
+          const matches = text.match(pattern);
+          if (matches) {
+            score += matches.length;
+          }
+        } catch (regexError) {
+          console.warn(`⚠️ Regex error for ${code}:`, regexError);
+        }
+      }
+      
+      if (score > 0) {
+        scores[code] = {
+          code,
+          name: config.name,
+          endpoint: config.endpoint,
+          weight: config.weight,
+          script: config.script,
+          rtl: config.rtl,
+          score
+        };
       }
     }
-    if (score > 0) {
-      scores[code] = {
-        code,
-        ...config,
-        score
-      };
-    }
+  } catch (error) {
+    console.error('❌ Error during language detection:', error);
+    return null;
   }
   
   // Return the language with highest score
@@ -92,7 +123,7 @@ export function detectSyntaxLanguage(text) {
     }
   }
   
-  // Calculate confidence (rough estimate)
+  // Calculate confidence
   if (bestMatch) {
     bestMatch.confidence = Math.min(highestScore / text.length, 1);
     return bestMatch;
@@ -101,11 +132,8 @@ export function detectSyntaxLanguage(text) {
   return null;
 }
 
-// Export both named and default
-export default syntaxLanguagePatterns;
+// Export both as named exports
+export { syntaxLanguagePatterns, detectSyntaxLanguage };
 
-// For compatibility with existing module system
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = syntaxLanguagePatterns;
-  module.exports.detectSyntaxLanguage = detectSyntaxLanguage;
-}
+// Also export default for backward compatibility
+export default detectSyntaxLanguage;

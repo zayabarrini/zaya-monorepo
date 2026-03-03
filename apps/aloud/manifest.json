@@ -3,7 +3,7 @@
   "name": "Read Aloud - Text to Speech",
   "version": "1.0.0",
   "description": "Read text aloud with single click, double click, and hover features. Supports multiple languages.",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "https://transliteration-two.vercel.app/*"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
