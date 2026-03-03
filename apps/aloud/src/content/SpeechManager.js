@@ -26,10 +26,10 @@ export class SpeechManager {
 
   loadVoices() {
     this.voices = window.speechSynthesis.getVoices();
-    log(
-      'Available voices:',
-      this.voices.map((v) => `${v.name} (${v.lang})`)
-    );
+    // log(
+    //   'Available voices:',
+    //   this.voices.map((v) => `${v.name} (${v.lang})`)
+    // );
   }
 
   setRate(rate) {

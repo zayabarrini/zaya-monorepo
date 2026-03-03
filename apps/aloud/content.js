@@ -102,10 +102,10 @@
 
     loadVoices() {
       this.voices = window.speechSynthesis.getVoices();
-      console.log(
-        'Available voices:',
-        this.voices.map((v) => `${v.name} (${v.lang})`)
-      );
+      // console.log(
+      //   'Available voices:',
+      //   this.voices.map((v) => `${v.name} (${v.lang})`)
+      // );
     }
 
     loadState() {

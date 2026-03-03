@@ -5,7 +5,7 @@ export class LanguageDetector {
     // Ensure we have patterns even if none provided
     this.languagePatterns = languagePatterns || window.languagePatterns || {};
 
-    log('LanguageDetector initialized with patterns:', Object.keys(this.languagePatterns));
+    // log('LanguageDetector initialized with patterns:', Object.keys(this.languagePatterns));
 
     this.languageToVoiceCode = {
       en: 'en-US',

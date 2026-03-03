@@ -63,10 +63,10 @@
 
   function loadVoices() {
     voices = window.speechSynthesis.getVoices();
-    console.log(
-      "Available voices:",
-      voices.map((v) => `${v.name} (${v.lang})`)
-    );
+    // console.log(
+    //   "Available voices:",
+    //   voices.map((v) => `${v.name} (${v.lang})`)
+    // );
   }
 
   // Detect language from text
