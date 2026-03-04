@@ -54,7 +54,8 @@ export const nodes = [
 	() => import('./nodes/50'),
 	() => import('./nodes/51'),
 	() => import('./nodes/52'),
-	() => import('./nodes/53')
+	() => import('./nodes/53'),
+	() => import('./nodes/54')
 ];
 
 export const server_loads = [];
@@ -106,12 +107,13 @@ export const dictionary = {
 		"/grammar/russian/science": [45],
 		"/grammar/russian/songs": [46],
 		"/grammar/science": [47],
-		"/list": [48],
-		"/melancholic-machines": [49],
-		"/posts": [50],
-		"/sentences": [51],
-		"/transliteration": [52],
-		"/words": [53]
+		"/grammar/thai/thai-transliteration-api": [48],
+		"/list": [49],
+		"/melancholic-machines": [50],
+		"/posts": [51],
+		"/sentences": [52],
+		"/transliteration": [53],
+		"/words": [54]
 	};
 
 export const hooks = {

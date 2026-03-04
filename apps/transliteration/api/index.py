@@ -19,25 +19,23 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 app = Flask(__name__)
 
-# ==================== CORS CONFIGURATION ====================
-CORS(
-    app,
-    origins=["*"],
-    supports_credentials=True,
-    allow_headers=["Content-Type", "Authorization"],
-)
+# Configure CORS for both development and production
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Local development
+    "http://localhost:5173",  # Vite default
+    "https://signflux.vercel.app",  # Production
+    "https://signflux.vercel.app",  # Add your production domain
+    "https://*.vercel.app",  # All Vercel preview deployments (if needed)
+]
 
+# Use environment variable for additional origins
+if os.environ.get("ALLOWED_ORIGINS"):
+    ALLOWED_ORIGINS.extend(os.environ.get("ALLOWED_ORIGINS").split(","))
 
-@app.after_request
-def after_request(response):
-    response.headers.add("Access-Control-Allow-Origin", "*")
-    response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
-    response.headers.add("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS")
-    response.headers.add("Access-Control-Allow-Credentials", "true")
-    return response
+CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
 
-
-# ==================== IMPORTS ====================
+# Configure CORS properly - SIMPLE AND CLEAN
+# CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
 
 # Import Japanese analyzer
 try:
@@ -49,57 +47,7 @@ except Exception as e:
     logger.error(f"Failed to import Japanese analyzer: {e}")
     japanese_analyzer = None
 
-# Import Chinese analyzer
-try:
-    from chinese_analyzer import ChineseSentenceAnalyzer
-
-    chinese_analyzer = ChineseSentenceAnalyzer()
-    logger.info("Successfully imported Chinese analyzer")
-except Exception as e:
-    logger.error(f"Failed to import Chinese analyzer: {e}")
-    chinese_analyzer = None
-
-# Import Korean analyzer
-try:
-    from korean_analyzer import KoreanSentenceAnalyzer
-
-    korean_analyzer = KoreanSentenceAnalyzer()
-    logger.info("Successfully imported Korean analyzer")
-except Exception as e:
-    logger.error(f"Failed to import Korean analyzer: {e}")
-    korean_analyzer = None
-
-# Import Arabic analyzer
-try:
-    from arabic_analyzer import ArabicSentenceAnalyzer
-
-    arabic_analyzer = ArabicSentenceAnalyzer()
-    logger.info("Successfully imported Arabic analyzer")
-except Exception as e:
-    logger.error(f"Failed to import Arabic analyzer: {e}")
-    arabic_analyzer = None
-
-# Import Hindi analyzer
-try:
-    from hindi_analyzer import HindiSentenceAnalyzer
-
-    hindi_analyzer = HindiSentenceAnalyzer()
-    logger.info("Successfully imported Hindi analyzer")
-except Exception as e:
-    logger.error(f"Failed to import Hindi analyzer: {e}")
-    hindi_analyzer = None
-
-# Import Russian analyzer
-try:
-    from russian_analyzer import RussianSentenceAnalyzer
-
-    russian_analyzer = RussianSentenceAnalyzer()
-    logger.info("Successfully imported Russian analyzer")
-except Exception as e:
-    logger.error(f"Failed to import Russian analyzer: {e}")
-    russian_analyzer = None
-
-# Import transliteration functions
+# Import transliteration functions with error handling
 try:
     from transliteration.transliteration import (
         add_furigana,
@@ -136,438 +84,145 @@ except ImportError as e:
     filter_language_text = lambda text, lang: text
     is_language_text = lambda text, lang: True
 
-# ==================== HELPER FUNCTIONS ====================
 
-
-def create_error_response(message, status_code=500):
-    """Create a consistent error response"""
-    response = jsonify({"success": False, "error": message})
-    response.status_code = status_code
-    return response
-
-
-def create_success_response(data):
-    """Create a consistent success response"""
-    return jsonify({"success": True, **data})
-
-
-# ==================== ROOT ENDPOINT ====================
-
-
-@app.route("/", methods=["GET", "OPTIONS"])
-@app.route("/api", methods=["GET", "OPTIONS"])
-def home():
-    """Root endpoint with API info"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    # Get all available analyzers
-    available_analyzers = []
-    if japanese_analyzer:
-        available_analyzers.append("japanese")
-    if chinese_analyzer:
-        available_analyzers.append("chinese")
-    if korean_analyzer:
-        available_analyzers.append("korean")
-    if arabic_analyzer:
-        available_analyzers.append("arabic")
-    if hindi_analyzer:
-        available_analyzers.append("hindi")
-    if russian_analyzer:
-        available_analyzers.append("russian")
-
-    return jsonify(
-        {
-            "name": "Transliteration API",
-            "version": "1.0.0",
-            "status": "running",
-            "available_analyzers": available_analyzers,
-            "endpoints": {
-                "/api/health": "GET - Health check",
-                "/api/languages": "GET - List supported languages",
-                "/api/analyze/japanese": "POST - Detailed Japanese syntax analysis",
-                "/api/analyze/chinese": "POST - Detailed Chinese syntax analysis",
-                "/api/analyze/korean": "POST - Detailed Korean syntax analysis",
-                "/api/analyze/arabic": "POST - Detailed Arabic syntax analysis",
-                "/api/analyze/russian": "POST - Detailed Russian syntax analysis",
-                "/api/analyze/hindi": "POST - Detailed Hindi syntax analysis",
-                "/api/transliterate": "POST - Transliterate text",
-                "/api/transliterate/chinese": "POST - Chinese-specific transliteration",
-                "/api/detect-language": "POST - Detect language in text",
-            },
-        }
-    )
-
-
-# ==================== HEALTH CHECK ====================
-
-
-@app.route("/api/health", methods=["GET", "OPTIONS"])
-def health():
-    """Health check endpoint"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    analyzers_status = {
-        "japanese_analyzer": japanese_analyzer is not None,
-        "chinese_analyzer": chinese_analyzer is not None,
-        "korean_analyzer": korean_analyzer is not None,
-        "arabic_analyzer": arabic_analyzer is not None,
-        "russian_analyzer": russian_analyzer is not None,
-        "hindi_analyzer": hindi_analyzer is not None,
-    }
-
-    all_analyzers_loaded = all(analyzers_status.values())
-
-    return jsonify(
-        {
-            "status": "healthy" if all_analyzers_loaded else "degraded",
-            "timestamp": __import__("datetime").datetime.now().isoformat(),
-            "modules_loaded": {
-                "transliteration": "transliteration" in sys.modules,
-                "jieba": "jieba" in sys.modules,
-                "pykakasi": "pykakasi" in sys.modules,
-                "fugashi": "fugashi" in sys.modules,
-                **analyzers_status,
-            },
-        }
-    )
-
-
-# ==================== LANGUAGES LIST ====================
-
-
-@app.route("/api/languages", methods=["GET", "OPTIONS"])
-def list_languages():
-    """List all supported languages"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    languages = [
-        {
-            "code": "ja",
-            "name": "Japanese",
-            "analyzer_available": japanese_analyzer is not None,
-        },
-        {
-            "code": "jp",
-            "name": "Japanese",
-            "analyzer_available": japanese_analyzer is not None,
-        },
-        {
-            "code": "ko",
-            "name": "Korean",
-            "analyzer_available": korean_analyzer is not None,
-        },
-        {
-            "code": "kr",
-            "name": "Korean",
-            "analyzer_available": korean_analyzer is not None,
-        },
-        {
-            "code": "zh",
-            "name": "Chinese",
-            "analyzer_available": chinese_analyzer is not None,
-        },
-        {
-            "code": "zh-cn",
-            "name": "Chinese (Simplified)",
-            "analyzer_available": chinese_analyzer is not None,
-        },
-        {
-            "code": "hi",
-            "name": "Hindi",
-            "analyzer_available": hindi_analyzer is not None,
-        },
-        {
-            "code": "in",
-            "name": "Hindi",
-            "analyzer_available": hindi_analyzer is not None,
-        },
-        {
-            "code": "ar",
-            "name": "Arabic",
-            "analyzer_available": arabic_analyzer is not None,
-        },
-        {
-            "code": "ru",
-            "name": "Russian",
-            "analyzer_available": russian_analyzer is not None,
-        },
-    ]
-
-    return jsonify({"languages": languages})
-
-
-# ==================== JAPANESE ANALYSIS ====================
+# In your index.py, update the analyze_japanese endpoint
 
 
 @app.route("/api/analyze/japanese", methods=["POST", "OPTIONS"])
 def analyze_japanese():
     """Analyze Japanese text and return detailed word-by-word analysis"""
+    # Handle OPTIONS request for CORS preflight
     if request.method == "OPTIONS":
         return "", 200
 
     try:
         data = request.json
         if not data:
-            return create_error_response("No JSON data provided", 400)
+            return jsonify({"error": "No JSON data provided"}), 400
 
         text = data.get("text", "")
         if not text:
-            return create_error_response("No text provided", 400)
+            return jsonify({"error": "No text provided"}), 400
 
         target_language = data.get("target_language", "en")
 
         logger.info(f"Analyzing Japanese text: {text[:50]}...")
 
-        if not japanese_analyzer:
-            return create_error_response("Japanese analyzer not available", 503)
+        # Analyze the text
+        if japanese_analyzer:
+            analysis = japanese_analyzer.analyze_sentence(text, target_language)
 
-        analysis = japanese_analyzer.analyze_sentence(text, target_language)
-        full_translation = japanese_analyzer.translate_sentence(text, target_language)
-
-        return create_success_response(
-            {
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis),
-            }
-        )
-
-    except Exception as e:
-        logger.error(f"Japanese analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
-
-
-# ==================== CHINESE ANALYSIS ====================
-
-
-@app.route("/api/analyze/chinese", methods=["POST", "OPTIONS"])
-def analyze_chinese():
-    """Analyze Chinese text and return detailed word-by-word analysis"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    try:
-        data = request.json
-        if not data:
-            return create_error_response("No JSON data provided", 400)
-
-        text = data.get("text", "")
-        if not text:
-            return create_error_response("No text provided", 400)
-
-        target_language = data.get("target_language", "en")
-
-        logger.info(f"Analyzing Chinese text: {text[:50]}...")
-
-        if chinese_analyzer:
-            analysis = chinese_analyzer.analyze_sentence(text, target_language)
-            full_translation = chinese_analyzer.translate_sentence(
+            # Get full sentence translation
+            full_translation = japanese_analyzer.translate_sentence(
                 text, target_language
             )
 
-            return create_success_response(
+            return jsonify(
                 {
+                    "success": True,
                     "original": text,
+                    "translated": full_translation,
                     "analysis": analysis,
-                    "full_translation": full_translation,
                     "word_count": len(analysis),
                 }
             )
         else:
-            # Fallback to basic POS analysis
-            pos_analysis = get_detailed_pos_analysis(text)
-            return create_success_response(
-                {
-                    "original": text,
-                    "analysis": pos_analysis,
-                    "full_translation": "",
-                    "word_count": len(pos_analysis),
-                    "note": "Using basic POS analysis (Chinese analyzer not available)",
-                }
+            return (
+                jsonify(
+                    {
+                        "success": False,
+                        "error": "Japanese analyzer not available",
+                        "analysis": [],
+                        "translated": "",
+                    }
+                ),
+                500,
             )
 
     except Exception as e:
-        logger.error(f"Chinese analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
+        logger.error(f"Japanese analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
 
 
-# ==================== KOREAN ANALYSIS ====================
+@app.route("/", methods=["GET"])
+def home():
+    """Root endpoint with API info"""
+    return jsonify(
+        {
+            "name": "Transliteration API",
+            "version": "1.0.0",
+            "endpoints": {
+                "/api/transliterate": "POST - Transliterate text",
+                "/api/transliterate/chinese": "POST - Chinese-specific transliteration",
+                "/api/analyze/chinese": "POST - Detailed Chinese syntax analysis",
+                "/api/analyze/japanese": "POST - Detailed Japanese syntax analysis",
+                "/api/languages": "GET - List supported languages",
+                "/api/health": "GET - Health check",
+            },
+            "supported_languages": (
+                list(language_map.keys())
+                if language_map
+                else ["ja", "ko", "zh-cn", "hi", "ar", "ru"]
+            ),
+        }
+    )
 
 
-@app.route("/api/analyze/korean", methods=["POST", "OPTIONS"])
-def analyze_korean():
-    """Analyze Korean text and return detailed word-by-word analysis"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    try:
-        data = request.json
-        if not data:
-            return create_error_response("No JSON data provided", 400)
-
-        text = data.get("text", "")
-        if not text:
-            return create_error_response("No text provided", 400)
-
-        logger.info(f"Analyzing Korean text: {text[:50]}...")
-
-        if not korean_analyzer:
-            return create_error_response("Korean analyzer not available", 503)
-
-        analysis = korean_analyzer.analyze_sentence(text)
-        full_translation = korean_analyzer.translate_sentence(text)
-
-        return create_success_response(
-            {
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis),
-            }
-        )
-
-    except Exception as e:
-        logger.error(f"Korean analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
+@app.route("/api/health", methods=["GET"])
+def health():
+    """Health check endpoint"""
+    return jsonify(
+        {
+            "status": "healthy",
+            "modules_loaded": {
+                "transliteration": "transliteration" in sys.modules,
+                "jieba": "jieba" in sys.modules,
+                "pykakasi": "pykakasi" in sys.modules,
+                "fugashi": "fugashi" in sys.modules,
+                "japanese_analyzer": japanese_analyzer is not None,
+            },
+        }
+    )
 
 
-# ==================== ARABIC ANALYSIS ====================
+@app.route("/api/languages", methods=["GET"])
+def list_languages():
+    """List all supported languages"""
+    return jsonify(
+        {
+            "languages": [
+                {"code": "ja", "name": "Japanese"},
+                {"code": "jp", "name": "Japanese"},
+                {"code": "ko", "name": "Korean"},
+                {"code": "kr", "name": "Korean"},
+                {"code": "zh-cn", "name": "Chinese (Simplified)"},
+                {"code": "zh-CN", "name": "Chinese (Simplified)"},
+                {"code": "hi", "name": "Hindi"},
+                {"code": "in", "name": "Hindi"},
+                {"code": "ar", "name": "Arabic"},
+                {"code": "ru", "name": "Russian"},
+            ]
+        }
+    )
 
 
-@app.route("/api/analyze/arabic", methods=["POST", "OPTIONS"])
-def analyze_arabic():
-    """Analyze Arabic text and return detailed word-by-word analysis"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    try:
-        data = request.json
-        if not data:
-            return create_error_response("No JSON data provided", 400)
-
-        text = data.get("text", "")
-        if not text:
-            return create_error_response("No text provided", 400)
-
-        logger.info(f"Analyzing Arabic text: {text[:50]}...")
-
-        if not arabic_analyzer:
-            return create_error_response("Arabic analyzer not available", 503)
-
-        analysis = arabic_analyzer.analyze_sentence(text)
-        full_translation = arabic_analyzer.translate_sentence(text)
-
-        return create_success_response(
-            {
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis),
-            }
-        )
-
-    except Exception as e:
-        logger.error(f"Arabic analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
-
-
-# ==================== HINDI ANALYSIS ====================
-
-
-@app.route("/api/analyze/hindi", methods=["POST", "OPTIONS"])
-def analyze_hindi():
-    """Analyze Hindi text and return detailed word-by-word analysis"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    try:
-        data = request.json
-        if not data:
-            return create_error_response("No JSON data provided", 400)
-
-        text = data.get("text", "")
-        if not text:
-            return create_error_response("No text provided", 400)
-
-        logger.info(f"Analyzing Hindi text: {text[:50]}...")
-
-        if not hindi_analyzer:
-            return create_error_response("Hindi analyzer not available", 503)
-
-        analysis = hindi_analyzer.analyze_sentence(text)
-        full_translation = hindi_analyzer.translate_sentence(text)
-
-        return create_success_response(
-            {
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis),
-            }
-        )
-
-    except Exception as e:
-        logger.error(f"Hindi analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
-
-
-# ==================== RUSSIAN ANALYSIS ====================
-
-
-@app.route("/api/analyze/russian", methods=["POST", "OPTIONS"])
-def analyze_russian():
-    """Analyze Russian text and return detailed word-by-word analysis"""
-    if request.method == "OPTIONS":
-        return "", 200
-
-    try:
-        data = request.json
-        if not data:
-            return create_error_response("No JSON data provided", 400)
-
-        text = data.get("text", "")
-        if not text:
-            return create_error_response("No text provided", 400)
-
-        logger.info(f"Analyzing Russian text: {text[:50]}...")
-
-        if not russian_analyzer:
-            return create_error_response("Russian analyzer not available", 503)
-
-        analysis = russian_analyzer.analyze_sentence(text)
-        full_translation = russian_analyzer.translate_sentence(text)
-
-        return create_success_response(
-            {
-                "original": text,
-                "analysis": analysis,
-                "full_translation": full_translation,
-                "word_count": len(analysis),
-            }
-        )
-
-    except Exception as e:
-        logger.error(f"Russian analysis error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
-
-
-# ==================== OTHER ENDPOINTS ====================
-
-
-@app.route("/api/transliterate", methods=["POST", "OPTIONS"])
+@app.route("/api/transliterate", methods=["POST"])
 def transliterate_endpoint():
-    """Main transliteration endpoint"""
-    if request.method == "OPTIONS":
-        return "", 200
+    """
+    Main transliteration endpoint
 
+    Expected JSON payload:
+    {
+        "text": "Text to transliterate",
+        "language": "ja|ko|zh-cn|hi|ar|ru",
+        "mode": "simple|color|detailed",  # optional, defaults to simple
+        "format": "plain|html"  # optional, defaults to plain
+    }
+    """
     try:
         data = request.json
         if not data:
-            return create_error_response("No JSON data provided", 400)
+            return jsonify({"error": "No JSON data provided"}), 400
 
         text = data.get("text", "")
         language = data.get("language", "ja").lower()
@@ -575,15 +230,15 @@ def transliterate_endpoint():
         output_format = data.get("format", "plain")
 
         if not text:
-            return create_error_response("No text provided", 400)
+            return jsonify({"error": "No text provided"}), 400
 
         logger.info(f"Transliterating {len(text)} chars in {language} with mode={mode}")
 
-        # Handle different languages
-        if language in ["zh-cn", "zh-CN", "chinese", "zh"]:
+        # Handle Chinese specially
+        if language in ["zh-cn", "zh-CN", "chinese"]:
             if mode == "detailed":
                 result = process_chinese_advanced(text)
-                return create_success_response(
+                return jsonify(
                     {
                         "original": text,
                         "language": "chinese",
@@ -592,33 +247,32 @@ def transliterate_endpoint():
                     }
                 )
             else:
+                # Use color mode for HTML, simple for plain
                 color_mode = mode == "color" or output_format == "html"
                 result = transliterate_chinese(
                     text, mode="color" if color_mode else "simple"
                 )
 
                 if output_format == "html":
-                    return create_success_response(
+                    return jsonify(
                         {
                             "original": text,
                             "language": "chinese",
                             "mode": mode,
-                            "html": (
-                                str(result) if hasattr(result, "prettify") else result
-                            ),
-                            "result": (
-                                str(result) if hasattr(result, "prettify") else result
-                            ),
+                            "html": result,
+                            "result": result,  # Keep for backward compatibility
                         }
                     )
                 else:
-                    plain_text = str(result)
+                    # Extract plain text from HTML if needed
                     if hasattr(result, "prettify"):
                         import re
 
                         plain_text = re.sub(r"<[^>]+>", "", str(result))
+                    else:
+                        plain_text = str(result)
 
-                    return create_success_response(
+                    return jsonify(
                         {
                             "original": text,
                             "language": "chinese",
@@ -629,42 +283,94 @@ def transliterate_endpoint():
 
         # For other languages
         result = transliterate(text, language)
-        return create_success_response(
-            {"original": text, "language": language, "result": str(result)}
-        )
+
+        # Format based on language and output type
+        if language in ["ja", "japanese"] and isinstance(result, list):
+            if output_format == "html":
+                # Generate HTML with furigana
+                html_result = add_furigana(text, result, language)
+                if hasattr(html_result, "prettify"):
+                    html_result = str(html_result)
+
+                return jsonify(
+                    {
+                        "original": text,
+                        "language": language,
+                        "result": result,
+                        "html": html_result,
+                    }
+                )
+            else:
+                # Return structured data for Japanese
+                return jsonify(
+                    {
+                        "original": text,
+                        "language": language,
+                        "result": result,
+                        "plain": " ".join([item.get("hepburn", "") for item in result]),
+                    }
+                )
+
+        elif language in ["ko", "kr", "korean"] and isinstance(result, list):
+            # Korean returns list of [char, trans] pairs
+            plain_result = " ".join([trans for char, trans in result])
+
+            if output_format == "html":
+                html_result = add_furigana(text, result, language)
+                if hasattr(html_result, "prettify"):
+                    html_result = str(html_result)
+
+                return jsonify(
+                    {
+                        "original": text,
+                        "language": "korean",
+                        "result": result,
+                        "plain": plain_result,
+                        "html": html_result,
+                    }
+                )
+            else:
+                return jsonify(
+                    {"original": text, "language": "korean", "result": plain_result}
+                )
+
+        else:
+            # Simple string result for other languages
+            return jsonify(
+                {"original": text, "language": language, "result": str(result)}
+            )
 
     except Exception as e:
         logger.error(f"Transliteration error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
+        return jsonify({"error": str(e)}), 500
 
 
-@app.route("/api/transliterate/chinese", methods=["POST", "OPTIONS"])
+@app.route("/api/transliterate/chinese", methods=["POST"])
 def transliterate_chinese_endpoint():
-    """Chinese-specific transliteration endpoint"""
-    if request.method == "OPTIONS":
-        return "", 200
-
+    """Chinese-specific transliteration endpoint with POS analysis"""
     try:
         data = request.json
         text = data.get("text", "")
-        mode = data.get("mode", "color")
+        mode = data.get("mode", "color")  # 'simple', 'color', 'detailed'
         include_pos = data.get("include_pos", False)
 
         if not text:
-            return create_error_response("No text provided", 400)
+            return jsonify({"error": "No text provided"}), 400
 
         if mode == "detailed" or include_pos:
+            # Return detailed POS analysis
             analysis = get_detailed_pos_analysis(text)
-            return create_success_response(
+            return jsonify(
                 {
                     "original": text,
                     "analysis": analysis,
-                    "html": str(transliterate_chinese(text, mode="color")),
+                    "html": transliterate_chinese(text, mode="color"),
                 }
             )
         else:
+            # Return HTML with pinyin
             result = transliterate_chinese(text, mode=mode)
-            return create_success_response(
+            return jsonify(
                 {
                     "original": text,
                     "html": str(result) if hasattr(result, "prettify") else result,
@@ -674,29 +380,73 @@ def transliterate_chinese_endpoint():
 
     except Exception as e:
         logger.error(f"Chinese transliteration error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
+        return jsonify({"error": str(e)}), 500
 
 
-@app.route("/api/detect-language", methods=["POST", "OPTIONS"])
+# @app.route("/api/analyze/chinese", methods=["POST"])
+# def analyze_chinese():
+#     """Detailed Chinese syntax and POS analysis"""
+#     try:
+#         data = request.json
+#         text = data.get("text", "")
+
+#         if not text:
+#             return jsonify({"error": "No text provided"}), 400
+
+#         # Get detailed analysis
+#         analysis = get_detailed_pos_analysis(text)
+
+#         # Also get word-by-word breakdown
+#         words = []
+#         for item in analysis:
+#             words.append(
+#                 {
+#                     "word": item["word"],
+#                     "pos": item["pos"],
+#                     "syntax": item["syntax"],
+#                     "pinyin": item["pinyin"],
+#                     "is_punctuation": item["is_punctuation"],
+#                 }
+#             )
+
+#         # Get color-coded HTML version
+#         html_result = transliterate_chinese(text, mode="color")
+
+#         return jsonify(
+#             {
+#                 "original": text,
+#                 "words": words,
+#                 "html": (
+#                     str(html_result)
+#                     if hasattr(html_result, "prettify")
+#                     else html_result
+#                 ),
+#             }
+#         )
+
+#     except Exception as e:
+#         logger.error(f"Chinese analysis error: {e}", exc_info=True)
+#         return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/detect-language", methods=["POST"])
 def detect_language():
     """Detect if text contains characters from supported languages"""
-    if request.method == "OPTIONS":
-        return "", 200
-
     try:
         data = request.json
         text = data.get("text", "")
 
         if not text:
-            return create_error_response("No text provided", 400)
+            return jsonify({"error": "No text provided"}), 400
 
         results = {}
         for lang in ["chinese", "japanese", "korean", "arabic", "russian", "hindi"]:
             results[lang] = is_language_text(text, lang)
 
+        # Find the most likely language
         likely_langs = [lang for lang, present in results.items() if present]
 
-        return create_success_response(
+        return jsonify(
             {
                 "text": text[:100] + ("..." if len(text) > 100 else ""),
                 "detected_languages": likely_langs,
@@ -706,29 +456,369 @@ def detect_language():
 
     except Exception as e:
         logger.error(f"Language detection error: {e}", exc_info=True)
-        return create_error_response(str(e), 500)
+        return jsonify({"error": str(e)}), 500
 
 
-# ==================== ERROR HANDLERS ====================
+# Add this function to download unidic if not present
+def ensure_unidic_downloaded():
+    """Ensure unidic is downloaded for fugashi"""
+    try:
+        import unidic
+
+        # This will download unidic if not already present
+        dic_dir = unidic.DICDIR
+        logger.info(f"unidic is available at: {dic_dir}")
+        return True
+    except ImportError:
+        logger.warning(
+            "unidic package not installed. Please install with: pip install unidic"
+        )
+        return False
+    except Exception as e:
+        logger.error(f"Error checking unidic: {e}")
+        return False
 
 
-@app.errorhandler(404)
-def not_found(error):
-    return create_error_response("Endpoint not found", 404)
+# Call this when initializing the analyzer
+ensure_unidic_downloaded()
+
+# Add to /home/zaya/Downloads/Zayas/zaya-monorepo/apps/transliteration/api/index.py
+
+# Import Chinese analyzer
+try:
+    from chinese_analyzer import ChineseSentenceAnalyzer
+
+    chinese_analyzer = ChineseSentenceAnalyzer()
+    logger.info("Successfully imported Chinese analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Chinese analyzer: {e}")
+    chinese_analyzer = None
 
 
-@app.errorhandler(405)
-def method_not_allowed(error):
-    return create_error_response("Method not allowed", 405)
+# Add Chinese analysis endpoint
+@app.route("/api/analyze/chinese", methods=["POST", "OPTIONS"])
+def analyze_chinese():
+    """Analyze Chinese text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        target_language = data.get("target_language", "en")
+
+        logger.info(f"Analyzing Chinese text: {text[:50]}...")
+
+        if chinese_analyzer:
+            analysis = chinese_analyzer.analyze_sentence(text, target_language)
+
+            # Get full sentence translation
+            full_translation = chinese_analyzer.translate_sentence(
+                text, target_language
+            )
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Chinese analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Chinese analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
 
 
-@app.errorhandler(500)
-def internal_error(error):
-    return create_error_response("Internal server error", 500)
+# Import Arabic analyzer
+try:
+    from arabic_analyzer import ArabicSentenceAnalyzer
+
+    arabic_analyzer = ArabicSentenceAnalyzer()
+    logger.info("Successfully imported Arabic analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Arabic analyzer: {e}")
+    arabic_analyzer = None
 
 
-# ==================== MAIN ====================
+# Add Arabic analysis endpoint
+@app.route("/api/analyze/arabic", methods=["POST", "OPTIONS"])
+def analyze_arabic():
+    """Analyze Arabic text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
 
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Arabic text: {text[:50]}...")
+
+        if arabic_analyzer:
+            analysis = arabic_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = arabic_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Arabic analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Arabic analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# Import Hindi analyzer
+try:
+    from hindi_analyzer import HindiSentenceAnalyzer
+
+    hindi_analyzer = HindiSentenceAnalyzer()
+    logger.info("Successfully imported Hindi analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Hindi analyzer: {e}")
+    hindi_analyzer = None
+
+
+# Add Hindi analysis endpoint
+@app.route("/api/analyze/hindi", methods=["POST", "OPTIONS"])
+def analyze_hindi():
+    """Analyze Hindi text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Hindi text: {text[:50]}...")
+
+        if hindi_analyzer:
+            analysis = hindi_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = hindi_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Hindi analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Hindi analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# Import Russian analyzer
+try:
+    from russian_analyzer import RussianSentenceAnalyzer
+
+    russian_analyzer = RussianSentenceAnalyzer()
+    logger.info("Successfully imported Russian analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Russian analyzer: {e}")
+    russian_analyzer = None
+
+
+# Add Russian analysis endpoint
+@app.route("/api/analyze/russian", methods=["POST", "OPTIONS"])
+def analyze_russian():
+    """Analyze Russian text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Russian text: {text[:50]}...")
+
+        if russian_analyzer:
+            analysis = russian_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = russian_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Russian analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Russian analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# Import Korean analyzer
+try:
+    from korean_analyzer import KoreanSentenceAnalyzer
+
+    korean_analyzer = KoreanSentenceAnalyzer()
+    logger.info("Successfully imported Korean analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Korean analyzer: {e}")
+    korean_analyzer = None
+
+
+# Add Korean analysis endpoint
+@app.route("/api/analyze/korean", methods=["POST", "OPTIONS"])
+def analyze_korean():
+    """Analyze Korean text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Korean text: {text[:50]}...")
+
+        if korean_analyzer:
+            analysis = korean_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = korean_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Korean analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Korean analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# Import Thai analyzer
+try:
+    from thai_analyzer import ThaiSentenceAnalyzer
+
+    thai_analyzer = ThaiSentenceAnalyzer()
+    logger.info("Successfully imported Thai analyzer")
+except Exception as e:
+    logger.error(f"Failed to import Thai analyzer: {e}")
+    thai_analyzer = None
+
+
+# Add Thai analysis endpoint
+@app.route("/api/analyze/thai", methods=["POST", "OPTIONS"])
+def analyze_thai():
+    """Analyze Thai text and return detailed word-by-word analysis"""
+    if request.method == "OPTIONS":
+        return "", 200
+
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
+
+        text = data.get("text", "")
+        if not text:
+            return jsonify({"error": "No text provided"}), 400
+
+        logger.info(f"Analyzing Thai text: {text[:50]}...")
+
+        if thai_analyzer:
+            analysis = thai_analyzer.analyze_sentence(text)
+
+            # Get full sentence translation
+            full_translation = thai_analyzer.translate_sentence(text)
+
+            return jsonify(
+                {
+                    "success": True,
+                    "original": text,
+                    "analysis": analysis,
+                    "full_translation": full_translation,
+                    "word_count": len(analysis),
+                }
+            )
+        else:
+            return (
+                jsonify({"success": False, "error": "Thai analyzer not available"}),
+                500,
+            )
+
+    except Exception as e:
+        logger.error(f"Thai analysis error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+# For local development
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("FLASK_ENV") == "development"

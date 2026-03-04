@@ -95,6 +95,31 @@
       name: "Korean",
       code: "ko",
       text: "재빠른 갈색 여우가 게으른 개를 뛰어넘습니다. 이것은 테스트를 위한 간단한 한국어 문장입니다."
+    },
+    {
+      name: "Arabic",
+      code: "ar",
+      text: "الثعلب البني السريع يقفز فوق الكلب الكسول. هذه جملة بسيطة باللغة العربية للاختبار."
+    },
+    {
+      name: "Hindi",
+      code: "hi",
+      text: "तेज़ भूरी लोमड़ी आलसी कुत्ते के ऊपर कूदती है। यह परीक्षण के लिए हिंदी में एक सरल वाक्य है।"
+    },
+    {
+      name: "Thai",
+      code: "th",
+      text: "สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขขี้เกียจ นี่คือประโยคภาษาไทยอย่างง่ายสำหรับการทดสอบ"
+    },
+    {
+      name: "Hebrew",
+      code: "he",
+      text: "השועל החום המהיר קופץ מעל הכלב העצלן. זהו משפט פשוט בעברית לבדיקה."
+    },
+    {
+      name: "Indonesian",
+      code: "id",
+      text: "Rubah coklat yang cepat melompati anjing yang malas. Ini adalah kalimat sederhana dalam bahasa Indonesia untuk pengujian."
     }
   ];
 

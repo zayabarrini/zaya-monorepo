@@ -163,6 +163,9 @@
 	"/grammar/science": [
 		"src/routes/+layout.ts"
 	],
+	"/grammar/thai/thai-transliteration-api": [
+		"src/routes/+layout.ts"
+	],
 	"/list": [
 		"src/routes/list/+page.ts",
 		"src/routes/+layout.ts"
