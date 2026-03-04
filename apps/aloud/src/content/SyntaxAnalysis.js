@@ -13,40 +13,41 @@ import languagePatterns from '../lib/languagePatterns.js';
 function detectSyntaxLanguage(text) {
   // Guard clauses
   if (!text || typeof text !== 'string' || text.length < 2) return null;
-  
+
   // Ensure languagePatterns exists and is an object
   if (!languagePatterns || typeof languagePatterns !== 'object') {
     console.error('❌ languagePatterns is not available');
     return null;
   }
-  
+
   const scores = {};
-  
+
   // Get only the language codes (filter out any non-language properties)
   try {
     const languageCodes = Object.keys(languagePatterns).filter(
-      key => typeof languagePatterns[key] === 'object' && 
-             languagePatterns[key] !== null &&
-             languagePatterns[key].patterns &&
-             Array.isArray(languagePatterns[key].patterns)
+      (key) =>
+        typeof languagePatterns[key] === 'object' &&
+        languagePatterns[key] !== null &&
+        languagePatterns[key].patterns &&
+        Array.isArray(languagePatterns[key].patterns)
     );
-    
+
     if (!languageCodes || languageCodes.length === 0) {
       console.error('❌ No language patterns found');
       return null;
     }
-    
+
     for (const code of languageCodes) {
       const config = languagePatterns[code];
-      
+
       if (!config || !config.patterns || !Array.isArray(config.patterns)) {
         continue;
       }
-      
+
       let score = 0;
       for (const pattern of config.patterns) {
         if (!pattern) continue;
-        
+
         try {
           const matches = text.match(pattern);
           if (matches) {
@@ -56,7 +57,7 @@ function detectSyntaxLanguage(text) {
           // Silently ignore regex errors
         }
       }
-      
+
       if (score > 0) {
         scores[code] = {
           code,
@@ -64,7 +65,7 @@ function detectSyntaxLanguage(text) {
           weight: config.weight || 1.0,
           script: config.script,
           rtl: config.rtl,
-          score
+          score,
         };
       }
     }
@@ -72,18 +73,18 @@ function detectSyntaxLanguage(text) {
     console.error('❌ Error during language detection:', error);
     return null;
   }
-  
+
   // Return the language with highest score
   let bestMatch = null;
   let highestScore = 0;
-  
+
   for (const [code, data] of Object.entries(scores)) {
     if (data.score > highestScore) {
       highestScore = data.score;
       bestMatch = data;
     }
   }
-  
+
   // Calculate confidence based on script type
   if (bestMatch) {
     // Different confidence calculation for CJK languages
@@ -97,7 +98,7 @@ function detectSyntaxLanguage(text) {
     }
     return bestMatch;
   }
-  
+
   return null;
 }
 
@@ -106,12 +107,13 @@ function detectSyntaxLanguage(text) {
 class SyntaxRenderer {
   constructor() {
     this.renderers = {
-      'ja': this.renderJapanese.bind(this),
-      'zh': this.renderChinese.bind(this),
-      'ko': this.renderKorean.bind(this),
-      'ar': this.renderArabic.bind(this),
-      'ru': this.renderRussian.bind(this),
-      'hi': this.renderHindi.bind(this)
+      ja: this.renderJapanese.bind(this),
+      zh: this.renderChinese.bind(this),
+      ko: this.renderKorean.bind(this),
+      ar: this.renderArabic.bind(this),
+      ru: this.renderRussian.bind(this),
+      hi: this.renderHindi.bind(this),
+      th: this.renderThai.bind(this),
     };
   }
 
@@ -121,8 +123,9 @@ class SyntaxRenderer {
   }
 
   renderJapanese(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis japanese">';
     html += '<div class="syntax-header">';
@@ -132,8 +135,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid">';
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main">${word.word}</div>`;
       if (word.transliteration) {
@@ -155,7 +158,11 @@ class SyntaxRenderer {
       if (word.verb_form && word.verb_form !== 'NONE' && word.verb_form !== 'None') {
         html += `<span class="detail-item verb">🔄 ${word.verb_form.toLowerCase()}</span>`;
       }
-      if (word.honorific_level && word.honorific_level !== 'PLAIN' && word.honorific_level !== 'NEUTRAL') {
+      if (
+        word.honorific_level &&
+        word.honorific_level !== 'PLAIN' &&
+        word.honorific_level !== 'NEUTRAL'
+      ) {
         html += `<span class="detail-item honorific">👑 ${word.honorific_level.toLowerCase()}</span>`;
       }
       if (word.semantic_category && word.semantic_category !== 'GENERAL') {
@@ -164,15 +171,16 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
     html += '</div>';
     html += '</div>';
     return html;
   }
 
   renderChinese(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis chinese">';
     html += '<div class="syntax-header">';
@@ -182,8 +190,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid">';
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main">${word.word}</div>`;
       if (word.transliteration) {
@@ -208,15 +216,16 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
     html += '</div>';
     html += '</div>';
     return html;
   }
 
   renderKorean(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis korean">';
     html += '<div class="syntax-header">';
@@ -226,8 +235,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid">';
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main">${word.word}</div>`;
       if (word.transliteration) {
@@ -258,15 +267,16 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
     html += '</div>';
     html += '</div>';
     return html;
   }
 
   renderArabic(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis arabic" dir="rtl">';
     html += '<div class="syntax-header">';
@@ -276,8 +286,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid" dir="ltr">'; // Grid stays LTR for layout
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main" dir="rtl">${word.display || word.word}</div>`;
       if (word.transliteration) {
@@ -311,15 +321,16 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
     html += '</div>';
     html += '</div>';
     return html;
   }
 
   renderRussian(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis russian">';
     html += '<div class="syntax-header">';
@@ -329,8 +340,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid">';
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main">${word.word}</div>`;
       if (word.transliteration) {
@@ -370,15 +381,16 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
     html += '</div>';
     html += '</div>';
     return html;
   }
 
   renderHindi(analysis) {
-    if (!analysis || !analysis.analysis) return '<div class="syntax-error">No analysis available</div>';
-    
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
     const words = analysis.analysis;
     let html = '<div class="syntax-analysis hindi">';
     html += '<div class="syntax-header">';
@@ -388,8 +400,8 @@ class SyntaxRenderer {
     }
     html += '</div>';
     html += '<div class="syntax-grid">';
-    
-    words.forEach(word => {
+
+    words.forEach((word) => {
       html += '<div class="syntax-word-card">';
       html += `<div class="word-main">${word.word}</div>`;
       if (word.transliteration) {
@@ -426,7 +438,59 @@ class SyntaxRenderer {
       html += '</div>';
       html += '</div>';
     });
-    
+
+    html += '</div>';
+    html += '</div>';
+    return html;
+  }
+
+  renderThai(analysis) {
+    if (!analysis || !analysis.analysis)
+      return '<div class="syntax-error">No analysis available</div>';
+
+    const words = analysis.analysis;
+    let html = '<div class="syntax-analysis thai">';
+    html += '<div class="syntax-header">';
+    html += '<h3>วิเคราะห์ภาษาไทย</h3>';
+    if (analysis.full_translation) {
+      html += `<div class="full-translation">📖 ${analysis.full_translation}</div>`;
+    }
+    html += '</div>';
+    html += '<div class="syntax-grid">';
+
+    words.forEach((word) => {
+      html += '<div class="syntax-word-card">';
+      html += `<div class="word-main">${word.word}</div>`;
+      if (word.transliteration) {
+        html += `<div class="word-translit">${word.transliteration}</div>`;
+      }
+      html += '<div class="word-details">';
+      if (word.translation) {
+        html += `<span class="detail-item translation">📖 ${word.translation}</span>`;
+      }
+      if (word.part_of_speech && word.part_of_speech !== 'UNKNOWN') {
+        html += `<span class="detail-item pos">🏷️ ${word.part_of_speech.toLowerCase()}</span>`;
+      }
+      if (word.syntax_role && word.syntax_role !== 'UNKNOWN') {
+        html += `<span class="detail-item role">🔤 ${word.syntax_role.toLowerCase()}</span>`;
+      }
+      if (word.word_type && word.word_type !== 'NONE' && word.word_type !== 'UNKNOWN') {
+        html += `<span class="detail-item wordtype">📝 ${word.word_type.toLowerCase()}</span>`;
+      }
+      if (word.classifier && word.classifier !== 'NONE') {
+        html += `<span class="detail-item classifier">🔢 ${word.classifier}</span>`;
+      }
+      if (word.has_tone && word.tones) {
+        const toneText = word.tones.map((t) => t.tone).join(', ');
+        html += `<span class="detail-item tone">🎵 ${toneText}</span>`;
+      }
+      if (word.semantic_category && word.semantic_category !== 'GENERAL') {
+        html += `<span class="detail-item semantic">📌 ${word.semantic_category.toLowerCase()}</span>`;
+      }
+      html += '</div>';
+      html += '</div>';
+    });
+
     html += '</div>';
     html += '</div>';
     return html;
@@ -439,8 +503,6 @@ class SyntaxRenderer {
 
 // ==================== SYNTAX MODAL ====================
 
-// ==================== SYNTAX MODAL ====================
-
 class SyntaxModal {
   constructor() {
     this.modal = null;
@@ -448,7 +510,7 @@ class SyntaxModal {
     this.currentText = '';
     this.currentLanguage = '';
     this.onCloseCallback = null;
-    
+
     // Inject styles
     this.injectStyles();
   }
@@ -457,7 +519,7 @@ class SyntaxModal {
     if (document.getElementById('syntax-modal-styles')) {
       return;
     }
-    
+
     const styleEl = document.createElement('style');
     styleEl.id = 'syntax-modal-styles';
     styleEl.textContent = `
@@ -836,6 +898,24 @@ class SyntaxModal {
   color: #92400e;
 }
 
+/* Word Type - Mint Cream */
+.detail-item.wordtype {
+  background: linear-gradient(135deg, #d1f2eb, #a3e4d7);
+  color: #0e6251;
+}
+
+/* Classifier - Peach */
+.detail-item.classifier {
+  background: linear-gradient(135deg, #fdebd0, #fad7a0);
+  color: #aa6f1d;
+}
+
+/* Tone - Lavender */
+.detail-item.tone {
+  background: linear-gradient(135deg, #ebdef0, #d7bde2);
+  color: #6c3483;
+}
+
 /* Language-specific font families */
 .syntax-analysis.arabic .word-main {
   font-family: 'Amiri', 'Traditional Arabic', 'Noto Naskh Arabic', serif;
@@ -860,6 +940,11 @@ class SyntaxModal {
 
 .syntax-analysis.hindi .word-main {
   font-family: 'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', sans-serif;
+}
+
+.syntax-analysis.thai .word-main {
+  font-family: 'Noto Sans Thai', 'Tahoma', 'Leelawadee', 'Cordia New', sans-serif;
+  font-size: 2.2rem;
 }
 
 /* Loading State */
@@ -1081,8 +1166,8 @@ class SyntaxModal {
     color: #a0b3d9;
     border-bottom-color: #2d3349;
   }
-}`
-    
+}`;
+
     document.head.appendChild(styleEl);
     console.log('🔧 [SyntaxModal] styles injected');
   }
@@ -1110,10 +1195,10 @@ class SyntaxModal {
     // Add event listeners
     const closeBtn = this.modal.querySelector('.syntax-modal-close');
     const cancelBtn = this.modal.querySelector('.syntax-modal-cancel');
-    
+
     closeBtn.addEventListener('click', () => this.hide());
     cancelBtn.addEventListener('click', () => this.hide());
-    
+
     // Close on click outside
     this.modal.addEventListener('click', (e) => {
       if (e.target === this.modal) {
@@ -1139,33 +1224,33 @@ class SyntaxModal {
   }
 
   show(text, language, content) {
-    console.log('🔧 [SyntaxModal] show called', { 
-      textLength: text?.length, 
-      language, 
-      contentLength: content?.length 
+    console.log('🔧 [SyntaxModal] show called', {
+      textLength: text?.length,
+      language,
+      contentLength: content?.length,
     });
-    
+
     this.currentText = text;
     this.currentLanguage = language;
-    
+
     this.ensureModal();
-    
+
     // Reset any inline styles that might affect positioning
     this.modal.style.cssText = '';
-    
+
     const body = this.modal.querySelector('.syntax-modal-body');
     if (body) {
       body.innerHTML = content;
     }
-    
+
     // Add visible class
     this.modal.classList.add('visible');
-    
+
     this.isVisible = true;
-    
+
     // Force a reflow to ensure proper positioning
     this.modal.offsetHeight;
-    
+
     // Log the state after showing
     setTimeout(() => {
       const rect = this.modal.getBoundingClientRect();
@@ -1174,13 +1259,17 @@ class SyntaxModal {
         left: rect.left,
         width: rect.width,
         height: rect.height,
-        isInViewport: rect.top >= 0 && rect.left >= 0 && 
-                      rect.bottom <= window.innerHeight && 
-                      rect.right <= window.innerWidth
+        isInViewport:
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= window.innerHeight &&
+          rect.right <= window.innerWidth,
       });
-      
+
       // Check if modal content is visible
-      const contentRect = this.modal.querySelector('.syntax-modal-content')?.getBoundingClientRect();
+      const contentRect = this.modal
+        .querySelector('.syntax-modal-content')
+        ?.getBoundingClientRect();
       console.log('🔧 [SyntaxModal] content position:', contentRect);
     }, 100);
   }
@@ -1189,15 +1278,15 @@ class SyntaxModal {
     if (languageInfo) {
       this.currentLanguage = languageInfo.name || languageInfo.code;
     }
-    
+
     this.ensureModal();
-    
+
     // Reset any inline styles
     this.modal.style.cssText = '';
-    
+
     this.modal.classList.add('visible');
     this.isVisible = true;
-    
+
     const body = this.modal.querySelector('.syntax-modal-body');
     if (body) {
       body.innerHTML = `
@@ -1211,13 +1300,13 @@ class SyntaxModal {
 
   showError(message) {
     this.ensureModal();
-    
+
     // Reset any inline styles
     this.modal.style.cssText = '';
-    
+
     this.modal.classList.add('visible');
     this.isVisible = true;
-    
+
     const body = this.modal.querySelector('.syntax-modal-body');
     if (body) {
       body.innerHTML = `
@@ -1254,32 +1343,41 @@ class SyntaxModal {
   debugModal() {
     console.log('🔧 [SyntaxModal] DEBUG MODE');
     console.log('Modal exists:', !!this.modal);
-    
+
     if (!this.modal) {
       this.createModal();
     }
-    
+
     // Log all computed styles
     const styles = window.getComputedStyle(this.modal);
     const styleProps = [
-      'position', 'top', 'left', 'right', 'bottom',
-      'display', 'opacity', 'visibility', 'zIndex',
-      'alignItems', 'justifyContent', 'pointerEvents'
+      'position',
+      'top',
+      'left',
+      'right',
+      'bottom',
+      'display',
+      'opacity',
+      'visibility',
+      'zIndex',
+      'alignItems',
+      'justifyContent',
+      'pointerEvents',
     ];
-    
+
     console.log('Modal computed styles:');
-    styleProps.forEach(prop => {
+    styleProps.forEach((prop) => {
       console.log(`  ${prop}: ${styles.getPropertyValue(prop)}`);
     });
-    
+
     // Log DOM hierarchy
     console.log('Modal parent:', this.modal.parentNode?.tagName);
     console.log('Modal children:', this.modal.children.length);
-    
+
     // Check position
     const rect = this.modal.getBoundingClientRect();
     console.log('Modal position:', rect);
-    
+
     // Check if any parent has transform that might affect positioning
     let element = this.modal.parentNode;
     while (element && element !== document.body) {
@@ -1301,7 +1399,7 @@ export class SyntaxAnalysis {
     this.renderer = new SyntaxRenderer();
     this.isEnabled = true;
     this.currentSelection = null;
-    
+
     console.log('🔧 [SyntaxAnalysis] Constructor called, isEnabled:', this.isEnabled);
   }
 
@@ -1315,163 +1413,170 @@ export class SyntaxAnalysis {
 
   getApiUrl(languageCode) {
     const endpoints = {
-      'zh': '/api/analyze/chinese',
-      'ja': '/api/analyze/japanese',
-      'ko': '/api/analyze/korean',
-      'ar': '/api/analyze/arabic',
-      'ru': '/api/analyze/russian',
-      'hi': '/api/analyze/hindi',
-      'th': '/api/analyze/thai'
+      zh: '/api/analyze/chinese',
+      ja: '/api/analyze/japanese',
+      ko: '/api/analyze/korean',
+      ar: '/api/analyze/arabic',
+      ru: '/api/analyze/russian',
+      hi: '/api/analyze/hindi',
+      th: '/api/analyze/thai',
     };
-    
+
     // If no endpoint for this language, return null
     if (!endpoints[languageCode]) {
       return null;
     }
-    
+
     const url = `${this.apiBaseUrl}${endpoints[languageCode]}`;
     console.log('🔧 [SyntaxAnalysis] API URL for', languageCode, ':', url);
     return url;
   }
 
-// In SyntaxAnalysis.js - Update the analyzeSelection method
+  // In SyntaxAnalysis.js - Update the analyzeSelection method
 
-async analyzeSelection(text, languageInfo) {
-  console.log('🔧 [SyntaxAnalysis] analyzeSelection called, isEnabled:', this.isEnabled);
-  console.log('🔧 [SyntaxAnalysis] Text:', text ? text.substring(0, 50) : '(empty)');
-  
-  if (!this.isEnabled) {
-    console.log('🔧 [SyntaxAnalysis] Analysis disabled, returning');
-    return;
-  }
-  
-  // Ignore very short selections
-  if (!text || typeof text !== 'string' || text.length < 2) {
-    console.log('🔧 [SyntaxAnalysis] Text too short or invalid, ignoring');
-    return;
-  }
-  
-  // Don't re-analyze the same text
-  if (this.currentSelection === text) {
-    console.log('🔧 [SyntaxAnalysis] Same text, ignoring');
-    return;
-  }
-  this.currentSelection = text;
-  
-  // If languageInfo has code, use it, otherwise detect
-  let languageCode = languageInfo?.code;
-  let languageName = languageInfo?.name;
-  
-  if (!languageCode) {
-    console.log('🔧 [SyntaxAnalysis] No language provided, detecting...');
-    
-    // Wrap detection in try-catch
-    let detected;
-    try {
-      detected = detectSyntaxLanguage(text);
-    } catch (detectError) {
-      console.error('❌ Language detection threw error:', detectError);
-      this.modal.showError(`Language detection failed: ${detectError.message}`);
+  async analyzeSelection(text, languageInfo) {
+    console.log('🔧 [SyntaxAnalysis] analyzeSelection called, isEnabled:', this.isEnabled);
+    console.log('🔧 [SyntaxAnalysis] Text:', text ? text.substring(0, 50) : '(empty)');
+
+    if (!this.isEnabled) {
+      console.log('🔧 [SyntaxAnalysis] Analysis disabled, returning');
       return;
     }
-    
-    console.log('🔧 [SyntaxAnalysis] Detection result:', detected);
-    
-    if (!detected || typeof detected !== 'object') {
-      console.log('❌ Could not detect language');
-      this.modal.showError('Could not detect language. Please select a language manually.');
+
+    // Ignore very short selections
+    if (!text || typeof text !== 'string' || text.length < 2) {
+      console.log('🔧 [SyntaxAnalysis] Text too short or invalid, ignoring');
       return;
     }
-    
-    // Different confidence thresholds for different language types
-    let confidenceThreshold = 0.3;
-    
-    // For CJK languages, lower threshold because they naturally have lower scores
-    if (detected.script === 'cjk') {
-      confidenceThreshold = 0.1; // Lower threshold for CJK
-      console.log(`🔧 [SyntaxAnalysis] CJK language detected, using lower threshold: ${confidenceThreshold}`);
+
+    // Don't re-analyze the same text
+    if (this.currentSelection === text) {
+      console.log('🔧 [SyntaxAnalysis] Same text, ignoring');
+      return;
     }
-    
-    if (detected.confidence < confidenceThreshold) {
-      console.log(`❌ Low confidence detection: ${detected.confidence} (threshold: ${confidenceThreshold})`);
-      console.warn(`⚠️ Low confidence for ${detected.name}, but proceeding anyway`);
-    }
-    
-    languageCode = detected.code;
-    languageName = detected.name;
-  }
-  
-  console.log(`🔍 Analyzing ${languageName} text:`, text.substring(0, 50));
-  
-  try {
-    console.log('🔧 [SyntaxAnalysis] Showing loading modal');
-    this.modal.showLoading({ name: languageName, code: languageCode });
-    
-    // Get the endpoint for this language
-    const endpoint = this.getApiEndpoint(languageCode);
-    
-    if (!endpoint) {
-      throw new Error(`No API endpoint configured for language: ${languageName} (${languageCode})`);
-    }
-    
-    console.log('🔧 [SyntaxAnalysis] Sending request via background proxy for:', endpoint);
-    
-    // Send message to background script instead of direct fetch
-    chrome.runtime.sendMessage(
-      {
-        type: 'FETCH_FROM_API',
-        endpoint: endpoint,
-        method: 'POST',
-        data: { text, target_language: 'en' },
-        languageCode
-      },
-      (response) => {
-        if (chrome.runtime.lastError) {
-          console.error('🔧 [SyntaxAnalysis] Background proxy error:', chrome.runtime.lastError);
-          this.modal.showError(`Failed to connect to extension background: ${chrome.runtime.lastError.message}`);
-          return;
-        }
-        
-        console.log('🔧 [SyntaxAnalysis] Background proxy response:', response);
-        
-        if (!response || !response.success) {
-          const errorMsg = response?.error || 'Unknown error';
-          this.modal.showError(`Analysis failed: ${errorMsg}`);
-          return;
-        }
-        
-        const data = response.data;
-        
-        if (data.success) {
-          const rendered = this.renderer.render(data, languageCode);
-          console.log('🔧 [SyntaxAnalysis] Rendered content length:', rendered.length);
-          this.modal.show(text, languageCode, rendered);
-        } else {
-          this.modal.showError(data.error || 'Analysis failed');
-        }
+    this.currentSelection = text;
+
+    // If languageInfo has code, use it, otherwise detect
+    let languageCode = languageInfo?.code;
+    let languageName = languageInfo?.name;
+
+    if (!languageCode) {
+      console.log('🔧 [SyntaxAnalysis] No language provided, detecting...');
+
+      // Wrap detection in try-catch
+      let detected;
+      try {
+        detected = detectSyntaxLanguage(text);
+      } catch (detectError) {
+        console.error('❌ Language detection threw error:', detectError);
+        this.modal.showError(`Language detection failed: ${detectError.message}`);
+        return;
       }
-    );
-    
-  } catch (error) {
-    console.error('❌ Syntax analysis error:', error);
-    this.modal.showError(`Failed to analyze: ${error.message}`);
-  }
-}
 
-// Helper method to get API endpoint
-getApiEndpoint(languageCode) {
-  const endpoints = {
-    'zh': '/api/analyze/chinese',
-    'ja': '/api/analyze/japanese',
-    'ko': '/api/analyze/korean',
-    'ar': '/api/analyze/arabic',
-    'ru': '/api/analyze/russian',
-    'hi': '/api/analyze/hindi',
-    'th': '/api/analyze/thai'
-  };
-  
-  return endpoints[languageCode] || null;
-}
+      console.log('🔧 [SyntaxAnalysis] Detection result:', detected);
+
+      if (!detected || typeof detected !== 'object') {
+        console.log('❌ Could not detect language');
+        this.modal.showError('Could not detect language. Please select a language manually.');
+        return;
+      }
+
+      // Different confidence thresholds for different language types
+      let confidenceThreshold = 0.3;
+
+      // For CJK languages, lower threshold because they naturally have lower scores
+      if (detected.script === 'cjk') {
+        confidenceThreshold = 0.1; // Lower threshold for CJK
+        console.log(
+          `🔧 [SyntaxAnalysis] CJK language detected, using lower threshold: ${confidenceThreshold}`
+        );
+      }
+
+      if (detected.confidence < confidenceThreshold) {
+        console.log(
+          `❌ Low confidence detection: ${detected.confidence} (threshold: ${confidenceThreshold})`
+        );
+        console.warn(`⚠️ Low confidence for ${detected.name}, but proceeding anyway`);
+      }
+
+      languageCode = detected.code;
+      languageName = detected.name;
+    }
+
+    console.log(`🔍 Analyzing ${languageName} text:`, text.substring(0, 50));
+
+    try {
+      console.log('🔧 [SyntaxAnalysis] Showing loading modal');
+      this.modal.showLoading({ name: languageName, code: languageCode });
+
+      // Get the endpoint for this language
+      const endpoint = this.getApiEndpoint(languageCode);
+
+      if (!endpoint) {
+        throw new Error(
+          `No API endpoint configured for language: ${languageName} (${languageCode})`
+        );
+      }
+
+      console.log('🔧 [SyntaxAnalysis] Sending request via background proxy for:', endpoint);
+
+      // Send message to background script instead of direct fetch
+      chrome.runtime.sendMessage(
+        {
+          type: 'FETCH_FROM_API',
+          endpoint: endpoint,
+          method: 'POST',
+          data: { text, target_language: 'en' },
+          languageCode,
+        },
+        (response) => {
+          if (chrome.runtime.lastError) {
+            console.error('🔧 [SyntaxAnalysis] Background proxy error:', chrome.runtime.lastError);
+            this.modal.showError(
+              `Failed to connect to extension background: ${chrome.runtime.lastError.message}`
+            );
+            return;
+          }
+
+          console.log('🔧 [SyntaxAnalysis] Background proxy response:', response);
+
+          if (!response || !response.success) {
+            const errorMsg = response?.error || 'Unknown error';
+            this.modal.showError(`Analysis failed: ${errorMsg}`);
+            return;
+          }
+
+          const data = response.data;
+
+          if (data.success) {
+            const rendered = this.renderer.render(data, languageCode);
+            console.log('🔧 [SyntaxAnalysis] Rendered content length:', rendered.length);
+            this.modal.show(text, languageCode, rendered);
+          } else {
+            this.modal.showError(data.error || 'Analysis failed');
+          }
+        }
+      );
+    } catch (error) {
+      console.error('❌ Syntax analysis error:', error);
+      this.modal.showError(`Failed to analyze: ${error.message}`);
+    }
+  }
+
+  // Helper method to get API endpoint
+  getApiEndpoint(languageCode) {
+    const endpoints = {
+      zh: '/api/analyze/chinese',
+      ja: '/api/analyze/japanese',
+      ko: '/api/analyze/korean',
+      ar: '/api/analyze/arabic',
+      ru: '/api/analyze/russian',
+      hi: '/api/analyze/hindi',
+      th: '/api/analyze/thai',
+    };
+
+    return endpoints[languageCode] || null;
+  }
 
   destroy() {
     console.log('🔧 [SyntaxAnalysis] destroy called');

@@ -1,8 +1,9 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtReloader = require('webpack-ext-reloader'); // Changed from @cedelabs/webpack-ext-reloader
 
 module.exports = {
-  mode: 'development', // Use development for easier debugging
+  mode: 'development',
   devtool: 'source-map',
   entry: {
     content: './src/content/index.js',
@@ -32,6 +33,15 @@ module.exports = {
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
   plugins: [
+    new ExtReloader({
+      port: 9090,
+      reloadPage: true,
+      entries: {
+        contentScript: 'content',
+        background: 'background',
+        extensionPage: 'popup',
+      }
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: 'src/icons', to: 'icons' },

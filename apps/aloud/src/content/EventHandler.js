@@ -8,7 +8,6 @@ export class EventHandler {
     this.isEnabled = false;
     this.syntaxAnalysis = new SyntaxAnalysis();
 
-
     // Timeout handlers
     this.hoverTimeout = null;
     this.clickTimeout = null;
@@ -74,6 +73,10 @@ export class EventHandler {
     if (selectedText && selectedText.trim()) {
       text = selectedText;
 
+      setTimeout(() => {
+        this.syntaxAnalysis.analyzeSelection(text);
+      }, 100);
+
       // log('Reading selected text:', text.substring(0, 50));
     } else {
       const lineText = getLineFromElement(target);
@@ -98,9 +101,6 @@ export class EventHandler {
     if (selectedText && selectedText.trim()) {
       text = selectedText;
       log('Reading selected text:', text);
-      setTimeout(() => {
-        this.syntaxAnalysis.analyzeSelection(text);
-      }, 100);
     } else {
       const word = getWordUnderCursor(event);
       if (word) {
@@ -117,7 +117,7 @@ export class EventHandler {
       }
     }
 
-    // this.speakText(text);
+    this.speakText(text);
   }
 
   handleHover(event) {
@@ -169,5 +169,3 @@ export class EventHandler {
     this.clearTimeouts();
   }
 }
-
-

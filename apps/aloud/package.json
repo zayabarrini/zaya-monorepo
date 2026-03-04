@@ -7,7 +7,8 @@
     "build:chrome": "webpack --config webpack.config.js",
     "build:firefox": "webpack --config webpack.firefox.config.js",
     "watch": "webpack --watch --config webpack.config.js",
-    "clean": "rm -rf dist",
+    "dev": "webpack --watch --mode=development",
+    "dev:reload": "npx webpack-ext-reloader --config webpack.config.js --port 9090 --content-script content --background background --extension-page popup",    "clean": "rm -rf dist",
     "package": "npm run build",
     "test:chrome": "echo 'Load unpacked from dist/chrome in Chrome'",
     "test:firefox": "echo 'Load temporary add-on from dist/firefox in Firefox'",
@@ -30,8 +31,9 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.0",
+    "@babel/eslint-parser": "^7.28.6",
     "@babel/plugin-transform-modules-commonjs": "^7.28.6",
-    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-env": "^7.29.0",
     "@playwright/test": "^1.39.0",
     "@types/jest": "^29.5.0",
     "archiver": "^6.0.0",
@@ -40,9 +42,12 @@
     "babel-loader": "^10.0.0",
     "browserify": "^17.0.1",
     "copy-webpack-plugin": "^13.0.1",
-    "eslint": "^10.0.0",
-    "eslint-config-prettier": "^10.1.8",
+    "eslint": "^9.39.3",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^6.6.0",
     "fs-extra": "^11.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
@@ -50,6 +55,7 @@
     "playwright": "^1.58.2",
     "prettier": "^3.8.1",
     "webpack": "^5.105.2",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-ext-reloader": "^1.1.13"
   }
 }

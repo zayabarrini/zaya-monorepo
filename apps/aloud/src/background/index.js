@@ -7,7 +7,7 @@ let globalState = {
 };
 
 // API configuration
-const API_BASE_URL = 'http://127.0.0.1:5000'; // Local development server
+const API_BASE_URL = 'http://127.0.0.1:5000';
 
 // Load initial state
 chrome.storage.local.get(
@@ -121,30 +121,29 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
 
     // ============= NEW: API PROXY ENDPOINTS =============
-    
+
     // Proxy for syntax analysis API calls
     if (message.type === 'FETCH_FROM_API') {
       handleApiProxy(message, sendResponse);
       return true; // Will respond asynchronously
     }
-    
+
     // Get API configuration
     if (message.action === 'getApiConfig') {
       sendResponse({
         baseUrl: API_BASE_URL,
         endpoints: {
-          'zh': '/api/analyze/chinese',
-          'ja': '/api/analyze/japanese',
-          'ko': '/api/analyze/korean',
-          'ar': '/api/analyze/arabic',
-          'ru': '/api/analyze/russian',
-          'hi': '/api/analyze/hindi',
-          'th': '/api/analyze/thai'
-        }
+          zh: '/api/analyze/chinese',
+          ja: '/api/analyze/japanese',
+          ko: '/api/analyze/korean',
+          ar: '/api/analyze/arabic',
+          ru: '/api/analyze/russian',
+          hi: '/api/analyze/hindi',
+          th: '/api/analyze/thai',
+        },
       });
       return true;
     }
-    
   } catch (error) {
     console.error('Error in background script:', error);
     sendResponse({ error: error.message });
@@ -157,56 +156,90 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 // Background script - Update handleApiProxy function
 
+// ============= API PROXY HANDLER =============
+
 async function handleApiProxy(message, sendResponse) {
   const { endpoint, method = 'POST', data, languageCode } = message;
-  
-  // Map of language codes to their correct endpoints based on your index.py
+
+  // Map of language codes to their correct API endpoints
   const endpointMap = {
+    // Language code to endpoint mapping
+    ja: '/api/analyze/japanese',
+    jp: '/api/analyze/japanese',
+    zh: '/api/analyze/chinese',
+    ko: '/api/analyze/korean',
+    kr: '/api/analyze/korean',
+    ar: '/api/analyze/arabic',
+    ru: '/api/analyze/russian',
+    hi: '/api/analyze/hindi',
+    in: '/api/analyze/hindi',
+    th: '/api/analyze/thai',
+
+    // Direct endpoint paths (if passed directly)
     '/api/analyze/japanese': '/api/analyze/japanese',
     '/api/analyze/chinese': '/api/analyze/chinese',
     '/api/analyze/korean': '/api/analyze/korean',
     '/api/analyze/arabic': '/api/analyze/arabic',
     '/api/analyze/russian': '/api/analyze/russian',
     '/api/analyze/hindi': '/api/analyze/hindi',
-    // Add aliases for different language codes
-    'ja': '/api/analyze/japanese',
-    'jp': '/api/analyze/japanese',
-    'zh': '/api/analyze/chinese',
-    'ko': '/api/analyze/korean',
-    'kr': '/api/analyze/korean',
-    'ar': '/api/analyze/arabic',
-    'ru': '/api/analyze/russian',
-    'hi': '/api/analyze/hindi',
-    'in': '/api/analyze/hindi'
+    '/api/analyze/thai': '/api/analyze/thai',
   };
-  
-  // Get the correct endpoint
-  let actualEndpoint = endpoint;
-  if (endpointMap[languageCode]) {
+
+  // Determine the correct endpoint
+  let actualEndpoint = null;
+
+  // First try using languageCode if provided
+  if (languageCode && endpointMap[languageCode]) {
     actualEndpoint = endpointMap[languageCode];
-  } else if (endpointMap[endpoint]) {
+  }
+  // Then try using the endpoint string directly
+  else if (endpoint && endpointMap[endpoint]) {
     actualEndpoint = endpointMap[endpoint];
   }
-  
+  // If endpoint is a full URL, use it as is
+  else if (endpoint && endpoint.startsWith('http')) {
+    actualEndpoint = endpoint;
+  }
+  // If endpoint starts with /api, use it directly
+  else if (endpoint && endpoint.startsWith('/api')) {
+    actualEndpoint = endpoint;
+  }
+  // Fallback: try to construct from languageCode
+  else if (languageCode) {
+    actualEndpoint = `/api/analyze/${languageCode}`;
+    // Special case for Chinese
+    if (languageCode === 'zh') {
+      actualEndpoint = '/api/analyze/chinese';
+    }
+  }
+
+  if (!actualEndpoint) {
+    sendResponse({
+      success: false,
+      error: `No endpoint mapping found for language: ${languageCode || 'unknown'}`,
+    });
+    return;
+  }
+
   // Construct the full URL
-  const url = actualEndpoint.startsWith('http') 
-    ? actualEndpoint 
+  const url = actualEndpoint.startsWith('http')
+    ? actualEndpoint
     : `${API_BASE_URL}${actualEndpoint}`;
-  
+
   console.log('🔧 [Background] Proxying API request to:', url);
   console.log('🔧 [Background] Request data:', data);
-  
+
   try {
     const response = await fetch(url, {
       method: method,
       headers: {
         'Content-Type': 'application/json',
       },
-      body: data ? JSON.stringify(data) : undefined
+      body: data ? JSON.stringify(data) : undefined,
     });
-    
+
     console.log('🔧 [Background] Response status:', response.status);
-    
+
     if (!response.ok) {
       // Try to get error details from response
       let errorDetails = '';
@@ -216,25 +249,24 @@ async function handleApiProxy(message, sendResponse) {
       } catch {
         errorDetails = response.statusText;
       }
-      
+
       throw new Error(`API error: ${response.status} ${errorDetails}`);
     }
-    
+
     const responseData = await response.json();
     console.log('🔧 [Background] API response received, success:', responseData.success);
-    
+
     sendResponse({
       success: true,
       data: responseData,
-      languageCode
+      languageCode,
     });
-    
   } catch (error) {
     console.error('🔧 [Background] API proxy error:', error);
     sendResponse({
       success: false,
       error: error.message,
-      languageCode
+      languageCode,
     });
   }
 }
