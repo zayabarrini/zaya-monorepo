@@ -146,14 +146,14 @@
       backgroundType: "grid",
       backgroundIntensity: 0.12
     },
-    {
-      component: SoulAccountingSlide,
-      title: "Accounting of the Soul",
-      gradientStart: "brownRed",
-      gradientEnd: "burntCaramel",
-      backgroundType: "noise",
-      backgroundIntensity: 0.1
-    },
+    // {
+    //   component: SoulAccountingSlide,
+    //   title: "Accounting of the Soul",
+    //   gradientStart: "brownRed",
+    //   gradientEnd: "burntCaramel",
+    //   backgroundType: "noise",
+    //   backgroundIntensity: 0.1
+    // },
     {
       component: GlitchStrategySlide,
       title: "The Glitch Strategy",
@@ -292,9 +292,26 @@
     }
   ];
 
-  // Handle wheel events with smoother parallax
   function handleWheel(event: WheelEvent): void {
     if (!browser || isScrolling) return;
+
+    // Check if the target is inside scrollable content or TOC
+    const target = event.target as HTMLElement;
+    const isInScrollableContent =
+      target.closest(".slide-content") !== null;
+    const isInTOC = target.closest(".toc") !== null;
+    const isInNavigation =
+      target.closest(".navigation") !== null;
+
+    // Don't navigate if scrolling inside content areas
+    if (
+      isInScrollableContent ||
+      isInTOC ||
+      isInNavigation
+    ) {
+      return;
+    }
+
     event.preventDefault();
 
     const delta = event.deltaY;
@@ -329,9 +346,27 @@
     }
   }
 
-  // Handle keyboard navigation
+  // Handle keyboard navigation - prevent when in content areas
   function handleKeyDown(event: KeyboardEvent): void {
     if (!browser) return;
+
+    // Check if focus is inside scrollable content
+    const target = event.target as HTMLElement;
+    const isInScrollableContent =
+      target.closest(".slide-content") !== null;
+    const isInTOC = target.closest(".toc") !== null;
+    const isInNavigation =
+      target.closest(".navigation") !== null;
+
+    // Only handle arrow keys for navigation if not in content areas
+    if (
+      (event.key === "ArrowUp" ||
+        event.key === "ArrowDown") &&
+      (isInScrollableContent || isInTOC || isInNavigation)
+    ) {
+      // Let the content scroll naturally
+      return;
+    }
 
     switch (event.key) {
       case "ArrowUp":
@@ -783,6 +818,10 @@
     letter-spacing: -0.02em;
   }
 
+  /* :global(span) {
+    font-family: var(--font-mono);
+  } */
+
   :global(p) {
     font-size: 1.8em;
   }
@@ -830,6 +869,8 @@
     line-height: 1.6;
     font-weight: 400;
     color: var(--vanilla-custard);
+
+    -webkit-overflow-scrolling: touch;
   }
 
   .slide-content::-webkit-scrollbar {
@@ -844,6 +885,27 @@
   .slide-content::-webkit-scrollbar-thumb {
     background: var(--golden-orange);
     border-radius: 4px;
+  }
+
+  .slide-content::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.1),
+      transparent
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .slide-content:hover::after {
+    opacity: 1;
   }
 
   .parallax-bg {

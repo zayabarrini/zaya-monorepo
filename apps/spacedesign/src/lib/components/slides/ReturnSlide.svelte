@@ -32,7 +32,7 @@
             class="highlight"
             style="color: {colors.pearlAqua};"
           >
-            10x potential by 2026
+            10x potential by 2027
           </li>
         </ul>
       </div>

@@ -9,7 +9,7 @@
       class="parallax-item"
       style="color: {colors.vanillaCustard};"
     >
-      The Zayas Project
+      The Zayas Barrini Project
     </h1>
 
     <div class="contact-card parallax-item">
@@ -18,19 +18,19 @@
           class="name"
           style="color: {colors.goldenOrange};"
         >
-          [Your Name]
+          Z
         </p>
         <p
           class="detail"
           style="color: {colors.pearlAqua};"
         >
-          [Email]
+          zayabarrini@gmail.com
         </p>
         <p
           class="detail"
           style="color: {colors.pearlAqua};"
         >
-          [Phone]
+          +55 35 99772 6990
         </p>
         <p
           class="website"

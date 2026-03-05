@@ -87,6 +87,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    text-align: center;
   }
 
   .vision-container {
@@ -123,7 +124,7 @@
   }
 
   .target-box {
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--vanillaCustard);
     padding: 1.5rem;
     border-radius: 0.5rem;
     margin: 1.5rem 0;

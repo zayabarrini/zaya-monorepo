@@ -11,12 +11,14 @@
     >
       THE ZAYAS PROJECT
     </h1>
+    <p></p>
     <h2
       class="parallax-item"
       style="color: {colors.pearlAqua};"
     >
       Building the bridge from Precariat to Owning Class
     </h2>
+    <hr />
     <h3
       class="parallax-item"
       style="color: {colors.goldenOrange};"
@@ -25,34 +27,36 @@
     </h3>
 
     <div class="author-container parallax-item">
-      <p
+      <h2
         class="author-name"
         style="color: {colors.vanillaCustard};"
       >
-        [YOUR NAME]
-      </p>
-      <p
+        Zaya Barrini
+      </h2>
+      <hr />
+      <h3
         class="author-title"
-        style="color: {colors.pearlAqua};"
+        style="color: {colors.h3earlAqua};"
       >
         Psychoanalyst | Filmmaker | Computer Engineer
-      </p>
+      </h3>
     </div>
 
     <div class="ask-container parallax-item">
-      <p
+      <h2
         class="ask-text"
         style="color: {colors.goldenOrange};"
       >
         The Ask:
-      </p>
-      <p
+      </h2>
+      <p></p>
+      <h4
         class="ask-description"
         style="color: {colors.vanillaCustard};"
       >
         Investment in a vision, a trajectory, and a product
         ecosystem
-      </p>
+      </h4>
     </div>
   </div>
 </div>
@@ -126,7 +130,7 @@
   }
 
   .ask-description {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     line-height: 1.6;
   }
 

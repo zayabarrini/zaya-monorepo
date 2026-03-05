@@ -1,5 +1,5 @@
-<!-- src/lib/components/BackgroundPlayground.svelte
-<script>
+<!-- src/lib/components/BackgroundPlayground.svelte -->
+<!-- <script>
   import {
     getBackground,
     colorSchemes,

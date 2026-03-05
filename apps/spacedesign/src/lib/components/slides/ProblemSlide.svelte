@@ -61,9 +61,7 @@
     </div>
 
     <div class="conclusion parallax-item">
-      <p
-        style="color: {colors.pearlAqua}; font-size: 1.5rem;"
-      >
+      <p style="color: {colors.pearlAqua};">
         Most people die in the grammar they were born into.
       </p>
     </div>
@@ -118,7 +116,7 @@
   }
 
   .gap-section {
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 3rem;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.4);
@@ -132,7 +130,8 @@
   }
 
   .conclusion {
-    text-align: center;
+    text-align: center !important;
+    font-size: 2rem;
     animation: fadeIn 0.8s ease-out 0.6s both;
   }
 
