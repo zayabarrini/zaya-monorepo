@@ -106,6 +106,7 @@
   .invitation {
     margin-bottom: 3rem;
     animation: fadeIn 0.8s ease-out 0.6s both;
+    display: inline-block;
   }
 
   .invitation p {

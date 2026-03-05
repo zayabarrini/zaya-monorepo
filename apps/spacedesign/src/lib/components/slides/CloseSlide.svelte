@@ -13,9 +13,9 @@
     </h1>
 
     <div class="foundation-statement parallax-item">
-      <p style="color: {colors.pearlAqua};">
+      <h3 style="color: {colors.pearlAqua};">
         I have spent 10 years building the foundation.
-      </p>
+      </h3>
 
       <div class="pillars">
         <span
@@ -108,17 +108,19 @@
   }
 
   .foundation-statement {
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
     animation: slideInUp 0.8s ease-out 0.2s both;
   }
 
-  .foundation-statement p {
+  /* .foundation-statement h3 {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-  }
+  } */
 
   .pillars {
     display: flex;
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
@@ -143,6 +145,7 @@
     padding: 3rem;
     border-radius: 2rem;
     margin-bottom: 3rem;
+    text-align: center !important;
     border: 2px solid var(--golden-orange);
     animation: fadeIn 0.8s ease-out 0.4s both;
   }

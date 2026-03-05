@@ -31,7 +31,7 @@
           >$10M</span
         >
         <span style="color: {colors.pearlAqua};">
-          by 2026+</span
+          by 2028+</span
         >
       </div>
       <p style="color: {colors.vanillaCustard};">

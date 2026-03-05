@@ -9,7 +9,7 @@
       class="parallax-item"
       style="color: {colors.vanillaCustard};"
     >
-      THE ZAYAS PROJECT
+      ZAYA'S VISION
     </h1>
     <p></p>
     <h2

@@ -187,6 +187,14 @@
       backgroundIntensity: 0.3
     },
     {
+      component: KleinBottleVisualSlide,
+      title: "The Klein Bottle",
+      gradientStart: "darkCyan",
+      gradientEnd: "pearlAqua",
+      backgroundType: "morph",
+      backgroundIntensity: 0.35
+    },
+    {
       component: AskSlide,
       title: "The Ask",
       gradientStart: "burntCaramel",
@@ -274,14 +282,7 @@
       backgroundType: "noise",
       backgroundIntensity: 0.15
     },
-    {
-      component: KleinBottleVisualSlide,
-      title: "The Klein Bottle",
-      gradientStart: "darkCyan",
-      gradientEnd: "pearlAqua",
-      backgroundType: "morph",
-      backgroundIntensity: 0.35
-    },
+
     {
       component: EndSlide,
       title: "End",
@@ -813,7 +814,7 @@
   :global(h4),
   :global(h5),
   :global(h6) {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading) !important;
     font-weight: 600;
     letter-spacing: -0.02em;
   }

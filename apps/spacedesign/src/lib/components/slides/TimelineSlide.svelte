@@ -7,29 +7,51 @@
       year: "2016",
       event: "Starting point: Precariat, family precarity"
     },
+
+    {
+      year: "16-21",
+      event: "Expulsions: Aeronautics, Livup, UFSC"
+    },
     {
       year: "2017",
-      event: "Expulsions: Aeronautics, Livup, UFSC"
+      event: "Suicidal ideation, family crisis"
     },
     {
       year: "2018",
       event: "Begin Psychoanalysis formation"
     },
-    { year: "2019", event: "Return to Boa Esperança" },
+    { year: "2019", event: "Psychoanalysis clinic begins" },
+
     {
-      year: "2020",
-      event: "Suicidal ideation, family crisis"
+      year: "2021",
+      event: "Return to Boa Esperança, End of Doctorate"
     },
-    { year: "2021", event: "Psychoanalysis clinic begins" },
-    { year: "2022", event: "First digital products" },
-    { year: "2023", event: "Begin Cinema formation" },
     {
-      year: "2024",
+      year: "2022",
+      event: "Development of Psychoanalytic School"
+    },
+    {
+      year: "2023",
+      event:
+        "Begin Cinema formation, First digital products"
+    },
+    { year: "2024", event: "Cinema projects, animations" },
+    {
+      year: "2025",
       event: "Product ecosystem expands (15+)"
     },
-    { year: "2025", event: "Cinema projects, animations" },
     {
       year: "2026",
+      event:
+        "Focus on Digital Products Integration and Marketing"
+    },
+    {
+      year: "2027",
+      event:
+        "Cash flow, development of products related to finances, international markets"
+    },
+    {
+      year: "2028",
       event: "Target: $10M, Perfect Product launched"
     }
   ];

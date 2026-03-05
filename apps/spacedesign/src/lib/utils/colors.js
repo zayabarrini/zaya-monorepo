@@ -327,6 +327,6 @@ export const palettes = {
 };
 
 // Set the active palette here - change this line to switch globally
-const colors = palettes.darkForest; 
+const colors = palettes.autumn; 
 
 export { colors };
