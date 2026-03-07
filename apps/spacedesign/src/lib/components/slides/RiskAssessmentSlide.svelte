@@ -152,8 +152,8 @@
   .real-risk {
     background: linear-gradient(
       135deg,
-      rgba(187, 62, 3, 0.2),
-      rgba(0, 0, 0, 0.3)
+      var(--inkBlack),
+      var(--darkCyan)
     );
     padding: 2rem;
     border-radius: 1rem;

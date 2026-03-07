@@ -243,7 +243,7 @@
 
   .production-item:hover {
     transform: translateX(10px);
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--inkBlack);
   }
 
   .bullet {
@@ -283,8 +283,8 @@
   .thesis-section {
     background: linear-gradient(
       135deg,
-      rgba(238, 155, 0, 0.1),
-      rgba(187, 62, 3, 0.1)
+      var(--inkBlack),
+      var(--darkCyan)
     );
     padding: 1.5rem;
     border-radius: 1rem;

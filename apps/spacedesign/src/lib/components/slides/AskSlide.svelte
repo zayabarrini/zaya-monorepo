@@ -159,7 +159,7 @@
 
   .qualification-card:hover {
     transform: translateX(5px);
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--inkBlack);
   }
 
   .bullet {

@@ -27,10 +27,10 @@
           >Target:
         </span>
         <span
-          style="color: {colors.goldenOrange}; font-size: 2.5rem;"
+          style="color: {colors.inkBlack}; font-size: 2.5rem;"
           >$10M</span
         >
-        <span style="color: {colors.pearlAqua};">
+        <span style="color: {colors.darkCyan};">
           by 2028+</span
         >
       </div>

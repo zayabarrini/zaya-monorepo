@@ -247,7 +247,7 @@
 
   .course-item:hover {
     transform: translateX(10px);
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--inkBlack);
   }
 
   .course-bullet {

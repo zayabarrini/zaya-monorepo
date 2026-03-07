@@ -172,7 +172,7 @@
   }
 
   .next-steps {
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--inkBlack);
     padding: 1.5rem;
     border-radius: 1rem;
     animation: fadeIn 0.8s ease-out 0.6s both;

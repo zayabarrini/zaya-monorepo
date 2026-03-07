@@ -169,7 +169,7 @@
   }
 
   .ai-note {
-    background: rgba(238, 155, 0, 0.1);
+    background: var(--inkBlack);
     padding: 1.5rem;
     border-radius: 1rem;
     text-align: center;

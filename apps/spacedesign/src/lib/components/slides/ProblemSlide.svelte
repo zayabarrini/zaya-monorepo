@@ -81,6 +81,16 @@
   .problem-container {
     max-width: 1000px;
     width: 100%;
+    background: linear-gradient(
+      135deg,
+      var(--inkBlack),
+      var(--darkCyan)
+    );
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: slideInUp 0.8s ease-out 0.2s both;
   }
 
   h1 {
@@ -130,6 +140,14 @@
   }
 
   .conclusion {
+    background: linear-gradient(
+      135deg,
+      var(--inkBlack),
+      var(--darkCyan)
+    );
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
     text-align: center !important;
     font-size: 2rem;
     animation: fadeIn 0.8s ease-out 0.6s both;

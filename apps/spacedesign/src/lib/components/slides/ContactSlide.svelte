@@ -178,6 +178,9 @@
   }
 
   .final-message {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 1rem;
     animation: fadeIn 0.8s ease-out 0.4s both;
   }
 

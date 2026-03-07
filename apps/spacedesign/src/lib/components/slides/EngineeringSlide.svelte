@@ -192,7 +192,7 @@
   }
 
   .paranoia-section {
-    background: rgba(187, 62, 3, 0.1);
+    background: var(--inkBlack);
     padding: 1.5rem;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -241,8 +241,8 @@
     padding: 1.5rem;
     background: linear-gradient(
       135deg,
-      rgba(238, 155, 0, 0.1),
-      rgba(10, 147, 150, 0.1)
+      var(--inkBlack),
+      var(--darkCyan)
     );
     border-radius: 1rem;
     animation: fadeIn 0.8s ease-out 0.8s both;
